@@ -1,0 +1,32 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #AAB7CF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #788aac;
+}
+
+.EscFondo1 {
+    background: #e1e1e1;
+    height: 100vh;
+    position: relative;
+}
+
+.EscFondo2 {
+    background: #d1d1d1;
+    height: 100vh;
+    position: relative;
+}
