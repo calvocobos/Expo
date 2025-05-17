@@ -16,26 +16,36 @@
     <script src="cbs/efecto1.js" defer></script>
 </head>
 
-<body>
-    <div class="EscFondo1">
-        <!-- Video fondo -->
-        <div id="fondoVideo" class="bg-black h-screen w-screen overflow-hidden">
-            <video class="w-full h-full object-cover" controlsList="nodownload" autoplay loop muted>
-                <source src="fnd/Fondovideo.mp4" type="video/mp4">
-                Tu navegador no soporta el formato de video.
-            </video>
+<body class="m-0">
+    <div class="w-full h-screen flex justify-center items-center bg-slate-50">
+        <div class="relative w-full h-full max-w-[calc(100vh*16/9)] max-h-[calc(100vw*9/16)]">
+            <div class="absolute inset-0 aspect-[16/9] bg-slate-100">
+                <!-- Video fondo -->
+                <div id="fondoVideo" class="overflow-hidden">
+                    <video class="w-full h-full object-cover" controlsList="nodownload" autoplay loop muted>
+                        <source src="fnd/Fondovideo.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+                <div class="absolute top-0 w-full h-full bg-[#ffffff98]">
+                    <img src="fnd/circulo2.png" class="opacity-20">
+                </div>
+                <img src="img/01 universidad.png" class="w-[30%] absolute top-[5%] left-[5%]">
+                <img src="img/01 logo.png" class="w-[25%] absolute top-[20%] left-[7%]">
+                <img src="img/01 autor.png" class="w-[23%] absolute bottom-[15%] left-[10%]">
+
+                <img src="img/01 tesis.png" class="w-[40%] absolute top-[5%] right-[10%]">
+                <img src="img/01 consultorio.png" class="w-[50%] absolute bottom-[15%] right-[5%]">
+                <img src="img/01 cusco.png" class="w-[8%] absolute bottom-[5%] right-[25.9%]">
+            </div>
         </div>
-        <div class="blanco"></div>
     </div>
-    <div class="EscFondo2">
-        <img src="fnd/circulo2.png" alt="">
-    </div>
-    <div class="EscFondo3">
-        EscFondo1
-    </div>
-    <div class="EscFondo4">
-        EscFondo2
+    <div>
+        mas contendi
     </div>
 </body>
+
+
+
 
 </html>
