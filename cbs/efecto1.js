@@ -1,22 +1,23 @@
-$('.carousel').each(function () {
-    const $carousel = $(this);
-    const $slides = $carousel.find('.contenido .slide');
+$(document).ready(function () {
     let currentIndex = 0;
+    const slides = $('.carousel-slide');
+    const totalSlides = slides.length;
 
-    // Inicialmente mostrar solo la primera slide
-    $slides.hide('slow').eq(currentIndex).show('slow');
+    function showSlide(index) {
+        slides.hide();
+        slides.eq(index).fadeIn();
+    }
 
-    // Botón adelante
-    $carousel.find('.adelante').on('click', function () {
-        $slides.eq(currentIndex).hide('slow');
-        currentIndex = (currentIndex + 1) % $slides.length;
-        $slides.eq(currentIndex).show('slow');
+    $('#prevBtn').click(function () {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
     });
 
-    // Botón atrás
-    $carousel.find('.atras').on('click', function () {
-        $slides.eq(currentIndex).hide('slow');
-        currentIndex = (currentIndex - 1 + $slides.length) % $slides.length;
-        $slides.eq(currentIndex).show('slow');
+    $('#nextBtn').click(function () {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
     });
+
+    // Mostrar la primera slide
+    showSlide(currentIndex);
 });
