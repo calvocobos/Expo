@@ -1,0 +1,70 @@
+/**
+ * 2 columnas
+ * la ultima se pone arriba en responsive
+ */
+
+.col2-pri2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 columnas iguales */
+    grid-template-areas: "col1 col2";
+}
+
+.col2-pri2 .col1 {
+    grid-area: col1;
+    /*background: lightblue;*/
+}
+
+.col2-pri2 .col2 {
+    grid-area: col2;
+    /*background: lightcoral;*/
+}
+
+/* Media query para pantallas menores a 600px */
+@media (max-width: 640px) {
+    .col2-pri2 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "col2"
+            "col1";
+    }
+}
+
+/***********************************************************************************/ 
+
+/* 4 columnas q pasa a 2 luego a 1 */
+
+.col4-responsivo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "col1 col2 col3 col4";
+    gap: 2rem; /* opcional */
+}
+
+.col4-responsivo .col1 { grid-area: col1; }
+.col4-responsivo .col2 { grid-area: col2; }
+.col4-responsivo .col3 { grid-area: col3; }
+.col4-responsivo .col4 { grid-area: col4; }
+
+/* Para pantallas <= 1024px: 2 columnas */
+@media (max-width: 1024px) {
+    .col4-responsivo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "col1 col2"
+            "col3 col4";
+    }
+}
+
+/* Para pantallas <= 640px: 1 columna */
+@media (max-width: 640px) {
+    .col4-responsivo {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "col1"
+            "col2"
+            "col3"
+            "col4";
+    }
+}

@@ -1,0 +1,111 @@
+/* Estilos para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #AAB7CF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #788aac;
+}
+
+/*evitar q aarastren los img*/
+img {
+  pointer-events: auto;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Estilos para Firefox */
+* {
+    scrollbar-width: thin;             /* "auto" | "thin" | "none" */
+    scrollbar-color: #AAB7CF transparent;  /* thumb color, track color */
+}
+
+.tamano {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: monospace;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+
+}
+
+/* Fuente */
+@import '@fontsource/quicksand';
+
+body {
+    font-family: 'Quicksand', 'Figtree', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: inherit;
+    font-style: normal;
+    color: #525f76;
+    position: relative
+}
+
+/* Estilo General */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* FLEX */
+
+.g-cen-izq {
+    display: flex;
+    align-items: center;
+}
+
+.g-cen-der {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.g-cen-cen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-cen-bet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* poner detrar */
+.detras1 {
+    position: absolute;
+    z-index: -1;
+}
+
+.onda {
+    background-image: url(../img/olazul.svg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 300px;
+    width: 100%;
+}
+.onda.oscuro{
+    background-image: url(../img/olanegro.svg);
+}
