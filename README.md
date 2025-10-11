@@ -22,17 +22,15 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://calvocobos.github.io/Expo/">
-        <img src="https://github.com/calvocobos/Expo/blob/main/svg/3-3-7-4%20interfaz5.png" alt="Interfaz" border="0" width="80%" />
-    </a>
-</p>
+
 
 
 
 
 ----------------------------------------------------------------------
+
 
 ![Visitas al perfil](https://komarev.com/ghpvc/?username=calvocobos&label=Visitas&color=green&style=for-the-badge)
 
 ----------------------------------------------------------------------
+
