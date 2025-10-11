@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencias lock (opcional, si prefieres no subir package-lock)
+# package-lock.json
+
+# Directorios de build/output
+dist/
+build/
+
+# Archivos de configuración locales
+.env
+.env.local
+.env.*.local
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Tailwind CSS cache (si usas alguno)
+.tailwindcss-cache/
+
+# Otros archivos temporales
+*.log
