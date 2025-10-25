@@ -1,6 +1,7 @@
 {
-  "name": "expo3",
+  "name": "tailwindsolo",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,12 +9,11 @@
     "watch:css": "npx @tailwindcss/cli -i tailwind/input.css -o tailwind/output.css --watch"
   },
   "keywords": [],
-  "author": "julian cobos vargas",
+  "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.14",
-    "tailwindcss": "^4.1.14"
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2"

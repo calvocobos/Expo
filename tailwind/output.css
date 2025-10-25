@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -578,32 +578,32 @@
     }
   }
   .sm\:mx-0 {
-    @media (width >= 640px) {
+    @media (width >= 40rem) {
       margin-inline: calc(var(--spacing) * 0);
     }
   }
   .sm\:flex {
-    @media (width >= 640px) {
+    @media (width >= 40rem) {
       display: flex;
     }
   }
   .md\:mx-auto {
-    @media (width >= 768px) {
+    @media (width >= 48rem) {
       margin-inline: auto;
     }
   }
   .lg\:mx-0 {
-    @media (width >= 1024px) {
+    @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 0);
     }
   }
   .lg\:flex {
-    @media (width >= 1024px) {
+    @media (width >= 64rem) {
       display: flex;
     }
   }
   .lg\:text-4xl {
-    @media (width >= 1024px) {
+    @media (width >= 64rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
     }

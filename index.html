@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-	<title>Presentación de Tesis para Titulación | Calvo Arteaga y Cobos Vargas</title>
+
+    <title>Presentación de Tesis para Titulación | Calvo Arteaga y Cobos Vargas</title>
     <meta name="description"
         content="Presentación de tesis de grado para la titulación como Ingenieros de Sistemas. Autores: Carlos Antonio Calvo Arteaga e Irvin Julian Cobos Vargas.">
     <meta name="keywords"
         content="tesis, titulación, ingeniería de sistemas, presentación de tesis, Carlos Calvo Arteaga, Julian Cobos Vargas, Universidad Andina del Cusco, exposición académica">
     <link rel="icon" href="cbs/tesisico.ico" type="image/x-icon" />
-	
-	<!-- Estilos -->
+
+    <!-- Estilos -->
     <link href="./cbs/general.css" rel="stylesheet">
     <link href="./cbs/columna.css" rel="stylesheet">
     <link href="./tailwind/output.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <script src="jquery/jquery.easing.min.1.4.1.js"></script>
 
 
-	<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B8PVDVN1E"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -33,7 +33,7 @@
         gtag('js', new Date());
         gtag('config', 'G-3B8PVDVN1E');
     </script>
-	
+
 </head>
 
 <body>
@@ -58,16 +58,38 @@
             </div>
         </div>
         <div id="menucontenido" class="fixed w-48 top-9 right-2 rounded-md py-2 bg-[#FECF41] shadow">
-            <button class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+            <button data-target="#inicio" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
                 Inicio
             </button>
-            <button class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+            <button data-target="#herramientas" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                Herramientas
+            </button>
+            <button data-target="#video" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                Video
+            </button>
+            <button data-target="#universidad" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                Universidad
+            </button>
+            <button data-target="#autores" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
                 Autores
             </button>
-
+            <button data-target="#repositorio" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                Repositorio
+            </button>
+            <button data-target="#apa7" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                APA 7
+            </button>
+            <button data-target="#leyes" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                Leyes
+            </button>
+            <button data-target="#comentarios" class="w-full p-2 hover:bg-[#fe9941] cursor-pointer">
+                Comentarios
+            </button>
         </div>
     </div>
 
+
+    <section id="inicio"></section>
 
     <div class="detras1 w-full">
         <div class="onda"></div>
@@ -131,6 +153,8 @@
         </div>
     </div>
 
+    <section id="herramientas"></section>
+
     <div class="col2-pri2 max-w-[90%] mx-auto my-20">
         <div class="col1 g-cen-bet pt-20 overflow-hidden">
             <button class="w-[80%] mx-auto overflow-hidden rounded-lg">
@@ -193,6 +217,8 @@
         </div>
     </div>
 
+    <section id="video"></section>
+
     <div class="w-[80%] mx-auto aspect-[16/9]">
         <iframe class="w-full h-full" src="https://www.youtube.com/embed/GAQ6pLZKUeU" title="tesis" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -213,6 +239,9 @@
             </div>
         </div>
     </div>
+
+    <section id="universidad"></section>
+
     <div class="w-[90%] h-1 mx-auto mb-3 bg-amber-300 rounded-full">
         <!--linea-->
     </div>
@@ -224,6 +253,9 @@
     <div class="w-[90%] h-1 mx-auto my-3 bg-amber-300 rounded-full">
         <!--linea-->
     </div>
+
+    <section id="autores"></section>
+
     <div class="text-center mt-8">
         <p class="text-xl">Presentado por:</p>
     </div>
@@ -349,174 +381,221 @@
         <!--linea-->
     </div>
 
+    <section id="repositorio"></section>
+
     <!-- Enlaces -->
-        <div class="border-2 border-[#044DA2] rounded-lg my-4 p-4 max-w-[700px] mx-5 md:mx-auto">
+    <div class="border-2 border-[#044DA2] rounded-lg my-4 p-4 max-w-[700px] mx-5 md:mx-auto">
 
-            <div class="p-3 mb-5 text-center text-2xl">
-                Contenido
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4"
-                    target="_blank"
-                    class="h-40 w-70 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="img/01 logo.png" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>Repositorio UAC</p>
-                    <p>Universidad Andina del Cusco</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4 flex-row-reverse">
-                <a href="https://github.com/calvocobos" target="_blank"
-                    class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="ico/github.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>Repositorio Github</p>
-                    <p>Desarrollo del sistema</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_3-3.pdf"
-                    target="_blank"
-                    class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="ico/ods3.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>ODS 3</p>
-                    <p>Salud y bienestar</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4 flex-row-reverse">
-                <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_9-9.pdf"
-                    target="_blank"
-                    class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="ico/ods9.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>ODS 9</p>
-                    <p>Industria, innovación e infraestructura</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="https://iso25000.com/index.php/normas-iso-25000/iso-25010" target="_blank"
-                    class="h-40 w-80 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="ico/iso.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>ISO/IEC 25010</p>
-                    <p>Modelo de calidad</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4 flex-row-reverse">
-                <a href="https://www.researchgate.net/profile/Luis-Arturo-Rivas-Tovar/publication/357046089_NORMAS_APA_7_EDICION_ESTRUCTURA_CITAS_Y_REFERENCIAS/links/6789b78aec3ae3435a67a640/NORMAS-APA-7-EDICION-ESTRUCTURA-CITAS-Y-REFERENCIAS.pdf"
-                    target="_blank"
-                    class="h-40 w-60 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="ico/apa.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>APA 7</p>
-                    <p>Normas de documento</p>
-                </div>
-            </div>
-
+        <div class="p-3 mb-5 text-center text-2xl">
+            Contenido
         </div>
 
-        <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-            <!--linea-->
-        </div>
-
-
-        <!-- Ley de proteccion de datos -->
-        <div class="border-2 border-[#044DA2] rounded-lg my-4 p-4 max-w-[700px] mx-5 md:mx-auto">
-
-            <div class="p-3 mb-5 text-center text-2xl">
-                Ley de Protección de Datos Personales
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733"
-                    target="_blank"
-                    class="h-40 w-80 px-8 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="https://www.gob.pe/assets/escudo_text_gobpe_bicentenario_black-b62ef1cc.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>Congreso de la República del Perú. (2011).</p>
-                    <p>Ley N.°29733 - Ley de Protección de Datos Personales. Diario Oficial El Peruano.</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4 flex-row-reverse">
-                <a href="https://www.gob.pe/institucion/minjus/normas-legales/1941246-003-2013-jus"
-                    target="_blank"
-                    class="h-40 w-80 px-8 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                    <img src="https://www.gob.pe/assets/escudo_text_gobpe_bicentenario_black-b62ef1cc.svg" class="h-18 w-auto">
-                </a>
-                <div class="grow bg-slate-50 rounded-lg p-3">
-                    <p>Ministerio de Justicia y Derechos Humanos. (2013).</p>
-                    <p>Decreto Supremo N.°003-2013-JUS - Reglamento de la Ley N.°29733. Diario Oficial El Peruano.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-            <!--linea-->
-        </div>
-
-        <div class="flex items-center justify-center gap-10">
-            <p class="text-2xl">Visitas:</p>
-            <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=xngx2ttuh9ak3shm32yn7yud6k8xmjkz"
-                border="0" title="Contador" alt="contador">
-        </div>
-
-        <!-- Visitas al perfil de GitHub -->
-        <div class="flex justify-center my-5">
-            <a href="https://github.com/calvocobos/Expo" target="_blank">
-                <img src="https://komarev.com/ghpvc/?username=calvocobos&label=Visitas%20al%20perfil&color=orange&style=for-the-badge"
-                    alt="Contador de visitas al perfil de GitHub">
+        <div class="flex items-center gap-4">
+            <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4" target="_blank"
+                class="h-40 w-70 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="img/01 logo.png" class="h-18 w-auto">
             </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>Repositorio UAC</p>
+                <p>Universidad Andina del Cusco</p>
+            </div>
         </div>
 
-        
-
-        <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-            <!--linea-->
+        <div class="flex items-center gap-4 flex-row-reverse">
+            <a href="https://github.com/calvocobos" target="_blank"
+                class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="ico/github.svg" class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>Repositorio Github</p>
+                <p>Desarrollo del sistema</p>
+            </div>
         </div>
 
-        <div class="w-10/12 mx-auto flex items-center justify-center gap-10">
-            <script src="https://giscus.app/client.js" data-repo="calvocobos/Expo" data-repo-id="R_kgDOOrZfWw"
-                data-category="Announcements" data-category-id="DIC_kwDOOrZfW84Cvp5Z" data-mapping="pathname"
-                data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-                data-theme="light" data-lang="es" data-loading="lazy" crossorigin="anonymous" async>
-                </script>
+        <div class="flex items-center gap-4">
+            <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_3-3.pdf"
+                target="_blank"
+                class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="ico/ods3.svg" class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>ODS 3</p>
+                <p>Salud y bienestar</p>
+            </div>
         </div>
 
-
-        <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-            <!--linea-->
+        <div class="flex items-center gap-4 flex-row-reverse">
+            <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_9-9.pdf"
+                target="_blank"
+                class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="ico/ods9.svg" class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>ODS 9</p>
+                <p>Industria, innovación e infraestructura</p>
+            </div>
         </div>
 
-        <div class="flex items-center justify-center gap-10">
-            <p class="text-2xl">Visitas:</p>
-            <a href="https://www.hitwebcounter.com/" target="_blank">
-                <img src="https://hitwebcounter.com/counter/counter.php?page=21440271&style=0022&nbdigits=5&type=page&initCount=63"
-                    title="Counters" Alt="Counters" border="0" /></a>
+        <div class="flex items-center gap-4">
+            <a href="https://iso25000.com/index.php/normas-iso-25000/iso-25010" target="_blank"
+                class="h-40 w-80 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="ico/iso.svg" class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>ISO/IEC 25010</p>
+                <p>Modelo de calidad</p>
+            </div>
         </div>
 
-        <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-            <!--linea-->
+        <div class="flex items-center gap-4 flex-row-reverse">
+            <a href="https://www.researchgate.net/profile/Luis-Arturo-Rivas-Tovar/publication/357046089_NORMAS_APA_7_EDICION_ESTRUCTURA_CITAS_Y_REFERENCIAS/links/6789b78aec3ae3435a67a640/NORMAS-APA-7-EDICION-ESTRUCTURA-CITAS-Y-REFERENCIAS.pdf"
+                target="_blank"
+                class="h-40 w-60 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="ico/apa.svg" class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>APA 7</p>
+                <p>Normas de documento</p>
+            </div>
         </div>
 
-        <div class="h-9">
+    </div>
 
+    <section id="apa7"></section>
+
+    <!-- Ley de proteccion de datos -->
+    <div class="border-2 border-[#044DA2] rounded-lg my-4 p-4 max-w-[700px] mx-5 md:mx-auto">
+
+        <div class="p-3 mb-5 text-center text-2xl">
+            Normas APA 7
         </div>
+
+        <div class="p-3 mb-5">
+            <p>
+                La adecuada organización de un documento de tesis es fundamental para garantizar una presentación
+                formal, coherente y profesional. Por ello, las normas APA en su séptima edición proporcionan los
+                lineamientos necesarios para estructurar correctamente el trabajo académico. A continuación, se
+                presentan algunas de estas normas que es importante tener en cuenta al elaborar la tesis.
+            </p>
+        </div>
+
+        <div class="p-3 mb-5">
+            <h3>
+                <b>
+                    numeración de las páginas
+                </b>
+            </h3>
+            <p>
+                La numeración de las páginas en un documento elaborado bajo las normas APA debe ubicarse en la parte
+                superior derecha de cada hoja, comenzando desde la portada y continuando de forma consecutiva en todo el
+                trabajo. Este formato permite mantener una presentación uniforme y facilita la localización del
+                contenido dentro del texto, contribuyendo así a la organización y profesionalismo del documento
+                académico (American Psychological Association, 2020).
+            </p>
+            <h4>
+                <b>
+                    Referencia bibliográfica completa
+                </b>
+            </h4>
+            <p>
+                American Psychological Association. (2020). Publication Manual of the American Psychological Association
+                (7th ed.). APA Publishing.
+            </p>
+        </div>
+    </div>
+
+    <section id="leyes"></section>
+
+    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+        <!--linea-->
+    </div>
+
+
+    <!-- Ley de proteccion de datos -->
+    <div class="border-2 border-[#044DA2] rounded-lg my-4 p-4 max-w-[700px] mx-5 md:mx-auto">
+
+        <div class="p-3 mb-5 text-center text-2xl">
+            Ley de Protección de Datos Personales
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733"
+                target="_blank"
+                class="h-40 w-80 px-8 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="https://www.gob.pe/assets/escudo_text_gobpe_bicentenario_black-b62ef1cc.svg"
+                    class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>Congreso de la República del Perú. (2011).</p>
+                <p>Ley N.°29733 - Ley de Protección de Datos Personales. Diario Oficial El Peruano.</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4 flex-row-reverse">
+            <a href="https://www.gob.pe/institucion/minjus/normas-legales/1941246-003-2013-jus" target="_blank"
+                class="h-40 w-80 px-8 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
+                <img src="https://www.gob.pe/assets/escudo_text_gobpe_bicentenario_black-b62ef1cc.svg"
+                    class="h-18 w-auto">
+            </a>
+            <div class="grow bg-slate-50 rounded-lg p-3">
+                <p>Ministerio de Justicia y Derechos Humanos. (2013).</p>
+                <p>Decreto Supremo N.°003-2013-JUS - Reglamento de la Ley N.°29733. Diario Oficial El Peruano.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+        <!--linea-->
+    </div>
+
+    <div class="flex items-center justify-center gap-10">
+        <p class="text-2xl">Visitas:</p>
+        <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=xngx2ttuh9ak3shm32yn7yud6k8xmjkz"
+            border="0" title="Contador" alt="contador">
+    </div>
+
+    <!-- Visitas al perfil de GitHub -->
+    <div class="flex justify-center my-5">
+        <a href="https://github.com/calvocobos/Expo" target="_blank">
+            <img src="https://komarev.com/ghpvc/?username=calvocobos&label=Visitas%20al%20perfil&color=orange&style=for-the-badge"
+                alt="Contador de visitas al perfil de GitHub">
+        </a>
+    </div>
+
+    <section id="comentarios"></section>
+
+    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+        <!--linea-->
+    </div>
+
+    <div class="w-10/12 mx-auto flex items-center justify-center gap-10">
+        <script src="https://giscus.app/client.js" data-repo="calvocobos/Expo" data-repo-id="R_kgDOOrZfWw"
+            data-category="Announcements" data-category-id="DIC_kwDOOrZfW84Cvp5Z" data-mapping="pathname"
+            data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
+            data-theme="light" data-lang="es" data-loading="lazy" crossorigin="anonymous" async>
+            </script>
+    </div>
+
+
+    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+        <!--linea-->
+    </div>
+
+    <div class="flex items-center justify-center gap-10">
+        <p class="text-2xl">Visitas:</p>
+        <a href="https://www.hitwebcounter.com/" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=21440271&style=0022&nbdigits=5&type=page&initCount=63"
+                title="Counters" Alt="Counters" border="0" /></a>
+    </div>
+
+    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+        <!--linea-->
+    </div>
+
+    <div class="h-9">
+
+    </div>
 
 </body>
 
