@@ -13,8 +13,10 @@
     <meta name="author" content="Carlos Antonio Calvo Arteaga e Irvin Julian Cobos Vargas">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://calvocobos.github.io/Expo/">
-    
-       <link rel="icon" href="cbs/tesisico.ico" type="image/x-icon" />
+
+    <link rel="icon" href="cbs/tesisico.ico" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Estilos -->
     <link href="./cbs/general.css" rel="stylesheet">
@@ -40,7 +42,7 @@
 
 </head>
 
-<body>
+<body class="font-sans">
     <div class="relative h-8">
         <div class="w-full fixed top-0 bg-[#FECF41]">
             <div class="g-cen-bet mx-4">
@@ -53,10 +55,10 @@
                 <div class="font-bold select-none">Calvo & Cobos</div>
                 <div class="g-cen-izq gap-1">
                     <button id="btnoscuro" class="p-2 hover:bg-[#fe9941] cursor-pointer">
-                        <img src="ico/oscuro.svg" alt="libro" class="h-4 w-auto">
+                        <img src="ico/oscuro.svg" alt="oscuro" class="h-4 w-auto">
                     </button>
                     <button id="btnmenu" class="p-2 hover:bg-[#fe9941] cursor-pointer">
-                        <img src="ico/menu.svg" alt="libro" class="h-4 w-auto">
+                        <img src="ico/menu.svg" alt="menu" class="h-4 w-auto">
                     </button>
                 </div>
             </div>
@@ -103,11 +105,11 @@
         <div class="col1 g-cen-bet overflow-hidden">
             <div class="pt-12 w-[80%] mx-auto overflow-hidden">
                 <p class="font-bold text-md">Bienvenido</p>
-                <h1 class="font-bold text-2xl lg:text-4xl py-6 text-[#1d1d1e] dark:text-white">
+                <h1 class="font-bold text-2xl lg:text-4xl pt-6 text-[#1d1d1e] dark:text-white">
                     Sustentación de Tesis para la obtención del título profesional de Ingeniero de Sistemas.
                 </h1>
-                <h2 class="font-bold text-xl lg:text-3xl py-6 text-[#1d1d1e] dark:text-white">
-                    Universidad Andina del Cusco - Facultad de Ingeniería y Arquitectura.
+                <h2 class="font-bold text-xl lg:text-3xl pb-6 text-[#1d1d1e] dark:text-white">
+                    Universidad Andina del Cusco. Facultad de Ingeniería y Arquitectura.
                 </h2>
                 <h3 class="text-end font-bold">Calvo Arteaga & Cobos Vargas</h3>
             </div>
@@ -381,7 +383,7 @@
         </div>
     </div>
     <div>
-        <img src="img/01 cusco.png" class="w-[20%] max-w-[150px] mx-auto my-8">
+        <img src="img/01 cusco.png" alt="cusco" class="w-[20%] max-w-[150px] mx-auto my-8">
     </div>
     <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
         <!--linea-->
@@ -399,7 +401,7 @@
         <div class="flex items-center gap-4">
             <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4" target="_blank"
                 class="h-40 w-70 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                <img src="img/01 logo.png" class="h-18 w-auto">
+                <img src="img/01 logo.png" alt="logo" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>Repositorio UAC</p>
@@ -410,7 +412,7 @@
         <div class="flex items-center gap-4 flex-row-reverse">
             <a href="https://github.com/calvocobos" target="_blank"
                 class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                <img src="ico/github.svg" class="h-18 w-auto">
+                <img src="ico/github.svg" alt="github" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>Repositorio Github</p>
@@ -422,7 +424,7 @@
             <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_3-3.pdf"
                 target="_blank"
                 class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                <img src="ico/ods3.svg" class="h-18 w-auto">
+                <img src="ico/ods3.svg" alt="ods3" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>ODS 3</p>
@@ -434,7 +436,7 @@
             <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_9-9.pdf"
                 target="_blank"
                 class="h-40 w-40 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                <img src="ico/ods9.svg" class="h-18 w-auto">
+                <img src="ico/ods9.svg" alt="ods9" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>ODS 9</p>
@@ -445,7 +447,7 @@
         <div class="flex items-center gap-4">
             <a href="https://iso25000.com/index.php/normas-iso-25000/iso-25010" target="_blank"
                 class="h-40 w-80 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                <img src="ico/iso.svg" class="h-18 w-auto">
+                <img src="ico/iso.svg" alt="iso" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>ISO/IEC 25010</p>
@@ -457,7 +459,7 @@
             <a href="https://www.researchgate.net/profile/Luis-Arturo-Rivas-Tovar/publication/357046089_NORMAS_APA_7_EDICION_ESTRUCTURA_CITAS_Y_REFERENCIAS/links/6789b78aec3ae3435a67a640/NORMAS-APA-7-EDICION-ESTRUCTURA-CITAS-Y-REFERENCIAS.pdf"
                 target="_blank"
                 class="h-40 w-60 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
-                <img src="ico/apa.svg" class="h-18 w-auto">
+                <img src="ico/apa.svg" alt="apa" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>APA 7</p>
@@ -492,7 +494,11 @@
                 </b>
             </h3>
             <p class="text-justify">
-                La numeración de las páginas en un documento elaborado bajo las normas APA debe ubicarse en la parte superior derecha de cada hoja, comenzando desde la portada y continuando de forma consecutiva en todo el trabajo. Este formato permite mantener una presentación uniforme y facilita la localización del contenido dentro del texto, contribuyendo así a la organización y profesionalismo del documento académico (American Psychological Association, 2020, pp. 44–45).
+                La numeración de las páginas en un documento elaborado bajo las normas APA debe ubicarse en la parte
+                superior derecha de cada hoja, comenzando desde la portada y continuando de forma consecutiva en todo el
+                trabajo. Este formato permite mantener una presentación uniforme y facilita la localización del
+                contenido dentro del texto, contribuyendo así a la organización y profesionalismo del documento
+                académico (American Psychological Association, 2020, pp. 44–45).
             </p>
             <h4 class="my-3 mx-5">
                 <b>
@@ -500,7 +506,8 @@
                 </b>
             </h4>
             <p class="my-3 mx-5">
-                American Psychological Association. (2020). Publication Manual of the American Psychological Association (7th ed., pp. 44–45). APA Publishing.
+                American Psychological Association. (2020). Publication Manual of the American Psychological Association
+                (7th ed., pp. 44–45). APA Publishing.
             </p>
         </div>
 
@@ -511,7 +518,13 @@
                 </b>
             </h3>
             <p class="text-justify">
-                En el formato APA, las imágenes, figuras o ilustraciones deben ocupar el ancho disponible dentro de los márgenes establecidos del documento, sin estar sujetas a la sangría o tabulación del texto donde se insertan. Esto significa que, aunque una imagen esté asociada a un subtítulo de nivel 2 o 3, su alineación debe mantenerse centrada o ajustada al ancho permitido por los márgenes generales del trabajo. Esta disposición favorece una presentación visual clara y uniforme, garantizando que la imagen se interprete correctamente dentro del contexto del documento académico (American Psychological Association, 2020, pp. 225–227).
+                En el formato APA, las imágenes, figuras o ilustraciones deben ocupar el ancho disponible dentro de los
+                márgenes establecidos del documento, sin estar sujetas a la sangría o tabulación del texto donde se
+                insertan. Esto significa que, aunque una imagen esté asociada a un subtítulo de nivel 2 o 3, su
+                alineación debe mantenerse centrada o ajustada al ancho permitido por los márgenes generales del
+                trabajo. Esta disposición favorece una presentación visual clara y uniforme, garantizando que la imagen
+                se interprete correctamente dentro del contexto del documento académico (American Psychological
+                Association, 2020, pp. 225–227).
             </p>
             <h4 class="my-3 mx-5">
                 <b>
@@ -519,7 +532,8 @@
                 </b>
             </h4>
             <p class="my-3 mx-5">
-                American Psychological Association. (2020). Publication Manual of the American Psychological Association (7th ed., pp. 225–227). APA Publishing.
+                American Psychological Association. (2020). Publication Manual of the American Psychological Association
+                (7th ed., pp. 225–227). APA Publishing.
             </p>
         </div>
 
@@ -530,7 +544,12 @@
                 </b>
             </h3>
             <p class="text-justify">
-                En el estilo APA, las tablas deben ajustarse al ancho disponible dentro de los márgenes del documento, sin estar limitadas por la sangría o tabulación del texto donde se insertan. Asimismo, se recomienda utilizar únicamente líneas horizontales para separar los encabezados y las secciones de datos, evitando el uso de líneas verticales, con el fin de mantener un diseño limpio, claro y fácil de interpretar. Esta disposición contribuye a la presentación ordenada y profesional de la información contenida en las tablas (American Psychological Association, 2020, pp. 199–201).
+                En el estilo APA, las tablas deben ajustarse al ancho disponible dentro de los márgenes del documento,
+                sin estar limitadas por la sangría o tabulación del texto donde se insertan. Asimismo, se recomienda
+                utilizar únicamente líneas horizontales para separar los encabezados y las secciones de datos, evitando
+                el uso de líneas verticales, con el fin de mantener un diseño limpio, claro y fácil de interpretar. Esta
+                disposición contribuye a la presentación ordenada y profesional de la información contenida en las
+                tablas (American Psychological Association, 2020, pp. 199–201).
             </p>
             <h4 class="my-3 mx-5">
                 <b>
@@ -538,7 +557,8 @@
                 </b>
             </h4>
             <p class="my-3 mx-5">
-                American Psychological Association. (2020). Publication Manual of the American Psychological Association (7th ed., pp. 199–201). APA Publishing.
+                American Psychological Association. (2020). Publication Manual of the American Psychological Association
+                (7th ed., pp. 199–201). APA Publishing.
             </p>
         </div>
 
@@ -563,7 +583,7 @@
                 target="_blank"
                 class="h-40 w-80 px-8 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
                 <img src="https://www.gob.pe/assets/escudo_text_gobpe_bicentenario_black-b62ef1cc.svg"
-                    class="h-18 w-auto">
+                    alt="ley" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>Congreso de la República del Perú. (2011).</p>
@@ -575,7 +595,7 @@
             <a href="https://www.gob.pe/institucion/minjus/normas-legales/1941246-003-2013-jus" target="_blank"
                 class="h-40 w-80 px-8 bg-slate-50 rounded-lg hover:bg-slate-500 flex items-center justify-center">
                 <img src="https://www.gob.pe/assets/escudo_text_gobpe_bicentenario_black-b62ef1cc.svg"
-                    class="h-18 w-auto">
+                    alt="decreto" class="h-18 w-auto">
             </a>
             <div class="grow bg-slate-50 rounded-lg p-3">
                 <p>Ministerio de Justicia y Derechos Humanos. (2013).</p>
@@ -592,7 +612,7 @@
     <div class="flex items-center justify-center gap-10">
         <p class="text-2xl">Visitas:</p>
         <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=xngx2ttuh9ak3shm32yn7yud6k8xmjkz"
-            border="0" title="Contador" alt="contador">
+            border="0" title="Contador" alt="visitas">
     </div>
 
     <!-- Visitas al perfil de GitHub -->

@@ -50,23 +50,12 @@ img {
 @import '@fontsource/quicksand';
 
 body {
-    font-family: 'Quicksand', 'Figtree', sans-serif;
     font-optical-sizing: auto;
     font-weight: inherit;
     font-style: normal;
     color: #525f76;
     position: relative
 }
-
-/* Estilo General */
-* {
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
 
 /* FLEX */
 
