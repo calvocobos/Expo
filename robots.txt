@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://calvocobos.github.io/Expo/sitemap.xml
