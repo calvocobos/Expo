@@ -32,9 +32,8 @@ $(document).ready(function () {
    * JQuery menu lateral derecho
    * pequeño
    */
-  $("#menucontenido").fadeOut("slow");
   $("#btnmenu").on("click", function () {
-    $("#menucontenido").stop(true, true).slideToggle(300);
+    $("#menu-lateral").stop(true, true).slideToggle(300);
   });
 });
 
