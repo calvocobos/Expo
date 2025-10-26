@@ -37,19 +37,26 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $("button").click(function () {
-    // Obtener el destino desde el atributo data-target
-    var destino = $(this).data("target");
-    console.log(destino);
+/**
+ * comportamiento del meno
+ */
 
-    // Animar el scroll
+$(document).ready(function () {
+  // Captura todos los enlaces dentro del menú lateral
+  $("#menu-lateral a").click(function (e) {
+    e.preventDefault(); // Evitar el salto instantáneo
+
+    var destino = $(this).attr("href"); // Tomar el href del enlace
+    // Animar el scroll suavemente
     $("html, body").animate(
       {
-        scrollTop: $(destino).offset().top - 50,
+        scrollTop: $(destino).offset().top - 50, // Ajusta el offset si tienes header fijo
       },
       1000,
       "easeInOutExpo"
     );
+
+    // Ocultar el menú lateral después de hacer clic
+    $("#menu-lateral").fadeOut();
   });
 });
