@@ -2,428 +2,546 @@
 <html lang="es" class="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 🌎 Codificación y compatibilidad -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-    <!-- SEO básico -->
-    <title>Sustentación de tesis de ingeniería de sistemas | Calvo Arteaga y Cobos Vargas</title>
-    <meta name="description"
-        content="Sustentación de tesis para la titulación como Ingeniero de Sistemas. Autores: Carlos Antonio Calvo Arteaga e Irvin Julian Cobos Vargas.">
-    <meta name="keywords"
-        content="sustentación, tesis, titulación, ingeniería de sistemas, Universidad Andina del Cusco, exposición, presentación.">
-    <meta name="author" content="Carlos Antonio Calvo Arteaga e Irvin Julian Cobos Vargas">
-    <meta name="robots" content="index, follow">
+  <!-- 🧠 SEO básico -->
+  <title>Sustentación de tesis de Ingeniería de Sistemas | Calvo Arteaga & Cobos Vargas</title>
+  <meta name="description"
+    content="Presentación completa de la sustentación de tesis para obtener el título de Ingeniero de Sistemas. Autores: Carlos Calvo Arteaga e Irvin Cobos Vargas — Universidad Andina del Cusco.">
+  <meta name="author" content="Carlos Antonio Calvo Arteaga, Irvin Julian Cobos Vargas">
+  <meta name="application-name" content="Sustentación de Tesis - Ingeniería de Sistemas UAC">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="format-detection" content="telephone=no">
 
-    <!-- URL canónica -->
-    <link rel="canonical" href="https://calvocobos.github.io/Expo/">
+  <!-- 🧭 Canónica y versiones regionales -->
+  <link rel="canonical" href="https://calvocobos.github.io/Expo/">
+  <link rel="alternate" hreflang="es-PE" href="https://calvocobos.github.io/Expo/">
+  <link rel="alternate" hreflang="x-default" href="https://calvocobos.github.io/Expo/">
 
-    <!-- Favicon -->
-    <link rel="icon" href="cbs/tesisico.ico" type="image/x-icon">
+  <!-- 🖼️ Iconos y PWA -->
+  <link rel="icon" href="cbs/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="cbs/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="cbs/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="cbs/favicon-maskable.png" sizes="512x512">
+  <link rel="manifest" href="cbs/site.webmanifest">
+  <link rel="shortcut icon" href="cbs/tesisico.ico">
+  <meta name="theme-color" content="#fbbf24">
+  <meta name="msapplication-TileColor" content="#fbbf24">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- Tipografía -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- 🌐 Open Graph -->
+  <meta property="og:site_name" content="Expo Tesis - Universidad Andina del Cusco">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Sustentación de tesis de Ingeniería de Sistemas | Calvo & Cobos">
+  <meta property="og:description"
+    content="Tesis presentada en la Universidad Andina del Cusco por Calvo Arteaga y Cobos Vargas para la obtención del título de Ingeniero de Sistemas.">
+  <meta property="og:image" content="https://calvocobos.github.io/Expo/img/caratula/video-tesis-caratula-fallback.jpg">
+  <meta property="og:image:alt" content="Miniatura del video de la sustentación de tesis de Ingeniería de Sistemas">
+  <meta property="og:url" content="https://calvocobos.github.io/Expo/">
 
-    <!-- JQuery -->
-    <script src="jquery/jquery.min.3.7.1.js"></script>
-    <link rel="stylesheet" href="jquery/jquery-ui.1.13.2.css">
-    <script src="jquery/jquery-ui.min.1.13.2.js"></script>
-    <script src="jquery/jquery.easing.min.1.4.1.js"></script>
+  <!-- 🐦 Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sustentación de tesis de Ingeniería de Sistemas | Calvo & Cobos">
+  <meta name="twitter:description"
+    content="Exposición de tesis en la Universidad Andina del Cusco — Ingeniería de Sistemas.">
+  <meta name="twitter:image" content="https://calvocobos.github.io/Expo/img/caratula/video-tesis-caratula-fallback.jpg">
 
-    <!-- Estilos -->
-    <link href="./tailwind/output.css" rel="stylesheet">
-    <link href="./cbs/general.css" rel="stylesheet">
-    <link href="./cbs/columna.css" rel="stylesheet">
-    <script src="./cbs/general.js" defer></script>
+  <!-- ⚡ Rendimiento y tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+    crossorigin>
+  <link rel="preload" as="style" href="tailwind/output.css">
+  <link rel="preload" as="script" href="jquery/jquery.min.3.7.1.js" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B8PVDVN1E"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-3B8PVDVN1E');
-    </script>
+  <!-- 🎨 CSS principal -->
+  <link href="tailwind/output.css" rel="stylesheet">
+  <link href="cbs/general.css" rel="stylesheet">
+  <link href="cbs/estilo.css" rel="stylesheet">
 
+  <!-- 📚 jQuery -->
+  <link rel="stylesheet" href="jquery/jquery-ui.1.13.2.css">
+  <script src="jquery/jquery.min.3.7.1.js" defer></script>
+  <script src="jquery/jquery-ui.min.1.13.2.js" defer></script>
+  <script src="jquery/jquery.easing.min.1.4.1.js" defer></script>
+
+  <!-- 📜 Scripts propios -->
+  <script src="cbs/general.js" defer></script>
+
+  <!-- 📊 Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B8PVDVN1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3B8PVDVN1E');
+  </script>
+
+  <!-- 🧩 Datos estructurados (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Sustentación de tesis de Ingeniería de Sistemas | Calvo Arteaga & Cobos Vargas",
+    "author": [
+      { "@type": "Person", "name": "Carlos Antonio Calvo Arteaga" },
+      { "@type": "Person", "name": "Irvin Julian Cobos Vargas" }
+    ],
+    "publisher": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Andina del Cusco"
+    },
+    "inLanguage": "es",
+    "datePublished": "2025-10-01",
+    "url": "https://calvocobos.github.io/Expo/",
+    "image": "https://calvocobos.github.io/Expo/img/caratula/video-tesis-caratula-fallback.jpg",
+    "video": {
+      "@type": "VideoObject",
+      "name": "Exposición de tesis de Ingeniería de Sistemas",
+      "description": "Presentación oficial de la sustentación de tesis para la obtención del título de Ingeniero de Sistemas.",
+      "thumbnailUrl": "https://calvocobos.github.io/Expo/img/caratula/video-tesis-caratula-fallback.jpg",
+      "uploadDate": "2025-09-23",
+      "contentUrl": "https://www.youtube.com/watch?v=GAQ6pLZKUeU",
+      "embedUrl": "https://www.youtube.com/embed/GAQ6pLZKUeU"
+    }
+  }
+  </script>
 </head>
 
-<body class="font-sans">
-    <!-- Encabezado principal del sitio -->
-    <header class="relative">
 
-        <!-- Navegación principal -->
-        <nav class="fixed top-0 left-0 z-50 w-full bg-amber-300 shadow" role="navigation" aria-label="Menú principal">
-            <div class="flex items-center justify-between w-full px-3">
+<body>
+  <!-- Encabezado principal del sitio -->
+  <header class="relative">
 
-                <!-- Grupo 1: Contenido importante -->
-                <ul class="flex gap-1" aria-label="Contenido importante">
-                    <li>
-                        <a href="#referencias" aria-label="Ir a la sección Repositorio"
-                            class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-                            <img src="ico/libro.svg" alt="Icono libro PDF" class="h-4 w-auto">
-                            <span class="sr-only">Repositorio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#video" aria-label="Ir a la sección Video de exposición"
-                            class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-                            <img src="ico/youtube.svg" alt="Icono video" class="h-4 w-auto">
-                            <span class="sr-only">Video de exposición</span>
-                        </a>
-                    </li>
-                </ul>
+    <!-- Navegación principal -->
+    <nav class="fixed top-0 left-0 z-50 w-full bg-amber-300 shadow" role="navigation" aria-label="Menú principal">
+      <div class="flex items-center justify-between w-full px-3">
 
-                <!-- Grupo 2: Secciones del sitio (desktop) -->
-                <ul class="hidden md:flex justify-center text-slate-700" aria-label="Secciones principales del sitio">
-                    <li>
-                        <a href="#inicio" aria-label="Ir a la sección Inicio"
-                            class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#video" aria-label="Ir a la sección Video"
-                            class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            Video
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#autores" aria-label="Ir a la sección Autores"
-                            class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            Autores
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#normas-apa7" aria-label="Ir a la sección APA 7"
-                            class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            Normas APA 7
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#comentarios" aria-label="Ir a la sección Comentarios"
-                            class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            Comentarios
-                        </a>
-                    </li>
-                </ul>
+        <!-- Grupo 1: Contenido importante -->
+        <ul class="flex gap-1" aria-label="Contenido importante">
+          <li>
+            <a href="#referencias" aria-label="Ir a la sección Repositorio"
+              class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
+              <img src="ico/libro.svg" alt="Icono libro PDF" class="h-4 w-auto">
+              <span class="sr-only">Repositorio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#video" aria-label="Ir a la sección Video de exposición"
+              class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
+              <img src="ico/youtube.svg" alt="Icono video" class="h-4 w-auto">
+              <span class="sr-only">Video de exposición</span>
+            </a>
+          </li>
+        </ul>
 
-                <!-- Grupo 3: Icono central (móvil) -->
-                <ul class="flex md:hidden justify-center flex-1" aria-label="Ir a la sección Inicio">
-                    <li>
-                        <a href="#inicio" aria-label="Ir a la sección Inicio"
-                            class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-                            <img src="ico/central.svg" alt="Icono central Inicio" class="h-6 w-auto mx-auto">
-                            <span class="sr-only">Inicio</span>
-                        </a>
-                    </li>
-                </ul>
+        <!-- Grupo 2: Secciones del sitio (desktop) -->
+        <ul class="hidden md:flex justify-center text-slate-700" aria-label="Secciones principales del sitio">
+          <li>
+            <a href="#inicio" aria-label="Ir a la sección Inicio"
+              class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#video" aria-label="Ir a la sección Video"
+              class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              Video
+            </a>
+          </li>
+          <li>
+            <a href="#autores" aria-label="Ir a la sección Autores"
+              class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              Autores
+            </a>
+          </li>
+          <li>
+            <a href="#normas-apa7" aria-label="Ir a la sección APA 7"
+              class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              Normas APA 7
+            </a>
+          </li>
+          <li>
+            <a href="#comentarios" aria-label="Ir a la sección Comentarios"
+              class="block py-1 px-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              Comentarios
+            </a>
+          </li>
+        </ul>
 
-                <!-- Grupo 4: Acciones -->
-                <ul class="flex gap-1" aria-label="Acciones del sitio">
-                    <li>
-                        <button id="btnoscuro" aria-label="Cambiar a modo oscuro"
-                            class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            <img src="ico/oscuro.svg" alt="Icono modo oscuro" class="h-4 w-auto">
-                        </button>
-                    </li>
-                    <li>
-                        <button id="btnmenu" aria-label="Abrir menú lateral"
-                            class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-                            <img src="ico/menu.svg" alt="Icono menú lateral" class="h-4 w-auto">
-                        </button>
-                    </li>
-                </ul>
+        <!-- Grupo 3: Icono central (móvil) -->
+        <ul class="flex md:hidden justify-center flex-1" aria-label="Ir a la sección Inicio">
+          <li>
+            <a href="#inicio" aria-label="Ir a la sección Inicio"
+              class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
+              <img src="ico/central.svg" alt="Icono central Inicio" class="h-6 w-auto mx-auto">
+              <span class="sr-only">Inicio</span>
+            </a>
+          </li>
+        </ul>
 
-            </div>
-        </nav>
+        <!-- Grupo 4: Acciones -->
+        <ul class="flex gap-1" aria-label="Acciones del sitio">
+          <li>
+            <button id="btnoscuro" aria-label="Cambiar a modo oscuro"
+              class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              <img src="ico/oscuro.svg" alt="Icono modo oscuro" class="h-4 w-auto">
+            </button>
+          </li>
+          <li>
+            <button id="btnmenu" aria-label="Abrir menú lateral"
+              class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
+              <img src="ico/menu.svg" alt="Icono menú lateral" class="h-4 w-auto">
+            </button>
+          </li>
+        </ul>
 
-        <!-- Menú lateral (inicialmente oculto) -->
-        <aside id="menu-lateral"
-            class="fixed top-12 right-2 z-40 flex flex-col gap-1 bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-3 w-52"
-            style="display: none;">
-            <h2 class="sr-only">Menú lateral de secciones</h2>
-            <ul class="text-sm font-semibold">
-                <li>
-                    <a href="#inicio" aria-label="Ir a la sección Inicio"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="#enfoque" aria-label="Ir a la sección Enfoque"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Enfoque
-                    </a>
-                </li>
-                <li>
-                    <a href="#desarrollo" aria-label="Ir a la sección Desarrollo"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Desarrollo
-                    </a>
-                </li>
-                <li>
-                    <a href="#herramientas" aria-label="Ir a la sección Herramientas"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Herramientas
-                    </a>
-                </li>
-                <li>
-                    <a href="#video" aria-label="Ir a la sección Video"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Video
-                    </a>
-                </li>
-                <li>
-                    <a href="#autores" aria-label="Ir a la sección Autores"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Autores
-                    </a>
-                </li>
-                <li>
-                    <a href="#presentacion" aria-label="Ir a la sección Presentación"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Presentación
-                    </a>
-                </li>
-                <li>
-                    <a href="#jurado" aria-label="Ir a la sección Jurado"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Jurado
-                    </a>
-                </li>
-                <li>
-                    <a href="#evaluacion" aria-label="Ir a la sección Evaluación"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Evaluación
-                    </a>
-                </li>
-                <li>
-                    <a href="#referencias" aria-label="Ir a la sección Referencias"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Referencias
-                    </a>
-                </li>
-                <li>
-                    <a href="#normas-apa7" aria-label="Ir a la sección Normas APA 7"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Normas APA 7
-                    </a>
-                </li>
-                <li>
-                    <a href="#leyes" aria-label="Ir a la sección Leyes"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Leyes
-                    </a>
-                </li>
-                <li>
-                    <a href="#comentarios" aria-label="Ir a la sección Comentarios"
-                        class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
-                        Comentarios
-                    </a>
-                </li>
-            </ul>
-        </aside>
+      </div>
+    </nav>
 
-        <!-- Contenido del encabezado -->
-        <section id="inicio" class="mx-20 pt-28 pb-20 px-4 text-center flex flex-col md:flex-row items-center gap-6">
-            <article class="flex-1">
-                <h1 class="text-2xl font-bold text-[#1d1d1e] dark:text-white lg:text-4xl leading-tight">
-                    Sustentación de Tesis para la obtención del título profesional de Ingeniero de Sistemas
-                </h1>
-                <h2 class="pt-2 text-xl font-semibold text-[#1d1d1e] dark:text-white lg:text-3xl">
-                    Universidad Andina del Cusco
-                </h2>
-                <h2 class="pb-1 text-xl font-semibold text-[#1d1d1e] dark:text-white lg:text-3xl">
-                    Facultad de Ingeniería y Arquitectura
-                </h2>
-                <p class="font-bold text-center text-[#1d1d1e] dark:text-white">
-                    Calvo Arteaga &amp; Cobos Vargas
-                </p>
-            </article>
+    <!-- Menú lateral (inicialmente oculto) -->
+    <aside id="menu-lateral"
+      class="fixed top-12 right-2 z-40 flex flex-col gap-1 bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-3 w-52"
+      style="display: none;">
+      <h2 class="sr-only">Menú lateral de secciones</h2>
+      <ul class="text-sm font-semibold">
+        <li>
+          <a href="#inicio" aria-label="Ir a la sección Inicio"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="#enfoque" aria-label="Ir a la sección Enfoque"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Enfoque
+          </a>
+        </li>
+        <li>
+          <a href="#desarrollo" aria-label="Ir a la sección Desarrollo"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Desarrollo
+          </a>
+        </li>
+        <li>
+          <a href="#herramientas" aria-label="Ir a la sección Herramientas"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Herramientas
+          </a>
+        </li>
+        <li>
+          <a href="#video" aria-label="Ir a la sección Video"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Video
+          </a>
+        </li>
+        <li>
+          <a href="#autores" aria-label="Ir a la sección Autores"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Autores
+          </a>
+        </li>
+        <li>
+          <a href="#presentacion" aria-label="Ir a la sección Presentación"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Presentación
+          </a>
+        </li>
+        <li>
+          <a href="#jurado" aria-label="Ir a la sección Jurado"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Jurado
+          </a>
+        </li>
+        <li>
+          <a href="#evaluacion" aria-label="Ir a la sección Evaluación"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Evaluación
+          </a>
+        </li>
+        <li>
+          <a href="#referencias" aria-label="Ir a la sección Referencias"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Referencias
+          </a>
+        </li>
+        <li>
+          <a href="#normas-apa7" aria-label="Ir a la sección Normas APA 7"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Normas APA 7
+          </a>
+        </li>
+        <li>
+          <a href="#leyes" aria-label="Ir a la sección Leyes"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Leyes
+          </a>
+        </li>
+        <li>
+          <a href="#comentarios" aria-label="Ir a la sección Comentarios"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Comentarios
+          </a>
+        </li>
+      </ul>
+    </aside>
 
-            <figure class="flex-1 max-w-md mx-auto overflow-hidden rounded-lg shadow-lg">
-                <a href="#video" aria-label="Ver exposición de tesis en video">
-                    <img src="img/video-tesis-caratula.png" alt="Miniatura del video de exposición de tesis"
-                        loading="lazy" class="w-full h-auto transition-transform duration-300 hover:scale-110">
-                </a>
-                <figcaption class="sr-only">Carátula del video de la sustentación de tesis</figcaption>
-            </figure>
-        </section>
+    <!-- Contenido del encabezado -->
+    <section id="inicio"
+      class="mx-3 md:mx-20 pt-28 pb-20 px-4 text-center flex flex-col md:flex-row items-center gap-6">
+      <article class="flex-1">
+        <h1 class="text-2xl font-bold text-[#1d1d1e] dark:text-white lg:text-4xl leading-tight">
+          Sustentación de Tesis para la obtención del título profesional de Ingeniero de Sistemas
+        </h1>
+        <h2 class="pt-2 text-xl font-semibold text-[#1d1d1e] dark:text-white lg:text-3xl">
+          Universidad Andina del Cusco
+        </h2>
+        <h3 class="pb-1 text-xl font-semibold text-[#1d1d1e] dark:text-white lg:text-3xl">
+          Facultad de Ingeniería y Arquitectura
+        </h3>
+        <p class="font-bold text-center text-[#1d1d1e] dark:text-white">
+          Calvo Arteaga &amp; Cobos Vargas
+        </p>
+      </article>
 
-    </header>
+      <figure class="flex-1 max-w-md mx-auto overflow-hidden rounded-lg shadow-lg">
+        <a href="#video" aria-label="Ver exposición de tesis en video">
+          <picture>
+            <!-- 🔹 AVIF -->
+            <source srcset="
+          img/caratula/video-tesis-caratula-360.avif 360w,
+          img/caratula/video-tesis-caratula-720.avif 720w,
+          img/caratula/video-tesis-caratula-1280.avif 1280w,
+          img/caratula/video-tesis-caratula-1920.avif 1920w
+        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/avif">
 
-    <!-- ondas celestes del inicio -->
-    <div class="detras1 w-full">
-        <div class="onda"></div>
-    </div>
+            <!-- 🔹 WebP -->
+            <source srcset="
+          img/caratula/video-tesis-caratula-360.webp 360w,
+          img/caratula/video-tesis-caratula-720.webp 720w,
+          img/caratula/video-tesis-caratula-1280.webp 1280w,
+          img/caratula/video-tesis-caratula-1920.webp 1920w
+        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/webp">
+
+            <!-- 🔹 Fallback JPG se ve al inicio de la pagina asi q no debe ir loading="lazy" -->
+            <img src="img/caratula/video-tesis-caratula-fallback.jpg" alt="Miniatura del video de exposición de tesis"
+              width="1920" height="1080" class="w-full h-auto transition-transform duration-300 hover:scale-110">
+          </picture>
+        </a>
+        <figcaption class="sr-only">Carátula del video de la sustentación de tesis</figcaption>
+      </figure>
+
+
+    </section>
+
+  </header>
+
+  <!-- ondas celestes del inicio -->
+  <div class="detras1 w-full">
+    <div class="onda"></div>
+  </div>
+
+  <!-- contenido principal main tiene las secciones importantes del documento -->
+  <main>
 
     <!-- Sección de Enfoque -->
     <section id="enfoque" class="px-4 py-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-500 dark:text-amber-200 mb-10">
-            Alcance y Enfoque de la Investigación
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-500 dark:text-amber-200 mb-10">
+        Alcance y Enfoque de la Investigación
+      </h2>
 
-        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Ámbito de Influencia -->
-            <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
-                <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Ámbito de Influencia</h2>
-                <img src="ico/influencia.svg" alt="Diagrama del ámbito de influencia de la tesis"
-                    class="h-32 mx-auto my-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Sistemas de Información Odontológico, mostrando el alcance y población objetivo de la investigación.
-                </p>
-            </li>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Ámbito de Influencia -->
+        <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
+          <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Ámbito de Influencia</h2>
+          <img src="ico/influencia.svg" alt="Diagrama del ámbito de influencia de la tesis" class="h-32 mx-auto my-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Sistemas de Información Odontológico, mostrando el alcance y población objetivo de la investigación.
+          </p>
+        </li>
 
-            <!-- Área de Dominio -->
-            <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
-                <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Área de Dominio</h2>
-                <img src="ico/cerebro.svg" alt="Representación del área de dominio en tecnologías de información"
-                    class="h-32 mx-auto my-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Tecnologías de Información aplicadas a la gestión de procesos odontológicos y desarrollo de
-                    software.
-                </p>
-            </li>
+        <!-- Área de Dominio -->
+        <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
+          <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Área de Dominio</h2>
+          <img src="ico/cerebro.svg" alt="Representación del área de dominio en tecnologías de información"
+            class="h-32 mx-auto my-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Tecnologías de Información aplicadas a la gestión de procesos odontológicos y desarrollo de
+            software.
+          </p>
+        </li>
 
-            <!-- Línea de Investigación -->
-            <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
-                <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Línea de Investigación</h2>
-                <img src="ico/investiga.svg" alt="Icono de investigación y desarrollo de software"
-                    class="h-32 mx-auto my-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Desarrollo de Software enfocado en sistemas de gestión odontológica y optimización de procesos.
-                </p>
-            </li>
+        <!-- Línea de Investigación -->
+        <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
+          <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Línea de Investigación</h2>
+          <img src="ico/investiga.svg" alt="Icono de investigación y desarrollo de software" class="h-32 mx-auto my-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Desarrollo de Software enfocado en sistemas de gestión odontológica y optimización de procesos.
+          </p>
+        </li>
 
-            <!-- Tema(s) de Investigación -->
-            <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
-                <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Tema(s) de Investigación</h2>
-                <img src="ico/temas.svg" alt="Icono representando temas de registro, atención e inventario"
-                    class="h-32 mx-auto my-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Registro, atención, inventario y pagos, principales áreas de estudio dentro de la investigación.
-                </p>
-            </li>
-        </ul>
+        <!-- Tema(s) de Investigación -->
+        <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
+          <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Tema(s) de Investigación</h2>
+          <img src="ico/temas.svg" alt="Icono representando temas de registro, atención e inventario"
+            class="h-32 mx-auto my-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Registro, atención, inventario y pagos, principales áreas de estudio dentro de la investigación.
+          </p>
+        </li>
+      </ul>
     </section>
+
+
 
     <!-- Sección de Desarrollo -->
     <section id="desarrollo" class="px-4 py-20 md:px-12">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-500 dark:text-amber-200 mb-10">
-            Desarrollo del Sistema
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-500 dark:text-amber-200 mb-10">
+        Desarrollo del Sistema
+      </h2>
 
-        <div class="flex flex-col md:flex-row items-center gap-8">
-            <!-- Imagen -->
-            <figure class="flex-1">
-                <img src="img/desarrollo.jpg" alt="desarrolladores" class="w-full h-auto rounded-lg shadow-lg">
-                <figcaption class="sr-only">Imagen representativa del desarrollo del sistema</figcaption>
-            </figure>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <!-- Imagen -->
+        <figure class="flex-1">
+          <picture>
+            <!-- 🔹 AVIF -->
+            <source srcset="
+          img/desarrollo/desarrollo-360.avif 360w,
+          img/desarrollo/desarrollo-720.avif 720w,
+          img/desarrollo/desarrollo-1280.avif 1280w,
+          img/desarrollo/desarrollo-1408.avif 1408w
+        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/avif">
 
-            <!-- Párrafo descriptivo -->
-            <article class="flex-1 text-slate-700 dark:text-gray-300">
-                <p class="text-justify leading-relaxed">
-                    En el desarrollo del presente sistema se utilizó la metodología ágil Scrum,
-                    que permitió una gestión iterativa e incremental del sistema de información, favoreciendo la organización
-                    del trabajo en equipo y la entrega continua de avances. La arquitectura adoptada fue
-                    Modelo Vista Controlador (MVC),
-                    facilitando la separación de responsabilidades y el mantenimiento del código. Como framework
-                    principal
-                    se empleó Laravel, reconocido por su robustez, seguridad y eficiencia en el desarrollo de
-                    aplicaciones web.
-                    Para el diseño de la interfaz de usuario se utilizó Tailwind CSS, lo que permitió construir una
-                    interfaz moderna,
-                    responsiva y altamente personalizable, mejorando la experiencia del usuario final.
-                </p>
-            </article>
-        </div>
+            <!-- 🔹 WebP -->
+            <source srcset="
+          img/desarrollo/desarrollo-360.webp 360w,
+          img/desarrollo/desarrollo-720.webp 720w,
+          img/desarrollo/desarrollo-1280.webp 1280w,
+          img/desarrollo/desarrollo-1408.webp 1408w
+        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/webp">
+
+            <!-- 🔹 Fallback JPG -->
+            <img src="img/desarrollo/desarrollo-fallback.jpg" alt="Desarrolladores trabajando en el sistema de tesis"
+              loading="lazy" width="1408" height="792"
+              class="w-full h-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+          </picture>
+          <figcaption class="sr-only">Imagen representativa del desarrollo del sistema</figcaption>
+        </figure>
+
+
+
+        <!-- Párrafo descriptivo -->
+        <article class="flex-1 text-slate-700 dark:text-gray-300">
+          <p class="text-justify leading-relaxed">
+            En el desarrollo del presente sistema se utilizó la metodología ágil Scrum,
+            que permitió una gestión iterativa e incremental del sistema de información, favoreciendo la organización
+            del trabajo en equipo y la entrega continua de avances. La arquitectura adoptada fue
+            Modelo Vista Controlador (MVC),
+            facilitando la separación de responsabilidades y el mantenimiento del código. Como framework
+            principal
+            se empleó Laravel, reconocido por su robustez, seguridad y eficiencia en el desarrollo de
+            aplicaciones web.
+            Para el diseño de la interfaz de usuario se utilizó Tailwind CSS, lo que permitió construir una
+            interfaz moderna,
+            responsiva y altamente personalizable, mejorando la experiencia del usuario final.
+          </p>
+        </article>
+      </div>
     </section>
 
     <!-- Sección de Herramientas -->
     <section id="herramientas" class="px-4 py-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-500 dark:text-amber-200 mb-10">
-            Herramientas Tecnológicas
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-500 dark:text-amber-200 mb-10">
+        Herramientas Tecnológicas
+      </h2>
 
-        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- SCRUM -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">SCRUM</h3>
-                <img src="ico/scrum.svg" alt="Ícono representando la metodología ágil SCRUM"
-                    class="h-32 w-auto mx-auto mb-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Metodología ágil de desarrollo para sistemas de información iterativos e incrementales.
-                </p>
-            </li>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- SCRUM -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+          <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">SCRUM</h3>
+          <img src="ico/scrum.svg" alt="Ícono representando la metodología ágil SCRUM" class="h-32 w-auto mx-auto mb-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Metodología ágil de desarrollo para sistemas de información iterativos e incrementales.
+          </p>
+        </li>
 
-            <!-- MVC -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">MVC</h3>
-                <img src="ico/mvc.svg"
-                    alt="Ícono representando la arquitectura de software Modelo-Vista-Controlador (MVC)"
-                    class="h-32 w-auto mx-auto mb-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Arquitectura que separa lógica, interfaz y control para mayor orden y mantenimiento.
-                </p>
-            </li>
+        <!-- MVC -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+          <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">MVC</h3>
+          <img src="ico/mvc.svg" alt="Ícono representando la arquitectura de software Modelo-Vista-Controlador (MVC)"
+            class="h-32 w-auto mx-auto mb-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Arquitectura que separa lógica, interfaz y control para mayor orden y mantenimiento.
+          </p>
+        </li>
 
-            <!-- Laravel 11 -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">Laravel 11</h3>
-                <img src="ico/laravel.svg" alt="Ícono representando el framework backend Laravel 11"
-                    class="h-32 w-auto mx-auto mb-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Framework backend confiable y seguro para construir aplicaciones web robustas.
-                </p>
-            </li>
+        <!-- Laravel 11 -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+          <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">Laravel 11</h3>
+          <img src="ico/laravel.svg" alt="Ícono representando el framework backend Laravel 11"
+            class="h-32 w-auto mx-auto mb-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Framework backend confiable y seguro para construir aplicaciones web robustas.
+          </p>
+        </li>
 
-            <!-- Tailwind CSS -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">Tailwind CSS</h3>
-                <img src="ico/tailwind.svg" alt="Ícono representando Tailwind CSS, framework de diseño frontend"
-                    class="h-32 w-auto mx-auto mb-4">
-                <p class="text-slate-700 dark:text-gray-300">
-                    Framework frontend para crear interfaces modernas, responsivas y consistentes.
-                </p>
-            </li>
-        </ul>
+        <!-- Tailwind CSS -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+          <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">Tailwind CSS</h3>
+          <img src="ico/tailwind.svg" alt="Ícono representando Tailwind CSS, framework de diseño frontend"
+            class="h-32 w-auto mx-auto mb-4">
+          <p class="text-slate-700 dark:text-gray-300">
+            Framework frontend para crear interfaces modernas, responsivas y consistentes.
+          </p>
+        </li>
+      </ul>
     </section>
 
 
 
     <!-- Sección de Video -->
     <section id="video" class="px-4 py-20">
-        <!-- Título principal de la sección -->
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-            Video de la sustentación de tesis de Ingeniería de Sistemas
-        </h2>
+      <!-- Título principal de la sección -->
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Video de la sustentación de tesis de Ingeniería de Sistemas
+      </h2>
 
-        <!-- Video responsive -->
-        <div class="w-full max-w-4xl mx-auto aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/GAQ6pLZKUeU"
-                title="Exposición de la sustentación de tesis de Calvo Arteaga & Cobos Vargas" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen loading="lazy">
-            </iframe>
-        </div>
+      <!-- Video responsive -->
+      <div class="w-full max-w-4xl mx-auto aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/GAQ6pLZKUeU"
+          title="Exposición de la sustentación de tesis de Calvo Arteaga & Cobos Vargas" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
 
-        <!-- Información adicional y QR -->
-        <div class="p-5 mt-8">
-            <div class="sm:flex items-center justify-center gap-6 mx-4">
-                <img src="img/02 QR.png" alt="Código QR para acceder al video de la sustentación de tesis"
-                    class="w-28 mx-auto sm:mx-0">
-                <div class="flex flex-col space-y-2 text-center sm:text-left">
-                    <p class="font-semibold text-slate-700 dark:text-slate-300">Acceso al video en línea:</p>
-                    <a href="https://calvocobos.github.io/Expo/" target="_blank" rel="noopener noreferrer"
-                        class="bg-[#044DA2] text-white rounded-lg p-4 block overflow-hidden hover:bg-[#FFD353] hover:text-black transition-colors duration-300">
-                        www.calvocobos.github.io/Expo
-                    </a>
-                </div>
-            </div>
+      <!-- Información adicional y QR -->
+      <div class="p-5 mt-8">
+        <div class="sm:flex items-center justify-center gap-6 mx-4">
+          <img src="img/02 QR.png" alt="Código QR para acceder al video de la sustentación de tesis"
+            class="w-28 mx-auto sm:mx-0">
+          <div class="flex flex-col space-y-2 text-center sm:text-left">
+            <p class="font-semibold text-slate-700 dark:text-slate-300">Acceso al video en línea:</p>
+            <a href="https://calvocobos.github.io/Expo/" target="_blank" rel="noopener noreferrer"
+              class="bg-[#044DA2] text-white rounded-lg p-4 block overflow-hidden hover:bg-[#FFD353] hover:text-black transition-colors duration-300">
+              www.calvocobos.github.io/Expo
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
 
@@ -431,80 +549,80 @@
 
     <!-- Sección de Autores -->
     <section id="autores" class="px-4 py-20 bg-slate-50 dark:bg-slate-900">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-            Autores y Asesor
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Autores y Asesor
+      </h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Asesor -->
-            <article
-                class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg sm:col-span-2 lg:col-span-1 h-full">
-                <!-- Parte superior -->
-                <div class="flex flex-col items-center">
-                    <img src="img/Hugo-Espetia-Huamanga.png" alt="Asesor Mg. Ing. Hugo Espetia Huamanga"
-                        class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Asesor -->
+        <article
+          class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg sm:col-span-2 lg:col-span-1 h-full">
+          <!-- Parte superior -->
+          <div class="flex flex-col items-center">
+            <img src="img/Hugo-Espetia-Huamanga.png" alt="Asesor Mg. Ing. Hugo Espetia Huamanga"
+              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
 
-                    <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
-                        <span class="text-sm block">Mg. Ing.</span>
-                        <span class="text-xl block font-bold">Hugo</span>
-                        <span class="text-lg block">Espetia Huamanga</span>
-                    </h3>
-                </div>
+            <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
+              <span class="text-sm block">Mg. Ing.</span>
+              <span class="text-xl block font-bold">Hugo</span>
+              <span class="text-lg block">Espetia Huamanga</span>
+            </h3>
+          </div>
 
-                <!-- Parte inferior -->
-                <div class="flex flex-col items-center mt-4">
-                    <p class="text-slate-600 dark:text-slate-300 mb-2">Asesor de Tesis</p>
-                    <a href="https://orcid.org/0000-0003-4078-4121" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
-                        ORCID: 0000-0003-4078-4121
-                    </a>
-                </div>
-            </article>
+          <!-- Parte inferior -->
+          <div class="flex flex-col items-center mt-4">
+            <p class="text-slate-600 dark:text-slate-300 mb-2">Asesor de Tesis</p>
+            <a href="https://orcid.org/0000-0003-4078-4121" target="_blank" rel="noopener noreferrer"
+              class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
+              ORCID: 0000-0003-4078-4121
+            </a>
+          </div>
+        </article>
 
-            <!-- Bachiller 1 -->
-            <article
-                class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
-                <div class="flex flex-col items-center">
-                    <img src="img/Carlos-Antonio-Calvo-Arteaga.png" alt="Bachiller Carlos Antonio Calvo Arteaga"
-                        class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
-                    <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
-                        <span class="text-sm block">Bachiller (ahora Ingeniero)</span>
-                        <span class="text-xl block font-bold">Carlos Antonio</span>
-                        <span class="text-lg block">Calvo Arteaga</span>
-                    </h3>
-                </div>
+        <!-- Bachiller 1 -->
+        <article
+          class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
+          <div class="flex flex-col items-center">
+            <img src="img/Carlos-Antonio-Calvo-Arteaga.png" alt="Bachiller Carlos Antonio Calvo Arteaga"
+              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
+            <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
+              <span class="text-sm block">Bachiller (ahora Ingeniero)</span>
+              <span class="text-xl block font-bold">Carlos Antonio</span>
+              <span class="text-lg block">Calvo Arteaga</span>
+            </h3>
+          </div>
 
-                <div class="flex flex-col items-center mt-4">
-                    <p class="text-slate-600 dark:text-slate-300 mb-2">UAC: 016200186D</p>
-                    <a href="https://orcid.org/0009-0005-1426-4415" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
-                        ORCID: 0009-0005-1426-4415
-                    </a>
-                </div>
-            </article>
+          <div class="flex flex-col items-center mt-4">
+            <p class="text-slate-600 dark:text-slate-300 mb-2">UAC: 016200186D</p>
+            <a href="https://orcid.org/0009-0005-1426-4415" target="_blank" rel="noopener noreferrer"
+              class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
+              ORCID: 0009-0005-1426-4415
+            </a>
+          </div>
+        </article>
 
-            <!-- Bachiller 2 -->
-            <article
-                class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
-                <div class="flex flex-col items-center">
-                    <img src="img/Irvin-Julian-Cobos-Vargas.png" alt="Bachiller Irvin Julian Cobos Vargas"
-                        class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
-                    <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
-                        <span class="text-sm block">Bachiller (ahora Ingeniero)</span>
-                        <span class="text-xl block font-bold">Irvin Julian</span>
-                        <span class="text-lg block">Cobos Vargas</span>
-                    </h3>
-                </div>
+        <!-- Bachiller 2 -->
+        <article
+          class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
+          <div class="flex flex-col items-center">
+            <img src="img/Irvin-Julian-Cobos-Vargas.png" alt="Bachiller Irvin Julian Cobos Vargas"
+              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
+            <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
+              <span class="text-sm block">Bachiller (ahora Ingeniero)</span>
+              <span class="text-xl block font-bold">Irvin Julian</span>
+              <span class="text-lg block">Cobos Vargas</span>
+            </h3>
+          </div>
 
-                <div class="flex flex-col items-center mt-4">
-                    <p class="text-slate-600 dark:text-slate-300 mb-2">UAC: 016200330H</p>
-                    <a href="https://orcid.org/0009-0001-2767-3462" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
-                        ORCID: 0009-0001-2767-3462
-                    </a>
-                </div>
-            </article>
-        </div>
+          <div class="flex flex-col items-center mt-4">
+            <p class="text-slate-600 dark:text-slate-300 mb-2">UAC: 016200330H</p>
+            <a href="https://orcid.org/0009-0001-2767-3462" target="_blank" rel="noopener noreferrer"
+              class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
+              ORCID: 0009-0001-2767-3462
+            </a>
+          </div>
+        </article>
+      </div>
     </section>
 
 
@@ -512,136 +630,136 @@
 
     <!-- Sección de Presentación -->
     <section id="presentacion" class="px-4 py-20 md:px-12">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-            Presentación y Sustentación del Sistema de Información Odontológico
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Presentación y Sustentación del Sistema de Información Odontológico
+      </h2>
 
-        <div class="flex flex-col lg:flex-row items-center gap-8 max-w-6xl mx-auto">
-            <!-- Imagen representativa -->
-            <figure class="flex-1">
-                <img src="img/jurado-asesor-bachiller.jpg"
-                    alt="Jurado, asesor y bachilleres durante la sustentación de la tesis de sistema odontológico"
-                    class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-                    loading="lazy">
-                <figcaption class="text-center text-sm text-slate-600 dark:text-slate-400 mt-5">
-                    Sustentación del Sistema de Información Odontológico — Universidad Andina del Cusco, 23 de
-                    septiembre de 2025.
-                </figcaption>
-            </figure>
+      <div class="flex flex-col lg:flex-row items-center gap-8 max-w-6xl mx-auto">
+        <!-- Imagen representativa -->
+        <figure class="flex-1">
+          <img src="img/jurado-asesor-bachiller.jpg"
+            alt="Jurado, asesor y bachilleres durante la sustentación de la tesis de sistema odontológico"
+            class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+            loading="lazy">
+          <figcaption class="text-center text-sm text-slate-600 dark:text-slate-400 mt-5">
+            Sustentación del Sistema de Información Odontológico — Universidad Andina del Cusco, 23 de
+            septiembre de 2025.
+          </figcaption>
+        </figure>
 
-            <!-- Descripción del evento -->
-            <article class="flex-1 text-slate-700 dark:text-gray-300">
-                <p class="text-justify leading-relaxed mb-4">
-                    La sustentación del <strong>Sistema de Información Odontológico</strong> se llevó a cabo el
-                    <strong>23 de septiembre de 2025</strong> en la
-                    <strong>Universidad Andina del Cusco</strong>, ante el jurado evaluador y el asesor de tesis.
-                    En el evento, los autores presentaron de manera integral la propuesta, desarrollo e implementación
-                    del sistema web, diseñado para optimizar los procesos de registro, atención, inventario y pagos
-                    dentro de consultorios odontológicos.
-                </p>
+        <!-- Descripción del evento -->
+        <article class="flex-1 text-slate-700 dark:text-gray-300">
+          <p class="text-justify leading-relaxed mb-4">
+            La sustentación del <strong>Sistema de Información Odontológico</strong> se llevó a cabo el
+            <strong>23 de septiembre de 2025</strong> en la
+            <strong>Universidad Andina del Cusco</strong>, ante el jurado evaluador y el asesor de tesis.
+            En el evento, los autores presentaron de manera integral la propuesta, desarrollo e implementación
+            del sistema web, diseñado para optimizar los procesos de registro, atención, inventario y pagos
+            dentro de consultorios odontológicos.
+          </p>
 
-                <p class="text-justify leading-relaxed mb-4">
-                    La exposición abordó tanto los aspectos academicos como metodológicos de la tesis.
-                    El sistema fue desarrollado siguiendo la <strong>metodología ágil SCRUM</strong>,
-                    ejecutándose en <strong>cinco sprints</strong> que permitieron gestionar de manera iterativa
-                    las etapas de planificación, desarrollo, pruebas y retroalimentación continua.
-                    Este enfoque fomentó la colaboración efectiva entre los integrantes del equipo y
-                    aseguró la entrega de avances funcionales en cada iteración.
-                </p>
+          <p class="text-justify leading-relaxed mb-4">
+            La exposición abordó tanto los aspectos academicos como metodológicos de la tesis.
+            El sistema fue desarrollado siguiendo la <strong>metodología ágil SCRUM</strong>,
+            ejecutándose en <strong>cinco sprints</strong> que permitieron gestionar de manera iterativa
+            las etapas de planificación, desarrollo, pruebas y retroalimentación continua.
+            Este enfoque fomentó la colaboración efectiva entre los integrantes del equipo y
+            aseguró la entrega de avances funcionales en cada iteración.
+          </p>
 
-                <p class="text-justify leading-relaxed">
-                    En cuanto a la arquitectura, se aplicó el patrón <strong>Modelo–Vista–Controlador (MVC)</strong>,
-                    lo cual facilitó la organización del código, el mantenimiento del sistema y la separación de
-                    responsabilidades.
-                    El desarrollo se llevó a cabo con el framework <strong>Laravel 11</strong>, mientras que para el
-                    diseño de la interfaz de usuario se empleó <strong>Tailwind CSS</strong>, logrando una plataforma
-                    moderna, accesible y adaptable a distintos dispositivos. Todo este trabajo fue presentado durante
-                    la sustentación, evidenciando el cumplimiento de los objetivos planteados y la calidad técnica del
-                    sistema de información.
-                </p>
-            </article>
-        </div>
+          <p class="text-justify leading-relaxed">
+            En cuanto a la arquitectura, se aplicó el patrón <strong>Modelo–Vista–Controlador (MVC)</strong>,
+            lo cual facilitó la organización del código, el mantenimiento del sistema y la separación de
+            responsabilidades.
+            El desarrollo se llevó a cabo con el framework <strong>Laravel 11</strong>, mientras que para el
+            diseño de la interfaz de usuario se empleó <strong>Tailwind CSS</strong>, logrando una plataforma
+            moderna, accesible y adaptable a distintos dispositivos. Todo este trabajo fue presentado durante
+            la sustentación, evidenciando el cumplimiento de los objetivos planteados y la calidad técnica del
+            sistema de información.
+          </p>
+        </article>
+      </div>
     </section>
 
 
 
     <!-- Sección de Jurado Calificador -->
     <section id="jurado" class="px-4 py-20 bg-slate-50 dark:bg-slate-900">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-            Jurado Calificador
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Jurado Calificador
+      </h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-            <!-- Jurado Presidente -->
-            <article
-                class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg sm:col-span-2 lg:col-span-1 h-full">
-                <div class="flex flex-col items-center">
-                    <img src="img/William-Alberto-Chavez-Espinoza.png"
-                        alt="Mg. Ing. William Alberto Chávez Espinoza, Presidente del Jurado Calificador"
-                        class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
-                        <span class="text-sm block">Mg. Ing.</span>
-                        <span class="text-xl block font-bold">William Alberto</span>
-                        <span class="text-lg block">Chávez Espinoza</span>
-                    </h3>
-                </div>
+        <!-- Jurado Presidente -->
+        <article
+          class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg sm:col-span-2 lg:col-span-1 h-full">
+          <div class="flex flex-col items-center">
+            <img src="img/William-Alberto-Chavez-Espinoza.png"
+              alt="Mg. Ing. William Alberto Chávez Espinoza, Presidente del Jurado Calificador"
+              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
+            <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
+              <span class="text-sm block">Mg. Ing.</span>
+              <span class="text-xl block font-bold">William Alberto</span>
+              <span class="text-lg block">Chávez Espinoza</span>
+            </h3>
+          </div>
 
-                <div class="flex flex-col items-center mt-4">
-                    <p class="text-slate-600 dark:text-slate-300 mb-2 font-medium">Presidente del Jurado</p>
-                    <a href="https://orcid.org/0000-0002-7170-8837" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
-                        ORCID: 0000-0002-7170-8837
-                    </a>
-                </div>
-            </article>
+          <div class="flex flex-col items-center mt-4">
+            <p class="text-slate-600 dark:text-slate-300 mb-2 font-medium">Presidente del Jurado</p>
+            <a href="https://orcid.org/0000-0002-7170-8837" target="_blank" rel="noopener noreferrer"
+              class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
+              ORCID: 0000-0002-7170-8837
+            </a>
+          </div>
+        </article>
 
-            <!-- Jurado Secretario -->
-            <article
-                class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
-                <div class="flex flex-col items-center">
-                    <img src="img/Yessenia-Bernales-Guzman.png"
-                        alt="Dra. Ing. Yessenia Bernales Guzmán, Secretaria de Actas del Jurado Calificador"
-                        class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
-                        <span class="text-sm block">Dra. Ing.</span>
-                        <span class="text-xl block font-bold">Yessenia</span>
-                        <span class="text-lg block">Bernales Guzmán</span>
-                    </h3>
-                </div>
+        <!-- Jurado Secretario -->
+        <article
+          class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
+          <div class="flex flex-col items-center">
+            <img src="img/Yessenia-Bernales-Guzman.png"
+              alt="Dra. Ing. Yessenia Bernales Guzmán, Secretaria de Actas del Jurado Calificador"
+              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
+            <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
+              <span class="text-sm block">Dra. Ing.</span>
+              <span class="text-xl block font-bold">Yessenia</span>
+              <span class="text-lg block">Bernales Guzmán</span>
+            </h3>
+          </div>
 
-                <div class="flex flex-col items-center mt-4">
-                    <p class="text-slate-600 dark:text-slate-300 mb-2 font-medium">Secretaria de Actas</p>
-                    <a href="https://orcid.org/0000-0001-7479-3152" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
-                        ORCID: 0000-0001-7479-3152
-                    </a>
-                </div>
-            </article>
+          <div class="flex flex-col items-center mt-4">
+            <p class="text-slate-600 dark:text-slate-300 mb-2 font-medium">Secretaria de Actas</p>
+            <a href="https://orcid.org/0000-0001-7479-3152" target="_blank" rel="noopener noreferrer"
+              class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
+              ORCID: 0000-0001-7479-3152
+            </a>
+          </div>
+        </article>
 
-            <!-- Jurado Vocal -->
-            <article
-                class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
-                <div class="flex flex-col items-center">
-                    <img src="img/Luis-Alvaro-Monzon-Condori.png"
-                        alt="Mg. Ing. Luis Álvaro Monzón Condori, Miembro del Jurado Calificador"
-                        class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
-                        <span class="text-sm block">Mg. Ing.</span>
-                        <span class="text-xl block font-bold">Luis Álvaro</span>
-                        <span class="text-lg block">Monzón Condori</span>
-                    </h3>
-                </div>
+        <!-- Jurado Vocal -->
+        <article
+          class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
+          <div class="flex flex-col items-center">
+            <img src="img/Luis-Alvaro-Monzon-Condori.png"
+              alt="Mg. Ing. Luis Álvaro Monzón Condori, Miembro del Jurado Calificador"
+              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
+            <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
+              <span class="text-sm block">Mg. Ing.</span>
+              <span class="text-xl block font-bold">Luis Álvaro</span>
+              <span class="text-lg block">Monzón Condori</span>
+            </h3>
+          </div>
 
-                <div class="flex flex-col items-center mt-4">
-                    <p class="text-slate-600 dark:text-slate-300 mb-2 font-medium">Miembro del Jurado</p>
-                    <a href="https://orcid.org/0000-0001-5915-4096" target="_blank" rel="noopener noreferrer"
-                        class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
-                        ORCID: 0000-0001-5915-4096
-                    </a>
-                </div>
-            </article>
-        </div>
+          <div class="flex flex-col items-center mt-4">
+            <p class="text-slate-600 dark:text-slate-300 mb-2 font-medium">Miembro del Jurado</p>
+            <a href="https://orcid.org/0000-0001-5915-4096" target="_blank" rel="noopener noreferrer"
+              class="px-4 py-2 bg-[#044DA2] text-white rounded-lg hover:bg-yellow-400 hover:text-black transition-colors">
+              ORCID: 0000-0001-5915-4096
+            </a>
+          </div>
+        </article>
+      </div>
     </section>
 
 
@@ -649,435 +767,443 @@
 
     <!-- Sección de Evaluación del Jurado -->
     <section id="evaluacion" class="px-4 py-20 md:px-12">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-            Evaluación del Jurado Calificador
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Evaluación del Jurado Calificador
+      </h2>
 
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-8 max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-8 max-w-6xl mx-auto">
 
-            <!-- Imagen representativa -->
-            <figure class="flex-1">
-                <img src="img/preguntas-jurado.jpg"
-                    alt="Jurado calificador realizando preguntas sobre la documentación y el sistema de información odontológico"
-                    class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-                    loading="lazy">
-                <figcaption class="text-center text-sm text-slate-600 dark:text-slate-400 mt-10">
-                    Evaluación y ronda de preguntas del Jurado Calificador — Universidad Andina del Cusco, 23 de
-                    septiembre de 2025.
-                </figcaption>
-            </figure>
+        <!-- Imagen representativa -->
+        <figure class="flex-1">
+          <img src="img/preguntas-jurado.jpg"
+            alt="Jurado calificador realizando preguntas sobre la documentación y el sistema de información odontológico"
+            class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+            loading="lazy">
+          <figcaption class="text-center text-sm text-slate-600 dark:text-slate-400 mt-10">
+            Evaluación y ronda de preguntas del Jurado Calificador — Universidad Andina del Cusco, 23 de
+            septiembre de 2025.
+          </figcaption>
+        </figure>
 
-            <!-- Descripción de la evaluación -->
-            <article class="flex-1 text-slate-700 dark:text-gray-300">
-                <p class="text-justify leading-relaxed mb-4">
-                    Durante la etapa de <strong>evaluación de la sustentación</strong>, el jurado calificador formuló
-                    preguntas
-                    orientadas a la comprensión profunda de la <strong>documentación técnica</strong> y la
-                    <strong>implementación
-                        funcional</strong> del Sistema de Información Odontológico. Esta fase permitió a los autores
-                    demostrar su dominio
-                    conceptual, metodológico y práctico sobre cada uno de los componentes del sistema de información.
-                </p>
+        <!-- Descripción de la evaluación -->
+        <article class="flex-1 text-slate-700 dark:text-gray-300">
+          <p class="text-justify leading-relaxed mb-4">
+            Durante la etapa de <strong>evaluación de la sustentación</strong>, el jurado calificador formuló
+            preguntas
+            orientadas a la comprensión profunda de la <strong>documentación técnica</strong> y la
+            <strong>implementación
+              funcional</strong> del Sistema de Información Odontológico. Esta fase permitió a los autores
+            demostrar su dominio
+            conceptual, metodológico y práctico sobre cada uno de los componentes del sistema de información.
+          </p>
 
-                <p class="text-justify leading-relaxed mb-4">
-                    Las consultas abordaron tanto aspectos de <strong>análisis y diseño del sistema</strong> incluyendo
-                    diagramas,
-                    requerimientos funcionales y estructura de base de datos como elementos del <strong>proceso de
-                        desarrollo</strong>
-                    basado en la metodología ágil <strong>SCRUM</strong>. Los sustentantes explicaron la gestión
-                    realizada a lo largo
-                    de los <strong>cinco sprints</strong>, justificando las decisiones técnicas adoptadas durante la
-                    planificación,
-                    codificación y pruebas.
-                </p>
+          <p class="text-justify leading-relaxed mb-4">
+            Las consultas abordaron tanto aspectos de <strong>análisis y diseño del sistema</strong> incluyendo
+            diagramas,
+            requerimientos funcionales y estructura de base de datos como elementos del <strong>proceso de
+              desarrollo</strong>
+            basado en la metodología ágil <strong>SCRUM</strong>. Los sustentantes explicaron la gestión
+            realizada a lo largo
+            de los <strong>cinco sprints</strong>, justificando las decisiones técnicas adoptadas durante la
+            planificación,
+            codificación y pruebas.
+          </p>
 
-                <p class="text-justify leading-relaxed">
-                    Asimismo, se discutieron temas relacionados con la <strong>arquitectura Modelo Vista Controlador
-                        (MVC)</strong>,
-                    la seguridad de la información y la experiencia de usuario. El jurado destacó la correcta aplicación
-                    de
-                    <strong>Laravel 11</strong> como framework backend y <strong>Tailwind CSS</strong> para la interfaz,
-                    resaltando
-                    la calidad, escalabilidad y accesibilidad del sistema web. Esta evaluación consolidó la relevancia
-                    académica
-                    y técnica del sistema de información, confirmando su contribución al ámbito de los sistemas de información
-                    odontológicos.
-                </p>
-            </article>
-        </div>
+          <p class="text-justify leading-relaxed">
+            Asimismo, se discutieron temas relacionados con la <strong>arquitectura Modelo Vista Controlador
+              (MVC)</strong>,
+            la seguridad de la información y la experiencia de usuario. El jurado destacó la correcta aplicación
+            de
+            <strong>Laravel 11</strong> como framework backend y <strong>Tailwind CSS</strong> para la interfaz,
+            resaltando
+            la calidad, escalabilidad y accesibilidad del sistema web. Esta evaluación consolidó la relevancia
+            académica
+            y técnica del sistema de información, confirmando su contribución al ámbito de los sistemas de información
+            odontológicos.
+          </p>
+        </article>
+      </div>
     </section>
 
 
     <!-- Sección de Enlaces y Referencias -->
     <section id="referencias" class="px-4 py-20 bg-slate-50 dark:bg-slate-900">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-            Enlaces y Referencias del sistema de información
-        </h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Enlaces y Referencias del sistema de información
+      </h2>
 
-        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-            <!-- Repositorio UAC -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
-                <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Abrir repositorio institucional de la Universidad Andina del Cusco">
-                    <img src="img/01 logo.png" alt="Repositorio UAC - Universidad Andina del Cusco"
-                        class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
-                </a>
-                <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio UAC</h3>
-                <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Universidad Andina del Cusco</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">
-                    Contiene la versión oficial del trabajo de investigación y documentación completa de la tesis
-                    sustentada.
-                </p>
-            </li>
+        <!-- Repositorio UAC -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+          <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4" target="_blank"
+            rel="noopener noreferrer" aria-label="Abrir repositorio institucional de la Universidad Andina del Cusco">
+            <img src="img/01 logo.png" alt="Repositorio UAC - Universidad Andina del Cusco"
+              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+          </a>
+          <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio UAC</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Universidad Andina del Cusco</p>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">
+            Contiene la versión oficial del trabajo de investigación y documentación completa de la tesis
+            sustentada.
+          </p>
+        </li>
 
-            <!-- Repositorio GitHub -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
-                <a href="https://github.com/calvocobos" target="_blank" rel="noopener noreferrer"
-                    aria-label="Abrir repositorio GitHub del desarrollo del sistema odontológico">
-                    <img src="ico/github.svg" alt="Repositorio GitHub del desarrollo del sistema odontológico"
-                        class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
-                </a>
-                <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio GitHub</h3>
-                <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Desarrollo del sistema</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">
-                    Repositorio del código fuente del sistema de información odontológico, desarrollado con Laravel y
-                    Tailwind CSS.
-                </p>
-            </li>
+        <!-- Repositorio GitHub -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+          <a href="https://github.com/calvocobos" target="_blank" rel="noopener noreferrer"
+            aria-label="Abrir repositorio GitHub del desarrollo del sistema odontológico">
+            <img src="ico/github.svg" alt="Repositorio GitHub del desarrollo del sistema odontológico"
+              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+          </a>
+          <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio GitHub</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Desarrollo del sistema</p>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">
+            Repositorio del código fuente del sistema de información odontológico, desarrollado con Laravel y
+            Tailwind CSS.
+          </p>
+        </li>
 
-            <!-- ODS 3 -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
-                <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_3-3.pdf"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Objetivo de Desarrollo Sostenible 3 Salud y Bienestar">
-                    <img src="ico/ods3.svg" alt="ODS 3 Salud y Bienestar"
-                        class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
-                </a>
-                <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ODS 3</h3>
-                <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Salud y bienestar</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">
-                    Este sistema de información contribuye al ODS 3 al fortalecer la gestión y calidad de la atención en servicios
-                    odontológicos.
-                </p>
-            </li>
+        <!-- ODS 3 -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+          <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_3-3.pdf"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Objetivo de Desarrollo Sostenible 3 Salud y Bienestar">
+            <img src="ico/ods3.svg" alt="ODS 3 Salud y Bienestar"
+              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+          </a>
+          <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ODS 3</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Salud y bienestar</p>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">
+            Este sistema de información contribuye al ODS 3 al fortalecer la gestión y calidad de la atención en
+            servicios
+            odontológicos.
+          </p>
+        </li>
 
-            <!-- ODS 9 -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
-                <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_9-9.pdf"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Objetivo de Desarrollo Sostenible 9 Industria, innovación e infraestructura">
-                    <img src="ico/ods9.svg" alt="ODS 9 Industria, innovación e infraestructura"
-                        class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
-                </a>
-                <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ODS 9</h3>
-                <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Industria, innovación e infraestructura</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">
-                    Promueve la innovación tecnológica en la salud mediante un sistema de información web eficiente y
-                    escalable.
-                </p>
-            </li>
+        <!-- ODS 9 -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+          <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_9-9.pdf"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Objetivo de Desarrollo Sostenible 9 Industria, innovación e infraestructura">
+            <img src="ico/ods9.svg" alt="ODS 9 Industria, innovación e infraestructura"
+              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+          </a>
+          <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ODS 9</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Industria, innovación e infraestructura</p>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">
+            Promueve la innovación tecnológica en la salud mediante un sistema de información web eficiente y
+            escalable.
+          </p>
+        </li>
 
-            <!-- ISO/IEC 25010 -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
-                <a href="https://iso25000.com/index.php/normas-iso-25000/iso-25010" target="_blank"
-                    rel="noopener noreferrer" aria-label="Modelo de calidad ISO/IEC 25010">
-                    <img src="ico/iso.svg" alt="ISO/IEC 25010 Modelo de calidad de software"
-                        class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
-                </a>
-                <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ISO/IEC 25010</h3>
-                <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Modelo de calidad de software</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">
-                    El sistema fue evaluado considerando los atributos de calidad definidos por la norma ISO/IEC 25010.
-                </p>
-            </li>
+        <!-- ISO/IEC 25010 -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+          <a href="https://iso25000.com/index.php/normas-iso-25000/iso-25010" target="_blank" rel="noopener noreferrer"
+            aria-label="Modelo de calidad ISO/IEC 25010">
+            <img src="ico/iso.svg" alt="ISO/IEC 25010 Modelo de calidad de software"
+              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+          </a>
+          <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ISO/IEC 25010</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Modelo de calidad de software</p>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">
+            El sistema fue evaluado considerando los atributos de calidad definidos por la norma ISO/IEC 25010.
+          </p>
+        </li>
 
-            <!-- Norma APA 7 -->
-            <li
-                class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
-                <a href="https://www.researchgate.net/profile/Luis-Arturo-Rivas-Tovar/publication/357046089_NORMAS_APA_7_EDICION_ESTRUCTURA_CITAS_Y_REFERENCIAS/links/6789b78aec3ae3435a67a640/NORMAS-APA-7-EDICION-ESTRUCTURA-CITAS-Y-REFERENCIAS.pdf"
-                    target="_blank" rel="noopener noreferrer" aria-label="Normas APA Séptima Edición">
-                    <img src="ico/apa.svg" alt="Normas APA Séptima Edición"
-                        class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
-                </a>
-                <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">APA 7</h3>
-                <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Normas de documentación</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">
-                    Las referencias y citas bibliográficas de la tesis fueron elaboradas conforme a las normas APA
-                    Séptima Edición.
-                </p>
-            </li>
+        <!-- Norma APA 7 -->
+        <li
+          class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+          <a href="https://www.researchgate.net/profile/Luis-Arturo-Rivas-Tovar/publication/357046089_NORMAS_APA_7_EDICION_ESTRUCTURA_CITAS_Y_REFERENCIAS/links/6789b78aec3ae3435a67a640/NORMAS-APA-7-EDICION-ESTRUCTURA-CITAS-Y-REFERENCIAS.pdf"
+            target="_blank" rel="noopener noreferrer" aria-label="Normas APA Séptima Edición">
+            <img src="ico/apa.svg" alt="Normas APA Séptima Edición"
+              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+          </a>
+          <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">APA 7</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Normas de documentación</p>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">
+            Las referencias y citas bibliográficas de la tesis fueron elaboradas conforme a las normas APA
+            Séptima Edición.
+          </p>
+        </li>
 
-        </ul>
+      </ul>
     </section>
 
 
 
     <!-- Sección de Normas APA 7 -->
     <section id="normas-apa7" class="px-4 py-20">
-        <div class="max-w-5xl mx-auto">
+      <div class="max-w-5xl mx-auto">
 
-            <!-- Título principal -->
-            <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-6">
-                Normas APA Séptima Edición
-            </h2>
+        <!-- Título principal -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-6">
+          Normas APA Séptima Edición
+        </h2>
 
-            <!-- Introducción -->
-            <p class="text-slate-700 dark:text-slate-300 text-justify mb-12 leading-relaxed">
-                La adecuada organización de un documento de tesis es fundamental para garantizar una presentación
-                formal,
-                coherente y profesional. Por ello, las normas <span class="font-semibold">APA (American Psychological
-                    Association)</span>
-                en su séptima edición proporcionan los lineamientos necesarios para estructurar correctamente el trabajo
-                académico.
-                A continuación, se presentan algunas de estas normas esenciales que deben considerarse al elaborar una
-                tesis universitaria.
+        <!-- Introducción -->
+        <p class="text-slate-700 dark:text-slate-300 text-justify mb-12 leading-relaxed">
+          La adecuada organización de un documento de tesis es fundamental para garantizar una presentación
+          formal,
+          coherente y profesional. Por ello, las normas <span class="font-semibold">APA (American Psychological
+            Association)</span>
+          en su séptima edición proporcionan los lineamientos necesarios para estructurar correctamente el trabajo
+          académico.
+          A continuación, se presentan algunas de estas normas esenciales que deben considerarse al elaborar una
+          tesis universitaria.
+        </p>
+
+        <!-- Contenedor de tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Tarjeta 1: Numeración de páginas -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Numeración de las páginas</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
+              La numeración debe ubicarse en la parte superior derecha de cada hoja, comenzando desde la
+              portada y continuando
+              de forma consecutiva. Este formato asegura uniformidad y facilita la localización del contenido
+              dentro del documento.
             </p>
+            <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
+              (American Psychological Association, 2020, pp. 44–45)
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 text-xs">
+              <strong>Referencia bibliográfica:</strong> American Psychological Association. (2020).
+              <em>Publication Manual of the American Psychological Association</em> (7th ed., pp. 44–45). APA
+              Publishing.
+            </p>
+          </article>
 
-            <!-- Contenedor de tarjetas -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Tarjeta 2: Disposición de imágenes -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Disposición de imágenes</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
+              Las imágenes o figuras deben ocupar el ancho permitido por los márgenes del documento, sin estar
+              sujetas
+              a la sangría del texto. Su alineación debe mantenerse centrada o ajustada a los márgenes
+              generales del trabajo.
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
+              (American Psychological Association, 2020, pp. 225–227)
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 text-xs">
+              <strong>Referencia bibliográfica:</strong> American Psychological Association. (2020).
+              <em>Publication Manual of the American Psychological Association</em> (7th ed., pp. 225–227).
+              APA Publishing.
+            </p>
+          </article>
 
-                <!-- Tarjeta 1: Numeración de páginas -->
-                <article
-                    class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Numeración de las páginas</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
-                        La numeración debe ubicarse en la parte superior derecha de cada hoja, comenzando desde la
-                        portada y continuando
-                        de forma consecutiva. Este formato asegura uniformidad y facilita la localización del contenido
-                        dentro del documento.
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
-                        (American Psychological Association, 2020, pp. 44–45)
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 text-xs">
-                        <strong>Referencia bibliográfica:</strong> American Psychological Association. (2020).
-                        <em>Publication Manual of the American Psychological Association</em> (7th ed., pp. 44–45). APA
-                        Publishing.
-                    </p>
-                </article>
-
-                <!-- Tarjeta 2: Disposición de imágenes -->
-                <article
-                    class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Disposición de imágenes</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
-                        Las imágenes o figuras deben ocupar el ancho permitido por los márgenes del documento, sin estar
-                        sujetas
-                        a la sangría del texto. Su alineación debe mantenerse centrada o ajustada a los márgenes
-                        generales del trabajo.
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
-                        (American Psychological Association, 2020, pp. 225–227)
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 text-xs">
-                        <strong>Referencia bibliográfica:</strong> American Psychological Association. (2020).
-                        <em>Publication Manual of the American Psychological Association</em> (7th ed., pp. 225–227).
-                        APA Publishing.
-                    </p>
-                </article>
-
-                <!-- Tarjeta 3: Disposición de tablas -->
-                <article
-                    class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Disposición de tablas</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
-                        Las tablas deben ajustarse al ancho de los márgenes y emplear únicamente líneas horizontales
-                        para separar encabezados
-                        y datos. Se debe evitar el uso de líneas verticales, logrando una presentación limpia y
-                        profesional de la información.
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
-                        (American Psychological Association, 2020, pp. 199–201)
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 text-xs">
-                        <strong>Referencia bibliográfica:</strong> American Psychological Association. (2020).
-                        <em>Publication Manual of the American Psychological Association</em> (7th ed., pp. 199–201).
-                        APA Publishing.
-                    </p>
-                </article>
-            </div>
+          <!-- Tarjeta 3: Disposición de tablas -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-slate-50 dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Disposición de tablas</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
+              Las tablas deben ajustarse al ancho de los márgenes y emplear únicamente líneas horizontales
+              para separar encabezados
+              y datos. Se debe evitar el uso de líneas verticales, logrando una presentación limpia y
+              profesional de la información.
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
+              (American Psychological Association, 2020, pp. 199–201)
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 text-xs">
+              <strong>Referencia bibliográfica:</strong> American Psychological Association. (2020).
+              <em>Publication Manual of the American Psychological Association</em> (7th ed., pp. 199–201).
+              APA Publishing.
+            </p>
+          </article>
         </div>
+      </div>
     </section>
 
 
     <!-- Sección de Leyes Aplicadas -->
     <section id="leyes" class="px-4 py-20 bg-slate-50 dark:bg-slate-900">
-        <div class="max-w-5xl mx-auto">
+      <div class="max-w-5xl mx-auto">
 
-            <!-- Título principal -->
-            <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-6">
-                Leyes Aplicadas en la tesis
-            </h2>
+        <!-- Título principal -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-6">
+          Leyes Aplicadas en la tesis
+        </h2>
 
-            <!-- Introducción -->
-            <p class="text-slate-700 dark:text-slate-300 text-justify mb-12 leading-relaxed">
-                Para garantizar la protección de la información personal y el cumplimiento de las normas legales
-                vigentes,
-                esta tesis se adhiere a la Ley de Protección de Datos Personales y su reglamento. A continuación, se
-                presentan las principales leyes y decretos aplicados, junto con una descripción ampliada de sus
-                objetivos y alcance.
+        <!-- Introducción -->
+        <p class="text-slate-700 dark:text-slate-300 text-justify mb-12 leading-relaxed">
+          Para garantizar la protección de la información personal y el cumplimiento de las normas legales
+          vigentes,
+          esta tesis se adhiere a la Ley de Protección de Datos Personales y su reglamento. A continuación, se
+          presentan las principales leyes y decretos aplicados, junto con una descripción ampliada de sus
+          objetivos y alcance.
+        </p>
+
+        <!-- Contenedor de tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+          <!-- Ley de Protección de Datos Personales -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Ley de Protección de Datos
+              Personales</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
+              La Ley N.°29733 establece las normas para la recolección, almacenamiento, tratamiento y
+              circulación
+              de los datos personales en el Perú. Su objetivo principal es proteger la privacidad de las
+              personas,
+              garantizar el derecho a la información y regular el uso de datos por parte de entidades públicas
+              y privadas.
             </p>
+            <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
+              Fuente: Congreso de la República del Perú (2011). Ley N.°29733 - Ley de Protección de Datos
+              Personales. Diario Oficial El Peruano.
+            </p>
+          </article>
 
-            <!-- Contenedor de tarjetas -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <!-- Decreto Supremo N.°003-2013-JUS -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Reglamento de la Ley N.°29733
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
+              El Decreto Supremo N.°003-2013-JUS, emitido por el Ministerio de Justicia y Derechos Humanos,
+              regula de manera detallada la aplicación de la Ley de Protección de Datos Personales. Define los
+              procedimientos
+              para garantizar la seguridad de la información, los derechos de los titulares de datos y las
+              obligaciones de las entidades responsables.
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
+              Fuente: Ministerio de Justicia y Derechos Humanos (2013). Decreto Supremo N.°003-2013-JUS -
+              Reglamento de la Ley N.°29733. Diario Oficial El Peruano.
+            </p>
+          </article>
 
-                <!-- Ley de Protección de Datos Personales -->
-                <article
-                    class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Ley de Protección de Datos
-                        Personales</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
-                        La Ley N.°29733 establece las normas para la recolección, almacenamiento, tratamiento y
-                        circulación
-                        de los datos personales en el Perú. Su objetivo principal es proteger la privacidad de las
-                        personas,
-                        garantizar el derecho a la información y regular el uso de datos por parte de entidades públicas
-                        y privadas.
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
-                        Fuente: Congreso de la República del Perú (2011). Ley N.°29733 - Ley de Protección de Datos
-                        Personales. Diario Oficial El Peruano.
-                    </p>
-                </article>
-
-                <!-- Decreto Supremo N.°003-2013-JUS -->
-                <article
-                    class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Reglamento de la Ley N.°29733
-                    </h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4">
-                        El Decreto Supremo N.°003-2013-JUS, emitido por el Ministerio de Justicia y Derechos Humanos,
-                        regula de manera detallada la aplicación de la Ley de Protección de Datos Personales. Define los
-                        procedimientos
-                        para garantizar la seguridad de la información, los derechos de los titulares de datos y las
-                        obligaciones de las entidades responsables.
-                    </p>
-                    <p class="text-slate-500 dark:text-slate-400 italic text-sm mb-2">
-                        Fuente: Ministerio de Justicia y Derechos Humanos (2013). Decreto Supremo N.°003-2013-JUS -
-                        Reglamento de la Ley N.°29733. Diario Oficial El Peruano.
-                    </p>
-                </article>
-
-            </div>
         </div>
+      </div>
     </section>
 
+  </main>
 
 
-    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-        <!--linea-->
+
+  <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+    <!--linea-->
+  </div>
+
+  <div class="flex items-center justify-center gap-10">
+    <p class="text-2xl">Visitas:</p>
+    <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=xngx2ttuh9ak3shm32yn7yud6k8xmjkz" border="0"
+      title="Contador" alt="visitas">
+  </div>
+
+  <!-- Visitas al perfil de GitHub -->
+  <div class="flex justify-center my-5">
+    <a href="https://github.com/calvocobos/Expo" target="_blank">
+      <img
+        src="https://komarev.com/ghpvc/?username=calvocobos&label=Visitas%20al%20perfil&color=orange&style=for-the-badge"
+        alt="Contador de visitas al perfil de GitHub">
+    </a>
+  </div>
+
+
+  <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+    <!--linea-->
+  </div>
+
+  <section id="comentarios">
+    <div class="w-10/12 mx-auto flex items-center justify-center gap-10">
+      <script src="https://giscus.app/client.js" data-repo="calvocobos/Expo" data-repo-id="R_kgDOOrZfWw"
+        data-category="Announcements" data-category-id="DIC_kwDOOrZfW84Cvp5Z" data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="es"
+        data-loading="lazy" crossorigin="anonymous" async>
+        </script>
     </div>
+  </section>
 
-    <div class="flex items-center justify-center gap-10">
-        <p class="text-2xl">Visitas:</p>
-        <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=xngx2ttuh9ak3shm32yn7yud6k8xmjkz"
-            border="0" title="Contador" alt="visitas">
-    </div>
+  <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+    <!--linea-->
+  </div>
 
-    <!-- Visitas al perfil de GitHub -->
-    <div class="flex justify-center my-5">
-        <a href="https://github.com/calvocobos/Expo" target="_blank">
-            <img src="https://komarev.com/ghpvc/?username=calvocobos&label=Visitas%20al%20perfil&color=orange&style=for-the-badge"
-                alt="Contador de visitas al perfil de GitHub">
-        </a>
-    </div>
+  <div class="flex items-center justify-center gap-10">
+    <p class="text-2xl">Visitas:</p>
+    <a href="https://www.hitwebcounter.com/" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=21440271&style=0022&nbdigits=5&type=page&initCount=63"
+        title="Counters" Alt="Counters" border="0" /></a>
+  </div>
+
+  <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
+    <!--linea-->
+  </div>
+
+  <div class="h-9">
+
+  </div>
 
 
-    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-        <!--linea-->
-    </div>
+  <!-- Pie de página -->
+  <footer class="bg-gray-900 text-gray-200 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-    <section id="comentarios">
-        <div class="w-10/12 mx-auto flex items-center justify-center gap-10">
-            <script src="https://giscus.app/client.js" data-repo="calvocobos/Expo" data-repo-id="R_kgDOOrZfWw"
-                data-category="Announcements" data-category-id="DIC_kwDOOrZfW84Cvp5Z" data-mapping="pathname"
-                data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-                data-theme="light" data-lang="es" data-loading="lazy" crossorigin="anonymous" async>
-                </script>
+      <!-- Columna 1: Información de la tesis -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white">Sobre la tesis</h3>
+        <p class="text-gray-400 text-sm">
+          El sistema se desarrolló usando la metodología ágil Scrum, con arquitectura MVC para facilitar el
+          mantenimiento y la separación de responsabilidades. Se utilizó Laravel como framework principal por su
+          eficiencia y seguridad, y Tailwind CSS para crear una interfaz moderna, responsiva y personalizable,
+          optimizando la experiencia del usuario.
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white">Enlaces Rápidos</h3>
+        <ul class="space-y-2">
+          <li><a href="#enfoque" class="hover:text-amber-400 transition-colors">Alcance y Enfoque</a></li>
+          <li><a href="#herramientas" class="hover:text-amber-400 transition-colors">Herramientas Tecnológicas</a></li>
+          <li><a href="#video" class="hover:text-amber-400 transition-colors">Video de Sustentación</a></li>
+          <li><a href="#presentacion" class="hover:text-amber-400 transition-colors">Presentación</a></li>
+          <li><a href="#referencias" class="hover:text-amber-400 transition-colors">Referencias</a></li>
+          <li><a href="#normas-apa7" class="hover:text-amber-400 transition-colors">Normas APA 7</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes Sociales -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white">Síguenos</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.youtube.com/watch?v=GAQ6pLZKUeU&t=3928s" target="_blank"
+            aria-label="Video de sustentación" class="hover:text-amber-400 transition-colors">
+            <img src="ico/youtubeblanco.svg" alt="Icono libro PDF" class="h-5 w-auto">
+          </a>
+          <span class="sr-only">Video de sustentación</span>
+          <a href="https://github.com/calvocobos" target="_blank" aria-label="Repositorio Github"
+            class="hover:text-amber-400 transition-colors">
+            <img src="ico/gitblanco.svg" alt="Icono libro PDF" class="h-5 w-auto">
+          </a>
+          <span class="sr-only">Repositorio</span>
         </div>
-    </section>
+      </div>
 
-    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-        <!--linea-->
-    </div>
-
-    <div class="flex items-center justify-center gap-10">
-        <p class="text-2xl">Visitas:</p>
-        <a href="https://www.hitwebcounter.com/" target="_blank">
-            <img src="https://hitwebcounter.com/counter/counter.php?page=21440271&style=0022&nbdigits=5&type=page&initCount=63"
-                title="Counters" Alt="Counters" border="0" /></a>
-    </div>
-
-    <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
-        <!--linea-->
-    </div>
-
-    <div class="h-9">
+      <!-- Columna 4: Contacto -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white">Autores</h3>
+        <p class="text-gray-400 text-sm">Calvo Arteaga, Carlos Antonio</p>
+        <p class="text-gray-400 text-sm">Cobos Vargas, Irvin Julian</p>
+      </div>
 
     </div>
 
-
-    <!-- Pie de página -->
-    <footer class="bg-gray-900 text-gray-200 py-12">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            <!-- Columna 1: Información de la tesis -->
-            <div>
-                <h3 class="text-lg font-bold mb-4 text-white">Sobre la tesis</h3>
-                <p class="text-gray-400 text-sm">
-                    El sistema se desarrolló usando la metodología ágil Scrum, con arquitectura MVC para facilitar el mantenimiento y la separación de responsabilidades. Se utilizó Laravel como framework principal por su eficiencia y seguridad, y Tailwind CSS para crear una interfaz moderna, responsiva y personalizable, optimizando la experiencia del usuario.
-                </p>
-            </div>
-
-            <!-- Columna 2: Enlaces rápidos -->
-            <div>
-                <h3 class="text-lg font-bold mb-4 text-white">Enlaces Rápidos</h3>
-                <ul class="space-y-2">
-                    <li><a href="#enfoque" class="hover:text-amber-400 transition-colors">Alcance y Enfoque</a></li>
-                    <li><a href="#herramientas" class="hover:text-amber-400 transition-colors">Herramientas Tecnológicas</a></li>
-                    <li><a href="#video" class="hover:text-amber-400 transition-colors">Video de Sustentación</a></li>
-                    <li><a href="#presentacion" class="hover:text-amber-400 transition-colors">Presentación</a></li>
-                    <li><a href="#referencias" class="hover:text-amber-400 transition-colors">Referencias</a></li>
-                    <li><a href="#normas-apa7" class="hover:text-amber-400 transition-colors">Normas APA 7</a></li>
-                </ul>
-            </div>
-
-            <!-- Columna 3: Redes Sociales -->
-            <div>
-                <h3 class="text-lg font-bold mb-4 text-white">Síguenos</h3>
-                <div class="flex space-x-4">
-                    <a href="https://www.youtube.com/watch?v=GAQ6pLZKUeU&t=3928s" target="_blank" aria-label="Video de sustentación" class="hover:text-amber-400 transition-colors">
-                        <img src="ico/youtubeblanco.svg" alt="Icono libro PDF" class="h-5 w-auto">
-                    </a>
-                    <span class="sr-only">Video de sustentación</span>
-                    <a href="https://github.com/calvocobos" target="_blank" aria-label="Repositorio Github" class="hover:text-amber-400 transition-colors">
-                        <img src="ico/gitblanco.svg" alt="Icono libro PDF" class="h-5 w-auto">
-                    </a>
-                    <span class="sr-only">Repositorio</span>
-                </div>
-            </div>
-
-            <!-- Columna 4: Contacto -->
-            <div>
-                <h3 class="text-lg font-bold mb-4 text-white">Autores</h3>
-                <p class="text-gray-400 text-sm">Calvo Arteaga, Carlos Antonio</p>
-                <p class="text-gray-400 text-sm">Cobos Vargas, Irvin Julian</p>
-            </div>
-
-        </div>
-
-        <div class="mt-10 text-center text-gray-500 text-sm">
-            &copy; 2025 Sustentacion de Tesis. Todos los derechos reservados.
-        </div>
-    </footer>
-
+    <div class="mt-10 text-center text-gray-500 text-sm">
+      &copy; 2025 Sustentacion de Tesis. Todos los derechos reservados.
+    </div>
+  </footer>
 
 
 </body>

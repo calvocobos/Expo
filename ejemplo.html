@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo inicial</title>
+
+    <!-- Tipografía -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS compilado de Tailwind -->
+    <link href="./tailwind/output.css" rel="stylesheet" />
+
+    <!-- CSS adicionales (opcionales) -->
+    <link href="./cbs/general.css" rel="stylesheet" />
+    <link href="./cbs/estilo.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="bg-testcolor text-white p-4 m-4 rounded-lg">
+      Fondo testcolor 🎨
+    </div>
+
+    <div class="bg-verdefondo text-verdetexto p-4 m-4 rounded-lg">
+      Fondo con color personalizado en tailwind
+    </div>
+
+    <div class="bg-amber-200 dark:bg-amber-800 dark:text-white p-4 m-4 rounded-lg">
+      <p>
+        Este archivo HTML crea una página base configurada con Tailwind CSS y la fuente Ubuntu desde Google Fonts. Inicia en modo oscuro (class="dark") y aplica estilos personalizados definidos en tu configuración de Tailwind. Muestra dos bloques de ejemplo con colores distintos uno usando un color personalizado (bg-testcolor) y otro que cambia entre tonos claros y oscuros según el modo activo, además de un botón que permite alternar entre modo claro y oscuro. El script detecta el clic en ese botón, cambia la clase dark del elemento <html>, y guarda la preferencia del usuario en localStorage para mantener el tema seleccionado al recargar la página.
+      </p>
+    </div>
+
+    <button id="cambio-tema" class="m-4 p-4 rounded-lg bg-blue-900 text-white dark:bg-red-800">
+        cambiar tema claro oscuro
+    </button>
+
+    <script>
+    // Esperar a que el DOM cargue
+    document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("cambio-tema");
+        const html = document.documentElement;
+
+        // Leer modo actual guardado (si existe)
+        const temaGuardado = localStorage.getItem("tema");
+        if (temaGuardado === "dark") {
+        html.classList.add("dark");
+        } else if (temaGuardado === "light") {
+        html.classList.remove("dark");
+        }
+
+        // Al hacer clic, alternar modo y guardar preferencia
+        btn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+
+        // Guardar la preferencia del usuario
+        const modoActual = html.classList.contains("dark") ? "dark" : "light";
+        localStorage.setItem("tema", modoActual);
+        });
+    });
+    </script>
+
+  </body>
+</html>

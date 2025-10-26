@@ -1,17 +1,72 @@
 @import "tailwindcss";
-@config "../tailwind.config.js";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";
 
-/* Estilos base globales */
+/* Donde escaneará Tailwind */
+@source "./*.html";
+@source "./cbs/**/*.js";
+
+/* Forzar modo oscuro por clase (.dark) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ===========================
+   🎨 Tema personalizado
+   =========================== */
+@theme {
+  /* Fuente global */
+  --font-sans: 'Ubuntu', sans-serif;
+
+  /* Colores personalizados */
+  --color-fondo: #fefefe;
+  --color-texto: #212121;
+  --color-testcolor: #123456;
+  --color-verdefondo: #1f9c49;
+  --color-verdetexto: #d5ecdd;
+
+  /* Breakpoints personalizados */
+  --breakpoint-shr: 550px;
+  --breakpoint-mdl: 900px;
+  --breakpoint-lgx: 1120px;
+  --breakpoint-lgz: 1200px;
+  --breakpoint-xlm: 1420px;
+}
+
+/* ===========================
+   🌙 Tema oscuro
+   =========================== */
+html.dark {
+  color-scheme: dark;
+  --color-fondo: #212121;
+  --color-texto: #fefefe;
+  --color-verdefondo: #d5ecdd;
+  --color-verdetexto: #1f9c49;
+}
+
+/* ===========================
+   🧱 Base global
+   =========================== */
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth font-sans;
   }
 
   body {
-    @apply bg-white text-black transition-colors duration-300;
-  }
-
-  .dark body {
-    @apply bg-[#212121] text-white;
+    @apply bg-fondo text-texto transition-colors duration-300;
   }
 }
+
+/* ===========================
+   📏 Notas de breakpoints
+   ===========================
+   shr   - 550px  
+   sm    - 640px  
+   md    - 768px  
+   mdl   - 900px  
+   lg    - 1024px  
+   lgx   - 1120px  
+   lgz   - 1200px  
+   xl    - 1280px  
+   xlm   - 1420px  
+   2xl   - 1536px  
+*/

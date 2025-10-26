@@ -1,5 +1,5 @@
 {
-  "name": "tailwindsolo",
+  "name": "expo-nuevo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.16",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
     "tailwindcss": "^4.1.16"
   },
   "dependencies": {

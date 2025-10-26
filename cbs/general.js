@@ -1,61 +1,45 @@
-$(document).ready(function () {
-  /**
-   * ancho de pantalla
-   */
-  function mostrarAncho() {
-    var ancho = $(window).width();
-    $(".tamano").text(ancho);
+/* JS puro */
+
+// Evitar animaciones durante carga inicial
+document.documentElement.classList.add("js");
+
+// Registrar carga diferida
+window.addEventListener("load", () => {
+  console.log("Página completamente cargada");
+});
+
+// Esperar a que el DOM cargue
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("btnoscuro");
+  const html = document.documentElement;
+
+  // Leer modo actual guardado (si existe)
+  const temaGuardado = localStorage.getItem("tema");
+  if (temaGuardado === "dark") {
+    html.classList.add("dark");
+  } else if (temaGuardado === "light") {
+    html.classList.remove("dark");
   }
 
-  mostrarAncho(); // Mostrar al cargar
+  // Al hacer clic, alternar modo y guardar preferencia
+  btn.addEventListener("click", () => {
+    html.classList.toggle("dark");
 
-  $(window).on("resize", function () {
-    mostrarAncho(); // Actualizar al redimensionar
-  });
-
-  /**
-   * cambios en modo oscuro
-   */
-  function ModoOscuro(activo) {
-    $(".onda").toggleClass("oscuro", activo);
-  }
-
-  /**
-   * cambia el <html lang="es" class="dark">
-   */
-  $("#btnoscuro").on("click", function () {
-    $("html").toggleClass("dark");
-    ModoOscuro($("html").hasClass("dark"));
-  });
-
-  /**
-   * JQuery menu lateral derecho
-   * pequeño
-   */
-  $("#btnmenu").on("click", function () {
-    $("#menu-lateral").stop(true, true).slideToggle(300);
+    // Guardar la preferencia del usuario
+    const modoActual = html.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("tema", modoActual);
   });
 });
 
-/**
- * comportamiento del meno
- */
+/* JQUERY */
 
 $(document).ready(function () {
-  // Captura todos los enlaces dentro del menú lateral
+  //menu lateral derecho
+  $("#btnmenu").on("click", function () {
+    $("#menu-lateral").stop(true, true).slideToggle(300);
+  });
+  //cerar menu al elegir uno
   $("#menu-lateral a").click(function (e) {
-    e.preventDefault(); // Evitar el salto instantáneo
-
-    var destino = $(this).attr("href"); // Tomar el href del enlace
-    // Animar el scroll suavemente
-    $("html, body").animate(
-      {
-        scrollTop: $(destino).offset().top - 50, // Ajusta el offset si tienes header fijo
-      },
-      1000,
-      "easeInOutExpo"
-    );
-
     // Ocultar el menú lateral después de hacer clic
     $("#menu-lateral").fadeOut();
   });

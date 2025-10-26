@@ -1,0 +1,38 @@
+{
+  "name": "Sustentación de Tesis - Ingeniería de Sistemas UAC",
+  "short_name": "Expo Tesis",
+  "description": "Presentación oficial de la sustentación de tesis de Ingeniería de Sistemas en la Universidad Andina del Cusco.",
+  "start_url": "../",
+  "display": "standalone",
+  "background_color": "#fbbf24",
+  "theme_color": "#fbbf24",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

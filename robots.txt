@@ -1,3 +1,31 @@
+# ----------------------------------------
+# ✅ Archivo robots.txt
+# Controla qué puede indexar Google y otros bots
+# ----------------------------------------
+
 User-agent: *
-Allow: /
-Sitemap: https://calvocobos.github.io/Expo/sitemap.xml
+# 🔒 Bloquear todo lo que es de desarrollo o interno
+Disallow: /node_modules/
+Disallow: /tailwind/input.css
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /robots.txt
+Disallow: /README.md
+Disallow: /.vscode/
+Disallow: /.git/
+Disallow: /ejemplo.html
+
+# 🔒 Bloquear también carpetas de edición o config
+Disallow: /.vscode/
+Disallow: /.idea/
+
+# ✅ Permitir lo que sí es público
+Allow: /index.html
+Allow: /tailwind/output.css
+Allow: /cbs/
+Allow: /img/
+Allow: /ico/
+Allow: /icon/
+
+# Opcional: ubicación del sitemap (si tienes uno)
+# Sitemap: https://calvocobos.github.io/Expo/
