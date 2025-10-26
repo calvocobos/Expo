@@ -349,6 +349,9 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
@@ -378,9 +381,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
   }
   .w-10\/12 {
     width: calc(10/12 * 100%);
@@ -580,9 +580,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .fill-current {
-    fill: currentcolor;
   }
   .object-cover {
     object-fit: cover;
