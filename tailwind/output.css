@@ -469,6 +469,9 @@
   .bg-\[\#044DA2\] {
     background-color: #044DA2;
   }
+  .bg-\[\#c4dbff\] {
+    background-color: #c4dbff;
+  }
   .bg-amber-200 {
     background-color: var(--color-amber-200);
   }
@@ -483,6 +486,9 @@
   }
   .bg-slate-50 {
     background-color: var(--color-slate-50);
+  }
+  .bg-slate-500 {
+    background-color: var(--color-slate-500);
   }
   .bg-testcolor {
     background-color: var(--color-testcolor);
@@ -601,6 +607,9 @@
   }
   .text-gray-500 {
     color: var(--color-gray-500);
+  }
+  .text-slate-50 {
+    color: var(--color-slate-50);
   }
   .text-slate-500 {
     color: var(--color-slate-500);
@@ -852,6 +861,11 @@
   .dark\:border-gray-700 {
     &:where(.dark, .dark *) {
       border-color: var(--color-gray-700);
+    }
+  }
+  .dark\:bg-\[\#1b52aa\] {
+    &:where(.dark, .dark *) {
+      background-color: #1b52aa;
     }
   }
   .dark\:bg-amber-800 {

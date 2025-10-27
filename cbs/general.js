@@ -43,4 +43,20 @@ $(document).ready(function () {
     // Ocultar el menú lateral después de hacer clic
     $("#menu-lateral").fadeOut();
   });
+
+  function actualizarTamano() {
+    // obtener ancho y alto de la ventana
+    let ancho = $(window).width();
+    let alto = $(window).height();
+
+    // mostrarlo dentro del div
+    $(".ancho").text(`w ${ancho}`);
+    $(".alto").text(`h ${alto}`);
+  }
+
+  // mostrar tamaño al cargar la página
+  $(document).ready(actualizarTamano);
+
+  // actualizar cuando se redimensiona la ventana
+  $(window).on("resize", actualizarTamano);
 });
