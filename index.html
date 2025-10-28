@@ -192,6 +192,13 @@
         <!-- Grupo 4: Acciones -->
         <ul class="flex gap-1" aria-label="Acciones del sitio">
           <li>
+            <a href="#compartir" aria-label="Ir a la sección Compartir"
+              class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
+              <img src="ico/compartir.svg" alt="Icono compartir" class="h-4 w-auto">
+              <span class="sr-only">Compartir</span>
+            </a>
+          </li>
+          <li>
             <button id="btnoscuro" aria-label="Cambiar a modo oscuro"
               class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
               <img src="ico/oscuro.svg" alt="Icono modo oscuro" class="h-4 w-auto">
@@ -284,6 +291,12 @@
           <a href="#leyes" aria-label="Ir a la sección Leyes"
             class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
             Leyes
+          </a>
+        </li>
+        <li>
+          <a href="#compartir" aria-label="Compartir"
+            class="block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600">
+            Compartir
           </a>
         </li>
         <li>
@@ -1090,8 +1103,95 @@
         </div>
       </div>
     </section>
-
   </main>
+
+
+  <section id="compartir" class="text-center pb-16 pt-24" aria-labelledby="share-title">
+    <h2 id="share-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
+      Compartir
+    </h2>
+
+    <!-- Botón nativo de compartir -->
+    <button id="shareBtn" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition mb-8">
+      Compartir directamente
+    </button>
+
+    <!-- Grid de redes -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center max-w-3xl mx-auto">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://calvocobos.github.io/Expo/" target="_blank"
+        rel="noopener" aria-label="Compartir en Facebook" class="flex flex-col items-center group">
+        <img src="ico/facebook.svg" alt="Facebook"
+          class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+        <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
+          Facebook
+        </span>
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://twitter.com/intent/tweet?url=https://calvocobos.github.io/Expo/&text=Explora%20este%20proyecto%20web%20odontol%C3%B3gico"
+        target="_blank" rel="noopener" aria-label="Compartir en X (antes Twitter)"
+        class="flex flex-col items-center group">
+        <img src="ico/twiter.svg" alt="X (Twitter)" class="w-14 h-14 transition-transform duration-300 group-hover:scale-110"
+          loading="lazy" />
+        <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
+          X (Twitter)
+        </span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://calvocobos.github.io/Expo/" target="_blank"
+        rel="noopener" aria-label="Compartir en LinkedIn" class="flex flex-col items-center group">
+        <img src="ico/linkedin.svg" alt="LinkedIn"
+          class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+        <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
+          LinkedIn
+        </span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://api.whatsapp.com/send?text=Mira%20este%20proyecto%20web%20odontol%C3%B3gico%20https://calvocobos.github.io/Expo/"
+        target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" class="flex flex-col items-center group">
+        <img src="ico/whatsapp.svg" alt="WhatsApp"
+          class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+        <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
+          WhatsApp
+        </span>
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://t.me/share/url?url=https://calvocobos.github.io/Expo/&text=Proyecto%20web%20odontol%C3%B3gico%20interesante"
+        target="_blank" rel="noopener" aria-label="Compartir en Telegram" class="flex flex-col items-center group">
+        <img src="ico/telegram.svg" alt="Telegram"
+          class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+        <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
+          Telegram
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    // API de compartir nativa (para móviles y navegadores modernos)
+    const shareData = {
+      title: 'Expo - Sistema Odontológico',
+      text: 'Mira este proyecto web desarrollado con metodología SCRUM y arquitectura MVC.',
+      url: 'https://calvocobos.github.io/Expo/'
+    };
+
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          console.error('Error al compartir:', err);
+        }
+      } else {
+        alert('Tu navegador no admite compartir directamente.');
+      }
+    });
+  </script>
 
 
 
@@ -1100,7 +1200,8 @@
   </div>
 
   <div class="flex items-center justify-center">
-    <div class="flex items-center justify-center gap-4 w-fit bg-white dark:bg-white text-black dark:text-black rounded-lg p-4">
+    <div
+      class="flex items-center justify-center gap-4 w-fit bg-white dark:bg-white text-black dark:text-black rounded-lg p-4">
       <p class="text-2xl">Visitas:</p>
       <img
         src="https://hitwebcounter.com/counter/counter.php?page=21440271&style=0022&nbdigits=5&type=page&initCount=63"
