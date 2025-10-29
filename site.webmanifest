@@ -1,0 +1,57 @@
+{
+  "name": "Sistema Dental",
+  "short_name": "Sistema Dental",
+  "description": "Sustentación y repositorio del Sistema de Información Web Odontológico, tesis de Ingeniería de Sistemas en la Universidad Andina del Cusco. Proyecto de Ingeniería de Sistemas orientado a la digitalización del servicio odontológico.",
+  "lang": "es-PE",
+  "dir": "ltr",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAAC01",
+  "theme_color": "#fbbf24",
+  "categories": [
+    "educación",
+    "tecnología",
+    "odontología",
+    "ingeniería de sistemas",
+    "tesis universitaria"
+  ],
+  "iarc_rating_id": "pending",
+  "screenshots": [
+    {
+      "src": "img/screenshots/inicio.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "label": "Pantalla de inicio del Sistema Dental"
+    },
+    {
+      "src": "img/screenshots/repositorio.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "label": "Vista del repositorio de la tesis"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/app-splash/app-splash-720.webp",
+      "sizes": "720x720",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ]
+}

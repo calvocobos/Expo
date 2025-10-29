@@ -14,9 +14,6 @@ Disallow: /README.md
 Disallow: /.vscode/
 Disallow: /.git/
 Disallow: /ejemplo.html
-
-# 🔒 Bloquear también carpetas de edición o config
-Disallow: /.vscode/
 Disallow: /.idea/
 
 # ✅ Permitir lo que sí es público
@@ -26,6 +23,9 @@ Allow: /cbs/
 Allow: /img/
 Allow: /ico/
 Allow: /icon/
+Allow: /site.webmanifest   # Permitir que los buscadores y navegadores lo lean
 
-# Opcional: ubicación del sitemap (si tienes uno)
+# Ubicación del sitemap:
 # Sitemap: https://calvocobos.github.io/Expo/
+
+#con esto deberia ser bien indexado
