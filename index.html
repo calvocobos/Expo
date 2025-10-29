@@ -199,6 +199,13 @@
               <span class="sr-only">Video de exposición</span>
             </a>
           </li>
+          <li>
+            <a href="#instalar-app" aria-label="Ir a la sección Instalar app"
+              class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
+              <img src="ico/instalar.svg" alt="Icono instalar" class="h-4 w-auto">
+              <span class="sr-only">Instalar App</span>
+            </a>
+          </li>
         </ul>
 
         <!-- Grupo 2: Secciones del sitio (desktop) -->
@@ -602,13 +609,36 @@
         </iframe>
       </div>
 
+      <div class="my-20 flex items-center justify-center gap-3">
+        <div>
+          <img src="ico/youtube-red.svg" alt="YouTube logo" class="h-12 w-auto sm:w-10 sm:h-10" loading="lazy">
+          <p class="font-semibold text-slate-700 dark:text-slate-300 py-3">
+            Ver directo en YouTube
+          </p>
+          <a href="https://www.youtube.com/watch?v=GAQ6pLZKUeU" target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+            ▶ Reproducir Video
+          </a>
+          <div class="mt-4 text-sm text-gray-600 break-all">
+            <a href="https://www.youtube.com/watch?v=GAQ6pLZKUeU" target="_blank" rel="noopener noreferrer"
+              class="underline hover:text-red-600">
+              https://www.youtube.com/watch?v=GAQ6pLZKUeU
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
       <!-- Información adicional y QR -->
       <div class="p-5 mt-8">
         <div class="sm:flex items-center justify-center gap-6 mx-4">
           <img src="img/02 QR.png" alt="Código QR para acceder al video de la sustentación de tesis"
             class="w-28 mx-auto sm:mx-0">
           <div class="flex flex-col space-y-2 text-center sm:text-left">
-            <p class="font-semibold text-slate-700 dark:text-slate-300">Acceso al video en línea:</p>
+            <p class="font-semibold text-slate-700 dark:text-slate-300">
+              Respositorio:
+            </p>
             <a href="https://calvocobos.github.io/Expo/" target="_blank" rel="noopener noreferrer"
               class="bg-[#044DA2] text-white rounded-lg p-4 block overflow-hidden hover:bg-[#FFD353] hover:text-black transition-colors duration-300">
               www.calvocobos.github.io/Expo
@@ -1162,17 +1192,59 @@
     </section>
   </main>
 
-  
 
-  
-  
-  
+
+  <section id="instalar-app" class="py-28 bg-slate-200 dark:bg-[#242425] px-6 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-800 dark:text-amber-200 mb-4">Instala nuestra App de Tesis</h2>
+      <p class="text-gray-700 dark:text-slate-50 mb-6">
+        Accede de forma rápida y organizada a la sustentación y documentación de nuestra tesis.
+        Esta aplicación web progresiva permite explorar los contenidos académicos y materiales del proyecto de
+        investigación, brindando una experiencia inmersiva en el desarrollo del Sistema de Información Odontológico.
+      </p>
+      <button id="btnInstalar"
+        class="cursor-pointer bg-yellow-400 hover:bg-blue-700 text-gray-800 hover:text-slate-50 font-semibold py-3 px-6 rounded-lg shadow-md transition-colors">
+        Instalar App
+      </button>
+    </div>
+  </section>
+
+  <script>
+    let deferredPrompt;
+    const btnInstalar = document.getElementById('btnInstalar');
+
+    // Captura del evento 'beforeinstallprompt'
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault(); // Evita que se muestre el prompt automáticamente
+      deferredPrompt = e;  // Guardamos el evento para usarlo más tarde
+      btnInstalar.style.display = 'inline-block'; // Mostramos el botón
+    });
+
+    // Cuando el usuario hace clic en el botón
+    btnInstalar.addEventListener('click', async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt(); // Mostramos el prompt de instalación
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+          console.log('El usuario instaló la app');
+        } else {
+          console.log('El usuario rechazó la instalación');
+        }
+        deferredPrompt = null;
+        btnInstalar.style.display = 'none'; // Ocultamos el botón después
+      }
+    });
+  </script>
+
+
+
+
   <section id="compartir" class="text-center pb-8 pt-24" aria-labelledby="share-title">
     <div class="w-[90%] h-1 mx-auto my-8 bg-amber-300 rounded-full">
       <!--linea-->
     </div>
 
-    <h2 id="share-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
+    <h2 id="share-title" class="cursor-pointer text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
       Compartir
     </h2>
 
@@ -1198,8 +1270,8 @@
       <a href="https://twitter.com/intent/tweet?url=https://calvocobos.github.io/Expo/&text=Explora%20este%20proyecto%20web%20odontol%C3%B3gico"
         target="_blank" rel="noopener" aria-label="Compartir en X (antes Twitter)"
         class="flex flex-col items-center group">
-        <img src="ico/twiter.svg" alt="X (Twitter)" class="w-14 h-14 transition-transform duration-300 group-hover:scale-110"
-          loading="lazy" />
+        <img src="ico/twiter.svg" alt="X (Twitter)"
+          class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
         <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
           X (Twitter)
         </span>
