@@ -395,6 +395,7 @@
     <!-- Contenido del encabezado -->
     <section id="inicio"
       class="mx-3 md:mx-20 pt-28 pb-20 px-4 text-center flex flex-col md:flex-row items-center gap-6">
+
       <article class="flex-1">
         <h1 class="text-2xl font-bold text-[#1d1d1e] dark:text-white lg:text-4xl leading-tight">
           Sustentación de Tesis para la obtención del título profesional de Ingeniero de Sistemas
@@ -413,32 +414,32 @@
       <figure class="flex-1 max-w-md mx-auto overflow-hidden rounded-lg shadow-lg">
         <a href="#video" aria-label="Ver exposición de tesis en video">
           <picture>
-            <!-- 🔹 AVIF -->
+            <!-- AVIF -->
             <source srcset="
-          img/caratula/video-tesis-caratula-360.avif 360w,
-          img/caratula/video-tesis-caratula-720.avif 720w,
-          img/caratula/video-tesis-caratula-1280.avif 1280w,
-          img/caratula/video-tesis-caratula-1920.avif 1920w
-        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/avif">
+            img/caratula/video-tesis-caratula-360.avif 360w,
+            img/caratula/video-tesis-caratula-720.avif 720w,
+            img/caratula/video-tesis-caratula-1280.avif 1280w,
+            img/caratula/video-tesis-caratula-1920.avif 1920w
+          " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 768px" type="image/avif">
 
-            <!-- 🔹 WebP -->
+            <!-- WebP -->
             <source srcset="
-          img/caratula/video-tesis-caratula-360.webp 360w,
-          img/caratula/video-tesis-caratula-720.webp 720w,
-          img/caratula/video-tesis-caratula-1280.webp 1280w,
-          img/caratula/video-tesis-caratula-1920.webp 1920w
-        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/webp">
+            img/caratula/video-tesis-caratula-360.webp 360w,
+            img/caratula/video-tesis-caratula-720.webp 720w,
+            img/caratula/video-tesis-caratula-1280.webp 1280w,
+            img/caratula/video-tesis-caratula-1920.webp 1920w
+          " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 768px" type="image/webp">
 
-            <!-- 🔹 Fallback JPG se ve al inicio de la pagina asi q no debe ir loading="lazy" -->
+            <!-- Fallback JPG -->
             <img src="img/caratula/video-tesis-caratula-fallback.jpg" alt="Miniatura del video de exposición de tesis"
-              width="1920" height="1080" class="w-full h-auto transition-transform duration-300 hover:scale-110">
+              width="1920" height="1080" decoding="async"
+              class="w-full h-auto aspect-[16/9] transition-transform duration-300 hover:scale-110">
           </picture>
         </a>
         <figcaption class="sr-only">Carátula del video de la sustentación de tesis</figcaption>
       </figure>
-
-
     </section>
+
 
   </header>
 
@@ -511,24 +512,28 @@
       </h2>
 
       <div class="flex flex-col md:flex-row items-center gap-8">
-        <!-- Imagen -->
-        <figure class="flex-1">
+        <!-- Imagen optimizada -->
+        <figure class="flex-1 max-w-2xl mx-auto">
           <picture>
             <!-- 🔹 AVIF -->
             <source srcset="
-          img/desarrollo/desarrollo-360.avif 360w,
-          img/desarrollo/desarrollo-720.avif 720w,
-          img/desarrollo/desarrollo-1280.avif 1280w,
-          img/desarrollo/desarrollo-1408.avif 1408w
-        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/avif">
+            img/desarrollo/desarrollo-360.avif 360w,
+            img/desarrollo/desarrollo-720.avif 720w,
+            img/desarrollo/desarrollo-1280.avif 1280w,
+            img/desarrollo/desarrollo-1408.avif 1408w
+          " sizes="(max-width: 640px) 100vw,
+                 (max-width: 1024px) 60vw,
+                 45vw" type="image/avif">
 
             <!-- 🔹 WebP -->
             <source srcset="
-          img/desarrollo/desarrollo-360.webp 360w,
-          img/desarrollo/desarrollo-720.webp 720w,
-          img/desarrollo/desarrollo-1280.webp 1280w,
-          img/desarrollo/desarrollo-1408.webp 1408w
-        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/webp">
+            img/desarrollo/desarrollo-360.webp 360w,
+            img/desarrollo/desarrollo-720.webp 720w,
+            img/desarrollo/desarrollo-1280.webp 1280w,
+            img/desarrollo/desarrollo-1408.webp 1408w
+          " sizes="(max-width: 640px) 100vw,
+                 (max-width: 1024px) 60vw,
+                 45vw" type="image/webp">
 
             <!-- 🔹 Fallback JPG -->
             <img src="img/desarrollo/desarrollo-fallback.jpg" alt="Desarrolladores trabajando en el sistema de tesis"
@@ -537,8 +542,6 @@
           </picture>
           <figcaption class="sr-only">Imagen representativa del desarrollo del sistema</figcaption>
         </figure>
-
-
 
         <!-- Párrafo descriptivo -->
         <article class="flex-1 text-slate-700 dark:text-gray-300">
@@ -558,6 +561,7 @@
         </article>
       </div>
     </section>
+
 
     <!-- Sección de Herramientas -->
     <section id="herramientas" class="px-4 py-20">
@@ -653,11 +657,33 @@
       <!-- Información adicional y QR -->
       <div class="p-5 mt-8">
         <div class="sm:flex items-center justify-center gap-6 mx-4">
-          <img src="img/02 QR.png" alt="Código QR para acceder al video de la sustentación de tesis"
-            class="w-28 mx-auto sm:mx-0">
+          <picture>
+            <!-- 🔹 AVIF -->
+            <source srcset="
+          img/02 QR/02 QR-360.avif 360w,
+          img/02 QR/02 QR-720.avif 720w,
+          img/02 QR/02 QR-1280.avif 1280w,
+          img/02 QR/02 QR-1920.avif 1920w
+        " sizes="(max-width: 640px) 30vw, 120px" type="image/avif">
+
+            <!-- 🔹 WebP -->
+            <source srcset="
+          img/02 QR/02 QR-360.webp 360w,
+          img/02 QR/02 QR-720.webp 720w,
+          img/02 QR/02 QR-1280.webp 1280w,
+          img/02 QR/02 QR-1920.webp 1920w
+        " sizes="(max-width: 640px) 30vw, 120px" type="image/webp">
+
+            <!-- 🔹 Fallback JPG -->
+            <img src="img/02 QR/02 QR-fallback.jpg" alt="Código QR para acceder al video de la sustentación de tesis"
+              width="360" height="360"
+              class="w-28 mx-auto sm:mx-0 rounded-md shadow-md transition-transform duration-300 hover:scale-105"
+              loading="lazy">
+          </picture>
+
           <div class="flex flex-col space-y-2 text-center sm:text-left">
             <p class="font-semibold text-slate-700 dark:text-slate-300">
-              Respositorio:
+              Repositorio:
             </p>
             <a href="https://calvocobos.github.io/Expo/" target="_blank" rel="noopener noreferrer"
               class="bg-[#044DA2] text-white rounded-lg p-4 block overflow-hidden hover:bg-[#FFD353] hover:text-black transition-colors duration-300">
@@ -666,6 +692,8 @@
           </div>
         </div>
       </div>
+
+
     </section>
 
 
@@ -683,8 +711,29 @@
           class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg sm:col-span-2 lg:col-span-1 h-full">
           <!-- Parte superior -->
           <div class="flex flex-col items-center">
-            <img src="img/Hugo-Espetia-Huamanga.png" alt="Asesor Mg. Ing. Hugo Espetia Huamanga"
-              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-360.avif 360w,
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-720.avif 720w,
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-1280.avif 1280w,
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-1920.avif 1920w
+    " sizes="(max-width: 640px) 30vw, 128px" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-360.webp 360w,
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-720.webp 720w,
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-1280.webp 1280w,
+      img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-1920.webp 1920w
+    " sizes="(max-width: 640px) 30vw, 128px" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/Hugo-Espetia-Huamanga/Hugo-Espetia-Huamanga-fallback.jpg"
+                alt="Asesor Mg. Ing. Hugo Espetia Huamanga" width="360" height="360"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform"
+                loading="lazy">
+            </picture>
 
             <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
               <span class="text-sm block">Mg. Ing.</span>
@@ -707,8 +756,31 @@
         <article
           class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
           <div class="flex flex-col items-center">
-            <img src="img/Carlos-Antonio-Calvo-Arteaga.png" alt="Bachiller Carlos Antonio Calvo Arteaga"
-              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
+
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-360.avif 360w,
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-720.avif 720w,
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-1280.avif 1280w,
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-1920.avif 1920w
+    " sizes="(max-width: 640px) 30vw, 128px" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-360.webp 360w,
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-720.webp 720w,
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-1280.webp 1280w,
+      img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-1920.webp 1920w
+    " sizes="(max-width: 640px) 30vw, 128px" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/Carlos-Antonio-Calvo-Arteaga/Carlos-Antonio-Calvo-Arteaga-fallback.jpg"
+                alt="Bachiller Carlos Antonio Calvo Arteaga" width="360" height="360"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform"
+                loading="lazy">
+            </picture>
+
             <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
               <span class="text-sm block">Bachiller (ahora Ingeniero)</span>
               <span class="text-xl block font-bold">Carlos Antonio</span>
@@ -729,8 +801,32 @@
         <article
           class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
           <div class="flex flex-col items-center">
-            <img src="img/Irvin-Julian-Cobos-Vargas.png" alt="Bachiller Irvin Julian Cobos Vargas"
-              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform">
+
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-360.avif 360w,
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-720.avif 720w,
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-1280.avif 1280w,
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-1920.avif 1920w
+    " sizes="(max-width: 640px) 30vw, 128px" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-360.webp 360w,
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-720.webp 720w,
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-1280.webp 1280w,
+      img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-1920.webp 1920w
+    " sizes="(max-width: 640px) 30vw, 128px" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/Irvin-Julian-Cobos-Vargas/Irvin-Julian-Cobos-Vargas-fallback.jpg"
+                alt="Bachiller Irvin Julian Cobos Vargas" width="360" height="360"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform"
+                loading="lazy">
+            </picture>
+
+
             <h3 class="text-slate-800 dark:text-white font-semibold mb-2">
               <span class="text-sm block">Bachiller (ahora Ingeniero)</span>
               <span class="text-xl block font-bold">Irvin Julian</span>
@@ -761,15 +857,37 @@
       <div class="flex flex-col lg:flex-row items-center gap-8 max-w-6xl mx-auto">
         <!-- Imagen representativa -->
         <figure class="flex-1">
-          <img src="img/jurado-asesor-bachiller.jpg"
-            alt="Jurado, asesor y bachilleres durante la sustentación de la tesis de sistema odontológico"
-            class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-            loading="lazy">
+          <picture>
+            <!-- 🔹 AVIF -->
+            <source srcset="
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-360.avif 360w,
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-720.avif 720w,
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-1280.avif 1280w,
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-1920.avif 1920w
+      " sizes="(max-width: 768px) 100vw, 50vw" type="image/avif">
+
+            <!-- 🔹 WebP -->
+            <source srcset="
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-360.webp 360w,
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-720.webp 720w,
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-1280.webp 1280w,
+        img/jurado-asesor-bachiller/jurado-asesor-bachiller-1920.webp 1920w
+      " sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+
+            <!-- 🔹 Fallback JPG -->
+            <img src="img/jurado-asesor-bachiller/jurado-asesor-bachiller-fallback.jpg"
+              alt="Jurado, asesor y bachilleres durante la sustentación de la tesis de sistema odontológico"
+              width="1280" height="720"
+              class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+              loading="lazy">
+          </picture>
+
           <figcaption class="text-center text-sm text-slate-600 dark:text-slate-400 mt-5">
             Sustentación del Sistema de Información Odontológico — Universidad Andina del Cusco, 23 de
             septiembre de 2025.
           </figcaption>
         </figure>
+
 
         <!-- Descripción del evento -->
         <article class="flex-1 text-slate-700 dark:text-gray-300">
@@ -819,9 +937,33 @@
         <article
           class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg sm:col-span-2 lg:col-span-1 h-full">
           <div class="flex flex-col items-center">
-            <img src="img/William-Alberto-Chavez-Espinoza.png"
-              alt="Mg. Ing. William Alberto Chávez Espinoza, Presidente del Jurado Calificador"
-              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
+
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-360.avif 360w,
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-720.avif 720w,
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-1280.avif 1280w,
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-1920.avif 1920w
+    " sizes="(max-width: 768px) 100vw, 8rem" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-360.webp 360w,
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-720.webp 720w,
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-1280.webp 1280w,
+      img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-1920.webp 1920w
+    " sizes="(max-width: 768px) 100vw, 8rem" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/William-Alberto-Chavez-Espinoza/William-Alberto-Chavez-Espinoza-fallback.jpg"
+                alt="Mg. Ing. William Alberto Chávez Espinoza, Presidente del Jurado Calificador" width="1280"
+                height="1280"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300"
+                loading="lazy">
+            </picture>
+
+
             <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
               <span class="text-sm block">Mg. Ing.</span>
               <span class="text-xl block font-bold">William Alberto</span>
@@ -842,9 +984,33 @@
         <article
           class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
           <div class="flex flex-col items-center">
-            <img src="img/Yessenia-Bernales-Guzman.png"
-              alt="Dra. Ing. Yessenia Bernales Guzmán, Secretaria de Actas del Jurado Calificador"
-              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
+
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-360.avif 360w,
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-720.avif 720w,
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-1280.avif 1280w,
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-1920.avif 1920w
+    " sizes="(max-width: 768px) 100vw, 8rem" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-360.webp 360w,
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-720.webp 720w,
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-1280.webp 1280w,
+      img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-1920.webp 1920w
+    " sizes="(max-width: 768px) 100vw, 8rem" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/Yessenia-Bernales-Guzman/Yessenia-Bernales-Guzman-fallback.jpg"
+                alt="Dra. Ing. Yessenia Bernales Guzmán, Secretaria de Actas del Jurado Calificador" width="1280"
+                height="1280"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300"
+                loading="lazy">
+            </picture>
+
+
             <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
               <span class="text-sm block">Dra. Ing.</span>
               <span class="text-xl block font-bold">Yessenia</span>
@@ -865,9 +1031,32 @@
         <article
           class="flex flex-col justify-between items-center text-center p-5 bg-white dark:bg-slate-800 rounded-lg shadow-lg h-full">
           <div class="flex flex-col items-center">
-            <img src="img/Luis-Alvaro-Monzon-Condori.png"
-              alt="Mg. Ing. Luis Álvaro Monzón Condori, Miembro del Jurado Calificador"
-              class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300">
+
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-360.avif 360w,
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-720.avif 720w,
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-1280.avif 1280w,
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-1920.avif 1920w
+    " sizes="(max-width: 768px) 100vw, 8rem" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-360.webp 360w,
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-720.webp 720w,
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-1280.webp 1280w,
+      img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-1920.webp 1920w
+    " sizes="(max-width: 768px) 100vw, 8rem" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/Luis-Alvaro-Monzon-Condori/Luis-Alvaro-Monzon-Condori-fallback.jpg"
+                alt="Mg. Ing. Luis Álvaro Monzón Condori, Miembro del Jurado Calificador" width="1280" height="1280"
+                class="w-32 h-32 rounded-full mb-4 object-cover shadow-2xl hover:scale-105 transition-transform duration-300"
+                loading="lazy">
+            </picture>
+
+
             <h3 class="text-slate-800 dark:text-white font-semibold mb-2 leading-tight">
               <span class="text-sm block">Mg. Ing.</span>
               <span class="text-xl block font-bold">Luis Álvaro</span>
@@ -899,15 +1088,37 @@
 
         <!-- Imagen representativa -->
         <figure class="flex-1">
-          <img src="img/preguntas-jurado.jpg"
-            alt="Jurado calificador realizando preguntas sobre la documentación y el sistema de información odontológico"
-            class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-            loading="lazy">
+          <picture>
+            <!-- 🔹 AVIF -->
+            <source srcset="
+        img/preguntas-jurado/preguntas-jurado-360.avif 360w,
+        img/preguntas-jurado/preguntas-jurado-720.avif 720w,
+        img/preguntas-jurado/preguntas-jurado-1280.avif 1280w,
+        img/preguntas-jurado/preguntas-jurado-1920.avif 1920w
+      " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/avif">
+
+            <!-- 🔹 WebP -->
+            <source srcset="
+        img/preguntas-jurado/preguntas-jurado-360.webp 360w,
+        img/preguntas-jurado/preguntas-jurado-720.webp 720w,
+        img/preguntas-jurado/preguntas-jurado-1280.webp 1280w,
+        img/preguntas-jurado/preguntas-jurado-1920.webp 1920w
+      " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw" type="image/webp">
+
+            <!-- 🔹 Fallback JPG -->
+            <img src="img/preguntas-jurado/preguntas-jurado-fallback.jpg"
+              alt="Jurado calificador realizando preguntas sobre la documentación y el sistema de información odontológico"
+              width="1280" height="720"
+              class="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+              loading="lazy">
+          </picture>
+
           <figcaption class="text-center text-sm text-slate-600 dark:text-slate-400 mt-10">
-            Evaluación y ronda de preguntas del Jurado Calificador — Universidad Andina del Cusco, 23 de
-            septiembre de 2025.
+            Evaluación y ronda de preguntas del Jurado Calificador — Universidad Andina del Cusco, 23 de septiembre de
+            2025.
           </figcaption>
         </figure>
+
 
         <!-- Descripción de la evaluación -->
         <article class="flex-1 text-slate-700 dark:text-gray-300">
@@ -961,11 +1172,32 @@
         <!-- Repositorio UAC -->
         <li
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
+
           <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4" target="_blank"
             rel="noopener noreferrer" aria-label="Abrir repositorio institucional de la Universidad Andina del Cusco">
-            <img src="img/01 logo.png" alt="Repositorio UAC - Universidad Andina del Cusco"
-              class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+            <picture>
+              <!-- 🔹 AVIF -->
+              <source srcset="
+        img/01 logo/01 logo-360.avif 360w,
+        img/01 logo/01 logo-720.avif 720w,
+        img/01 logo/01 logo-1280.avif 1280w,
+        img/01 logo/01 logo-1920.avif 1920w
+      " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px" type="image/avif">
+
+              <!-- 🔹 WebP -->
+              <source srcset="
+        img/01 logo/01 logo-360.webp 360w,
+        img/01 logo/01 logo-720.webp 720w,
+        img/01 logo/01 logo-1280.webp 1280w,
+        img/01 logo/01 logo-1920.webp 1920w
+      " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px" type="image/webp">
+
+              <!-- 🔹 Fallback JPG -->
+              <img src="img/01 logo/01 logo-fallback.jpg" alt="Repositorio UAC - Universidad Andina del Cusco"
+                class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+            </picture>
           </a>
+
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio UAC</h3>
           <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Universidad Andina del Cusco</p>
           <p class="text-slate-500 dark:text-slate-400 text-sm">
