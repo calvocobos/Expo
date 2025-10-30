@@ -33,7 +33,7 @@
   <link rel="apple-touch-icon" href="cbs/favicon-maskable.png" sizes="512x512">
   <!-- manifiesto PWA -->
   <link rel="manifest" href="site.webmanifest">
-  
+
   <meta name="theme-color" content="#fbbf24">
   <meta name="msapplication-TileColor" content="#fbbf24">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -58,13 +58,24 @@
   <meta name="twitter:image" content="https://calvocobos.github.io/Expo/img/caratula/video-tesis-caratula-fallback.jpg">
 
   <!-- ⚡ Rendimiento y tipografía -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- 🌐 Preconexión a dominios de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ⚡ Precarga + uso de la fuente Ubuntu -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
-    crossorigin>
-  <link rel="preload" as="style" href="tailwind/output.css">
-  <link rel="preload" as="script" href="jquery/jquery.min.3.7.1.js" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    crossorigin="anonymous" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      crossorigin="anonymous">
+  </noscript>
+
+  <!-- 🎨 Precarga de tu CSS local -->
+  <link rel="preload" href="tailwind/output.css" as="style">
+
+  <!-- ⚙️ Precarga de tu script principal -->
+  <link rel="preload" href="jquery/jquery.min.3.7.1.js" as="script">
+
 
   <!-- 🎨 CSS principal -->
   <link href="tailwind/output.css" rel="stylesheet">
