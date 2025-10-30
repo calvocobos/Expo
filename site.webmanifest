@@ -4,8 +4,8 @@
   "description": "Sustentación y repositorio del Sistema de Información Web Odontológico, Tesis de Ingeniería de Sistemas en la Universidad Andina del Cusco. Orientado a la digitalización del servicio odontológico.",
   "lang": "es-PE",
   "dir": "ltr",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "/Expo/index.html",
+  "scope": "/Expo/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#FAAC01",
@@ -50,8 +50,6 @@
       "label": "Panel de reportes y estadísticas"
     }
   ],
-  "related_applications": [],
-  "prefer_related_applications": false,
   "icons": [
     {
       "src": "cbs/favicon-192.png",
