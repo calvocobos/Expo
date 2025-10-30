@@ -1174,29 +1174,35 @@
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
 
           <a href="https://repositorio.uandina.edu.pe/collection/a91ce9f7-384a-4c75-be15-e0e09219d2d4" target="_blank"
-            rel="noopener noreferrer" aria-label="Abrir repositorio institucional de la Universidad Andina del Cusco">
-            <picture>
-              <!-- 🔹 AVIF -->
-              <source srcset="
-        img/01 logo/01 logo-360.avif 360w,
-        img/01 logo/01 logo-720.avif 720w,
-        img/01 logo/01 logo-1280.avif 1280w,
-        img/01 logo/01 logo-1920.avif 1920w
-      " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px" type="image/avif">
+            rel="noopener noreferrer" aria-label="Abrir repositorio institucional de la Universidad Andina del Cusco"
+            class="mx-auto block h-28">
 
-              <!-- 🔹 WebP -->
+            <picture class="block h-full w-auto">
+              <!-- AVIF transparente -->
               <source srcset="
-        img/01 logo/01 logo-360.webp 360w,
-        img/01 logo/01 logo-720.webp 720w,
-        img/01 logo/01 logo-1280.webp 1280w,
-        img/01 logo/01 logo-1920.webp 1920w
-      " sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px" type="image/webp">
+      img/01 logo/01 logo-360.avif 360w,
+      img/01 logo/01 logo-720.avif 720w,
+      img/01 logo/01 logo-1280.avif 1280w,
+      img/01 logo/01 logo-1920.avif 1920w
+    " sizes="112px" type="image/avif">
 
-              <!-- 🔹 Fallback JPG -->
-              <img src="img/01 logo/01 logo-fallback.jpg" alt="Repositorio UAC - Universidad Andina del Cusco"
-                class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
+              <!-- WebP transparente -->
+              <source srcset="
+      img/01 logo/01 logo-360.webp 360w,
+      img/01 logo/01 logo-720.webp 720w,
+      img/01 logo/01 logo-1280.webp 1280w,
+      img/01 logo/01 logo-1920.webp 1920w
+    " sizes="112px" type="image/webp">
+
+              <!-- Fallback -->
+              <img src="img/01 logo.png" alt="Repositorio UAC - Universidad Andina del Cusco"
+                class="h-full w-auto block mx-auto">
             </picture>
+
           </a>
+
+
+
 
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio UAC</h3>
           <p class="text-slate-600 dark:text-slate-300 text-sm mb-2">Universidad Andina del Cusco</p>
