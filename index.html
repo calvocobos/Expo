@@ -85,8 +85,12 @@
 
   <!-- 🎨 CSS principal -->
   <link href="tailwind/output.css" rel="stylesheet">
-  <link href="cbs/general.css" rel="stylesheet">
-  <link href="cbs/estilo.css" rel="stylesheet">
+  <!-- Carga optimizada de CSS -->
+  <link rel="preload" href="cbs/general.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="cbs/general.css">
+  </noscript>
+
 
   <!-- 📚 jQuery -->
   <link rel="stylesheet" href="jquery/jquery-ui.1.13.2.css">
@@ -96,6 +100,9 @@
 
   <!-- 📜 Scripts propios -->
   <script src="cbs/general.js" defer></script>
+
+  <!--coneccion previa a giscus-->
+  <link rel="preconnect" href="https://giscus.app" crossorigin>
 
   <!-- 📊 Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B8PVDVN1E"></script>
@@ -432,7 +439,7 @@
 
             <!-- Fallback JPG -->
             <img src="img/caratula/video-tesis-caratula-fallback.jpg" alt="Miniatura del video de exposición de tesis"
-              width="1920" height="1080" decoding="async" loading="lazy"
+              width="1920" height="1080" decoding="async"
               class="w-full h-auto aspect-[16/9] transition-transform duration-300 hover:scale-110">
           </picture>
         </a>
