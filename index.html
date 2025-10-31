@@ -208,21 +208,21 @@
           <li>
             <a href="#referencias" aria-label="Ir a la sección Repositorio"
               class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-              <img src="ico/libro.svg" alt="Icono libro PDF" class="h-4 w-auto">
+              <img src="ico/libro.svg" width="54" height="50" alt="Icono libro PDF" class="h-4 w-auto">
               <span class="sr-only">Repositorio</span>
             </a>
           </li>
           <li>
             <a href="#video" aria-label="Ir a la sección Video de exposición"
               class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-              <img src="ico/youtube.svg" alt="Icono video" class="h-4 w-auto">
+              <img src="ico/youtube.svg" width="50" height="50" alt="Icono video" class="h-4 w-auto">
               <span class="sr-only">Video de exposición</span>
             </a>
           </li>
           <li>
             <a href="#instalar-app" aria-label="Ir a la sección Instalar app"
               class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-              <img src="ico/instalar.svg" alt="Icono instalar" class="h-4 w-auto">
+              <img src="ico/instalar.svg" width="50" height="50" alt="Icono instalar" class="h-4 w-auto">
               <span class="sr-only">Instalar App</span>
             </a>
           </li>
@@ -267,7 +267,7 @@
           <li>
             <a href="#inicio" aria-label="Ir a la sección Inicio"
               class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-              <img src="ico/central.svg" alt="Icono central Inicio" class="h-6 w-auto mx-auto">
+              <img src="ico/central.svg" width="50" height="50" alt="Icono central Inicio" class="h-6 w-auto mx-auto">
               <span class="sr-only">Inicio</span>
             </a>
           </li>
@@ -278,20 +278,20 @@
           <li>
             <a href="#compartir" aria-label="Ir a la sección Compartir"
               class="block p-2 hover:bg-[#fe9941] focus-visible:ring-2 focus-visible:ring-[#fe9941] rounded">
-              <img src="ico/compartir.svg" alt="Icono compartir" class="h-4 w-auto">
+              <img src="ico/compartir.svg" width="50" height="50" alt="Icono compartir" class="h-4 w-auto">
               <span class="sr-only">Compartir</span>
             </a>
           </li>
           <li>
             <button id="btnoscuro" aria-label="Cambiar a modo oscuro"
               class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-              <img src="ico/oscuro.svg" alt="Icono modo oscuro" class="h-4 w-auto">
+              <img src="ico/oscuro.svg" width="50" height="50" alt="Icono modo oscuro" class="h-4 w-auto">
             </button>
           </li>
           <li>
             <button id="btnmenu" aria-label="Abrir menú lateral"
               class="p-2 hover:bg-[#fe9941] rounded focus-visible:ring-2 focus-visible:ring-[#fe9941]">
-              <img src="ico/menu.svg" alt="Icono menú lateral" class="h-4 w-auto">
+              <img src="ico/menu.svg" width="50" height="50" alt="Icono menú lateral" class="h-4 w-auto">
             </button>
           </li>
         </ul>
@@ -416,28 +416,33 @@
           <picture>
             <!-- AVIF -->
             <source srcset="
-            img/caratula/video-tesis-caratula-360.avif 360w,
-            img/caratula/video-tesis-caratula-720.avif 720w,
-            img/caratula/video-tesis-caratula-1280.avif 1280w,
-            img/caratula/video-tesis-caratula-1920.avif 1920w
-          " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 768px" type="image/avif">
+          img/caratula/video-tesis-caratula-360.avif 360w,
+          img/caratula/video-tesis-caratula-720.avif 720w,
+          img/caratula/video-tesis-caratula-1280.avif 1280w,
+          img/caratula/video-tesis-caratula-1920.avif 1920w
+        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 448px, 448px" type="image/avif">
 
             <!-- WebP -->
             <source srcset="
-            img/caratula/video-tesis-caratula-360.webp 360w,
-            img/caratula/video-tesis-caratula-720.webp 720w,
-            img/caratula/video-tesis-caratula-1280.webp 1280w,
-            img/caratula/video-tesis-caratula-1920.webp 1920w
-          " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 768px" type="image/webp">
+          img/caratula/video-tesis-caratula-360.webp 360w,
+          img/caratula/video-tesis-caratula-720.webp 720w,
+          img/caratula/video-tesis-caratula-1280.webp 1280w,
+          img/caratula/video-tesis-caratula-1920.webp 1920w
+        " sizes="(max-width: 640px) 100vw, (max-width: 1024px) 448px, 448px" type="image/webp">
 
             <!-- Fallback JPG -->
             <img src="img/caratula/video-tesis-caratula-fallback.jpg" alt="Miniatura del video de exposición de tesis"
-              width="1920" height="1080" decoding="async"
+              width="1920" height="1080" decoding="async" loading="lazy"
               class="w-full h-auto aspect-[16/9] transition-transform duration-300 hover:scale-110">
           </picture>
         </a>
-        <figcaption class="sr-only">Carátula del video de la sustentación de tesis</figcaption>
+        <figcaption class="sr-only">
+          Carátula del video de la sustentación de tesis
+        </figcaption>
       </figure>
+
+
+
     </section>
 
 
@@ -465,7 +470,7 @@
         <!-- Ámbito de Influencia -->
         <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
           <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Ámbito de Influencia</h2>
-          <img src="ico/influencia.svg" alt="Diagrama del ámbito de influencia de la tesis" class="h-32 mx-auto my-4">
+          <img src="ico/influencia.svg" width="50" height="50" alt="Diagrama del ámbito de influencia de la tesis" class="h-32 mx-auto my-4">
           <p class="text-slate-700 dark:text-gray-300">
             Sistemas de Información Odontológico, mostrando el alcance y población objetivo de la investigación.
           </p>
@@ -474,7 +479,7 @@
         <!-- Área de Dominio -->
         <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
           <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Área de Dominio</h2>
-          <img src="ico/cerebro.svg" alt="Representación del área de dominio en tecnologías de información"
+          <img src="ico/cerebro.svg" width="50" height="50" alt="Representación del área de dominio en tecnologías de información"
             class="h-32 mx-auto my-4">
           <p class="text-slate-700 dark:text-gray-300">
             Tecnologías de Información aplicadas a la gestión de procesos odontológicos y desarrollo de
@@ -485,7 +490,7 @@
         <!-- Línea de Investigación -->
         <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
           <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Línea de Investigación</h2>
-          <img src="ico/investiga.svg" alt="Icono de investigación y desarrollo de software" class="h-32 mx-auto my-4">
+          <img src="ico/investiga.svg" width="50" height="50" alt="Icono de investigación y desarrollo de software" class="h-32 mx-auto my-4">
           <p class="text-slate-700 dark:text-gray-300">
             Desarrollo de Software enfocado en sistemas de gestión odontológica y optimización de procesos.
           </p>
@@ -494,7 +499,7 @@
         <!-- Tema(s) de Investigación -->
         <li class="border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-6 text-center">
           <h2 class="text-xl font-semibold mb-3 text-slate-800 dark:text-white">Tema(s) de Investigación</h2>
-          <img src="ico/temas.svg" alt="Icono representando temas de registro, atención e inventario"
+          <img src="ico/temas.svg" width="50" height="50" alt="Icono representando temas de registro, atención e inventario"
             class="h-32 mx-auto my-4">
           <p class="text-slate-700 dark:text-gray-300">
             Registro, atención, inventario y pagos, principales áreas de estudio dentro de la investigación.
@@ -517,31 +522,35 @@
           <picture>
             <!-- 🔹 AVIF -->
             <source srcset="
-            img/desarrollo/desarrollo-360.avif 360w,
-            img/desarrollo/desarrollo-720.avif 720w,
-            img/desarrollo/desarrollo-1280.avif 1280w,
-            img/desarrollo/desarrollo-1408.avif 1408w
-          " sizes="(max-width: 640px) 100vw,
-                 (max-width: 1024px) 60vw,
-                 45vw" type="image/avif">
+        img/desarrollo/desarrollo-360.avif 360w,
+        img/desarrollo/desarrollo-720.avif 720w,
+        img/desarrollo/desarrollo-1280.avif 1280w,
+        img/desarrollo/desarrollo-1408.avif 1408w
+      " sizes="(max-width: 640px) 100vw,
+             (max-width: 1024px) 60vw,
+             672px" type="image/avif">
 
             <!-- 🔹 WebP -->
             <source srcset="
-            img/desarrollo/desarrollo-360.webp 360w,
-            img/desarrollo/desarrollo-720.webp 720w,
-            img/desarrollo/desarrollo-1280.webp 1280w,
-            img/desarrollo/desarrollo-1408.webp 1408w
-          " sizes="(max-width: 640px) 100vw,
-                 (max-width: 1024px) 60vw,
-                 45vw" type="image/webp">
+        img/desarrollo/desarrollo-360.webp 360w,
+        img/desarrollo/desarrollo-720.webp 720w,
+        img/desarrollo/desarrollo-1280.webp 1280w,
+        img/desarrollo/desarrollo-1408.webp 1408w
+      " sizes="(max-width: 640px) 100vw,
+             (max-width: 1024px) 60vw,
+             672px" type="image/webp">
 
             <!-- 🔹 Fallback JPG -->
             <img src="img/desarrollo/desarrollo-fallback.jpg" alt="Desarrolladores trabajando en el sistema de tesis"
-              loading="lazy" width="1408" height="792"
+              loading="lazy" decoding="async" width="1408" height="792"
               class="w-full h-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
           </picture>
-          <figcaption class="sr-only">Imagen representativa del desarrollo del sistema</figcaption>
+
+          <figcaption class="sr-only">
+            Imagen representativa del desarrollo del sistema
+          </figcaption>
         </figure>
+
 
         <!-- Párrafo descriptivo -->
         <article class="flex-1 text-slate-700 dark:text-gray-300">
@@ -574,7 +583,7 @@
         <li
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
           <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">SCRUM</h3>
-          <img src="ico/scrum.svg" alt="Ícono representando la metodología ágil SCRUM" class="h-32 w-auto mx-auto mb-4">
+          <img src="ico/scrum.svg" width="50" height="50" alt="Ícono representando la metodología ágil SCRUM" class="h-32 w-auto mx-auto mb-4">
           <p class="text-slate-700 dark:text-gray-300">
             Metodología ágil de desarrollo para sistemas de información iterativos e incrementales.
           </p>
@@ -584,7 +593,7 @@
         <li
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
           <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">MVC</h3>
-          <img src="ico/mvc.svg" alt="Ícono representando la arquitectura de software Modelo-Vista-Controlador (MVC)"
+          <img src="ico/mvc.svg" width="50" height="50" alt="Ícono representando la arquitectura de software Modelo-Vista-Controlador (MVC)"
             class="h-32 w-auto mx-auto mb-4">
           <p class="text-slate-700 dark:text-gray-300">
             Arquitectura que separa lógica, interfaz y control para mayor orden y mantenimiento.
@@ -595,7 +604,7 @@
         <li
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
           <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">Laravel 11</h3>
-          <img src="ico/laravel.svg" alt="Ícono representando el framework backend Laravel 11"
+          <img src="ico/laravel.svg" width="50" height="50" alt="Ícono representando el framework backend Laravel 11"
             class="h-32 w-auto mx-auto mb-4">
           <p class="text-slate-700 dark:text-gray-300">
             Framework backend confiable y seguro para construir aplicaciones web robustas.
@@ -606,7 +615,7 @@
         <li
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
           <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-white">Tailwind CSS</h3>
-          <img src="ico/tailwind.svg" alt="Ícono representando Tailwind CSS, framework de diseño frontend"
+          <img src="ico/tailwind.svg" width="50" height="50" alt="Ícono representando Tailwind CSS, framework de diseño frontend"
             class="h-32 w-auto mx-auto mb-4">
           <p class="text-slate-700 dark:text-gray-300">
             Framework frontend para crear interfaces modernas, responsivas y consistentes.
@@ -635,7 +644,7 @@
 
       <div class="my-20 flex items-center justify-center gap-3">
         <div>
-          <img src="ico/youtube-red.svg" alt="YouTube logo" class="h-12 w-auto sm:w-10 sm:h-10" loading="lazy">
+          <img src="ico/youtube-red.svg" width="50" height="50" alt="YouTube logo" class="h-12 w-auto sm:w-10 sm:h-10" loading="lazy">
           <p class="font-semibold text-slate-700 dark:text-slate-300 py-3">
             Ver directo en YouTube
           </p>
@@ -1217,7 +1226,7 @@
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
           <a href="https://github.com/calvocobos" target="_blank" rel="noopener noreferrer"
             aria-label="Abrir repositorio GitHub del desarrollo del sistema odontológico">
-            <img src="ico/github.svg" alt="Repositorio GitHub del desarrollo del sistema odontológico"
+            <img src="ico/github.svg" width="50" height="50" alt="Repositorio GitHub del desarrollo del sistema odontológico"
               class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
           </a>
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">Repositorio GitHub</h3>
@@ -1234,7 +1243,7 @@
           <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_3-3.pdf"
             target="_blank" rel="noopener noreferrer"
             aria-label="Objetivo de Desarrollo Sostenible 3 Salud y Bienestar">
-            <img src="ico/ods3.svg" alt="ODS 3 Salud y Bienestar"
+            <img src="ico/ods3.svg" width="50" height="50" alt="ODS 3 Salud y Bienestar"
               class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
           </a>
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ODS 3</h3>
@@ -1252,7 +1261,7 @@
           <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_9-9.pdf"
             target="_blank" rel="noopener noreferrer"
             aria-label="Objetivo de Desarrollo Sostenible 9 Industria, innovación e infraestructura">
-            <img src="ico/ods9.svg" alt="ODS 9 Industria, innovación e infraestructura"
+            <img src="ico/ods9.svg" width="50" height="50" alt="ODS 9 Industria, innovación e infraestructura"
               class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
           </a>
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ODS 9</h3>
@@ -1268,7 +1277,7 @@
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
           <a href="https://iso25000.com/index.php/normas-iso-25000/iso-25010" target="_blank" rel="noopener noreferrer"
             aria-label="Modelo de calidad ISO/IEC 25010">
-            <img src="ico/iso.svg" alt="ISO/IEC 25010 Modelo de calidad de software"
+            <img src="ico/iso.svg" width="109" height="50" alt="ISO/IEC 25010 Modelo de calidad de software"
               class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
           </a>
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">ISO/IEC 25010</h3>
@@ -1283,7 +1292,7 @@
           class="border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-white dark:bg-slate-800">
           <a href="https://www.researchgate.net/profile/Luis-Arturo-Rivas-Tovar/publication/357046089_NORMAS_APA_7_EDICION_ESTRUCTURA_CITAS_Y_REFERENCIAS/links/6789b78aec3ae3435a67a640/NORMAS-APA-7-EDICION-ESTRUCTURA-CITAS-Y-REFERENCIAS.pdf"
             target="_blank" rel="noopener noreferrer" aria-label="Normas APA Séptima Edición">
-            <img src="ico/apa.svg" alt="Normas APA Séptima Edición"
+            <img src="ico/apa.svg" width="65" height="50" alt="Normas APA Séptima Edición"
               class="h-28 w-auto mx-auto mb-4 hover:scale-105 transition-transform duration-300">
           </a>
           <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-1">APA 7</h3>
@@ -1545,7 +1554,7 @@
       <!-- Facebook -->
       <a href="https://www.facebook.com/sharer/sharer.php?u=https://calvocobos.github.io/Expo/" target="_blank"
         rel="noopener" aria-label="Compartir en Facebook" class="flex flex-col items-center group">
-        <img src="ico/facebook.svg" alt="Facebook"
+        <img src="ico/facebook.svg" width="50" height="50" alt="Facebook"
           class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
         <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
           Facebook
@@ -1556,7 +1565,7 @@
       <a href="https://twitter.com/intent/tweet?url=https://calvocobos.github.io/Expo/&text=Explora%20este%20proyecto%20web%20odontol%C3%B3gico"
         target="_blank" rel="noopener" aria-label="Compartir en X (antes Twitter)"
         class="flex flex-col items-center group">
-        <img src="ico/twiter.svg" alt="X (Twitter)"
+        <img src="ico/twiter.svg" width="50" height="50" alt="X (Twitter)"
           class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
         <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
           X (Twitter)
@@ -1566,7 +1575,7 @@
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://calvocobos.github.io/Expo/" target="_blank"
         rel="noopener" aria-label="Compartir en LinkedIn" class="flex flex-col items-center group">
-        <img src="ico/linkedin.svg" alt="LinkedIn"
+        <img src="ico/linkedin.svg" width="50" height="50" alt="LinkedIn"
           class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
         <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
           LinkedIn
@@ -1576,7 +1585,7 @@
       <!-- WhatsApp -->
       <a href="https://api.whatsapp.com/send?text=Mira%20este%20proyecto%20web%20odontol%C3%B3gico%20https://calvocobos.github.io/Expo/"
         target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" class="flex flex-col items-center group">
-        <img src="ico/whatsapp.svg" alt="WhatsApp"
+        <img src="ico/whatsapp.svg" width="50" height="50" alt="WhatsApp"
           class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
         <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
           WhatsApp
@@ -1586,7 +1595,7 @@
       <!-- Telegram -->
       <a href="https://t.me/share/url?url=https://calvocobos.github.io/Expo/&text=Proyecto%20web%20odontol%C3%B3gico%20interesante"
         target="_blank" rel="noopener" aria-label="Compartir en Telegram" class="flex flex-col items-center group">
-        <img src="ico/telegram.svg" alt="Telegram"
+        <img src="ico/telegram.svg" width="50" height="50" alt="Telegram"
           class="w-14 h-14 transition-transform duration-300 group-hover:scale-110" loading="lazy" />
         <span class="mt-2 text-sm text-gray-700 dark:text-gray-300 group-hover:underline">
           Telegram
@@ -1691,12 +1700,12 @@
         <div class="flex space-x-4">
           <a href="https://www.youtube.com/watch?v=GAQ6pLZKUeU&t=3928s" target="_blank"
             aria-label="Video de sustentación" class="hover:text-amber-400 transition-colors">
-            <img src="ico/youtubeblanco.svg" alt="Icono libro PDF" class="h-5 w-auto">
+            <img src="ico/youtubeblanco.svg" width="50" height="50" alt="Icono libro PDF" class="h-5 w-auto">
           </a>
           <span class="sr-only">Video de sustentación</span>
           <a href="https://github.com/calvocobos" target="_blank" aria-label="Repositorio Github"
             class="hover:text-amber-400 transition-colors">
-            <img src="ico/gitblanco.svg" alt="Icono libro PDF" class="h-5 w-auto">
+            <img src="ico/gitblanco.svg" width="53" height="50" alt="Icono libro PDF" class="h-5 w-auto">
           </a>
           <span class="sr-only">Repositorio</span>
         </div>
