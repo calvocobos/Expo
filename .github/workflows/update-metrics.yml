@@ -1,23 +1,38 @@
 name: Actualizar métricas de visitas y descargas
 
 on:
+  # Ejecuta todos los días a las 10:30 UTC
   schedule:
     - cron: '30 10 * * *'
+  # Permite ejecución manual desde GitHub
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ Obtener el código del repo
       - uses: actions/checkout@v3
+
+      # 2️⃣ Instalar Node.js
       - name: Instalar Node
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+
+      # 3️⃣ Instalar dependencias necesarias para scraping
       - name: Instalar dependencias
         run: npm install jsdom node-fetch
+
+      # 4️⃣ Ejecutar tu script de scraping
       - name: Ejecutar script de scraping
         run: node scripts/metrics.js
+
+      # 5️⃣ Revisar contenido de metrics.json antes del commit
+      - name: Mostrar metrics.json
+        run: cat metrics.json
+
+      # 6️⃣ Commit y push de metrics.json si hay cambios
       - name: Commit y push del JSON
         run: |
           git config user.name "GitHub Actions"
