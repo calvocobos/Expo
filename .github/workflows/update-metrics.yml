@@ -2,41 +2,33 @@ name: Actualizar métricas de visitas y descargas
 
 on:
   schedule:
-    - cron: '30 10 * * *' # todos los días a 10:30 UTC
+    - cron: '30 10 * * *' # todos los días a las 10:30 UTC
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Checkout del repo
       - uses: actions/checkout@v3
 
-      # 2️⃣ Instalar Node.js
       - name: Instalar Node
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # 3️⃣ Instalar Puppeteer
       - name: Instalar dependencias
         run: npm install puppeteer
 
-      # 4️⃣ Ejecutar script de scraping
       - name: Ejecutar script de scraping
         run: node scripts/metrics.js
 
-      # 5️⃣ Mostrar metrics.json en los logs para debug
       - name: Mostrar metrics.json
         run: cat metrics.json
 
-      # 6️⃣ Commit y push si hay cambios
       - name: Commit y push del JSON
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add metrics.json
           git commit -m "Actualizar metrics.json automáticamente" || echo "No hay cambios para commitear"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/calvocobos/Expo.git HEAD:main
