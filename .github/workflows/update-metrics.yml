@@ -2,14 +2,17 @@ name: Actualizar métricas de visitas y descargas
 
 on:
   schedule:
-    - cron: '30 10 * * *' # todos los días a las 10:30 UTC
+    - cron: '30 10 * * *'
   workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
+      # 🔑 Checkout SIN credenciales automáticas
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Instalar Node
         uses: actions/setup-node@v3
@@ -30,5 +33,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add metrics.json
-          git commit -m "Actualizar metrics.json automáticamente" || echo "No hay cambios para commitear"
+          git commit -m "Actualizar metrics.json automáticamente" || echo "No hay cambios"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/calvocobos/Expo.git HEAD:main
