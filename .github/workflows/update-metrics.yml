@@ -2,8 +2,8 @@ name: Actualizar métricas de visitas y descargas
 
 on:
   schedule:
-    - cron: '30 10 * * *' # Todos los días a las 10:30 UTC
-  workflow_dispatch: # Permite ejecutar manualmente
+    - cron: '30 10 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -19,8 +19,11 @@ jobs:
       - name: Ejecutar script de scraping
         run: node scripts/metrics.js
       - name: Commit y push del JSON
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: 'GitHub Actions'
-          author_email: 'actions@github.com'
-          message: 'Actualizar metrics.json automáticamente'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add metrics.json
+          git commit -m "Actualizar metrics.json automáticamente" || echo "No hay cambios para commitear"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
