@@ -1,36 +1,51 @@
+// scripts/metrics.js
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async () => {
+  const url = 'https://repositorio.uandina.edu.pe/item/a5a76dd6-ce00-47f1-8172-cde9c9661b1a';
+
+  let browser;
   try {
-    // Abre navegador headless
-    const browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
+      headless: true, // sin interfaz gráfica
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
+
     const page = await browser.newPage();
 
-    // Navega a la URL final
-    const url = 'https://repositorio.uandina.edu.pe/item/a5a76dd6-ce00-47f1-8172-cde9c9661b1a';
-    await page.goto(url, { waitUntil: 'networkidle2' });
+    // Navega a la página y espera que la SPA termine de cargar
+    await page.goto(url, { waitUntil: 'networkidle0' });
 
-    // Espera que los elementos estén visibles
-    await page.waitForSelector('span.MuiTypography-root.MuiTypography-h2');
+    // Espera extra para que el contenido de métricas aparezca
+    await page.waitForTimeout(5000);
 
-    // Extrae las métricas
+    // Extrae visitas y descargas usando el texto cercano
     const metrics = await page.evaluate(() => {
-      const spans = document.querySelectorAll('span.MuiTypography-root.MuiTypography-h2');
-      const visits = spans[0]?.innerText || '0';
-      const downloads = spans[1]?.innerText || '0';
-      return { visits, downloads, date: new Date().toISOString() };
+      const spans = Array.from(document.querySelectorAll('span'));
+      
+      const visitasLabel = spans.find(s => s.textContent.includes('Visitas en los últimos 30 días'));
+      const descargasLabel = spans.find(s => s.textContent.includes('Descargas en los últimos 30 días'));
+
+      const visits = visitasLabel?.previousElementSibling?.innerText || '0';
+      const downloads = descargasLabel?.previousElementSibling?.innerText || '0';
+
+      return {
+        visits,
+        downloads,
+        date: new Date().toISOString()
+      };
     });
 
-    // Guarda en JSON
+    // Guarda el JSON
     fs.writeFileSync('metrics.json', JSON.stringify(metrics, null, 2));
-    console.log('✅ Metrics guardadas:', metrics);
 
-    await browser.close();
-  } catch (error) {
-    console.error('❌ Error scraping metrics:', error);
-    process.exit(1);
+    console.log('✅ Métricas actualizadas:', metrics);
+
+  } catch (err) {
+    console.error('❌ Error scraping metrics:', err);
+    process.exit(1); // marca error para GitHub Actions
+  } finally {
+    if (browser) await browser.close();
   }
 })();
