@@ -37,3 +37,8 @@
 [Visita la Página](https://calvocobos.github.io/Expo/) - Sustentación de Tesis.
 
 ----------------------------------------------------------------------
+
+*pull directo*
+$ git pull --no-edit origin main
+
+----------------------------------------------------------------------
