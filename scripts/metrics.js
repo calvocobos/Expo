@@ -1,45 +1,67 @@
-import puppeteer from "puppeteer";
 import fs from "fs";
 
-(async () => {
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  });
+const OAI_ID = "oai:repositorio.uandina.edu.pe:20.500.12557/8558";
+const HANDLE = "20.500.12557/8558";
+const TITLE =
+  "Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco";
 
-  const page = await browser.newPage();
+async function exists(url) {
+  try {
+    const res = await fetch(url, { redirect: "follow" });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
 
-  await page.goto(
-    "https://repositorio.uandina.edu.pe/item/a5a76dd6-ce00-47f1-8172-cde9c9661b1a",
-    {
-      waitUntil: "networkidle2",
-      timeout: 60000
+async function run() {
+  const result = {
+    fecha: new Date().toISOString(),
+    identificador: HANDLE,
+    oai_id: OAI_ID,
+    indexacion: {
+      alicia: false,
+      renati: false,
+      la_referencia: false,
+      google_academico: false
     }
-  );
-
-  // ⏳ Espera adicional para React / MUI
-  await new Promise(resolve => setTimeout(resolve, 6000));
-
-  // 🔍 DOM FINAL que ve Chromium en GitHub Actions
-  const domFinal = await page.content();
-
-  // 💾 Guardar DOM en archivo de texto (solo debug)
-  fs.writeFileSync("doomleido.txt", domFinal, "utf8");
-
-  // Mantener metrics.json mínimo para que el workflow siga funcionando
-  const metrics = {
-    visits: "DEBUG",
-    downloads: "DEBUG",
-    date: new Date().toISOString()
   };
 
-  fs.writeFileSync(
-    "metrics.json",
-    JSON.stringify(metrics, null, 2),
-    "utf8"
+  // ======================
+  // ALICIA (OAI-PMH)
+  // ======================
+  result.indexacion.alicia = await exists(
+    `https://alicia.concytec.gob.pe/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=${OAI_ID}`
   );
 
-  console.log("✅ DOM guardado en doomleido.txt");
+  // ======================
+  // RENATI (OAI-PMH)
+  // ======================
+  result.indexacion.renati = await exists(
+    `https://renati.sunedu.gob.pe/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=${OAI_ID}`
+  );
 
-  await browser.close();
-})();
+  // ======================
+  // La Referencia (API)
+  // ======================
+  result.indexacion.la_referencia = await exists(
+    `https://api.lareferencia.info/v1/search?q=${HANDLE}`
+  );
+
+  // ======================
+  // Google Académico (heurístico)
+  // ======================
+  result.indexacion.google_academico = await exists(
+    `https://scholar.google.com/scholar?q=${encodeURIComponent(TITLE)}`
+  );
+
+  fs.mkdirSync("metrics", { recursive: true });
+  fs.writeFileSync(
+    "metrics/indexing.json",
+    JSON.stringify(result, null, 2)
+  );
+
+  console.log("✔ Indexación verificada correctamente");
+}
+
+run();

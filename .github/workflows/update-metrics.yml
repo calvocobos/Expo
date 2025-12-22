@@ -1,42 +1,33 @@
-name: Actualizar métricas de visitas y descargas
+name: Verificar indexación de tesis
 
 on:
   schedule:
-    - cron: '30 10 * * *' # todos los días a las 10:30 UTC
+    - cron: "0 9 * * 1" # Lunes 09:00 UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  scrape:
+  indexing-check:
     runs-on: ubuntu-latest
+
     steps:
-      # 1️⃣ Checkout SIN credenciales automáticas
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          persist-credentials: false
+          node-version: 20
 
-      # 2️⃣ Instalar Node.js
-      - name: Instalar Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      # 3️⃣ Instalar Puppeteer
-      - name: Instalar dependencias
-        run: npm install puppeteer
-
-      # 4️⃣ Ejecutar script de scraping
-      - name: Ejecutar script de scraping
+      - name: Ejecutar validación
         run: node scripts/metrics.js
 
-      # 5️⃣ Mostrar metrics.json en los logs (debug)
-      - name: Mostrar metrics.json
-        run: cat metrics.json
-
-      # 6️⃣ Commit y push de metrics.json y doomleido.txt
-      - name: Commit y push de archivos generados
+      - name: Commit cambios
         run: |
-          git config user.name "GitHub Actions"
+          git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add metrics.json doomleido.txt
-          git commit -m "Actualizar metrics.json y doomleido.txt automáticamente" || echo "No hay cambios para commitear"
+          git add metrics/indexing.json
+          git commit -m "chore: actualización de indexación de tesis" || echo "Sin cambios"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/calvocobos/Expo.git HEAD:main
