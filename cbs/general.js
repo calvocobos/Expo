@@ -61,15 +61,60 @@ $(document).ready(function () {
   $(window).on("resize", actualizarTamano);
 });
 
-
 /**
  * para cargar el service-worker.js
  */
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/Expo/service-worker.js')
-      .then(reg => console.log('✅ Service Worker registrado con éxito:', reg.scope))
-      .catch(err => console.warn('❌ Error al registrar SW:', err));
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/Expo/service-worker.js")
+      .then((reg) =>
+        console.log("✅ Service Worker registrado con éxito:", reg.scope)
+      )
+      .catch((err) => console.warn("❌ Error al registrar SW:", err));
   });
 }
+
+/**
+ * leo mi JSON
+ * con los datos de si se hizo la cosecha
+ * de Alicia Renatil la referencia
+ */
+
+(async () => {
+  const container = document.querySelector("#cosechadores .contenidojson");
+  if (!container) return;
+
+  try {
+    const res = await fetch("metrics/indexing.json");
+    const data = await res.json();
+
+    const badge = (ok) => `
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium
+        ${ok ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}">
+        ${ok ? "Indexado" : "No indexado"}
+      </span>
+    `;
+
+    container.innerHTML = `
+      <p><strong>Identificador:</strong> ${data.identificador}</p>
+      <p><strong>OAI ID:</strong> ${data.oai_id}</p>
+      <p><strong>Última verificación:</strong>
+        ${new Date(data.fecha).toLocaleString("es-PE")}
+      </p>
+
+      <hr class="my-3">
+
+      <p>ALICIA ${badge(data.indexacion.alicia)}</p>
+      <p>RENATI ${badge(data.indexacion.renati)}</p>
+      <p>La Referencia ${badge(data.indexacion.la_referencia)}</p>
+      <p>Google Académico ${badge(data.indexacion.google_academico)}</p>
+    `;
+  } catch (err) {
+    container.innerHTML = `
+      <p class="text-red-600">
+        No se pudo cargar la información de indexación.
+      </p>`;
+  }
+})();
