@@ -1813,6 +1813,8 @@
       </p>
     </section>
 
+
+
     <!-- Sección de repositorio -->
     <section id="repositorio-oficial" aria-labelledby="titulo-repositorio" class="w-full max-w-4xl mx-auto my-10">
 
@@ -1820,20 +1822,45 @@
         Registro oficial de la tesis en el Repositorio Institucional
       </h2>
 
-      <div class="rounded-lg overflow-hidden shadow-lg border border-slate-300">
-        <iframe src="https://hdl.handle.net/20.500.12557/8558" width="100%" height="1200" referrerpolicy="no-referrer"
-          title="Repositorio Institucional Universidad Andina del Cusco">
+      <!-- CONTENEDOR DEL IFRAME -->
+      <div id="iframeContainer" class="rounded-lg overflow-hidden shadow-lg border border-slate-300">
+
+        <iframe id="repoIframe" src="https://hdl.handle.net/20.500.12557/8558" width="100%" height="1200"
+          referrerpolicy="no-referrer" title="Repositorio Institucional Universidad Andina del Cusco">
         </iframe>
+
       </div>
 
-      <p class="mt-3 text-sm text-slate-600">
-        Este registro corresponde a la versión oficial de la tesis depositada en el
-        Repositorio Institucional de la Universidad Andina del Cusco.
-        <a href="https://hdl.handle.net/20.500.12557/8558" target="_blank" rel="noopener" class="underline">
+      <!-- MENSAJE ALTERNATIVO -->
+      <p id="iframeFallback" class="hidden mt-4 text-sm text-slate-600">
+        El repositorio institucional no permite su visualización embebida.
+        <a href="https://hdl.handle.net/20.500.12557/8558" target="_blank" rel="noopener" class="underline font-medium">
           Abrir en nueva pestaña
         </a>.
       </p>
     </section>
+
+    <script>
+      const iframe = document.getElementById('repoIframe');
+      const container = document.getElementById('iframeContainer');
+      const fallback = document.getElementById('iframeFallback');
+
+      let iframeCargado = false;
+
+      // Si carga correctamente
+      iframe.addEventListener('load', () => {
+        iframeCargado = true;
+      });
+
+      // Si después de 3 segundos no cargó → ocultar iframe
+      setTimeout(() => {
+        if (!iframeCargado) {
+          container.style.display = 'none';
+          fallback.classList.remove('hidden');
+        }
+      }, 3000);
+    </script>
+
 
 
     <!-- Sección de ISO -->
