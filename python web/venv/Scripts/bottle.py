@@ -1,4 +1,4 @@
-#!D:\Juliano\Tailwind\python web\venv\Scripts\python.exe
+#!D:\Juliano\Tailwind\Expo\python web\venv\Scripts\python.exe
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 """
