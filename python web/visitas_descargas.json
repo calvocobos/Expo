@@ -1,0 +1,28 @@
+{
+  "registros": {
+    "2025-12-18": {
+      "visitas_30d": 6,
+      "descargas_30d": 2
+    },
+    "2025-12-19": {
+      "visitas_30d": 13,
+      "descargas_30d": 5
+    },
+    "2025-12-20": {
+      "visitas_30d": 20,
+      "descargas_30d": 8
+    },
+    "2025-12-21": {
+      "visitas_30d": 28,
+      "descargas_30d": 11
+    }, 
+    "2025-12-22": {
+      "visitas_30d": 38,
+      "descargas_30d": 15
+    },
+    "2025-12-23": {
+      "visitas_30d": 45,
+      "descargas_30d": 19
+    }
+  }
+}

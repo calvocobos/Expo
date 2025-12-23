@@ -18,6 +18,7 @@ Disallow: /ejemplo.html
 Disallow: /.idea/
 Disallow: /metrics/
 Disallow: /scripts/
+Disallow: /python web/
 
 # ✅ Permitir lo que sí es público
 Allow: /index.html

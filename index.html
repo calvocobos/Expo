@@ -98,6 +98,8 @@
   <script src="jquery/jquery-ui.min.1.13.2.js" defer></script>
   <script src="jquery/jquery.easing.min.1.4.1.js" defer></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
   <!-- 📜 Scripts propios -->
   <script src="cbs/general.js" defer></script>
 
@@ -198,6 +200,8 @@
   }
   </script>
 
+
+  
 
 </head>
 
@@ -1764,6 +1768,41 @@
           </table>
 
         </div>
+      </div>
+    </section>
+
+
+    <!-- Sección de Estadísticas -->
+    <section id="estadisticas" class="px-4 py-20">
+      <!-- Título principal -->
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+        Visitas y descargas del repositorio
+      </h2>
+
+      <!-- Totales -->
+      <div class="flex flex-col sm:flex-row justify-center gap-6 mb-8 text-center">
+        <div class="px-6 py-4 rounded-lg shadow-lg bg-white dark:bg-slate-800">
+          <p class="text-sm text-slate-500 dark:text-slate-400">
+            Total de visitas
+          </p>
+          <p id="totalVisitas" class="text-3xl font-bold text-slate-800 dark:text-amber-200">
+            —
+          </p>
+        </div>
+
+        <div class="px-6 py-4 rounded-lg shadow-lg bg-white dark:bg-slate-800">
+          <p class="text-sm text-slate-500 dark:text-slate-400">
+            Total de descargas
+          </p>
+          <p id="totalDescargas" class="text-3xl font-bold text-slate-800 dark:text-amber-200">
+            —
+          </p>
+        </div>
+      </div>
+
+      <!-- Gráfico -->
+      <div class="w-full max-w-5xl mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4 md:p-6">
+        <canvas id="visitasChart" class="w-full h-[320px]"></canvas>
       </div>
     </section>
 

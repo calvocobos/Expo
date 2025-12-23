@@ -118,3 +118,86 @@ if ("serviceWorker" in navigator) {
       </p>`;
   }
 })();
+
+
+/**
+ * graficas estadisticas
+ * chart js
+ */
+
+async function cargarEstadisticas() {
+  const [incrementos, totales] = await Promise.all([
+    fetch('python web/incrementos_diarios.json').then(r => r.json()),
+    fetch('python web/totales.json').then(r => r.json())
+  ]);
+
+  // Totales
+  document.getElementById('totalVisitas').textContent =
+    totales.total_visitas;
+
+  document.getElementById('totalDescargas').textContent =
+    totales.total_descargas;
+
+  const registros = incrementos.incrementos_diarios;
+  const fechas = Object.keys(registros);
+
+  const visitas = fechas.map(f => registros[f].visitas_dia);
+  const descargas = fechas.map(f => registros[f].descargas_dia);
+
+  new Chart(document.getElementById('visitasChart'), {
+    type: 'line',
+    data: {
+      labels: fechas,
+      datasets: [
+        {
+          label: 'Visitas diarias',
+          data: visitas,
+          borderColor: '#2563eb', // blue-600
+          backgroundColor: 'rgba(37, 99, 235, 0.1)',
+          fill: true,
+          tension: 0.35
+        },
+        {
+          label: 'Descargas diarias',
+          data: descargas,
+          borderColor: '#16a34a', // green-600
+          backgroundColor: 'rgba(22, 163, 74, 0.1)',
+          fill: true,
+          tension: 0.35
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          labels: {
+            color: document.documentElement.classList.contains('dark')
+              ? '#fbbf24'
+              : '#1f2937'
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: document.documentElement.classList.contains('dark')
+              ? '#cbd5f5'
+              : '#475569'
+          }
+        },
+        y: {
+          beginAtZero: true,
+          ticks: {
+            color: document.documentElement.classList.contains('dark')
+              ? '#cbd5f5'
+              : '#475569'
+          }
+        }
+      }
+    }
+  });
+}
+
+cargarEstadisticas();
