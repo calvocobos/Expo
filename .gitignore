@@ -1,2 +1,7 @@
 # Ignorar dependencias y archivos de desarrollo
 node_modules/
+# Ignorar librerios de carpeta python web
+# Python (solo dentro de python web)
+python web/venv/
+python web/__pycache__/
+python web/*.pyc
