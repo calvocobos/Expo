@@ -99,7 +99,7 @@
   <script src="jquery/jquery.easing.min.1.4.1.js" defer></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  
+
   <!-- 📜 Scripts propios -->
   <script src="cbs/general.js" defer></script>
 
@@ -201,7 +201,7 @@
   </script>
 
 
-  
+
 
 </head>
 
@@ -1799,6 +1799,18 @@
           </p>
         </div>
       </div>
+
+      <!-- Totales en gráfico tipo dona -->
+      <section class="px-4 mb-12">
+        <h3 class="text-xl font-semibold text-center text-slate-800 dark:text-amber-200 mb-6">
+          Totales acumulados
+        </h3>
+
+        <div class="max-w-md mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
+          <canvas id="totalesChart" aria-label="Gráfico de visitas y descargas"></canvas>
+        </div>
+      </section>
+
 
       <!-- Gráfico -->
       <div class="w-full max-w-5xl mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4 md:p-6">

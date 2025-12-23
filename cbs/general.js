@@ -119,53 +119,85 @@ if ("serviceWorker" in navigator) {
   }
 })();
 
-
 /**
  * graficas estadisticas
  * chart js
  */
 
 async function cargarEstadisticas() {
+  /* =========================================================
+   * 1️⃣ RECOLECCIÓN DE DATOS (JSON)
+   * ========================================================= */
   const [incrementos, totales] = await Promise.all([
-    fetch('python web/incrementos_diarios.json').then(r => r.json()),
-    fetch('python web/totales.json').then(r => r.json())
+    fetch("python web/incrementos_diarios.json").then((r) => r.json()),
+    fetch("python web/totales.json").then((r) => r.json()),
   ]);
 
-  // Totales
-  document.getElementById('totalVisitas').textContent =
-    totales.total_visitas;
+  /* =========================================================
+   * 2️⃣ GRÁFICO DONA — TOTALES ACUMULADOS
+   * ========================================================= */
+  new Chart(document.getElementById("totalesChart"), {
+    type: "doughnut",
+    data: {
+      labels: ["Visitas", "Descargas"],
+      datasets: [
+        {
+          data: [totales.total_visitas, totales.total_descargas],
+          backgroundColor: [
+            "#38bdf8", // sky-400
+            "#f59e0b", // amber-500
+          ],
+          borderWidth: 0,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      cutout: "65%",
+      plugins: {
+        legend: {
+          position: "bottom",
+          labels: {
+            color: document.documentElement.classList.contains("dark")
+              ? "#fde68a"
+              : "#1e293b",
+          },
+        },
+      },
+    },
+  });
 
-  document.getElementById('totalDescargas').textContent =
-    totales.total_descargas;
-
+  /* =========================================================
+   * 3️⃣ GRÁFICO DE LÍNEAS — INCREMENTOS DIARIOS
+   * ========================================================= */
   const registros = incrementos.incrementos_diarios;
+
   const fechas = Object.keys(registros);
+  const visitas = fechas.map((f) => registros[f].visitas_dia);
+  const descargas = fechas.map((f) => registros[f].descargas_dia);
 
-  const visitas = fechas.map(f => registros[f].visitas_dia);
-  const descargas = fechas.map(f => registros[f].descargas_dia);
-
-  new Chart(document.getElementById('visitasChart'), {
-    type: 'line',
+  new Chart(document.getElementById("visitasChart"), {
+    type: "line",
     data: {
       labels: fechas,
       datasets: [
         {
-          label: 'Visitas diarias',
+          label: "Visitas diarias",
           data: visitas,
-          borderColor: '#2563eb', // blue-600
-          backgroundColor: 'rgba(37, 99, 235, 0.1)',
+          borderColor: "#2563eb", // blue-600
+          backgroundColor: "rgba(37, 99, 235, 0.1)",
           fill: true,
-          tension: 0.35
+          tension: 0.35,
         },
         {
-          label: 'Descargas diarias',
+          label: "Descargas diarias",
           data: descargas,
-          borderColor: '#16a34a', // green-600
-          backgroundColor: 'rgba(22, 163, 74, 0.1)',
+          borderColor: "#16a34a", // green-600
+          backgroundColor: "rgba(22, 163, 74, 0.1)",
           fill: true,
-          tension: 0.35
-        }
-      ]
+          tension: 0.35,
+        },
+      ],
     },
     options: {
       responsive: true,
@@ -173,31 +205,34 @@ async function cargarEstadisticas() {
       plugins: {
         legend: {
           labels: {
-            color: document.documentElement.classList.contains('dark')
-              ? '#fbbf24'
-              : '#1f2937'
-          }
-        }
+            color: document.documentElement.classList.contains("dark")
+              ? "#fbbf24"
+              : "#1f2937",
+          },
+        },
       },
       scales: {
         x: {
           ticks: {
-            color: document.documentElement.classList.contains('dark')
-              ? '#cbd5f5'
-              : '#475569'
-          }
+            color: document.documentElement.classList.contains("dark")
+              ? "#cbd5f5"
+              : "#475569",
+          },
         },
         y: {
           beginAtZero: true,
           ticks: {
-            color: document.documentElement.classList.contains('dark')
-              ? '#cbd5f5'
-              : '#475569'
-          }
-        }
-      }
-    }
+            color: document.documentElement.classList.contains("dark")
+              ? "#cbd5f5"
+              : "#475569",
+          },
+        },
+      },
+    },
   });
 }
 
+/* =========================================================
+ * 🚀 EJECUCIÓN
+ * ========================================================= */
 cargarEstadisticas();
