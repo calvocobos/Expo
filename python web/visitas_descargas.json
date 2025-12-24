@@ -15,13 +15,17 @@
     "2025-12-21": {
       "visitas_30d": 31,
       "descargas_30d": 13
-    }, 
+    },
     "2025-12-22": {
       "visitas_30d": 42,
       "descargas_30d": 17
     },
     "2025-12-23": {
       "visitas_30d": 51,
+      "descargas_30d": 19
+    },
+    "2025-12-24": {
+      "visitas_30d": 55,
       "descargas_30d": 19
     }
   }
