@@ -1,4 +1,5 @@
 import fs from "fs";
+import fetch from "node-fetch";
 
 const OAI_ID = "oai:repositorio.uandina.edu.pe:20.500.12557/8558";
 const HANDLE = "20.500.12557/8558";
@@ -9,6 +10,21 @@ async function exists(url) {
   try {
     const res = await fetch(url, { redirect: "follow" });
     return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+// Verificar Google Académico buscando el título en los resultados
+async function checkGoogleScholar(title) {
+  try {
+    const url = `https://scholar.google.com/scholar?q=${encodeURIComponent(title)}`;
+    const res = await fetch(url);
+    if (!res.ok) return false;
+
+    const html = await res.text();
+    // Verifica si el título exacto aparece en el HTML
+    return html.includes(title);
   } catch {
     return false;
   }
@@ -49,12 +65,13 @@ async function run() {
   );
 
   // ======================
-  // Google Académico (heurístico)
+  // Google Académico
   // ======================
-  result.indexacion.google_academico = await exists(
-    `https://scholar.google.com/scholar?q=${encodeURIComponent(TITLE)}`
-  );
+  result.indexacion.google_academico = await checkGoogleScholar(TITLE);
 
+  // ======================
+  // Guardar resultado
+  // ======================
   fs.mkdirSync("metrics", { recursive: true });
   fs.writeFileSync(
     "metrics/indexing.json",
@@ -62,6 +79,7 @@ async function run() {
   );
 
   console.log("✔ Indexación verificada correctamente");
+  console.log(result);
 }
 
 run();
