@@ -602,6 +602,9 @@
   .border-slate-300 {
     border-color: var(--color-slate-300);
   }
+  .border-slate-500 {
+    border-color: var(--color-slate-500);
+  }
   .bg-\[\#044DA2\] {
     background-color: #044DA2;
   }
