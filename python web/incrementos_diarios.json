@@ -1,15 +1,15 @@
 {
   "incrementos_diarios": {
     "2025-12-18": {
-      "visitas_dia": 6,
+      "visitas_dia": 4,
       "descargas_dia": 2
     },
     "2025-12-19": {
-      "visitas_dia": 8,
+      "visitas_dia": 9,
       "descargas_dia": 3
     },
     "2025-12-20": {
-      "visitas_dia": 11,
+      "visitas_dia": 4,
       "descargas_dia": 4
     },
     "2025-12-21": {
@@ -17,11 +17,11 @@
       "descargas_dia": 5
     },
     "2025-12-22": {
-      "visitas_dia": 9,
+      "visitas_dia": 11,
       "descargas_dia": 4
     },
     "2025-12-23": {
-      "visitas_dia": 3,
+      "visitas_dia": 9,
       "descargas_dia": 1
     }
   }
