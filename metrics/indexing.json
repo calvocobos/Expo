@@ -1,11 +1,11 @@
 {
-  "fecha": "2025-12-24T09:17:54.133Z",
+  "fecha": "2025-12-24T13:52:23.101Z",
   "identificador": "20.500.12557/8558",
   "oai_id": "oai:repositorio.uandina.edu.pe:20.500.12557/8558",
   "indexacion": {
     "alicia": false,
     "renati": false,
     "la_referencia": false,
-    "google_academico": true
+    "google_academico": false
   }
 }
