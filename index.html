@@ -1772,6 +1772,164 @@
     </section>
 
 
+    <!-- Sección de citas -->
+    <section id="citas" class="px-4 py-20 bg-slate-100 dark:bg-slate-800">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Título principal -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-6">
+          Citas de la tesis
+        </h2>
+
+        <!-- Contenedor de tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- APA -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">
+              APA
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">
+              Calvo, C., Cobos, I. (2025). Desarrollo de un sistema de información web para la administración de los
+              procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito
+              de Cusco [https://purl.org/pe-repo/renati/type#tesis, Universidad Andina del Cusco].
+              https://hdl.handle.net/20.500.12557/8558
+            </p>
+          </article>
+
+          <!-- Vancouver -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">
+              Vancouver
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">
+              Calvo, C., Cobos, I. Desarrollo de un sistema de información web para la administración de los procesos de
+              registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
+              [https://purl.org/pe-repo/renati/type#tesis]. PE: Universidad Andina del Cusco; 2025.
+              https://hdl.handle.net/20.500.12557/8558
+            </p>
+          </article>
+
+          <!-- Harvard -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 mb-4">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Harvard</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4 leading-relaxed">
+              Calvo, C.A. & Cobos, I.J., 2025. Desarrollo de un sistema de información web para la administración de los
+              procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito
+              de Cusco. Universidad Andina del Cusco. Disponible en: https://hdl.handle.net/20.500.12557/8558 [Acceso:
+              <span id="fecha-acceso"></span>].
+            </p>
+          </article>
+
+          <script>
+            // Genera la fecha actual en formato “23 Dic 2025”
+            const meses = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+            const hoy = new Date();
+            const dia = hoy.getDate();
+            const mes = meses[hoy.getMonth()];
+            const anio = hoy.getFullYear();
+            document.getElementById("fecha-acceso").textContent = `${dia} ${mes} ${anio}`;
+          </script>
+
+          <!-- ISO 690 -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">ISO 690</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">
+              CALVO, C.; COBOS, I. Desarrollo de un sistema de información web para la administración de los procesos de
+              registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco.
+              Universidad Andina del Cusco, Perú, 2025. https://hdl.handle.net/20.500.12557/8558
+            </p>
+          </article>
+
+          <!-- MLA -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">MLA</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 leading-relaxed">
+              Calvo, Carlos Antonio, y Irvin Julian Cobos. <i>Desarrollo de un sistema de información web para la
+                administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico
+                Lalysdent del distrito de Cusco</i>. Universidad Andina del Cusco, 2025.
+              https://hdl.handle.net/20.500.12557/8558
+            </p>
+          </article>
+
+          <!-- Chicago (Author-Date) -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 mb-4">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">Chicago (Author-Date)</h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm text-justify mb-4 leading-relaxed">
+              Calvo, Carlos Antonio, y Irvin Julian Cobos. 2025. "Desarrollo de un sistema de información web para la
+              administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico
+              Lalysdent del distrito de Cusco." Universidad Andina del Cusco. https://hdl.handle.net/20.500.12557/8558
+            </p>
+          </article>
+
+
+
+
+          <!-- RefMan (RIS) -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 mb-4">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">RefMan (RIS)</h3>
+            <pre
+              class="text-slate-600 dark:text-slate-300 text-sm mb-4 bg-gray-100 dark:bg-slate-700 p-4 rounded overflow-x-auto">
+TY  - THES
+AU  - Calvo, Carlos Antonio
+AU  - Cobos, Irvin Julian
+TI  - Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
+PB  - Universidad Andina del Cusco
+PY  - 2025
+UR  - https://hdl.handle.net/20.500.12557/8558
+ER  -
+  </pre>
+          </article>
+
+          <!-- BibTeX -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">
+              BibTeX
+            </h3>
+            <pre
+              class="text-slate-700 dark:text-slate-300 text-sm mb-4 bg-gray-100 dark:bg-slate-700 p-4 rounded overflow-x-auto">
+@misc{20.500.12557/8558,
+  author = "Calvo Arteaga, Carlos Antonio and Cobos Vargas, Irvin Julian",
+  title = "Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco",
+  publisher = "Universidad Andina del Cusco",
+  year = "2025"
+}
+        </pre>
+          </article>
+
+          <!-- RefWorks -->
+          <article
+            class="border border-gray-200 dark:border-gray-700 rounded-lg shadow-md p-6 bg-white dark:bg-slate-800 mb-4">
+            <h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-3">RefWorks</h3>
+            <pre
+              class="text-slate-600 dark:text-slate-300 text-sm mb-4 bg-gray-100 dark:bg-slate-700 p-4 rounded overflow-x-auto">
+RT  - Thesis
+AU  - Calvo, Carlos Antonio
+AU  - Cobos, Irvin Julian
+TI  - Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
+PB  - Universidad Andina del Cusco
+YR  - 2025
+UR  - https://hdl.handle.net/20.500.12557/8558
+ER  -
+  </pre>
+          </article>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+
     <!-- Sección de Estadísticas -->
     <section id="estadisticas" class="px-4 py-20">
       <!-- Título principal -->
