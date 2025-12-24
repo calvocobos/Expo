@@ -5,24 +5,24 @@
       "descargas_dia": 2
     },
     "2025-12-19": {
-      "visitas_dia": 7,
-      "descargas_dia": 3
-    },
-    "2025-12-20": {
-      "visitas_dia": 7,
-      "descargas_dia": 3
-    },
-    "2025-12-21": {
       "visitas_dia": 8,
       "descargas_dia": 3
     },
+    "2025-12-20": {
+      "visitas_dia": 11,
+      "descargas_dia": 4
+    },
+    "2025-12-21": {
+      "visitas_dia": 14,
+      "descargas_dia": 5
+    },
     "2025-12-22": {
-      "visitas_dia": 10,
+      "visitas_dia": 9,
       "descargas_dia": 4
     },
     "2025-12-23": {
-      "visitas_dia": 7,
-      "descargas_dia": 4
+      "visitas_dia": 3,
+      "descargas_dia": 1
     }
   }
 }
