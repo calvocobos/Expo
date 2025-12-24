@@ -23,7 +23,6 @@ Disallow: /python web/
 # ✅ Permitir lo que sí es público
 Allow: /index.html
 Allow: /Carlos_Irvin_Tesis_bachiller_2025.pdf
-Allow: /tesis.html
 Allow: /tailwind/output.css
 Allow: /cbs/
 Allow: /img/

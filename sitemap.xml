@@ -17,12 +17,4 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Tesis (HTML iframe) -->
-  <url>
-    <loc>https://calvocobos.github.io/Expo/tesis.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
