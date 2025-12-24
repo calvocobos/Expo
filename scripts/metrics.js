@@ -1,5 +1,4 @@
 import fs from "fs";
-import fetch from "node-fetch";
 
 const OAI_ID = "oai:repositorio.uandina.edu.pe:20.500.12557/8558";
 const HANDLE = "20.500.12557/8558";
