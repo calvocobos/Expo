@@ -5,6 +5,18 @@ const HANDLE = "20.500.12557/8558";
 const TITLE =
   "Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco";
 
+// ======================
+// Función de normalización
+// ======================
+function normalizeText(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD") // descompone caracteres acentuados
+    .replace(/[\u0300-\u036f]/g, "") // elimina acentos
+    .replace(/\s+/g, " ") // reemplaza espacios múltiples
+    .trim();
+}
+
 async function exists(url) {
   try {
     const res = await fetch(url, { redirect: "follow" });
@@ -14,7 +26,9 @@ async function exists(url) {
   }
 }
 
-// Verificar Google Académico buscando el título en los resultados
+// ======================
+// Verificar Google Scholar
+// ======================
 async function checkGoogleScholar(title) {
   try {
     const url = `https://scholar.google.com/scholar?q=${encodeURIComponent(title)}`;
@@ -22,8 +36,10 @@ async function checkGoogleScholar(title) {
     if (!res.ok) return false;
 
     const html = await res.text();
-    // Verifica si el título exacto aparece en el HTML
-    return html.includes(title);
+    const normalizedHtml = normalizeText(html);
+    const normalizedTitle = normalizeText(title);
+
+    return normalizedHtml.includes(normalizedTitle);
   } catch {
     return false;
   }
