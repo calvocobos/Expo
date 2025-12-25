@@ -76,7 +76,6 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-
 /**
  * Lee el JSON de indexación generado por GitHub Actions
  * y muestra el estado de Cosecha
@@ -108,11 +107,18 @@ if ("serviceWorker" in navigator) {
       alicia: "https://alicia.concytec.gob.pe",
       renati: "https://renati.sunedu.gob.pe",
       la_referencia: "https://www.lareferencia.info",
-              //https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18047949
-      openaire: `https://explore.openaire.eu/search/publications?doi=${data.zenodo.doi}`,
-      base: `https://www.base-search.net/Search/Results?lookfor=${data.zenodo.doi}&type=all`,
-      google_academico:
-        `https://scholar.google.com/scholar?q=${encodeURIComponent(data.zenodo.doi)}`
+
+      // OpenAIRE (link público válido por PID)
+      openaire: `https://explore.openaire.eu/search/result?pid=${encodeURIComponent(
+        data.zenodo.doi
+      )}`,
+
+      // BASE (no existe permalink confiable)
+      base: "https://www.base-search.net",
+
+      google_academico: `https://scholar.google.com/scholar?q=${encodeURIComponent(
+        data.zenodo.doi
+      )}`,
     };
 
     // ======================
@@ -122,12 +128,14 @@ if ("serviceWorker" in navigator) {
       <p class="flex items-center gap-2">
         <span class="font-medium">${label}</span>
         ${badge(ok)}
-        ${ok && url
-          ? `<a href="${url}" target="_blank"
+        ${
+          ok && url
+            ? `<a href="${url}" target="_blank"
                class="text-blue-600 text-sm hover:underline">
                Ver
              </a>`
-          : ""}
+            : ""
+        }
       </p>
     `;
 
@@ -152,21 +160,32 @@ if ("serviceWorker" in navigator) {
       <h4 class="font-semibold mb-2">Repositorio de origen</h4>
       ${row("ALICIA", data.repositorio_origen.indexacion.alicia, links.alicia)}
       ${row("RENATI", data.repositorio_origen.indexacion.renati, links.renati)}
-      ${row("La Referencia", data.repositorio_origen.indexacion.la_referencia, links.la_referencia)}
+      ${row(
+        "La Referencia",
+        data.repositorio_origen.indexacion.la_referencia,
+        links.la_referencia
+      )}
 
       <hr class="my-3">
 
       <h4 class="font-semibold mb-2">Zenodo</h4>
       ${row("OpenAIRE", data.zenodo.openaire, links.openaire)}
       ${row("BASE", data.zenodo.base, links.base)}
-      ${row("La Referencia (indirecto)", data.zenodo.la_referencia_indirecto, links.la_referencia)}
+      ${row(
+        "La Referencia (indirecto)",
+        data.zenodo.la_referencia_indirecto,
+        links.la_referencia
+      )}
 
       <hr class="my-3">
 
       <h4 class="font-semibold mb-2">Motores de búsqueda</h4>
-      ${row("Google Académico", data.motores_busqueda.google_academico, links.google_academico)}
+      ${row(
+        "Google Académico",
+        data.motores_busqueda.google_academico,
+        links.google_academico
+      )}
     `;
-
   } catch (err) {
     container.innerHTML = `
       <p class="text-red-600">
@@ -175,8 +194,6 @@ if ("serviceWorker" in navigator) {
     `;
   }
 })();
-
-
 
 /**
  * graficas estadisticas
