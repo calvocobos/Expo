@@ -108,7 +108,7 @@ if ("serviceWorker" in navigator) {
       alicia: "https://alicia.concytec.gob.pe",
       renati: "https://renati.sunedu.gob.pe",
       la_referencia: "https://www.lareferencia.info",
-
+              //https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18047949
       openaire: `https://explore.openaire.eu/search/publications?doi=${data.zenodo.doi}`,
       base: `https://www.base-search.net/Search/Results?lookfor=${data.zenodo.doi}&type=all`,
       google_academico:
