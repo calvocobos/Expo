@@ -80,6 +80,8 @@ if ("serviceWorker" in navigator) {
 /**
  * Lee el JSON de indexación generado por GitHub Actions
  * y muestra el estado de Cosecha
+ * Lee metrics/indexing.json
+ * y muestra el estado de indexación con links
  */
 (async () => {
   const container = document.querySelector("#cosechadores .contenidojson");
@@ -89,6 +91,9 @@ if ("serviceWorker" in navigator) {
     const res = await fetch("metrics/indexing.json");
     const data = await res.json();
 
+    // ======================
+    // Badges
+    // ======================
     const badge = (ok) => `
       <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium
         ${ok ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}">
@@ -96,6 +101,39 @@ if ("serviceWorker" in navigator) {
       </span>
     `;
 
+    // ======================
+    // Links conocidos
+    // ======================
+    const links = {
+      alicia: "https://alicia.concytec.gob.pe",
+      renati: "https://renati.sunedu.gob.pe",
+      la_referencia: "https://www.lareferencia.info",
+
+      openaire: `https://explore.openaire.eu/search/publications?doi=${data.zenodo.doi}`,
+      base: `https://www.base-search.net/Search/Results?lookfor=${data.zenodo.doi}&type=all`,
+      google_academico:
+        `https://scholar.google.com/scholar?q=${encodeURIComponent(data.zenodo.doi)}`
+    };
+
+    // ======================
+    // Helper para render fila
+    // ======================
+    const row = (label, ok, url) => `
+      <p class="flex items-center gap-2">
+        <span class="font-medium">${label}</span>
+        ${badge(ok)}
+        ${ok && url
+          ? `<a href="${url}" target="_blank"
+               class="text-blue-600 text-sm hover:underline">
+               Ver
+             </a>`
+          : ""}
+      </p>
+    `;
+
+    // ======================
+    // Render HTML
+    // ======================
     container.innerHTML = `
       <p><strong>Identificador:</strong>
         ${data.repositorio_origen.identificador}
@@ -112,28 +150,32 @@ if ("serviceWorker" in navigator) {
       <hr class="my-3">
 
       <h4 class="font-semibold mb-2">Repositorio de origen</h4>
-      <p>ALICIA ${badge(data.repositorio_origen.indexacion.alicia)}</p>
-      <p>RENATI ${badge(data.repositorio_origen.indexacion.renati)}</p>
-      <p>La Referencia ${badge(data.repositorio_origen.indexacion.la_referencia)}</p>
+      ${row("ALICIA", data.repositorio_origen.indexacion.alicia, links.alicia)}
+      ${row("RENATI", data.repositorio_origen.indexacion.renati, links.renati)}
+      ${row("La Referencia", data.repositorio_origen.indexacion.la_referencia, links.la_referencia)}
 
       <hr class="my-3">
 
-      <h4 class="font-semibold mb-2">Zenodo (difusión internacional)</h4>
-      <p>OpenAIRE ${badge(data.zenodo.openaire)}</p>
-      <p>BASE ${badge(data.zenodo.base)}</p>
+      <h4 class="font-semibold mb-2">Zenodo</h4>
+      ${row("OpenAIRE", data.zenodo.openaire, links.openaire)}
+      ${row("BASE", data.zenodo.base, links.base)}
+      ${row("La Referencia (indirecto)", data.zenodo.la_referencia_indirecto, links.la_referencia)}
 
       <hr class="my-3">
 
       <h4 class="font-semibold mb-2">Motores de búsqueda</h4>
-      <p>Google Académico ${badge(data.motores_busqueda.google_academico)}</p>
+      ${row("Google Académico", data.motores_busqueda.google_academico, links.google_academico)}
     `;
+
   } catch (err) {
     container.innerHTML = `
       <p class="text-red-600">
         No se pudo cargar la información de indexación.
-      </p>`;
+      </p>
+    `;
   }
 })();
+
 
 
 /**
