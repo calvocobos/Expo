@@ -419,6 +419,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -500,8 +503,14 @@
   .resize {
     resize: both;
   }
+  .list-inside {
+    list-style-position: inside;
+  }
   .list-decimal {
     list-style-type: decimal;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -605,8 +614,8 @@
   .border-slate-300 {
     border-color: var(--color-slate-300);
   }
-  .border-slate-500 {
-    border-color: var(--color-slate-500);
+  .border-slate-700 {
+    border-color: var(--color-slate-700);
   }
   .bg-\[\#044DA2\] {
     background-color: #044DA2;
