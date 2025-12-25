@@ -76,12 +76,11 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-/**
- * leo mi JSON
- * con los datos de si se hizo la cosecha
- * de Alicia Renatil la referencia
- */
 
+/**
+ * Lee el JSON de indexación generado por GitHub Actions
+ * y muestra el estado de Cosecha
+ */
 (async () => {
   const container = document.querySelector("#cosechadores .contenidojson");
   if (!container) return;
@@ -98,18 +97,35 @@ if ("serviceWorker" in navigator) {
     `;
 
     container.innerHTML = `
-      <p><strong>Identificador:</strong> ${data.identificador}</p>
-      <p><strong>OAI ID:</strong> ${data.oai_id}</p>
+      <p><strong>Identificador:</strong>
+        ${data.repositorio_origen.identificador}
+      </p>
+
+      <p><strong>OAI ID:</strong>
+        ${data.repositorio_origen.oai_id}
+      </p>
+
       <p><strong>Última verificación:</strong>
         ${new Date(data.fecha).toLocaleString("es-PE")}
       </p>
 
       <hr class="my-3">
 
-      <p>ALICIA ${badge(data.indexacion.alicia)}</p>
-      <p>RENATI ${badge(data.indexacion.renati)}</p>
-      <p>La Referencia ${badge(data.indexacion.la_referencia)}</p>
-      <p>Google Académico ${badge(data.indexacion.google_academico)}</p>
+      <h4 class="font-semibold mb-2">Repositorio de origen</h4>
+      <p>ALICIA ${badge(data.repositorio_origen.indexacion.alicia)}</p>
+      <p>RENATI ${badge(data.repositorio_origen.indexacion.renati)}</p>
+      <p>La Referencia ${badge(data.repositorio_origen.indexacion.la_referencia)}</p>
+
+      <hr class="my-3">
+
+      <h4 class="font-semibold mb-2">Zenodo (difusión internacional)</h4>
+      <p>OpenAIRE ${badge(data.zenodo.openaire)}</p>
+      <p>BASE ${badge(data.zenodo.base)}</p>
+
+      <hr class="my-3">
+
+      <h4 class="font-semibold mb-2">Motores de búsqueda</h4>
+      <p>Google Académico ${badge(data.motores_busqueda.google_academico)}</p>
     `;
   } catch (err) {
     container.innerHTML = `
@@ -118,6 +134,7 @@ if ("serviceWorker" in navigator) {
       </p>`;
   }
 })();
+
 
 /**
  * graficas estadisticas
