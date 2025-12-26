@@ -1,0 +1,34 @@
+{
+  "registros": {
+    "2025-12-24": {
+      "uac": {
+        "visitas_30d": 63,
+        "descargas_30d": 19
+      },
+      "zenodo": {
+        "visitas_30d": 12,
+        "descargas_30d": 11
+      }
+    },
+    "2025-12-25": {
+      "uac": {
+        "visitas_30d": 63,
+        "descargas_30d": 19
+      },
+      "zenodo": {
+        "visitas_30d": 12,
+        "descargas_30d": 11
+      }
+    },
+    "2025-12-26": {
+      "uac": {
+        "visitas_30d": 63,
+        "descargas_30d": 19
+      },
+      "zenodo": {
+        "visitas_30d": 12,
+        "descargas_30d": 11
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+Skip to main
+
+Info: Zenodo’s user support line is staffed on regular business days between Dec 22 and Jan 4. Response times may be slightly longer than normal.
+
+Published December 24, 2025 | Version Final version
+Thesis  Open
+Desarrollo de un sistema de información web para la administración de los procesos del consultorio odontológico Lalysdent (Web-based Information System for Managing Processes at Lalysdent Dental Office)
+Creators
+Cobos Vargas, Irvin Julian (Producer)1
+ 
+Calvo Arteaga, Carlos Antonio (Producer)1
+Show affiliations
+Description
+
+This thesis aims to develop a web-based information system for managing registration, care, inventory, and financial processes at the LALYSDENT dental office in Cusco. Agile Scrum methodology and MVC architecture were used, with modules for patient registration, appointment management, treatment administration, inventory control, and consolidated reports, implemented with Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery, and MySQL. The system contributes to digitalization and improved administrative efficiency.
+
+University repository: https://hdl.handle.net/20.500.12557/8558
+
+Project homepage: https://calvocobos.github.io/Expo/
+
+PDF copy: https://calvocobos.github.io/Expo/Carlos_Irvin_Tesis_bachiller_2025.pdf
+
+Abstract (Spanish)
+
+La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. Se utilizó metodología ágil Scrum y arquitectura MVC, implementando módulos para registro de pacientes, gestión de citas, administración de tratamientos, inventario y reportes consolidados, con tecnologías como Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery y MySQL. El sistema contribuye a la digitalización y mejora de la eficiencia administrativa.
+
+Abstract (Portuguese)
+
+O principal objetivo desta tese é o desenvolvimento de um sistema de informação baseado na web para gerenciar os processos de cadastro, atendimento ao paciente, estoque e finanças da clínica odontológica LALYSDENT, na cidade de Cusco. A metodologia Agile Scrum e a arquitetura MVC foram utilizadas, implementando módulos para cadastro de pacientes, agendamento de consultas, administração de tratamentos, controle de estoque e geração de relatórios consolidados, com tecnologias como Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery e MySQL. O sistema contribui para a digitalização e o aumento da eficiência administrativa.
+
+Abstract (French)
+
+Cette thèse a pour objectif principal le développement d’un système d’information web destiné à la gestion des processus d’enregistrement, de prise en charge, d’inventaire et de finances du cabinet dentaire LALYSDENT, situé dans la ville de Cusco. La méthodologie agile Scrum ainsi que l’architecture MVC ont été utilisées, en mettant en œuvre des modules pour l’enregistrement des patients, la gestion des rendez-vous, l’administration des traitements, le contrôle des stocks et la génération de rapports consolidés. Le système a été développé à l’aide de technologies telles que Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery et MySQL. La solution proposée contribue à la digitalisation des processus administratifs et à l’amélioration de l’efficacité de la gestion au sein du cabinet dentaire.
+
+Abstract (German)
+
+Diese Arbeit hat zum Ziel, ein webbasiertes Informationssystem zur Verwaltung der Prozesse der Registrierung, Patientenbetreuung, Bestandsverwaltung und Finanzverwaltung der Zahnarztpraxis LALYSDENT in der Stadt Cusco zu entwickeln. Dabei wurden die agile Scrum-Methodik sowie die MVC-Architektur eingesetzt und Module für die Patientenregistrierung, die Terminverwaltung, die Behandlungsadministration, die Lagerbestandskontrolle und die Erstellung konsolidierter Berichte implementiert. Das System wurde unter Verwendung von Technologien wie Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery und MySQL entwickelt. Die vorgeschlagene Lösung trägt zur Digitalisierung der administrativen Prozesse und zur Verbesserung der Verwaltungseffizienz in der Zahnarztpraxis bei.
+
+Files
+Carlos_Irvin_Tesis_bachiller_2025.pdf
+Files (17.1 MB)
+Carlos_Irvin_Tesis_bachiller_2025.pdf
+md5:7790f8d2b14c083ddecac3aae144efee 
+17.1 MB
+Preview Download
+Additional details
+Identifiers
+Handle
+20.500.12557/8558
+Related works
+Is published in
+Publication: 20.500.12557/8558 (Handle)
+References
+Presentation: https://calvocobos.github.io/Expo/ (URL)
+Dates
+Available
+2025-12-18
+Date when the thesis became publicly available in the institutional repository.
+Software
+Repository URL 
+https://github.com/calvocobos/Expo
+Programming language 
+PHP, JavaScript, HTML, CSS
+Development Status 
+Active
+References
+Calvo, C., & Cobos, I. (2025). Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco [Tesis para obtener el título profesional de Ingeniero de Sistemas, Universidad Andina del Cusco]. https://hdl.handle.net/20.500.12557/8558
+Citations
+Show only:
+Literature (0)
+Dataset (0)
+Software (0)
+Unknown (0)
+Citations To This Version
+Search
+
+No citations found
+
+12
+ VIEWS
+11
+ DOWNLOADS
+ Show more details
+Versions
+Version Final version
+10.5281/zenodo.18047949
+Dec 24, 2025
+
+Cite all versions? You can cite all versions by using the DOI 10.5281/zenodo.18047948. This DOI represents all versions, and will always resolve to the latest one. Read more.
+
+External resources
+Indexed in
+OpenAIRE
+Keywords and subjects
+Ingeniería de Sistemas Sistema de información web Gestión administrativa Automatización de procesos Aplicaciones informáticas en salud Web-based information system Administrative management Process automation
+GEMET
+Software development
+MeSH
+Information Systems
+Details
+DOI
+Resource type
+Thesis
+Publisher
+Zenodo
+Thesis
+Universidad Andina del Cusco (Facultad de Ingeniería y Arquitectura), Engineers, Submitted: 2025-09-23, Defended: 2025-09-23
+Languages
+Spanish, English
+Rights
+License
+Creative Commons Attribution Non Commercial No Derivatives 4.0 International
+Copyright
+Copyright (C) 2025 The Authors.
+Citation
+Cobos Vargas, I. J., & Calvo Arteaga, C. A. (2025). Desarrollo de un sistema de información web para la administración de los procesos del consultorio odontológico Lalysdent (Web-based Information System for Managing Processes at Lalysdent Dental Office) (Final version) [Zenodo]. https://doi.org/10.5281/zenodo.18047949
+Style
+APA
+Export
+JSON
+Export
+Technical metadata
+Created December 24, 2025
+Modified December 26, 2025
+Jump up
+About
+About
+Policies
+Infrastructure
+Principles
+Projects
+Roadmap
+Contact
+Blog
+Blog
+Help
+FAQ
+Docs
+Guides
+Support
+Developers
+REST API
+OAI-PMH
+Contribute
+ GitHub
+ Donate
+Funded by
+  
+
+Powered by CERN Data Centre & InvenioRDM
+
+Status Privacy policy Cookie policy Terms of Use Support
+ 
+
+This site uses cookies. Find out more on how we use cookies
+
+Accept all cookies
+Accept only essential cookies
