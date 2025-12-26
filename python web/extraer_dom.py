@@ -17,6 +17,9 @@ def extraer_dom():
     with open("contenido_visible.txt", "w", encoding="utf-8") as f:
         f.write(texto)
 
+    # 🔴 CERRAR EL NAVEGADOR
+    window.destroy()
+
     print("✔ dom_completo.html creado")
     print("✔ contenido_visible.txt creado")
 
