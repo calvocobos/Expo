@@ -196,10 +196,10 @@ if ("serviceWorker" in navigator) {
 })();
 
 
-
 /**
  * 📊 Gráficas estadísticas
  * Chart.js
+ * Dona doble + Líneas (UAC / Zenodo)
  */
 
 async function cargarEstadisticas() {
@@ -212,31 +212,70 @@ async function cargarEstadisticas() {
   ]);
 
   /* =========================================================
-   * 2️⃣ GRÁFICO DONA — TOTALES ACUMULADOS
+   * 2️⃣ DONA DOBLE — TOTALES
    * ========================================================= */
   const tot = totales.totales;
 
   new Chart(document.getElementById("totalesChart"), {
     type: "doughnut",
     data: {
-      labels: ["Visitas", "Descargas"],
+      labels: [
+        "Global · Visitas",
+        "Global · Descargas",
+        "UAC · Visitas",
+        "UAC · Descargas",
+        "Zenodo · Visitas",
+        "Zenodo · Descargas",
+      ],
       datasets: [
+        /* 🟠 DONA EXTERNA — GLOBAL */
         {
           data: [
             tot.global.visitas,
-            tot.global.descargas
+            tot.global.descargas,
+            0,
+            0,
+            0,
+            0,
           ],
           backgroundColor: [
-            "#38bdf8", // sky-400
-            "#f59e0b", // amber-500
+            "#38bdf8",
+            "#f59e0b",
+            "transparent",
+            "transparent",
+            "transparent",
+            "transparent",
           ],
           borderWidth: 0,
+          weight: 2,
+        },
+
+        /* 🔵 DONA INTERNA — UAC / ZENODO */
+        {
+          data: [
+            0,
+            0,
+            tot.uac.visitas,
+            tot.uac.descargas,
+            tot.zenodo.visitas,
+            tot.zenodo.descargas,
+          ],
+          backgroundColor: [
+            "transparent",
+            "transparent",
+            "#60a5fa",
+            "#fbbf24",
+            "#22c55e",
+            "#a855f7",
+          ],
+          borderWidth: 0,
+          weight: 1,
         },
       ],
     },
     options: {
       responsive: true,
-      cutout: "65%",
+      cutout: "40%",
       plugins: {
         legend: {
           position: "bottom",
@@ -246,28 +285,26 @@ async function cargarEstadisticas() {
               : "#1e293b",
           },
         },
+        tooltip: {
+          callbacks: {
+            label: (ctx) =>
+              `${ctx.label}: ${ctx.raw.toLocaleString()}`,
+          },
+        },
       },
     },
   });
 
   /* =========================================================
-   * 3️⃣ GRÁFICO DE LÍNEAS — INCREMENTOS DIARIOS
+   * 3️⃣ GRÁFICO DE LÍNEAS — 4 SERIES
    * ========================================================= */
   const registros = incrementos.incrementos_por_dia;
-
   const fechas = Object.keys(registros);
 
-  const visitas = fechas.map(
-    (f) =>
-      registros[f].uac.visitas_dia +
-      registros[f].zenodo.visitas_dia
-  );
-
-  const descargas = fechas.map(
-    (f) =>
-      registros[f].uac.descargas_dia +
-      registros[f].zenodo.descargas_dia
-  );
+  const uacVisitas = fechas.map((f) => registros[f].uac.visitas_dia);
+  const uacDescargas = fechas.map((f) => registros[f].uac.descargas_dia);
+  const zenVisitas = fechas.map((f) => registros[f].zenodo.visitas_dia);
+  const zenDescargas = fechas.map((f) => registros[f].zenodo.descargas_dia);
 
   new Chart(document.getElementById("pordiaChart"), {
     type: "line",
@@ -275,19 +312,31 @@ async function cargarEstadisticas() {
       labels: fechas,
       datasets: [
         {
-          label: "Visitas diarias",
-          data: visitas,
-          borderColor: "#2563eb", // blue-600
-          backgroundColor: "rgba(37, 99, 235, 0.1)",
-          fill: true,
+          label: "UAC · Visitas",
+          data: uacVisitas,
+          borderColor: "#2563eb",
+          backgroundColor: "rgba(37, 99, 235, 0.15)",
           tension: 0.35,
         },
         {
-          label: "Descargas diarias",
-          data: descargas,
-          borderColor: "#16a34a", // green-600
-          backgroundColor: "rgba(22, 163, 74, 0.1)",
-          fill: true,
+          label: "UAC · Descargas",
+          data: uacDescargas,
+          borderColor: "#f59e0b",
+          backgroundColor: "rgba(245, 158, 11, 0.15)",
+          tension: 0.35,
+        },
+        {
+          label: "Zenodo · Visitas",
+          data: zenVisitas,
+          borderColor: "#16a34a",
+          backgroundColor: "rgba(22, 163, 74, 0.15)",
+          tension: 0.35,
+        },
+        {
+          label: "Zenodo · Descargas",
+          data: zenDescargas,
+          borderColor: "#a855f7",
+          backgroundColor: "rgba(168, 85, 247, 0.15)",
           tension: 0.35,
         },
       ],
@@ -297,6 +346,7 @@ async function cargarEstadisticas() {
       maintainAspectRatio: false,
       plugins: {
         legend: {
+          position: "top",
           labels: {
             color: document.documentElement.classList.contains("dark")
               ? "#fbbf24"
