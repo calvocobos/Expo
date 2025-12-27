@@ -1,0 +1,94 @@
+{
+  "incrementos_por_dia": {
+    "2025-12-18": {
+      "uac": {
+        "visitas_dia": 4,
+        "descargas_dia": 2
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      }
+    },
+    "2025-12-19": {
+      "uac": {
+        "visitas_dia": 9,
+        "descargas_dia": 3
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      }
+    },
+    "2025-12-20": {
+      "uac": {
+        "visitas_dia": 4,
+        "descargas_dia": 7
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      }
+    },
+    "2025-12-21": {
+      "uac": {
+        "visitas_dia": 14,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      }
+    },
+    "2025-12-22": {
+      "uac": {
+        "visitas_dia": 11,
+        "descargas_dia": 4
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      }
+    },
+    "2025-12-23": {
+      "uac": {
+        "visitas_dia": 9,
+        "descargas_dia": 2
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      }
+    },
+    "2025-12-24": {
+      "uac": {
+        "visitas_dia": 4,
+        "descargas_dia": 0
+      },
+      "zenodo": {
+        "visitas_dia": 5,
+        "descargas_dia": 4
+      }
+    },
+    "2025-12-25": {
+      "uac": {
+        "visitas_dia": 6,
+        "descargas_dia": 0
+      },
+      "zenodo": {
+        "visitas_dia": 6,
+        "descargas_dia": 6
+      }
+    },
+    "2025-12-26": {
+      "uac": {
+        "visitas_dia": 2,
+        "descargas_dia": 0
+      },
+      "zenodo": {
+        "visitas_dia": 5,
+        "descargas_dia": 5
+      }
+    }
+  }
+}
