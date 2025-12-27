@@ -105,7 +105,6 @@ if ("serviceWorker" in navigator) {
     // ======================
     const links = {
       alicia: "https://alicia.concytec.gob.pe",
-      renati: "https://renati.sunedu.gob.pe",
       la_referencia: "https://www.lareferencia.info",
 
       // OpenAIRE (link público válido por PID)
@@ -159,7 +158,6 @@ if ("serviceWorker" in navigator) {
 
       <h4 class="font-semibold mb-2">Repositorio de origen</h4>
       ${row("ALICIA", data.repositorio_origen.indexacion.alicia, links.alicia)}
-      ${row("RENATI", data.repositorio_origen.indexacion.renati, links.renati)}
       ${row(
         "La Referencia",
         data.repositorio_origen.indexacion.la_referencia,
