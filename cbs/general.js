@@ -195,30 +195,37 @@ if ("serviceWorker" in navigator) {
   }
 })();
 
+
+
 /**
- * graficas estadisticas
- * chart js
+ * 📊 Gráficas estadísticas
+ * Chart.js
  */
 
 async function cargarEstadisticas() {
   /* =========================================================
-   * 1️⃣ RECOLECCIÓN DE DATOS (JSON)
+   * 1️⃣ CARGA DE JSON
    * ========================================================= */
   const [incrementos, totales] = await Promise.all([
-    fetch("python web/incrementos_diarios.json").then((r) => r.json()),
-    fetch("python web/totales.json").then((r) => r.json()),
+    fetch("python web/incrementos_por_dia.json").then((r) => r.json()),
+    fetch("python web/totales_acumulados.json").then((r) => r.json()),
   ]);
 
   /* =========================================================
    * 2️⃣ GRÁFICO DONA — TOTALES ACUMULADOS
    * ========================================================= */
+  const tot = totales.totales;
+
   new Chart(document.getElementById("totalesChart"), {
     type: "doughnut",
     data: {
       labels: ["Visitas", "Descargas"],
       datasets: [
         {
-          data: [totales.total_visitas, totales.total_descargas],
+          data: [
+            tot.global.visitas,
+            tot.global.descargas
+          ],
           backgroundColor: [
             "#38bdf8", // sky-400
             "#f59e0b", // amber-500
@@ -246,13 +253,23 @@ async function cargarEstadisticas() {
   /* =========================================================
    * 3️⃣ GRÁFICO DE LÍNEAS — INCREMENTOS DIARIOS
    * ========================================================= */
-  const registros = incrementos.incrementos_diarios;
+  const registros = incrementos.incrementos_por_dia;
 
   const fechas = Object.keys(registros);
-  const visitas = fechas.map((f) => registros[f].visitas_dia);
-  const descargas = fechas.map((f) => registros[f].descargas_dia);
 
-  new Chart(document.getElementById("visitasChart"), {
+  const visitas = fechas.map(
+    (f) =>
+      registros[f].uac.visitas_dia +
+      registros[f].zenodo.visitas_dia
+  );
+
+  const descargas = fechas.map(
+    (f) =>
+      registros[f].uac.descargas_dia +
+      registros[f].zenodo.descargas_dia
+  );
+
+  new Chart(document.getElementById("pordiaChart"), {
     type: "line",
     data: {
       labels: fechas,
