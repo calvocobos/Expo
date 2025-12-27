@@ -1,4 +1,7 @@
 Skip to main
+Communities
+My dashboard
+ Log in  Sign up
 
 Info: Zenodo’s user support line is staffed on regular business days between Dec 22 and Jan 4. Response times may be slightly longer than normal.
 
@@ -39,10 +42,12 @@ Diese Arbeit hat zum Ziel, ein webbasiertes Informationssystem zur Verwaltung de
 Files
 Carlos_Irvin_Tesis_bachiller_2025.pdf
 Files (17.1 MB)
+Name	Size	
+ Download all
+
+
 Carlos_Irvin_Tesis_bachiller_2025.pdf
-md5:7790f8d2b14c083ddecac3aae144efee 
-17.1 MB
-Preview Download
+md5:7790f8d2b14c083ddecac3aae144efee 	17.1 MB	Preview Download
 Additional details
 Identifiers
 Handle
@@ -76,9 +81,9 @@ Search
 
 No citations found
 
-21
+36
  VIEWS
-17
+18
  DOWNLOADS
  Show more details
 Versions
