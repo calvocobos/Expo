@@ -62,7 +62,6 @@ async function run() {
       oai_id: OAI_ID,
       indexacion: {
         alicia: false,
-        renati: false,
         la_referencia: false
       }
     },
@@ -85,10 +84,6 @@ async function run() {
   // ======================
   result.repositorio_origen.indexacion.alicia = await exists(
     `https://alicia.concytec.gob.pe/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=${OAI_ID}`
-  );
-
-  result.repositorio_origen.indexacion.renati = await exists(
-    `https://renati.sunedu.gob.pe/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=${OAI_ID}`
   );
 
   result.repositorio_origen.indexacion.la_referencia = await exists(
