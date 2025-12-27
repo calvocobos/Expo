@@ -195,7 +195,6 @@ if ("serviceWorker" in navigator) {
   }
 })();
 
-
 /**
  * 📊 Gráficas estadísticas
  * Chart.js
@@ -228,16 +227,11 @@ async function cargarEstadisticas() {
         "Zenodo · Descargas",
       ],
       datasets: [
-        /* 🟠 DONA EXTERNA — GLOBAL */
+        /* ============================
+         * 🟠 DONA EXTERNA — GLOBAL
+         * ============================ */
         {
-          data: [
-            tot.global.visitas,
-            tot.global.descargas,
-            0,
-            0,
-            0,
-            0,
-          ],
+          data: [tot.global.visitas, tot.global.descargas, 0, 0, 0, 0],
           backgroundColor: [
             "#38bdf8",
             "#f59e0b",
@@ -247,10 +241,14 @@ async function cargarEstadisticas() {
             "transparent",
           ],
           borderWidth: 0,
-          weight: 2,
+          radius: "100%",
+          cutout: "45%",
+          spacing: 4,
         },
 
-        /* 🔵 DONA INTERNA — UAC / ZENODO */
+        /* ============================
+         * 🔵 DONA INTERNA — FUENTES
+         * ============================ */
         {
           data: [
             0,
@@ -269,30 +267,36 @@ async function cargarEstadisticas() {
             "#a855f7",
           ],
           borderWidth: 0,
-          weight: 1,
+          radius: "75%",
+          cutout: "60%",
+          spacing: 4,
         },
       ],
     },
     options: {
       responsive: true,
-      cutout: "40%",
       plugins: {
         legend: {
-          position: "bottom",
-          labels: {
-            color: document.documentElement.classList.contains("dark")
-              ? "#fde68a"
-              : "#1e293b",
-          },
+          display: false, // ❌ sin leyenda
         },
         tooltip: {
           callbacks: {
-            label: (ctx) =>
-              `${ctx.label}: ${ctx.raw.toLocaleString()}`,
+            label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString()}`,
+          },
+        },
+        datalabels: {
+          color: "#111827",
+          font: {
+            weight: "bold",
+            size: 12,
+          },
+          formatter: (value) => {
+            return value > 0 ? value : "";
           },
         },
       },
     },
+    plugins: [ChartDataLabels],
   });
 
   /* =========================================================
