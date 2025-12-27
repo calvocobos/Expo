@@ -67,7 +67,7 @@
       },
       "zenodo": {
         "visitas_dia": 8,
-        "descargas_dia": 8
+        "descargas_dia": 6
       }
     },
     "2025-12-25": {
@@ -82,12 +82,12 @@
     },
     "2025-12-26": {
       "uac": {
-        "visitas_dia": 6,
+        "visitas_dia": 7,
         "descargas_dia": 0
       },
       "zenodo": {
-        "visitas_dia": 6,
-        "descargas_dia": 6
+        "visitas_dia": 10,
+        "descargas_dia": 9
       }
     }
   }

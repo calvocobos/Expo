@@ -82,12 +82,12 @@
     },
     "2025-12-26": {
       "uac": {
-        "visitas_30d": 67,
+        "visitas_30d": 68,
         "descargas_30d": 19
       },
       "zenodo": {
-        "visitas_30d": 17,
-        "descargas_30d": 16
+        "visitas_30d": 21,
+        "descargas_30d": 17
       }
     }
   }
