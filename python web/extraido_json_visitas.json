@@ -99,6 +99,16 @@
         "visitas_30d": 36,
         "descargas_30d": 18
       }
+    },
+    "2025-12-28": {
+      "uac": {
+        "visitas_30d": 76,
+        "descargas_30d": 19
+      },
+      "zenodo": {
+        "visitas_30d": 49,
+        "descargas_30d": 29
+      }
     }
   }
 }
