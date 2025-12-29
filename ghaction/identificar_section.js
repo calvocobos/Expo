@@ -13,6 +13,7 @@ const LOWERCASE_WORDS = ['de', 'a', 'la', 'y', 'en'];
 const ACCENTS_MAP = {
   'Informacion': 'Información',
   'Presentacion': 'Presentación',
+  'Sustemtacion': 'Sustemtación',
   'Colacion': 'Colación',
   'Abstrac': 'Abstract',
   'Metodos': 'Métodos',

@@ -76,6 +76,38 @@ if ("serviceWorker" in navigator) {
   });
 }
 
+/**
+ * Reescribir menu lateral derecho
+ * usano json como fuente
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('../ghaction/sections.json')
+    .then(res => res.json())
+    .then(sections => {
+      const menu = document.getElementById('menu-lateral');
+      if (!menu) return;
+
+      const ul = menu.querySelector('ul');
+      if (!ul) return;
+
+      // Limpiar contenido actual
+      ul.innerHTML = '';
+
+      // Crear <li> y <a> para cada sección
+      sections.forEach(section => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.setAttribute('href', `#${section.id}`);
+        a.setAttribute('aria-label', `Ir a la sección ${section.titulo}`);
+        a.className = 'block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600';
+        a.textContent = section.nombre;
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+    })
+    .catch(err => console.error('Error cargando sections.json:', err));
+});
 
 
 /**
