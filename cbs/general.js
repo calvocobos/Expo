@@ -82,7 +82,7 @@ if ("serviceWorker" in navigator) {
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../ghaction/sections.json')
+  fetch('../Expo/ghaction/sections.json')
     .then(res => res.json())
     .then(sections => {
       const menu = document.getElementById('menu-lateral');
