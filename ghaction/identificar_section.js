@@ -21,7 +21,9 @@ const ACCENTS_MAP = {
   'Graficas': 'Gráficas',
   'Normas': 'Normas',
   'Internacional': 'Internacional',
-  'Licencia': 'Licencia'
+  'Licencia': 'Licencia',
+  'Iso': 'ISO',
+  'Iec': 'IEC'
 };
 
 // Función para formatear nombre desde id
