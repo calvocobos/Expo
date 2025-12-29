@@ -11,13 +11,29 @@ const html = fs.readFileSync(INDEX_PATH, 'utf-8');
 // Cargar con Cheerio
 const $ = cheerio.load(html);
 
+// Función para formatear id a nombre
+function formatName(id) {
+  return id
+    .split('-')                // separar por guion
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // capitalizar inicial
+    .join(' ');                // unir con espacio
+}
+
 // Extraer todas las secciones con id
 const sections = [];
 $('section[id]').each((i, el) => {
-  sections.push({
-    id: $(el).attr('id'),
-    title: $(el).attr('title') || '' // opcional, si quieres rescatar title
-  });
+  const id = $(el).attr('id');
+  const nombre = formatName(id);
+
+  // Buscar primer h1 dentro de la sección
+  let titulo = $(el).find('h1').first().text().trim();
+
+  // Si no hay h1, usar primer h2
+  if (!titulo) {
+    titulo = $(el).find('h2').first().text().trim();
+  }
+
+  sections.push({ id, nombre, titulo });
 });
 
 // Ruta del JSON de salida
