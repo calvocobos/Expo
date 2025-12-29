@@ -1,110 +1,132 @@
 [
   {
     "id": "inicio",
-    "title": ""
+    "nombre": "Inicio",
+    "titulo": "Sustentación de Tesis para la obtención del título profesional de Ingeniero de Sistemas"
   },
   {
     "id": "enfoque",
-    "title": ""
+    "nombre": "Enfoque",
+    "titulo": "Alcance y Enfoque de la Investigación"
   },
   {
     "id": "desarrollo",
-    "title": ""
+    "nombre": "Desarrollo",
+    "titulo": "Desarrollo del Sistema"
   },
   {
     "id": "herramientas",
-    "title": ""
+    "nombre": "Herramientas",
+    "titulo": "Herramientas Tecnológicas"
   },
   {
     "id": "video",
-    "title": ""
+    "nombre": "Video",
+    "titulo": "Video de la sustentación de tesis de Ingeniería de Sistemas"
   },
   {
     "id": "autores",
-    "title": ""
+    "nombre": "Autores",
+    "titulo": "Autores y Asesor"
   },
   {
     "id": "presentacion",
-    "title": ""
+    "nombre": "Presentacion",
+    "titulo": "Presentación y Sustentación del Sistema de Información Odontológico"
   },
   {
     "id": "jurado",
-    "title": ""
+    "nombre": "Jurado",
+    "titulo": "Jurado Calificador"
   },
   {
     "id": "evaluacion",
-    "title": ""
+    "nombre": "Evaluacion",
+    "titulo": "Evaluación del Jurado Calificador"
   },
   {
     "id": "referencias",
-    "title": ""
+    "nombre": "Referencias",
+    "titulo": "Enlaces y Referencias del sistema de información"
   },
   {
     "id": "tesis-resources",
-    "title": ""
+    "nombre": "Tesis Resources",
+    "titulo": "Recursos de la Tesis"
   },
   {
     "id": "renati",
-    "title": ""
+    "nombre": "Renati",
+    "titulo": "Registro Nacional de Trabajos de Investigación (RENATI – SUNEDU)"
   },
   {
     "id": "metadata-uac",
-    "title": ""
+    "nombre": "Metadata Uac",
+    "titulo": "Metadata de la Tesis"
   },
   {
     "id": "resumen",
-    "title": ""
+    "nombre": "Resumen",
+    "titulo": "Resumen de la tesis"
   },
   {
     "id": "licencia-cc",
-    "title": ""
+    "nombre": "Licencia Cc",
+    "titulo": "Licencia Creative Commons Atribución–No Comercial–Sin Derivadas 4.0 Internacional"
   },
   {
     "id": "citas",
-    "title": ""
+    "nombre": "Citas",
+    "titulo": "Citas de la tesis"
   },
   {
     "id": "metadata-zenodo",
-    "title": ""
+    "nombre": "Metadata Zenodo",
+    "titulo": "Metadata de la Tesis (Zenodo)"
   },
   {
     "id": "estadisticas-impacto",
-    "title": ""
+    "nombre": "Estadisticas Impacto",
+    "titulo": "Impacto y visibilidad del trabajo académico"
   },
   {
     "id": "estadisticas",
-    "title": ""
-  },
-  {
-    "id": "cosechadores",
-    "title": ""
+    "nombre": "Estadisticas",
+    "titulo": "Visitas y descargas del repositorio"
   },
   {
     "id": "iso",
-    "title": ""
+    "nombre": "Iso",
+    "titulo": "Norma ISO/IEC 25010:2011 y ISO/IEC 25010:2023"
   },
   {
     "id": "normas-apa7",
-    "title": ""
+    "nombre": "Normas Apa7",
+    "titulo": "Normas APA Séptima Edición"
   },
   {
     "id": "leyes",
-    "title": ""
+    "nombre": "Leyes",
+    "titulo": "Leyes Aplicadas en la tesis"
   },
   {
     "id": "colacion",
-    "title": ""
+    "nombre": "Colacion",
+    "titulo": "Colación de Grado – Ingeniería de Sistemas"
   },
   {
     "id": "instalar-app",
-    "title": ""
+    "nombre": "Instalar App",
+    "titulo": "Instala nuestra App de Tesis"
   },
   {
     "id": "compartir",
-    "title": ""
+    "nombre": "Compartir",
+    "titulo": "Compartir"
   },
   {
     "id": "comentarios",
-    "title": ""
+    "nombre": "Comentarios",
+    "titulo": ""
   }
 ]
