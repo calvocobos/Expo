@@ -108,16 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 
 $(document).ready(function () {
-  //menu lateral derecho
+  // botón para mostrar/ocultar menú lateral
   $("#btnmenu").on("click", function () {
     $("#menu-lateral").stop(true, true).slideToggle(300);
   });
-  //cerar menu al elegir uno
-  $("#menu-lateral a").click(function (e) {
+
+  // Delegación de eventos para enlaces generados dinámicamente
+  $("#menu-lateral").on("click", "a", function (e) {
     // Ocultar el menú lateral después de hacer clic
     $("#menu-lateral").fadeOut();
   });
 });
+
 
 /**
  * 📊 Gráficas estadísticas
