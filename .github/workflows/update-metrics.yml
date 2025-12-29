@@ -1,34 +1,41 @@
-name: Verificar indexación de tesis
+name: Actualizar secciones de HTML
 
 on:
   schedule:
-    #- cron: "0 9 * * 1" # Lunes 09:00 UTC
-    - cron: "0 9 * * *" # Todos los días 09:00 UTC
+    - cron: "0 9 * * *"  # Todos los días a las 09:00 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  indexing-check:
+  update-sections:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Clonar el repositorio
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # 2️⃣ Configurar Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Ejecutar validación
-        run: node scripts/metrics.js
+      # 3️⃣ Instalar dependencias Node
+      - name: Instalar dependencias Node
+        run: npm install cheerio
 
-      - name: Commit cambios
+      # 4️⃣ Ejecutar el script JS
+      - name: Ejecutar identificación de secciones
+        run: node ghaction/identificar_section.js
+
+      # 5️⃣ Commit y push del JSON generado
+      - name: Commit resultados
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add metrics/indexing.json
-          git commit -m "chore: actualización de indexación de tesis" || echo "Sin cambios"
+          git add ghaction/sections.json
+          git commit -m "chore: actualización automática de secciones" || echo "Sin cambios"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/calvocobos/Expo.git HEAD:main
