@@ -31,7 +31,7 @@
   },
   {
     "id": "presentacion",
-    "nombre": "Presentacion",
+    "nombre": "Presentación",
     "titulo": "Presentación y Sustentación del Sistema de Información Odontológico"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "id": "resumen-abstrac",
-    "nombre": "Resumen Abstrac",
+    "nombre": "Resumen Abstract",
     "titulo": "Resumen de la tesis"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "id": "estadisticas-graficas",
-    "nombre": "Estadisticas Graficas",
+    "nombre": "Estadísticas Gráficas",
     "titulo": "Grafica de visitas y descargas del repositorio"
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "id": "colacion-de-grado",
-    "nombre": "Colacion de Grado",
+    "nombre": "Colación de Grado",
     "titulo": "Colación de Grado - Ingeniería de Sistemas"
   },
   {
