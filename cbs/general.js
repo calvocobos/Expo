@@ -33,17 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* JQUERY */
 
-$(document).ready(function () {
-  //menu lateral derecho
-  $("#btnmenu").on("click", function () {
-    $("#menu-lateral").stop(true, true).slideToggle(300);
-  });
-  //cerar menu al elegir uno
-  $("#menu-lateral a").click(function (e) {
-    // Ocultar el menú lateral después de hacer clic
-    $("#menu-lateral").fadeOut();
-  });
+/**
+ * informacion de ancho y alto de mi ventana
+ */
 
+$(document).ready(function () {
   function actualizarTamano() {
     // obtener ancho y alto de la ventana
     let ancho = $(window).width();
@@ -109,6 +103,21 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(err => console.error('Error cargando sections.json:', err));
 });
 
+/**
+ * accion de mi menu lateral
+ */
+
+$(document).ready(function () {
+  //menu lateral derecho
+  $("#btnmenu").on("click", function () {
+    $("#menu-lateral").stop(true, true).slideToggle(300);
+  });
+  //cerar menu al elegir uno
+  $("#menu-lateral a").click(function (e) {
+    // Ocultar el menú lateral después de hacer clic
+    $("#menu-lateral").fadeOut();
+  });
+});
 
 /**
  * 📊 Gráficas estadísticas
