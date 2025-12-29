@@ -1,16 +1,16 @@
 {
   "totales": {
     "uac": {
-      "visitas": 76,
-      "descargas": 19
+      "visitas": 79,
+      "descargas": 20
     },
     "zenodo": {
-      "visitas": 49,
-      "descargas": 29
+      "visitas": 57,
+      "descargas": 34
     },
     "global": {
-      "visitas": 125,
-      "descargas": 48
+      "visitas": 136,
+      "descargas": 54
     }
   }
 }

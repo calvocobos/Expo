@@ -12,51 +12,116 @@ Calvo Arteaga, Carlos Antonio (Producer)1
 Show affiliations
 Description
 
-La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. Se utilizó metodología ágil Scrum y arquitectura MVC, implementando módulos para registro de pacientes, gestión de citas, administración de tratamientos, inventario y reportes consolidados, con tecnologías como Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery y MySQL. El sistema contribuye a la digitalización y mejora de la eficiencia administrativa.
+La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. Se utilizó metodología ágil Scrum y arquitectura MVC, implementando módulos para registro de pacientes, gestión de citas, administración de tratamientos, inventario y reportes consolidados, con tecnologías como Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery y MySQL. El sistema contribuye a la digitalización y mejora de la eficiencia administrativa. https://hdl.handle.net/20.500.12557/8558 
+
+DOI: https://doi.org/10.5281/zenodo.18047949
+
+Other
+
+Related resources
+
+• University repository:
+https://hdl.handle.net/20.500.12557/8558
+
+• National Registry (SUNEDU – RENATI):
+https://renati.sunedu.gob.pe/handle/renati/4844187
+
+• DOI (Zenodo record):
+https://doi.org/10.5281/zenodo.18047949
+
+• Open Science Framework (OSF) project:
+https://osf.io/rqzdx/
+
+• Project homepage:
+https://calvocobos.github.io/Expo/
+
+• PDF version:
+https://calvocobos.github.io/Expo/Carlos_Irvin_Tesis_bachiller_2025.pdf
+
+• Thesis presentation video:
+https://www.youtube.com/watch?v=GAQ6pLZKUeU
 
  
+
+Methods
+
+El desarrollo del proyecto siguió la metodología ágil Scrum, permitiendo un avance iterativo, retroalimentación continua y entregas incrementales.
+
+La arquitectura del software se basó en el patrón Modelo–Vista–Controlador (MVC), separando la lógica de negocio, la interfaz de usuario y el control del flujo, lo que mejora la mantenibilidad y escalabilidad del sistema.
+
+Technical info
+
+Información técnica
+
+El proyecto fue desarrollado utilizando Laravel 11 como framework backend, basado en la arquitectura Modelo–Vista–Controlador (MVC).
+
+La capa de presentación se implementó con Tailwind CSS, JavaScript, CSS y jQuery, permitiendo una interfaz de usuario responsiva e interactiva.
+
+Para la gestión de autenticación y scaffolding se utilizó Laravel Jetstream.
+
+El proceso de construcción y empaquetado de recursos frontend se realizó mediante Vite.
+
+El control de versiones y la gestión del código fuente se llevaron a cabo utilizando Git y GitHub.
+
+Abstract (English)
 
 English Tittle:
 
-Development of a web information system for the administration of the registration, care, inventory and finance processes of the Lalysdent dental office in the district of Cusco
-
-This thesis is also available in the institutional repository of the University: Universidad Anina del Cusco.
-
- 
-
-University repository: https://hdl.handle.net/20.500.12557/8558
-
-National Registry (SUNEDU - RENATI): https://renati.sunedu.gob.pe/handle/renati/4844187
-
-DOI Identifier: https://doi.org/10.5281/zenodo.18047949
-
-Open Science Framework project: https://osf.io/rqzdx/
-
-Project homepage: https://calvocobos.github.io/Expo/
-
-PDF copy: https://calvocobos.github.io/Expo/Carlos_Irvin_Tesis_bachiller_2025.pdf
-
-Thesis presentation video: https://www.youtube.com/watch?v=GAQ6pLZKUeU
+Development of a web information system for the administration of the registration, care, inventory and finance processes of the Lalysdent dental office in the district of Cusco.
 
 Abstract (English)
 
 This thesis aims to develop a web-based information system for managing registration, care, inventory, and financial processes at the LALYSDENT dental office in Cusco. Agile Scrum methodology and MVC architecture were used, with modules for patient registration, appointment management, treatment administration, inventory control, and consolidated reports, implemented with Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery, and MySQL. The system contributes to digitalization and improved administrative efficiency.
 
-Abstract (Spanish)
-
-La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. Se utilizó metodología ágil Scrum y arquitectura MVC, implementando módulos para registro de pacientes, gestión de citas, administración de tratamientos, inventario y reportes consolidados, con tecnologías como Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery y MySQL. El sistema contribuye a la digitalización y mejora de la eficiencia administrativa.
-
 Abstract (Portuguese)
+
+Título em Português:
+
+Desenvolvimento de um sistema de informação web para a administração dos processos de cadastro, atendimento, inventário e finanças do consultório odontológico Lalysdent no distrito de Cusco.
+
+Abstract (Português)
 
 O principal objetivo desta tese é o desenvolvimento de um sistema de informação baseado na web para gerenciar os processos de cadastro, atendimento ao paciente, estoque e finanças da clínica odontológica LALYSDENT, na cidade de Cusco. A metodologia Agile Scrum e a arquitetura MVC foram utilizadas, implementando módulos para cadastro de pacientes, agendamento de consultas, administração de tratamentos, controle de estoque e geração de relatórios consolidados, com tecnologias como Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery e MySQL. O sistema contribui para a digitalização e o aumento da eficiência administrativa.
 
+Abstract (Italian)
+
+Titolo in Italiano:
+
+Sviluppo di un sistema informativo web per la gestione dei processi di registrazione, assistenza, inventario e finanza della clinica odontoiatrica Lalysdent nel distretto di Cusco.
+
+Abstract (Italiano)
+
+Questa tesi mira a sviluppare un sistema informativo basato sul web per la gestione dei processi di registrazione, assistenza ai pazienti, inventario e contabilità della clinica odontoiatrica LALYSDENT di Cusco. Sono stati utilizzati la metodologia agile Scrum e l'architettura MVC, implementando moduli per la registrazione dei pazienti, la gestione degli appuntamenti, la gestione dei trattamenti, l'inventario e la reportistica consolidata, con tecnologie come Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery e MySQL. Il sistema contribuisce alla digitalizzazione e al miglioramento dell'efficienza amministrativa.
+
 Abstract (French)
 
-Cette thèse a pour objectif principal le développement d’un système d’information web destiné à la gestion des processus d’enregistrement, de prise en charge, d’inventaire et de finances du cabinet dentaire LALYSDENT, situé dans la ville de Cusco. La méthodologie agile Scrum ainsi que l’architecture MVC ont été utilisées, en mettant en œuvre des modules pour l’enregistrement des patients, la gestion des rendez-vous, l’administration des traitements, le contrôle des stocks et la génération de rapports consolidés. Le système a été développé à l’aide de technologies telles que Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery et MySQL. La solution proposée contribue à la digitalisation des processus administratifs et à l’amélioration de l’efficacité de la gestion au sein du cabinet dentaire.
+Titre en Français :
+
+Développement d'un système d'information web pour la gestion des inscriptions, des soins aux patients, des stocks et des processus financiers de la clinique dentaire Lalysdent, dans le district de Cusco.
+
+Résumé (Français)
+
+Ce mémoire présente le développement d'un système d'information web pour la gestion des inscriptions, des soins aux patients, des stocks et des processus financiers de la clinique dentaire Lalysdent, située dans la ville de Cusco. La méthodologie Agile Scrum et l'architecture MVC ont été utilisées, avec la mise en œuvre de modules pour l'inscription des patients, la gestion des rendez-vous, l'administration des traitements, la gestion des stocks et la production de rapports consolidés. Le système a été développé à l'aide de technologies telles que Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery et MySQL. Il contribue à la numérisation et à l'amélioration de l'efficacité administrative.
 
 Abstract (German)
 
-Diese Arbeit hat zum Ziel, ein webbasiertes Informationssystem zur Verwaltung der Prozesse der Registrierung, Patientenbetreuung, Bestandsverwaltung und Finanzverwaltung der Zahnarztpraxis LALYSDENT in der Stadt Cusco zu entwickeln. Dabei wurden die agile Scrum-Methodik sowie die MVC-Architektur eingesetzt und Module für die Patientenregistrierung, die Terminverwaltung, die Behandlungsadministration, die Lagerbestandskontrolle und die Erstellung konsolidierter Berichte implementiert. Das System wurde unter Verwendung von Technologien wie Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery und MySQL entwickelt. Die vorgeschlagene Lösung trägt zur Digitalisierung der administrativen Prozesse und zur Verbesserung der Verwaltungseffizienz in der Zahnarztpraxis bei.
+Titel (Deutsch):
+
+Entwicklung eines webbasierten Informationssystems zur Verwaltung von Patientenregistrierung, Patientenversorgung, Inventar und Finanzprozessen in der Zahnklinik Lalysdent im Bezirk Cusco.
+
+Zusammenfassung (Deutsch):
+
+Ziel dieser Arbeit ist die Entwicklung eines webbasierten Informationssystems zur Verwaltung von Patientenregistrierung, Patientenversorgung, Inventar und Finanzprozessen in der Zahnklinik Lalysdent in Cusco. Die agile Scrum-Methodik und die MVC-Architektur wurden angewendet. Dabei wurden Module für Patientenregistrierung, Terminverwaltung, Behandlungsadministration, Inventar und konsolidierte Berichte implementiert. Zum Einsatz kamen Technologien wie Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery und MySQL. Das System trägt zur Digitalisierung und Verbesserung der administrativen Effizienz bei.
+
+Abstract (Russian)
+
+Название на русском языке:
+
+Разработка веб-ориентированной информационной системы для управления регистрацией, обслуживанием пациентов, складским учетом и финансовыми процессами в стоматологической клинике «Лалисдент» в районе Куско.
+
+Аннотация (на русском языке)
+
+Целью данной работы является разработка веб-ориентированной информационной системы для управления регистрацией, обслуживанием пациентов, складским учетом и финансовыми процессами в стоматологической клинике «Лалисдент» в городе Куско. Использована гибкая методология Scrum и архитектура MVC, реализованы модули для регистрации пациентов, управления записями на прием, администрирования лечения, складского учета и сводных отчетов, с использованием таких технологий, как Laravel 11, Jetstream, Livewire, Tailwind CSS, jQuery и MySQL. Система способствует цифровизации и повышению эффективности административной работы.
 
 Files
 Carlos_Irvin_Tesis_bachiller_2025.pdf
@@ -72,6 +137,16 @@ Development of a web information system for the administration of the registrati
 Identifiers
 Handle
 20.500.12557/8558
+URL
+https://renati.sunedu.gob.pe/handle/renati/4844187
+DOI
+10.5281/zenodo.18047949
+URL
+https://osf.io/rqzdx/
+URL
+https://calvocobos.github.io/Expo/
+URL
+https://www.youtube.com/watch?v=GAQ6pLZKUeU
 Related works
 Is published in
 Publication: 20.500.12557/8558 (Handle)
@@ -101,9 +176,9 @@ Search
 
 No citations found
 
-49
+57
  VIEWS
-29
+34
  DOWNLOADS
  Show more details
 Versions
@@ -146,7 +221,7 @@ JSON
 Export
 Technical metadata
 Created December 24, 2025
-Modified December 27, 2025
+Modified December 28, 2025
 Jump up
 About
 About

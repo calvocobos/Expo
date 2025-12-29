@@ -109,6 +109,16 @@
         "visitas_dia": 13,
         "descargas_dia": 11
       }
+    },
+    "2025-12-29": {
+      "uac": {
+        "visitas_dia": 3,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 8,
+        "descargas_dia": 5
+      }
     }
   }
 }
