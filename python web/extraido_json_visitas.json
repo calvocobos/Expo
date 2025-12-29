@@ -2,122 +2,143 @@
   "registros": {
     "2025-12-18": {
       "uac": {
-        "visitas_30d": 4,
-        "descargas_30d": 2
+        "visitas": 4,
+        "descargas": 2
       },
       "zenodo": {
-        "visitas_30d": 0,
-        "descargas_30d": 0
+        "visitas": 0,
+        "descargas": 0
       }
     },
     "2025-12-19": {
       "uac": {
-        "visitas_30d": 13,
-        "descargas_30d": 5
+        "visitas": 13,
+        "descargas": 5
       },
       "zenodo": {
-        "visitas_30d": 0,
-        "descargas_30d": 0
+        "visitas": 0,
+        "descargas": 0
       }
     },
     "2025-12-20": {
       "uac": {
-        "visitas_30d": 17,
-        "descargas_30d": 12
+        "visitas": 17,
+        "descargas": 12
       },
       "zenodo": {
-        "visitas_30d": 0,
-        "descargas_30d": 0
+        "visitas": 0,
+        "descargas": 0
       }
     },
     "2025-12-21": {
       "uac": {
-        "visitas_30d": 31,
-        "descargas_30d": 13
+        "visitas": 31,
+        "descargas": 13
       },
       "zenodo": {
-        "visitas_30d": 0,
-        "descargas_30d": 0
+        "visitas": 0,
+        "descargas": 0
       }
     },
     "2025-12-22": {
       "uac": {
-        "visitas_30d": 42,
-        "descargas_30d": 17
+        "visitas": 42,
+        "descargas": 17
       },
       "zenodo": {
-        "visitas_30d": 0,
-        "descargas_30d": 0
+        "visitas": 0,
+        "descargas": 0
       }
     },
     "2025-12-23": {
       "uac": {
-        "visitas_30d": 51,
-        "descargas_30d": 19
+        "visitas": 51,
+        "descargas": 19
       },
       "zenodo": {
-        "visitas_30d": 0,
-        "descargas_30d": 0
+        "visitas": 0,
+        "descargas": 0
+      },
+      "sunedu": {
+        "visitas": 4
       }
     },
     "2025-12-24": {
       "uac": {
-        "visitas_30d": 55,
-        "descargas_30d": 19
+        "visitas": 55,
+        "descargas": 19
       },
       "zenodo": {
-        "visitas_30d": 8,
-        "descargas_30d": 6
+        "visitas": 8,
+        "descargas": 6
+      },
+      "sunedu": {
+        "visitas": 6
       }
     },
     "2025-12-25": {
       "uac": {
-        "visitas_30d": 61,
-        "descargas_30d": 19
+        "visitas": 61,
+        "descargas": 19
       },
       "zenodo": {
-        "visitas_30d": 11,
-        "descargas_30d": 8
+        "visitas": 11,
+        "descargas": 8
+      },
+      "sunedu": {
+        "visitas": 9
       }
     },
     "2025-12-26": {
       "uac": {
-        "visitas_30d": 68,
-        "descargas_30d": 19
+        "visitas": 68,
+        "descargas": 19
       },
       "zenodo": {
-        "visitas_30d": 21,
-        "descargas_30d": 17
+        "visitas": 21,
+        "descargas": 17
+      },
+      "sunedu": {
+        "visitas": 10
       }
     },
     "2025-12-27": {
       "uac": {
-        "visitas_30d": 71,
-        "descargas_30d": 19
+        "visitas": 71,
+        "descargas": 19
       },
       "zenodo": {
-        "visitas_30d": 36,
-        "descargas_30d": 18
+        "visitas": 36,
+        "descargas": 18
+      },
+      "sunedu": {
+        "visitas": 12
       }
     },
     "2025-12-28": {
       "uac": {
-        "visitas_30d": 76,
-        "descargas_30d": 19
+        "visitas": 76,
+        "descargas": 19
       },
       "zenodo": {
-        "visitas_30d": 49,
-        "descargas_30d": 29
+        "visitas": 49,
+        "descargas": 29
+      },
+      "sunedu": {
+        "visitas": 13
       }
     },
     "2025-12-29": {
       "uac": {
-        "visitas_30d": 79,
-        "descargas_30d": 20
+        "visitas": 80,
+        "descargas": 20
       },
       "zenodo": {
-        "visitas_30d": 57,
-        "descargas_30d": 34
+        "visitas": 57,
+        "descargas": 34
+      },
+      "sunedu": {
+        "visitas": 17
       }
     }
   }

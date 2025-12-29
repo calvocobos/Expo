@@ -196,7 +196,7 @@ if ("serviceWorker" in navigator) {
 /**
  * 📊 Gráficas estadísticas
  * Chart.js
- * Dona doble + Líneas (UAC / Zenodo)
+ * Dona doble + Líneas (UAC / Zenodo / SUNEDU)
  */
 
 async function cargarEstadisticas() {
@@ -223,13 +223,12 @@ async function cargarEstadisticas() {
         "UAC · Descargas",
         "Zenodo · Visitas",
         "Zenodo · Descargas",
+        "SUNEDU · Visitas",
       ],
       datasets: [
-        /* ============================
-         * 🟠 DONA EXTERNA — GLOBAL
-         * ============================ */
         {
-          data: [tot.global.visitas, tot.global.descargas, 0, 0, 0, 0],
+          // 🟠 DONA EXTERNA — GLOBAL
+          data: [tot.global.visitas, tot.global.descargas, 0, 0, 0, 0, 0],
           backgroundColor: [
             "#38bdf8",
             "#f59e0b",
@@ -237,17 +236,14 @@ async function cargarEstadisticas() {
             "transparent",
             "transparent",
             "transparent",
+            "transparent",
           ],
           borderWidth: 0,
           radius: "100%",
-          cutout: "45%",
-          spacing: 4,
+          cutout: "55%", // ⬅️ deja espacio para la interna
         },
-
-        /* ============================
-         * 🔵 DONA INTERNA — FUENTES
-         * ============================ */
         {
+          // 🔵 DONA INTERNA — FUENTES
           data: [
             0,
             0,
@@ -255,28 +251,27 @@ async function cargarEstadisticas() {
             tot.uac.descargas,
             tot.zenodo.visitas,
             tot.zenodo.descargas,
+            tot.sunedu.visitas,
           ],
           backgroundColor: [
             "transparent",
             "transparent",
-            "#60a5fa",
-            "#fbbf24",
-            "#22c55e",
-            "#a855f7",
+            "#60a5fa",   // UAC visitas
+            "#fbbf24",   // UAC descargas
+            "#22c55e",   // Zenodo visitas
+            "#a855f7",   // Zenodo descargas
+            "#ef4444",   // SUNEDU visitas
           ],
           borderWidth: 0,
-          radius: "75%",
-          cutout: "60%",
-          spacing: 4,
+          radius: "78%",
+          cutout: "62%",
         },
       ],
     },
     options: {
       responsive: true,
       plugins: {
-        legend: {
-          display: false, // ❌ sin leyenda
-        },
+        legend: { display: false },
         tooltip: {
           callbacks: {
             label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString()}`,
@@ -284,13 +279,8 @@ async function cargarEstadisticas() {
         },
         datalabels: {
           color: "#111827",
-          font: {
-            weight: "bold",
-            size: 12,
-          },
-          formatter: (value) => {
-            return value > 0 ? value : "";
-          },
+          font: { weight: "bold", size: 12 },
+          formatter: (v) => (v > 0 ? v : ""),
         },
       },
     },
@@ -298,7 +288,7 @@ async function cargarEstadisticas() {
   });
 
   /* =========================================================
-   * 3️⃣ GRÁFICO DE LÍNEAS — 4 SERIES
+   * 3️⃣ GRÁFICO DE LÍNEAS — 5 SERIES
    * ========================================================= */
   const registros = incrementos.incrementos_por_dia;
   const fechas = Object.keys(registros);
@@ -307,6 +297,9 @@ async function cargarEstadisticas() {
   const uacDescargas = fechas.map((f) => registros[f].uac.descargas_dia);
   const zenVisitas = fechas.map((f) => registros[f].zenodo.visitas_dia);
   const zenDescargas = fechas.map((f) => registros[f].zenodo.descargas_dia);
+  const suneduVisitas = fechas.map(
+    (f) => registros[f].sunedu?.visitas_dia ?? 0
+  );
 
   new Chart(document.getElementById("pordiaChart"), {
     type: "line",
@@ -339,6 +332,13 @@ async function cargarEstadisticas() {
           data: zenDescargas,
           borderColor: "#a855f7",
           backgroundColor: "rgba(168, 85, 247, 0.15)",
+          tension: 0.35,
+        },
+        {
+          label: "SUNEDU · Visitas",
+          data: suneduVisitas,
+          borderColor: "#dc2626",
+          backgroundColor: "rgba(220, 38, 38, 0.15)",
           tension: 0.35,
         },
       ],
@@ -381,3 +381,4 @@ async function cargarEstadisticas() {
  * 🚀 EJECUCIÓN
  * ========================================================= */
 cargarEstadisticas();
+

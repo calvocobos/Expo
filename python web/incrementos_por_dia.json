@@ -58,6 +58,9 @@
       "zenodo": {
         "visitas_dia": 0,
         "descargas_dia": 0
+      },
+      "sunedu": {
+        "visitas_dia": 4
       }
     },
     "2025-12-24": {
@@ -68,6 +71,9 @@
       "zenodo": {
         "visitas_dia": 8,
         "descargas_dia": 6
+      },
+      "sunedu": {
+        "visitas_dia": 2
       }
     },
     "2025-12-25": {
@@ -78,6 +84,9 @@
       "zenodo": {
         "visitas_dia": 3,
         "descargas_dia": 2
+      },
+      "sunedu": {
+        "visitas_dia": 3
       }
     },
     "2025-12-26": {
@@ -88,6 +97,9 @@
       "zenodo": {
         "visitas_dia": 10,
         "descargas_dia": 9
+      },
+      "sunedu": {
+        "visitas_dia": 1
       }
     },
     "2025-12-27": {
@@ -98,6 +110,9 @@
       "zenodo": {
         "visitas_dia": 15,
         "descargas_dia": 1
+      },
+      "sunedu": {
+        "visitas_dia": 2
       }
     },
     "2025-12-28": {
@@ -108,16 +123,22 @@
       "zenodo": {
         "visitas_dia": 13,
         "descargas_dia": 11
+      },
+      "sunedu": {
+        "visitas_dia": 1
       }
     },
     "2025-12-29": {
       "uac": {
-        "visitas_dia": 3,
+        "visitas_dia": 4,
         "descargas_dia": 1
       },
       "zenodo": {
         "visitas_dia": 8,
         "descargas_dia": 5
+      },
+      "sunedu": {
+        "visitas_dia": 4
       }
     }
   }

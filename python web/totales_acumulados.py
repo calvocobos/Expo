@@ -28,19 +28,29 @@ def main():
     totales = {
         "uac": {"visitas": 0, "descargas": 0},
         "zenodo": {"visitas": 0, "descargas": 0},
+        "sunedu": {"visitas": 0},
         "global": {"visitas": 0, "descargas": 0}
     }
 
     for fecha, fuentes in registros.items():
-        for fuente in ["uac", "zenodo"]:
-            v = fuentes[fuente]["visitas_dia"]
-            d = fuentes[fuente]["descargas_dia"]
+        for fuente, valores in fuentes.items():
+            visitas = int(valores.get("visitas_dia", 0))
+            descargas = int(valores.get("descargas_dia", 0))
 
-            totales[fuente]["visitas"] += v
-            totales[fuente]["descargas"] += d
+            # Inicializar fuente si aparece nueva
+            if fuente not in totales:
+                totales[fuente] = {"visitas": 0}
+                if descargas:
+                    totales[fuente]["descargas"] = 0
 
-            totales["global"]["visitas"] += v
-            totales["global"]["descargas"] += d
+            # Acumular por fuente
+            totales[fuente]["visitas"] += visitas
+            if "descargas" in totales[fuente]:
+                totales[fuente]["descargas"] += descargas
+
+            # Acumular global
+            totales["global"]["visitas"] += visitas
+            totales["global"]["descargas"] += descargas
 
     guardar_json(ARCHIVO_SALIDA, {"totales": totales})
     print("totales_acumulados.json generado correctamente.")

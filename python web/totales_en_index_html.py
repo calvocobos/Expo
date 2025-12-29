@@ -32,14 +32,19 @@ def actualizar(id_html, valor):
 # ======================
 # UAC
 # ======================
-actualizar("uac-visitas", data["uac"]["visitas"])
-actualizar("uac-descargas", data["uac"]["descargas"])
+actualizar("uac-visitas", data.get("uac", {}).get("visitas", 0))
+actualizar("uac-descargas", data.get("uac", {}).get("descargas", 0))
 
 # ======================
 # ZENODO
 # ======================
-actualizar("zenodo-visitas", data["zenodo"]["visitas"])
-actualizar("zenodo-descargas", data["zenodo"]["descargas"])
+actualizar("zenodo-visitas", data.get("zenodo", {}).get("visitas", 0))
+actualizar("zenodo-descargas", data.get("zenodo", {}).get("descargas", 0))
+
+# ======================
+# SUNEDU (solo visitas)
+# ======================
+actualizar("sunedu-visitas", data.get("sunedu", {}).get("visitas", 0))
 
 # ======================
 # Guardar HTML

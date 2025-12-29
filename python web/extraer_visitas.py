@@ -20,6 +20,11 @@ FUENTES = {
         "visitas": r"(\d+)\s*VIEWS",
         "descargas": r"(\d+)\s*DOWNLOADS",
     },
+    "sunedu": {
+        "archivo": "extraido_txt_sunedu.txt",
+        "visitas": r"(\d+)\s*Total de visitas por mes",
+        "descargas": None,  # 🔑 no existe
+    },
 }
 
 # ======================
@@ -29,19 +34,23 @@ def leer_txt(ruta):
     with open(ruta, "r", encoding="utf-8") as f:
         return f.read()
 
-
-def extraer_metricas(texto, patron_visitas, patron_descargas):
+def extraer_metricas(texto, patron_visitas, patron_descargas=None):
     visitas_match = re.search(patron_visitas, texto, re.IGNORECASE)
-    descargas_match = re.search(patron_descargas, texto, re.IGNORECASE)
 
-    if not visitas_match or not descargas_match:
-        raise ValueError("No se pudieron extraer visitas o descargas")
+    if not visitas_match:
+        raise ValueError("No se pudieron extraer visitas")
 
-    return {
-        "visitas_30d": int(visitas_match.group(1)),
-        "descargas_30d": int(descargas_match.group(1)),
+    resultado = {
+        "visitas": int(visitas_match.group(1))
     }
 
+    if patron_descargas:
+        descargas_match = re.search(patron_descargas, texto, re.IGNORECASE)
+        if not descargas_match:
+            raise ValueError("No se pudieron extraer descargas")
+        resultado["descargas"] = int(descargas_match.group(1))
+
+    return resultado
 
 def cargar_json(ruta):
     if Path(ruta).exists():
