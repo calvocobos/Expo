@@ -20,13 +20,13 @@
     "titulo": "Herramientas Tecnológicas"
   },
   {
-    "id": "video",
-    "nombre": "Video",
-    "titulo": "Video de la sustentación de tesis de Ingeniería de Sistemas"
+    "id": "video-sistemtacion",
+    "nombre": "Video Sistemtacion",
+    "titulo": "Video de Sustentación de la preseente Tesis de Ingeniería de Sistemas"
   },
   {
-    "id": "autores",
-    "nombre": "Autores",
+    "id": "autores-asesor",
+    "nombre": "Autores Asesor",
     "titulo": "Autores y Asesor"
   },
   {
@@ -35,68 +35,68 @@
     "titulo": "Presentación y Sustentación del Sistema de Información Odontológico"
   },
   {
-    "id": "jurado",
-    "nombre": "Jurado",
+    "id": "jurado-calificador",
+    "nombre": "Jurado Calificador",
     "titulo": "Jurado Calificador"
   },
   {
-    "id": "evaluacion",
-    "nombre": "Evaluacion",
+    "id": "evaluacion-de-tesis",
+    "nombre": "Evaluacion de Tesis",
     "titulo": "Evaluación del Jurado Calificador"
   },
   {
-    "id": "referencias",
-    "nombre": "Referencias",
+    "id": "enlaces-y-referencias",
+    "nombre": "Enlaces y Referencias",
     "titulo": "Enlaces y Referencias del sistema de información"
   },
   {
-    "id": "tesis-resources",
-    "nombre": "Tesis Resources",
+    "id": "recursos-importantes",
+    "nombre": "Recursos Importantes",
     "titulo": "Recursos de la Tesis"
   },
   {
-    "id": "renati",
-    "nombre": "Renati",
-    "titulo": "Registro Nacional de Trabajos de Investigación (RENATI – SUNEDU)"
+    "id": "sunedu-renati",
+    "nombre": "Sunedu Renati",
+    "titulo": "Registro Nacional de Trabajos de Investigación (RENATI - SUNEDU)"
   },
   {
-    "id": "metadata-uac",
-    "nombre": "Metadata Uac",
+    "id": "metadatos-de-tesis",
+    "nombre": "Metadatos de Tesis",
     "titulo": "Metadata de la Tesis"
   },
   {
-    "id": "resumen",
-    "nombre": "Resumen",
+    "id": "resumen-abstrac",
+    "nombre": "Resumen Abstrac",
     "titulo": "Resumen de la tesis"
   },
   {
-    "id": "licencia-cc",
-    "nombre": "Licencia Cc",
-    "titulo": "Licencia Creative Commons Atribución–No Comercial–Sin Derivadas 4.0 Internacional"
+    "id": "licencia-internacional",
+    "nombre": "Licencia Internacional",
+    "titulo": "Licencia Creative Commons Atribución-No Comercial-Sin Derivadas 4.0 Internacional"
   },
   {
-    "id": "citas",
-    "nombre": "Citas",
-    "titulo": "Citas de la tesis"
+    "id": "citas-bibliograficas",
+    "nombre": "Citas Bibliograficas",
+    "titulo": "Citas Bibliograficas de la tesis"
   },
   {
-    "id": "metadata-zenodo",
-    "nombre": "Metadata Zenodo",
+    "id": "metadatos-de-zenodo",
+    "nombre": "Metadatos de Zenodo",
     "titulo": "Metadata de la Tesis (Zenodo)"
   },
   {
-    "id": "estadisticas-impacto",
-    "nombre": "Estadisticas Impacto",
+    "id": "visitas-y-descargas",
+    "nombre": "Visitas y Descargas",
     "titulo": "Impacto y visibilidad del trabajo académico"
   },
   {
-    "id": "estadisticas",
-    "nombre": "Estadisticas",
-    "titulo": "Visitas y descargas del repositorio"
+    "id": "estadisticas-graficas",
+    "nombre": "Estadisticas Graficas",
+    "titulo": "Grafica de visitas y descargas del repositorio"
   },
   {
-    "id": "iso",
-    "nombre": "Iso",
+    "id": "normas-iso-iec",
+    "nombre": "Normas Iso Iec",
     "titulo": "Norma ISO/IEC 25010:2011 y ISO/IEC 25010:2023"
   },
   {
@@ -105,14 +105,14 @@
     "titulo": "Normas APA Séptima Edición"
   },
   {
-    "id": "leyes",
-    "nombre": "Leyes",
+    "id": "leyes-aplicadas",
+    "nombre": "Leyes Aplicadas",
     "titulo": "Leyes Aplicadas en la tesis"
   },
   {
-    "id": "colacion",
-    "nombre": "Colacion",
-    "titulo": "Colación de Grado – Ingeniería de Sistemas"
+    "id": "colacion-de-grado",
+    "nombre": "Colacion de Grado",
+    "titulo": "Colación de Grado - Ingeniería de Sistemas"
   },
   {
     "id": "instalar-app",
