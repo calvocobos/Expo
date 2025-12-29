@@ -641,9 +641,13 @@
       </div>
       <!-- Información adicional y QR -->
       <div class="p-5 mt-8">
-        <div class="sm:flex items-center justify-center gap-6 mx-4">
-          <img alt="Código QR para acceder al video de la sustentación de tesis" class="h-36 w-auto mb-4 hover:scale-105 transition-transform duration-300" height="47" src="img/tesis-qr.svg" width="50"/>
-          <div class="flex flex-col space-y-2 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <!-- SVG más grande -->
+          <img alt="Código QR para acceder al video de la sustentación de tesis"
+            class="h-48 w-48 hover:scale-105 transition-transform duration-300" src="img/tesis-qr.svg" />
+
+          <!-- Enlace al lado del SVG -->
+          <div class="flex flex-col items-center sm:items-start space-y-2 text-center sm:text-left">
             <p class="font-semibold text-slate-700 dark:text-slate-300">
               Repositorio:
             </p>
@@ -654,6 +658,7 @@
           </div>
         </div>
       </div>
+
     </section>
     <!-- Sección de Autores -->
     <section class="px-4 py-20 bg-slate-50 dark:bg-slate-900" id="autores-asesor">
