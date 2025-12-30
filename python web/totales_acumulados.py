@@ -53,7 +53,7 @@ def main():
             totales["global"]["descargas"] += descargas
 
     guardar_json(ARCHIVO_SALIDA, {"totales": totales})
-    print("totales_acumulados.json generado correctamente.")
+    print("✔  totales_acumulados.json generado correctamente.")
 
 
 if __name__ == "__main__":

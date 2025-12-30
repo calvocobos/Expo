@@ -23,7 +23,7 @@ with sync_playwright() as p:
     with open("extraido_txt_uac.txt", "w", encoding="utf-8") as f:
         f.write(text)
 
-    print("✔ extraido_dom_uac.html creado")
-    print("✔ extraido_txt_uac.txt creado")
+    print("✔  extraido_dom_uac.html creado")
+    print("✔  extraido_txt_uac.txt creado")
 
     browser.close()

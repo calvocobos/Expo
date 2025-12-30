@@ -105,7 +105,7 @@ def main():
         incrementos[fecha] = incremento_dia
 
     guardar_json(ARCHIVO_SALIDA, {"incrementos_por_dia": incrementos})
-    print("incrementos_por_dia.json generado correctamente.")
+    print("✔  incrementos_por_dia.json generado correctamente.")
 
 
 if __name__ == "__main__":

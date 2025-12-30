@@ -35,9 +35,9 @@ with sync_playwright() as p:
     total = result_items.count()
 
     if total == 0:
-        print("❌ ALICIA aún NO ha cosechado 2025 (Universidad Andina del Cusco)")
+        print("❌  ALICIA aún NO ha cosechado 2025 (Universidad Andina del Cusco)")
     else:
-        print(f"✅ ALICIA YA cosechó 2025 (UAC) — {total} resultados")
+        print(f"✅  ALICIA YA cosechó 2025 (UAC) — {total} resultados")
 
     page.wait_for_timeout(5000)
     browser.close()

@@ -83,4 +83,4 @@ for fuente, cfg in FUENTES.items():
     data["registros"][HOY][fuente] = metricas
 
 guardar_json(JSON_FILE, data)
-print(f"Registro actualizado para {HOY}")
+print(f"✔  Registro actualizado para {HOY}")

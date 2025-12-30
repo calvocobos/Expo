@@ -20,8 +20,8 @@ def extraer_dom():
     # 🔴 CERRAR EL NAVEGADOR
     window.destroy()
 
-    print("✔ extraido_dom_uac.html creado")
-    print("✔ extraido_txt_uac.txt creado")
+    print("✔  extraido_dom_uac.html creado")
+    print("✔  extraido_txt_uac.txt creado")
 
 window = webview.create_window(
     "Repositorio UAC",

@@ -51,4 +51,4 @@ actualizar("sunedu-visitas", data.get("sunedu", {}).get("visitas", 0))
 # ======================
 HTML_FILE.write_text(str(soup), encoding="utf-8")
 
-print("✔ Totales actualizados correctamente en index.html")
+print("✔  Totales actualizados correctamente en index.html")
