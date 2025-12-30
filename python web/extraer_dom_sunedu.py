@@ -21,8 +21,8 @@ def extraer_dom():
 
     window.destroy()
 
-    print(" 1️⃣ extraido_dom_sunedu.html ✔ creado")
-    print(" 1️⃣ extraido_txt_sunedu.txt ✔ creado")
+    print("✔ extraido_dom_sunedu.html creado")
+    print("✔ extraido_txt_sunedu.txt creado")
 
 window = webview.create_window(
     title="Repositorio UAC",
