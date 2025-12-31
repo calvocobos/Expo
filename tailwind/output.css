@@ -785,8 +785,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
@@ -826,6 +826,9 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-14 {
+    margin-bottom: calc(var(--spacing) * 14);
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -901,9 +904,6 @@
   }
   .w-0\.5 {
     width: calc(var(--spacing) * 0.5);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
   }
   .w-10\/12 {
     width: calc(10/12 * 100%);
@@ -1677,11 +1677,6 @@
       text-align: left;
     }
   }
-  .md\:absolute {
-    @media (width >= 48rem) {
-      position: absolute;
-    }
-  }
   .md\:left-1\/2 {
     @media (width >= 48rem) {
       left: calc(1/2 * 100%);
@@ -1690,11 +1685,6 @@
   .md\:mx-20 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:mt-8 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 8);
     }
   }
   .md\:block {
