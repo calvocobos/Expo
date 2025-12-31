@@ -143,15 +143,15 @@
     },
     "2025-12-30": {
       "uac": {
-        "visitas_dia": 2,
-        "descargas_dia": 0
+        "visitas_dia": 5,
+        "descargas_dia": 2
       },
       "zenodo": {
-        "visitas_dia": 4,
-        "descargas_dia": 3
+        "visitas_dia": 5,
+        "descargas_dia": 4
       },
       "sunedu": {
-        "visitas_dia": 0
+        "visitas_dia": 2
       }
     }
   }

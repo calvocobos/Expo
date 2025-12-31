@@ -143,15 +143,15 @@
     },
     "2025-12-30": {
       "uac": {
-        "visitas": 85,
-        "descargas": 20
+        "visitas": 88,
+        "descargas": 22
       },
       "zenodo": {
-        "visitas": 67,
-        "descargas": 41
+        "visitas": 68,
+        "descargas": 42
       },
       "sunedu": {
-        "visitas": 19
+        "visitas": 21
       }
     }
   }
