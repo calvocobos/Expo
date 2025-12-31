@@ -175,115 +175,131 @@
             <!-- Contenido Español -->
             <article id="tab-es" class="tab-content prose prose-slate dark:prose-invert max-w-none" lang="es-PE">
 
-                <section class="mt-16">
-                    <h3 class="text-2xl font-semibold text-center text-slate-800 dark:text-slate-100 mb-14">
-                        Sumario en español:
+                <!-- ================= ESPAÑOL ================= -->
+                <div id="tab-es" class="tab-content">
+
+                    <h3 class="text-2xl font-bold text-center mb-14">
+                        Sumario temporal del contenido del video
                     </h3>
 
-                    <div class="relative max-w-5xl mx-auto">
+                    <div class="relative">
 
-                        <!-- Línea vertical central (solo desktop) -->
-                        <div
-                            class="absolute left-1/2 top-0 h-full w-0.5 bg-slate-300 dark:bg-slate-600 hidden md:block">
-                        </div>
+                        <!-- Línea central -->
+                        <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-slate-300"></div>
 
-                        <div class="space-y-16">
+                        <div class="space-y-20">
 
-                            <!-- ITEM 1 -->
-                            <div class="relative md:flex md:items-center">
-                                <!-- Izquierda -->
-                                <div class="md:w-1/2 md:pr-10 md:text-right">
-                                    <h4 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
-                                        Presentación del trabajo de tesis
+                            <!-- EVENTO 1 (IMPAR - IZQUIERDA) -->
+                            <article class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                                <div class="md:col-start-1 md:text-right">
+
+                                    <div class="flex justify-center md:justify-end mb-3">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold shadow relative z-10">
+                                            00:00
+                                        </div>
+                                    </div>
+
+                                    <h4 class="font-semibold text-lg">
+                                        Inicio y protocolo académico
                                     </h4>
-                                    <p class="mt-2 text-slate-700 dark:text-slate-300 text-justify">
-                                        La sustentación se inicia con el saludo protocolar a las autoridades académicas,
-                                        docentes y asistentes, resaltando la importancia del proceso de evaluación
-                                        como culminación del proceso formativo profesional.
+
+                                    <p class="text-sm text-slate-600 mt-2">
+                                        Se da inicio a la sustentación con la presentación formal del
+                                        acto académico y la explicación del protocolo institucional.
                                     </p>
+
                                 </div>
 
-                                <!-- Círculo central con tiempo -->
-                                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2
-                    flex items-center justify-center
-                    w-14 h-14 rounded-full
-                    bg-amber-500 text-white font-semibold text-sm shadow-lg">
-                                    00:00
-                                </div>
+                                <div class="hidden md:block"></div>
 
-                                <!-- Derecha vacío -->
-                                <div class="md:w-1/2"></div>
-                            </div>
+                            </article>
 
-                            <!-- ITEM 2 -->
-                            <div class="relative md:flex md:items-center">
-                                <div class="md:w-1/2"></div>
+                            <!-- EVENTO 2 (PAR - DERECHA) -->
+                            <article class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2
-                    flex items-center justify-center
-                    w-14 h-14 rounded-full
-                    bg-amber-500 text-white font-semibold text-sm shadow-lg">
-                                    00:17
-                                </div>
+                                <div class="hidden md:block"></div>
 
-                                <div class="md:w-1/2 md:pl-10">
-                                    <h4 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
-                                        Protocolo del acto académico
+                                <div class="md:col-start-3 md:text-left">
+
+                                    <div class="flex justify-center md:justify-start mb-3">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold shadow relative z-10">
+                                            01:12
+                                        </div>
+                                    </div>
+
+                                    <h4 class="font-semibold text-lg">
+                                        Contexto y problemática
                                     </h4>
-                                    <p class="mt-2 text-slate-700 dark:text-slate-300 text-justify">
-                                        Se expone el protocolo de la sustentación conforme a la normativa institucional,
-                                        indicando el marco legal que regula el desarrollo del acto académico.
-                                    </p>
-                                </div>
-                            </div>
 
-                            <!-- ITEM 3 -->
-                            <div class="relative md:flex md:items-center">
-                                <div class="md:w-1/2 md:pr-10 md:text-right">
-                                    <h4 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
-                                        Conformación del jurado evaluador
+                                    <p class="text-sm text-slate-600 mt-2">
+                                        Se expone la situación administrativa del consultorio odontológico,
+                                        identificando los principales problemas operativos existentes.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <!-- EVENTO 3 (IMPAR) -->
+                            <article class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                                <div class="md:col-start-1 md:text-right">
+
+                                    <div class="flex justify-center md:justify-end mb-3">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold shadow relative z-10">
+                                            03:05
+                                        </div>
+                                    </div>
+
+                                    <h4 class="font-semibold text-lg">
+                                        Objetivos del sistema
                                     </h4>
-                                    <p class="mt-2 text-slate-700 dark:text-slate-300 text-justify">
-                                        Se presenta a los miembros del jurado, detallando sus cargos y funciones,
-                                        quienes evaluarán el contenido, la metodología y los resultados obtenidos.
+
+                                    <p class="text-sm text-slate-600 mt-2">
+                                        Se presentan los objetivos generales y específicos orientados
+                                        a la automatización de los procesos administrativos.
                                     </p>
+
                                 </div>
 
-                                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2
-                    flex items-center justify-center
-                    w-14 h-14 rounded-full
-                    bg-amber-500 text-white font-semibold text-sm shadow-lg">
-                                    00:39
-                                </div>
+                                <div class="hidden md:block"></div>
 
-                                <div class="md:w-1/2"></div>
-                            </div>
+                            </article>
 
-                            <!-- ITEM 4 -->
-                            <div class="relative md:flex md:items-center">
-                                <div class="md:w-1/2"></div>
+                            <!-- EVENTO 4 (PAR) -->
+                            <article class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2
-                    flex items-center justify-center
-                    w-14 h-14 rounded-full
-                    bg-amber-500 text-white font-semibold text-sm shadow-lg">
-                                    01:15
-                                </div>
+                                <div class="hidden md:block"></div>
 
-                                <div class="md:w-1/2 md:pl-10">
-                                    <h4 class="text-lg font-semibold text-slate-800 dark:text-slate-100">
-                                        Tiempo asignado para la exposición
+                                <div class="md:col-start-3 md:text-left">
+
+                                    <div class="flex justify-center md:justify-start mb-3">
+                                        <div
+                                            class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold shadow relative z-10">
+                                            05:40
+                                        </div>
+                                    </div>
+
+                                    <h4 class="font-semibold text-lg">
+                                        Descripción de la solución
                                     </h4>
-                                    <p class="mt-2 text-slate-700 dark:text-slate-300 text-justify">
-                                        Se establece el tiempo máximo disponible para la exposición del trabajo,
-                                        garantizando un desarrollo ordenado del proceso de evaluación.
+
+                                    <p class="text-sm text-slate-600 mt-2">
+                                        Se explica el sistema de información web desarrollado y
+                                        su impacto en la gestión del consultorio.
                                     </p>
+
                                 </div>
-                            </div>
+
+                            </article>
 
                         </div>
                     </div>
-                </section>
+                </div>
 
             </article>
 
