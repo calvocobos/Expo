@@ -153,6 +153,19 @@
       "sunedu": {
         "visitas_dia": 2
       }
+    },
+    "2025-12-31": {
+      "uac": {
+        "visitas_dia": 2,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 1,
+        "descargas_dia": 1
+      },
+      "sunedu": {
+        "visitas_dia": 0
+      }
     }
   }
 }

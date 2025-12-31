@@ -1,19 +1,19 @@
 {
   "totales": {
     "uac": {
-      "visitas": 88,
-      "descargas": 22
+      "visitas": 90,
+      "descargas": 23
     },
     "zenodo": {
-      "visitas": 68,
-      "descargas": 42
+      "visitas": 69,
+      "descargas": 43
     },
     "sunedu": {
       "visitas": 21
     },
     "global": {
-      "visitas": 177,
-      "descargas": 64
+      "visitas": 180,
+      "descargas": 66
     }
   }
 }
