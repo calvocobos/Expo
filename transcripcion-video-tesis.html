@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    
+
     <!-- 🧠 SEO específico de transcripción -->
     <title>Transcripción de la sustentación de tesis | Ingeniería de Sistemas - Lalysdent</title>
 
@@ -113,9 +113,10 @@
     <script defer="" src="jquery/jquery.min.3.7.1.js"></script>
     <script defer="" src="jquery/jquery-ui.min.1.13.2.js"></script>
     <script defer="" src="jquery/jquery.easing.min.1.4.1.js"></script>
-    
+
     <!-- 📜 Scripts propios -->
     <script defer="" src="cbs/general.js"></script>
+    <script defer="" src="cbs/transcripcion.js"></script>
 
     <!-- 📊 Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3B8PVDVN1E"></script>
@@ -131,56 +132,122 @@
 
     <!-- Sección de Video -->
     <section class="px-4 py-20" id="video-de-sustentacion">
-      <!-- Título principal de la sección -->
-      <h1 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
-        Video de Sustentación de la presente Tesis de Ingeniería de Sistemas
-      </h1>
-      <!-- Video responsive -->
-      <div class="w-full max-w-4xl mx-auto aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
-        <iframe
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen="" class="w-full h-full" frameborder="0" loading="lazy"
-          src="https://www.youtube.com/embed/GAQ6pLZKUeU"
-          title="Exposición de la sustentación de tesis de Calvo Arteaga &amp; Cobos Vargas">
-        </iframe>
-      </div>
-      <div class="my-20 flex items-center justify-center gap-3">
-        <div>
-          <img alt="YouTube logo" class="h-12 w-auto sm:w-10 sm:h-10" height="50" loading="lazy"
-            src="ico/youtube-red.svg" width="50" />
-          <p class="font-semibold text-slate-700 dark:text-slate-300 py-3">
-            Ver directo en YouTube
-          </p>
-          <a class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
-            href="https://www.youtube.com/watch?v=GAQ6pLZKUeU" rel="noopener noreferrer" target="_blank">
-            ▶ Reproducir Video
-          </a>
-          <div class="mt-4 text-sm text-gray-600 break-all">
-            <a class="underline hover:text-red-600" href="https://www.youtube.com/watch?v=GAQ6pLZKUeU"
-              rel="noopener noreferrer" target="_blank">
-              https://www.youtube.com/watch?v=GAQ6pLZKUeU
-            </a>
-          </div>
+        <!-- Título principal de la sección -->
+        <h1 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+            Video de Sustentación de la presente Tesis de Ingeniería de Sistemas
+        </h1>
+        <!-- Video responsive -->
+        <div class="w-full max-w-4xl mx-auto aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
+            <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen="" class="w-full h-full" frameborder="0" loading="lazy"
+                src="https://www.youtube.com/embed/GAQ6pLZKUeU"
+                title="Exposición de la sustentación de tesis de Calvo Arteaga &amp; Cobos Vargas">
+            </iframe>
         </div>
-      </div>
-      <!-- Información adicional y QR -->
-      <div class="p-5 mt-8">
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <!-- SVG más grande -->
-          <img alt="Código QR para acceder al video de la sustentación de tesis"
-            class="h-48 w-48 hover:scale-105 transition-transform duration-300" src="img/tesis-qr.svg" />
-          <!-- Enlace al lado del SVG -->
-          <div class="flex flex-col items-center sm:items-start space-y-2 text-center sm:text-left">
-            <p class="font-semibold text-slate-700 dark:text-slate-300">
-              Repositorio:
-            </p>
-            <a class="bg-[#044DA2] text-white rounded-lg p-4 block overflow-hidden hover:bg-[#FFD353] hover:text-black transition-colors duration-300"
-              href="https://calvocobos.github.io/Expo/" rel="noopener noreferrer" target="_blank">
-              www.calvocobos.github.io/Expo
-            </a>
-          </div>
+        <div class="my-20 flex items-center justify-center gap-3">
+            <div>
+                <img alt="YouTube logo" class="h-12 w-auto sm:w-10 sm:h-10" height="50" loading="lazy"
+                    src="ico/youtube-red.svg" width="50" />
+                <p class="font-semibold text-slate-700 dark:text-slate-300 py-3">
+                    Ver directo en YouTube
+                </p>
+                <a class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+                    href="https://www.youtube.com/watch?v=GAQ6pLZKUeU" rel="noopener noreferrer" target="_blank">
+                    ▶ Reproducir Video
+                </a>
+                <div class="mt-4 text-sm text-gray-600 break-all">
+                    <a class="underline hover:text-red-600" href="https://www.youtube.com/watch?v=GAQ6pLZKUeU"
+                        rel="noopener noreferrer" target="_blank">
+                        https://www.youtube.com/watch?v=GAQ6pLZKUeU
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- Información adicional y QR -->
+        <div class="p-5 mt-8">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <!-- SVG más grande -->
+                <img alt="Código QR para acceder al video de la sustentación de tesis"
+                    class="h-48 w-48 hover:scale-105 transition-transform duration-300" src="img/tesis-qr.svg" />
+                <!-- Enlace al lado del SVG -->
+                <div class="flex flex-col items-center sm:items-start space-y-2 text-center sm:text-left">
+                    <p class="font-semibold text-slate-700 dark:text-slate-300">
+                        Repositorio:
+                    </p>
+                    <a class="bg-[#044DA2] text-white rounded-lg p-4 block overflow-hidden hover:bg-[#FFD353] hover:text-black transition-colors duration-300"
+                        href="https://calvocobos.github.io/Expo/" rel="noopener noreferrer" target="_blank">
+                        www.calvocobos.github.io/Expo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TRANSCRIPCIÓN ================= -->
+    <section class="px-4 py-20 bg-slate-50 dark:bg-slate-900" id="transcripcion">
+
+        <!-- Título -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 dark:text-amber-200 mb-10">
+            Transcripción de la sustentación de tesis
+        </h2>
+
+        <!-- Tabs -->
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Botones -->
+            <div class="flex justify-center gap-8 border-b border-slate-300 dark:border-slate-700 mb-8">
+                <button class="tab-btn pb-3 font-semibold transition" data-tab="es">
+                    🇵🇪 Español
+                </button>
+
+                <button class="tab-btn pb-3 font-semibold transition" data-tab="en">
+                    🇺🇸 English
+                </button>
+            </div>
+
+            <!-- Contenido Español -->
+            <article id="tab-es" class="tab-content prose prose-slate dark:prose-invert max-w-none" lang="es-PE">
+
+                <h3>Introducción</h3>
+                <p>
+                    Muy buenos días, señores miembros del jurado. A continuación,
+                    presentamos la sustentación de la tesis titulada
+                    <strong>“Desarrollo de un sistema de información web para la administración
+                        de los procesos de registro, atención, inventario y finanzas del consultorio
+                        odontológico Lalysdent del distrito de Cusco”</strong>.
+                </p>
+
+                <p>
+                    El presente trabajo tiene como objetivo principal optimizar los procesos
+                    administrativos del consultorio odontológico mediante la implementación
+                    de una solución tecnológica basada en un sistema de información web.
+                </p>
+
+                <!-- aquí sigues pegando TODA tu transcripción en español -->
+            </article>
+
+            <!-- Contenido Inglés -->
+            <article id="tab-en" class="tab-content hidden prose prose-slate dark:prose-invert max-w-none" lang="en-US">
+
+                <h3>Introduction</h3>
+                <p>
+                    Good morning, members of the jury. We now present the thesis defense entitled
+                    <strong>“Development of a web-based information system for the management
+                        of registration, patient care, inventory, and financial processes of the
+                        Lalysdent dental clinic in the district of Cusco”</strong>.
+                </p>
+
+                <p>
+                    The main objective of this research is to optimize administrative processes
+                    within the dental clinic through the implementation of a web-based
+                    information system.
+                </p>
+
+                <!-- aquí sigues pegando TODA tu transcripción en inglés -->
+            </article>
+
+        </div>
     </section>
 
 </body>
