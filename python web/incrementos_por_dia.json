@@ -205,6 +205,19 @@
       "sunedu": {
         "visitas_dia": 0
       }
+    },
+    "2026-01-04": {
+      "uac": {
+        "visitas_dia": 1,
+        "descargas_dia": 0
+      },
+      "zenodo": {
+        "visitas_dia": 1,
+        "descargas_dia": 1
+      },
+      "sunedu": {
+        "visitas_dia": 0
+      }
     }
   }
 }
