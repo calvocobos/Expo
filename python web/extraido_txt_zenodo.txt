@@ -2,9 +2,6 @@ Skip to main
 Communities
 My dashboard
  Log in  Sign up
-
-Info: Zenodo’s user support line is staffed on regular business days between Dec 22 and Jan 4. Response times may be slightly longer than normal.
-
 Published December 24, 2025 | Version Final version
 Thesis  Open
 Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
@@ -181,9 +178,9 @@ Search
 
 No citations found
 
-77
+78
  VIEWS
-51
+52
  DOWNLOADS
  Show more details
 Versions
