@@ -7,9 +7,9 @@ Escuela Profesional de Ingeniería de Sistemas
 Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
 
 Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
-103
+105
 Visitas en los últimos 30 días
-27
+28
 Descargas en los últimos 30 días
 Archivos
 Carlos_Irvin_Tesis_bachiller_2025.pdf
