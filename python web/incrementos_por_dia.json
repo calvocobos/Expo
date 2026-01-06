@@ -218,6 +218,32 @@
       "sunedu": {
         "visitas_dia": 0
       }
+    },
+    "2026-01-05": {
+      "uac": {
+        "visitas_dia": 4,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 2,
+        "descargas_dia": 2
+      },
+      "sunedu": {
+        "visitas_dia": 0
+      }
+    },
+    "2026-01-06": {
+      "uac": {
+        "visitas_dia": 1,
+        "descargas_dia": 0
+      },
+      "zenodo": {
+        "visitas_dia": 1,
+        "descargas_dia": 1
+      },
+      "sunedu": {
+        "visitas_dia": 0
+      }
     }
   }
 }
