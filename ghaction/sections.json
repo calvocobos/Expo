@@ -45,6 +45,11 @@
     "titulo": "Evaluación del Jurado Calificador"
   },
   {
+    "id": "proceso-titulacion",
+    "nombre": "Proceso Titulacion",
+    "titulo": "Proceso de Titulación - Proyecto, Aprobación y Resoluciones"
+  },
+  {
     "id": "repositorio-academico",
     "nombre": "Repositorio Academico",
     "titulo": "Repositorio Academico y Referencias"
