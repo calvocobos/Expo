@@ -299,15 +299,15 @@
     },
     "2026-01-11": {
       "uac": {
-        "visitas_dia": 2,
-        "descargas_dia": 0
+        "visitas_dia": 4,
+        "descargas_dia": 1
       },
       "zenodo": {
-        "visitas_dia": 2,
-        "descargas_dia": 2
+        "visitas_dia": 4,
+        "descargas_dia": 5
       },
       "sunedu": {
-        "visitas_dia": 4
+        "visitas_dia": 6
       }
     }
   }
