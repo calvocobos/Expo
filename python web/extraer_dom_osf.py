@@ -25,7 +25,7 @@ def extraer_dom():
     print("✔  extraido_txt_osf.txt creado")
 
 window = webview.create_window(
-    title="Repositorio UAC",
+    title="Cosechador analytics",
     url=URL
 )
 

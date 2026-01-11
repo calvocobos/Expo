@@ -296,6 +296,19 @@
       "sunedu": {
         "visitas": 24
       }
+    },
+    "2026-01-11": {
+      "uac": {
+        "visitas": 115,
+        "descargas": 29
+      },
+      "zenodo": {
+        "visitas": 90,
+        "descargas": 63
+      },
+      "sunedu": {
+        "visitas": 28
+      }
     }
   }
 }
