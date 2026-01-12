@@ -1,0 +1,204 @@
+{
+  "registros": {
+    "2025-12-18": {
+      "uac": {
+        "visitas": 4,
+        "descargas": 2,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-19": {
+      "uac": {
+        "visitas": 13,
+        "descargas": 5,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-20": {
+      "uac": {
+        "visitas": 17,
+        "descargas": 12,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-21": {
+      "uac": {
+        "visitas": 31,
+        "descargas": 13,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-22": {
+      "uac": {
+        "visitas": 42,
+        "descargas": 17,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-23": {
+      "uac": {
+        "visitas": 51,
+        "descargas": 19,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-24": {
+      "uac": {
+        "visitas": 55,
+        "descargas": 19,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-25": {
+      "uac": {
+        "visitas": 61,
+        "descargas": 19,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-26": {
+      "uac": {
+        "visitas": 68,
+        "descargas": 19,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-27": {
+      "uac": {
+        "visitas": 71,
+        "descargas": 19,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-28": {
+      "uac": {
+        "visitas": 76,
+        "descargas": 19,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-29": {
+      "uac": {
+        "visitas": 83,
+        "descargas": 20,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-30": {
+      "uac": {
+        "visitas": 88,
+        "descargas": 22,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2025-12-31": {
+      "uac": {
+        "visitas": 92,
+        "descargas": 24,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-01": {
+      "uac": {
+        "visitas": 94,
+        "descargas": 25,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-02": {
+      "uac": {
+        "visitas": 95,
+        "descargas": 25,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-03": {
+      "uac": {
+        "visitas": 97,
+        "descargas": 26,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-04": {
+      "uac": {
+        "visitas": 98,
+        "descargas": 26,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-05": {
+      "uac": {
+        "visitas": 102,
+        "descargas": 27,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-06": {
+      "uac": {
+        "visitas": 105,
+        "descargas": 28,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-07": {
+      "uac": {
+        "visitas": 106,
+        "descargas": 28,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-08": {
+      "uac": {
+        "visitas": 107,
+        "descargas": 28,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-09": {
+      "uac": {
+        "visitas": 111,
+        "descargas": 29,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-10": {
+      "uac": {
+        "visitas": 113,
+        "descargas": 29,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    },
+    "2026-01-11": {
+      "uac": {
+        "visitas": 117,
+        "descargas": 30,
+        "estado": "ok",
+        "fuentes_validas": ["UAC_contenido1.txt", "UAC_contenido2.txt"]
+      }
+    }
+  }
+}
