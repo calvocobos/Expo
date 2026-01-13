@@ -1,9 +1,5 @@
 {
   "totales": {
-    "global": {
-      "visitas": 346,
-      "descargas": 101
-    },
     "uac": {
       "visitas": 120,
       "descargas": 31
@@ -15,8 +11,9 @@
     "sunedu": {
       "visitas": 32
     },
-    "osf": {
-      "visitas": 97
+    "global": {
+      "visitas": 249,
+      "descargas": 101
     }
   }
 }

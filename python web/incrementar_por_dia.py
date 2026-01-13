@@ -11,7 +11,7 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
-ARCHIVO_ENTRADA = "extraido_json_visitas.json"
+ARCHIVO_ENTRADA = "Recopila_ramas.json"
 ARCHIVO_SALIDA = "incrementos_por_dia.json"
 VENTANA_DIAS = 30
 

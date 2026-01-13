@@ -1,0 +1,3 @@
+ERROR CRÍTICO Sunedu
+No se pudo cargar la página principal de Sunedu.
+Detalle: Sunedu no respondió

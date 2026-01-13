@@ -1,0 +1,436 @@
+{
+  "registros": {
+    "2025-12-18": {
+      "uac": {
+        "visitas": 4,
+        "descargas": 2,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 0,
+        "descargas": 0,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 0,
+        "origen": "copiado"
+      }
+    },
+    "2025-12-19": {
+      "uac": {
+        "visitas": 13,
+        "descargas": 5,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 0,
+        "descargas": 0,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 0,
+        "origen": "copiado"
+      }
+    },
+    "2025-12-20": {
+      "uac": {
+        "visitas": 17,
+        "descargas": 12,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 0,
+        "descargas": 0,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 0,
+        "origen": "copiado"
+      }
+    },
+    "2025-12-21": {
+      "uac": {
+        "visitas": 31,
+        "descargas": 13,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 0,
+        "descargas": 0,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 0,
+        "origen": "copiado"
+      }
+    },
+    "2025-12-22": {
+      "uac": {
+        "visitas": 42,
+        "descargas": 17,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 0,
+        "descargas": 0,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 0,
+        "origen": "copiado"
+      }
+    },
+    "2025-12-23": {
+      "uac": {
+        "visitas": 51,
+        "descargas": 19,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 0,
+        "descargas": 0,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 4,
+        "origen": "directo"
+      }
+    },
+    "2025-12-24": {
+      "uac": {
+        "visitas": 55,
+        "descargas": 19,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 8,
+        "descargas": 6,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 6,
+        "origen": "directo"
+      }
+    },
+    "2025-12-25": {
+      "uac": {
+        "visitas": 61,
+        "descargas": 19,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 11,
+        "descargas": 8,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 9,
+        "origen": "directo"
+      }
+    },
+    "2025-12-26": {
+      "uac": {
+        "visitas": 68,
+        "descargas": 19,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 21,
+        "descargas": 17,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 10,
+        "origen": "directo"
+      }
+    },
+    "2025-12-27": {
+      "uac": {
+        "visitas": 71,
+        "descargas": 19,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 36,
+        "descargas": 18,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 12,
+        "origen": "directo"
+      }
+    },
+    "2025-12-28": {
+      "uac": {
+        "visitas": 76,
+        "descargas": 19,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 49,
+        "descargas": 29,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 13,
+        "origen": "directo"
+      }
+    },
+    "2025-12-29": {
+      "uac": {
+        "visitas": 83,
+        "descargas": 20,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 63,
+        "descargas": 38,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 19,
+        "origen": "directo"
+      }
+    },
+    "2025-12-30": {
+      "uac": {
+        "visitas": 88,
+        "descargas": 22,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 68,
+        "descargas": 42,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 21,
+        "origen": "directo"
+      }
+    },
+    "2025-12-31": {
+      "uac": {
+        "visitas": 92,
+        "descargas": 24,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 71,
+        "descargas": 45,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 21,
+        "origen": "directo"
+      }
+    },
+    "2026-01-01": {
+      "uac": {
+        "visitas": 94,
+        "descargas": 25,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 73,
+        "descargas": 47,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 23,
+        "origen": "directo"
+      }
+    },
+    "2026-01-02": {
+      "uac": {
+        "visitas": 95,
+        "descargas": 25,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 74,
+        "descargas": 48,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-03": {
+      "uac": {
+        "visitas": 97,
+        "descargas": 26,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 76,
+        "descargas": 50,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-04": {
+      "uac": {
+        "visitas": 98,
+        "descargas": 26,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 77,
+        "descargas": 51,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-05": {
+      "uac": {
+        "visitas": 102,
+        "descargas": 27,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 79,
+        "descargas": 53,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-06": {
+      "uac": {
+        "visitas": 105,
+        "descargas": 28,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 81,
+        "descargas": 55,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-07": {
+      "uac": {
+        "visitas": 106,
+        "descargas": 28,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 82,
+        "descargas": 56,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-08": {
+      "uac": {
+        "visitas": 107,
+        "descargas": 28,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 83,
+        "descargas": 57,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-09": {
+      "uac": {
+        "visitas": 111,
+        "descargas": 29,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 85,
+        "descargas": 59,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-10": {
+      "uac": {
+        "visitas": 113,
+        "descargas": 29,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 88,
+        "descargas": 61,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 24,
+        "origen": "directo"
+      }
+    },
+    "2026-01-11": {
+      "uac": {
+        "visitas": 117,
+        "descargas": 30,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 92,
+        "descargas": 66,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 32,
+        "origen": "directo"
+      }
+    },
+    "2026-01-12": {
+      "uac": {
+        "visitas": 119,
+        "descargas": 30,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 95,
+        "descargas": 68,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 32,
+        "origen": "directo"
+      }
+    },
+    "2026-01-13": {
+      "uac": {
+        "visitas": 120,
+        "descargas": 31,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 97,
+        "descargas": 70,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 32,
+        "origen": "directo"
+      }
+    }
+  }
+}

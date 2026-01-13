@@ -47,8 +47,13 @@ actualizar("zenodo-descargas", data.get("zenodo", {}).get("descargas", 0))
 actualizar("sunedu-visitas", data.get("sunedu", {}).get("visitas", 0))
 
 # ======================
+# OSF (solo visitas)
+# ======================
+actualizar("osf-visitas", data.get("osf", {}).get("visitas", 0))
+
+# ======================
 # Guardar HTML
 # ======================
 HTML_FILE.write_text(str(soup), encoding="utf-8")
 
-print("✔  Totales actualizados correctamente en index.html")
+print("✔ Totales actualizados correctamente en index.html")

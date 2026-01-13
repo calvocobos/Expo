@@ -4,6 +4,8 @@ from pathlib import Path
 ARCHIVO_ENTRADA = "incrementos_por_dia.json"
 ARCHIVO_SALIDA = "totales_acumulados.json"
 
+FUENTES_CON_DESCARGAS = {"uac", "zenodo"}
+
 
 def cargar_json(path, default):
     if Path(path).exists():
@@ -26,9 +28,6 @@ def main():
         return
 
     totales = {
-        "uac": {"visitas": 0, "descargas": 0},
-        "zenodo": {"visitas": 0, "descargas": 0},
-        "sunedu": {"visitas": 0},
         "global": {"visitas": 0, "descargas": 0}
     }
 
@@ -37,15 +36,15 @@ def main():
             visitas = int(valores.get("visitas_dia", 0))
             descargas = int(valores.get("descargas_dia", 0))
 
-            # Inicializar fuente si aparece nueva
+            # Inicializar fuente
             if fuente not in totales:
                 totales[fuente] = {"visitas": 0}
-                if descargas:
+                if fuente in FUENTES_CON_DESCARGAS:
                     totales[fuente]["descargas"] = 0
 
             # Acumular por fuente
             totales[fuente]["visitas"] += visitas
-            if "descargas" in totales[fuente]:
+            if fuente in FUENTES_CON_DESCARGAS:
                 totales[fuente]["descargas"] += descargas
 
             # Acumular global
@@ -53,7 +52,7 @@ def main():
             totales["global"]["descargas"] += descargas
 
     guardar_json(ARCHIVO_SALIDA, {"totales": totales})
-    print("✔  totales_acumulados.json generado correctamente.")
+    print("✔ totales_acumulados.json generado correctamente.")
 
 
 if __name__ == "__main__":

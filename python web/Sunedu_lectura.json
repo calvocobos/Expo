@@ -1,0 +1,157 @@
+{
+  "registros": {
+    "2025-12-23": {
+      "sunedu": {
+        "visitas": 4,
+        "estado": "ok",
+        "cantidad": "sin_dato_anterior"
+      }
+    },
+    "2025-12-24": {
+      "sunedu": {
+        "visitas": 6,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-25": {
+      "sunedu": {
+        "visitas": 9,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-26": {
+      "sunedu": {
+        "visitas": 10,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-27": {
+      "sunedu": {
+        "visitas": 12,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-28": {
+      "sunedu": {
+        "visitas": 13,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-29": {
+      "sunedu": {
+        "visitas": 19,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-30": {
+      "sunedu": {
+        "visitas": 21,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2025-12-31": {
+      "sunedu": {
+        "visitas": 21,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-01": {
+      "sunedu": {
+        "visitas": 23,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2026-01-02": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2026-01-03": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-04": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-05": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-06": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-07": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-08": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-09": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-10": {
+      "sunedu": {
+        "visitas": 24,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-11": {
+      "sunedu": {
+        "visitas": 32,
+        "estado": "ok",
+        "cantidad": "incremento"
+      }
+    },
+    "2026-01-12": {
+      "sunedu": {
+        "visitas": 32,
+        "estado": "ok",
+        "cantidad": "sin_incremento"
+      }
+    },
+    "2026-01-13": {
+      "sunedu": {
+        "visitas": 32,
+        "estado": "error"
+      }
+    }
+  }
+}
