@@ -42,7 +42,7 @@
 
 A continuación se presentan las referencias digitales más importantes de la tesis, incluyendo repositorios institucionales, DOI, archivos PDF y material de presentación.
 
-**Repositorio universitario**
+**Repositorio Universidad Andina del Cusco - UAC**
 [https://hdl.handle.net/20.500.12557/8558](https://hdl.handle.net/20.500.12557/8558)
 
 **Registro nacional (SUNEDU – RENATI)**
