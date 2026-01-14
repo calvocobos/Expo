@@ -1,7 +1,7 @@
 import json
 
 ARCHIVO_MAESTRO = "incrementos_por_dia.json"
-ARCHIVO_OSF = "Osf_revisasemana.json"
+ARCHIVO_OSF = "Osf_revisames.json"
 
 # 1️⃣ Cargar JSON maestro
 with open(ARCHIVO_MAESTRO, "r", encoding="utf-8") as f:
