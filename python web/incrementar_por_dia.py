@@ -1,12 +1,3 @@
-"""
-UAC	✅ ventana móvil 30 días (igual que tu código)
-Zenodo	✅ delta simple día a día
-SUNEDU	✅ delta simple (solo visitas)
-Estructura	✅ visitas / descargas
-Negativos	✅ se corrigen a 0
-Aparición tardía	✅ desde 2025-12-23
-"""
-
 import json
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -41,16 +32,26 @@ def main():
         print("No hay registros para procesar.")
         return
 
+    # 🔹 cargar salida existente
+    salida = cargar_json(ARCHIVO_SALIDA, {"incrementos_por_dia": {}})
+    incrementos_guardados = salida["incrementos_por_dia"]
+
     fechas = sorted(registros.keys())
     fechas_dt = [parsear_fecha_segura(f) for f in fechas]
 
-    incrementos = {}
-
     for i, fecha in enumerate(fechas):
-        incremento_dia = {}
+
+        # crear fecha si no existe
+        if fecha not in incrementos_guardados:
+            incrementos_guardados[fecha] = {}
 
         # ========= UAC y ZENODO =========
         for fuente in ["uac", "zenodo"]:
+
+            # si ya existe → NO TOCAR
+            if fuente in incrementos_guardados[fecha]:
+                continue
+
             if fuente not in registros[fecha]:
                 continue
 
@@ -65,47 +66,44 @@ def main():
                 delta_visitas = visitas_hoy - ayer["visitas"]
                 delta_descargas = descargas_hoy - ayer["descargas"]
 
-                # 🔹 ZENODO → delta simple
                 if fuente == "zenodo":
                     inc_visitas = delta_visitas
                     inc_descargas = delta_descargas
-
-                # 🔹 UAC → ventana móvil 30 días (MISMA LÓGICA TUYA)
                 else:
                     fecha_actual_dt = fechas_dt[i]
                     fecha_30_dt = fecha_actual_dt - timedelta(days=VENTANA_DIAS)
                     fecha_30_str = fecha_30_dt.strftime("%Y-%m-%d")
 
-                    if fecha_30_str in incrementos:
-                        inc_visitas = delta_visitas + incrementos[fecha_30_str]["uac"]["visitas_dia"]
-                        inc_descargas = delta_descargas + incrementos[fecha_30_str]["uac"]["descargas_dia"]
+                    if fecha_30_str in incrementos_guardados and "uac" in incrementos_guardados[fecha_30_str]:
+                        inc_visitas = delta_visitas + incrementos_guardados[fecha_30_str]["uac"]["visitas_dia"]
+                        inc_descargas = delta_descargas + incrementos_guardados[fecha_30_str]["uac"]["descargas_dia"]
                     else:
                         inc_visitas = delta_visitas
                         inc_descargas = delta_descargas
 
-            incremento_dia[fuente] = {
+            incrementos_guardados[fecha][fuente] = {
                 "visitas_dia": max(int(inc_visitas), 0),
                 "descargas_dia": max(int(inc_descargas), 0)
             }
 
         # ========= SUNEDU =========
         if "sunedu" in registros[fecha]:
-            visitas_hoy = registros[fecha]["sunedu"]["visitas"]
 
-            if i == 0 or "sunedu" not in registros[fechas[i - 1]]:
-                inc_visitas = visitas_hoy
-            else:
-                visitas_ayer = registros[fechas[i - 1]]["sunedu"]["visitas"]
-                inc_visitas = visitas_hoy - visitas_ayer
+            if "sunedu" not in incrementos_guardados[fecha]:
+                visitas_hoy = registros[fecha]["sunedu"]["visitas"]
 
-            incremento_dia["sunedu"] = {
-                "visitas_dia": max(int(inc_visitas), 0)
-            }
+                if i == 0 or "sunedu" not in registros[fechas[i - 1]]:
+                    inc_visitas = visitas_hoy
+                else:
+                    visitas_ayer = registros[fechas[i - 1]]["sunedu"]["visitas"]
+                    inc_visitas = visitas_hoy - visitas_ayer
 
-        incrementos[fecha] = incremento_dia
+                incrementos_guardados[fecha]["sunedu"] = {
+                    "visitas_dia": max(int(inc_visitas), 0)
+                }
 
-    guardar_json(ARCHIVO_SALIDA, {"incrementos_por_dia": incrementos})
-    print("✔  incrementos_por_dia.json generado correctamente.")
+    guardar_json(ARCHIVO_SALIDA, salida)
+    print("✔ incrementos_por_dia.json actualizado SIN sobrescritura")
 
 
 if __name__ == "__main__":

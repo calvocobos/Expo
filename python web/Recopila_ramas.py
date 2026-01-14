@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from datetime import datetime
 
 # ---------------- CONFIG ----------------
 ARCHIVOS = {
@@ -19,7 +18,14 @@ SALIDA = "Recopila_ramas.json"
 
 
 # ---------------- UTILS ----------------
-def cargar_registros(ruta):
+def cargar_json(ruta, default):
+    if not Path(ruta).exists():
+        return default
+    with open(ruta, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def cargar_registros_fuente(ruta):
     if not Path(ruta).exists():
         return {}
     with open(ruta, "r", encoding="utf-8") as f:
@@ -27,45 +33,31 @@ def cargar_registros(ruta):
 
 
 # ---------------- CARGA ----------------
-datos = {k: cargar_registros(v) for k, v in ARCHIVOS.items()}
-
-# todas las fechas existentes
-fechas = set()
-for fuente in datos.values():
-    fechas.update(fuente.keys())
-
-fechas = sorted(fechas, key=lambda x: datetime.strptime(x, "%Y-%m-%d"))
-
-
-# ---------------- PROCESO ----------------
-resultado = {"registros": {}}
-
-# memoria por fuente
-ultimo_valor = {
-    fuente: {campo: 0 for campo in CAMPOS[fuente]}
-    for fuente in CAMPOS
+resultado = cargar_json(SALIDA, {"registros": {}})
+datos_fuente = {
+    fuente: cargar_registros_fuente(ruta)
+    for fuente, ruta in ARCHIVOS.items()
 }
 
-for fecha in fechas:
-    resultado["registros"][fecha] = {}
 
-    for fuente in CAMPOS:
-        entrada_fuente = datos.get(fuente, {}).get(fecha)
+# ---------------- FUSIÓN INCREMENTAL ----------------
+for fuente, registros in datos_fuente.items():
+    for fecha, contenido in registros.items():
+
+        # Crear fecha si no existe
+        if fecha not in resultado["registros"]:
+            resultado["registros"][fecha] = {}
+
+        # Si la fuente ya existe → NO TOCAR
+        if fuente in resultado["registros"][fecha]:
+            continue
+
+        # Si la fuente NO existe pero hay datos → agregar
         salida = {}
-        origen = "inicial"
+        for campo in CAMPOS[fuente]:
+            salida[campo] = contenido.get(fuente, {}).get(campo, 0)
 
-        if entrada_fuente:
-            origen = "directo"
-            for campo in CAMPOS[fuente]:
-                valor = entrada_fuente.get(fuente, {}).get(campo, 0)
-                salida[campo] = valor
-                ultimo_valor[fuente][campo] = valor
-        else:
-            origen = "copiado"
-            for campo in CAMPOS[fuente]:
-                salida[campo] = ultimo_valor[fuente][campo]
-
-        salida["origen"] = origen
+        salida["origen"] = "directo"
         resultado["registros"][fecha][fuente] = salida
 
 
@@ -73,4 +65,4 @@ for fecha in fechas:
 with open(SALIDA, "w", encoding="utf-8") as f:
     json.dump(resultado, f, indent=2, ensure_ascii=False)
 
-print(f"✅ Archivo generado correctamente: {SALIDA}")
+print("✅ Fusión incremental completada sin sobrescritura")

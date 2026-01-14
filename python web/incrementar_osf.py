@@ -1,38 +1,50 @@
 import json
+from pathlib import Path
 
 ARCHIVO_MAESTRO = "incrementos_por_dia.json"
 ARCHIVO_OSF = "Osf_revisames.json"
 
-# 1️⃣ Cargar JSON maestro
-with open(ARCHIVO_MAESTRO, "r", encoding="utf-8") as f:
-    maestro = json.load(f)
 
-incrementos = maestro.get("incrementos_por_dia", {})
+def cargar_json(path):
+    if not Path(path).exists():
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def guardar_json(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+# 1️⃣ Cargar maestro
+maestro = cargar_json(ARCHIVO_MAESTRO)
+incrementos = maestro.setdefault("incrementos_por_dia", {})
 
 # 2️⃣ Cargar OSF
-with open(ARCHIVO_OSF, "r", encoding="utf-8") as f:
-    osf = json.load(f)
+osf = cargar_json(ARCHIVO_OSF)
 
-# 3️⃣ Integración estricta
+
+# 3️⃣ Integración incremental (relleno de huecos)
 for item in osf.get("datos", []):
-    fecha = item["date"]
-    count = item["count"]
+    fecha = item.get("date")
+    count = item.get("count")
 
-    # 👉 Si la fecha NO existe → ignorar
+    # 👉 fecha debe existir
     if fecha not in incrementos:
         continue
 
-    # 👉 Si ya existe osf → NO sobrescribir
+    # 👉 si ya existe osf → NO TOCAR
     if "osf" in incrementos[fecha]:
         continue
 
-    # 👉 Fecha existe y osf NO existe → crear rama
+    # 👉 crear solo la rama faltante
     incrementos[fecha]["osf"] = {
-        "visitas_dia": count
+        "visitas_dia": int(count)
     }
 
-# 4️⃣ Guardar
-with open(ARCHIVO_MAESTRO, "w", encoding="utf-8") as f:
-    json.dump(maestro, f, indent=2, ensure_ascii=False)
 
-print("✔ OSF integrado sin sobrescribir ni crear fechas nuevas")
+# 4️⃣ Guardar (reescribe archivo, pero SIN modificar datos existentes)
+guardar_json(ARCHIVO_MAESTRO, maestro)
+
+print("✔ OSF integrado rellenando huecos (sin modificar nada existente)")

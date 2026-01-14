@@ -13,22 +13,19 @@ with sync_playwright() as p:
     time.sleep(5)
     print("🟢 Página de referencias cargada")
 
-    # 2️⃣ Click en el enlace identificado por ID
-    page.click("#ref-zenodo")
-    time.sleep(5)
-    print("🟢 Click en ref-zenodo")
+    # 2️⃣ Click en el enlace identificado por ID (navega a Zenodo)
+    with page.expect_navigation():
+        page.click("#ref-zenodo")
 
-    # 3️⃣ Carga la página de Zenodo
-    page.wait_for_load_state("networkidle")
     time.sleep(5)
     print("🟢 Página Zenodo cargada")
 
-    # 4️⃣ Scroll a 500
+    # 3️⃣ Scroll a 500
     page.evaluate("window.scrollTo(0, 500)")
     time.sleep(5)
     print("🟢 Scroll realizado")
 
-    # 5️⃣ Guardar contenido de Zenodo en TXT
+    # 4️⃣ Guardar contenido de Zenodo en TXT
     texto_zenodo = page.inner_text("body")
     with open("Zenodo_contenido2.txt", "w", encoding="utf-8") as f:
         f.write(texto_zenodo)
@@ -36,22 +33,19 @@ with sync_playwright() as p:
     time.sleep(5)
     print("🟢 Contenido de Zenodo guardado")
 
-    # 6️⃣ Click en enlace OpenAIRE (target=_blank)
+    # 5️⃣ Click en enlace OpenAIRE (target=_blank)
     with context.expect_page() as popup_info:
-        page.locator(
-            "#external-resource a",
-            has_text="OpenAIRE"
-        ).click()
+        page.locator("#external-resource a", has_text="OpenAIRE").click()
 
     time.sleep(5)
     print("🟢 Click en OpenAIRE")
 
-    # 7️⃣ Carga la página OpenAIRE
+    # 6️⃣ Carga la página OpenAIRE
     openaire_page = popup_info.value
-    openaire_page.wait_for_load_state("networkidle")
-    time.sleep(5)
+    openaire_page.wait_for_load_state("domcontentloaded")
+    time.sleep(8)
     print("🟢 Página OpenAIRE cargada")
 
-    # 8️⃣ Cerrar navegador y terminar
+    # 7️⃣ Cerrar navegador
     browser.close()
     print("🔴 Proceso finalizado")
