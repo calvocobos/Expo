@@ -75,32 +75,33 @@ if ("serviceWorker" in navigator) {
  * usano json como fuente
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('../Expo/ghaction/sections.json')
-    .then(res => res.json())
-    .then(sections => {
-      const menu = document.getElementById('menu-lateral');
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("../Expo/ghaction/sections.json")
+    .then((res) => res.json())
+    .then((sections) => {
+      const menu = document.getElementById("menu-lateral");
       if (!menu) return;
 
-      const ul = menu.querySelector('ul');
+      const ul = menu.querySelector("ul");
       if (!ul) return;
 
       // Limpiar contenido actual
-      ul.innerHTML = '';
+      ul.innerHTML = "";
 
       // Crear <li> y <a> para cada sección
-      sections.forEach(section => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.setAttribute('href', `#${section.id}`);
-        a.setAttribute('aria-label', `Ir a la sección ${section.titulo}`);
-        a.className = 'block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600';
+      sections.forEach((section) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.setAttribute("href", `#${section.id}`);
+        a.setAttribute("aria-label", `Ir a la sección ${section.titulo}`);
+        a.className =
+          "block py-2 px-3 rounded hover:bg-amber-300 dark:hover:bg-amber-600";
         a.textContent = section.nombre;
         li.appendChild(a);
         ul.appendChild(li);
       });
     })
-    .catch(err => console.error('Error cargando sections.json:', err));
+    .catch((err) => console.error("Error cargando sections.json:", err));
 });
 
 /**
@@ -119,7 +120,6 @@ $(document).ready(function () {
     $("#menu-lateral").fadeOut();
   });
 });
-
 
 /**
  * 📊 Gráficas estadísticas
@@ -152,6 +152,7 @@ async function cargarEstadisticas() {
         "Zenodo · Visitas",
         "Zenodo · Descargas",
         "SUNEDU · Visitas",
+        "OSF · Visitas",
       ],
       datasets: [
         {
@@ -180,15 +181,17 @@ async function cargarEstadisticas() {
             tot.zenodo.visitas,
             tot.zenodo.descargas,
             tot.sunedu.visitas,
+            tot.osf?.visitas ?? 0,
           ],
           backgroundColor: [
             "transparent",
             "transparent",
-            "#60a5fa",   // UAC visitas
-            "#fbbf24",   // UAC descargas
-            "#22c55e",   // Zenodo visitas
-            "#a855f7",   // Zenodo descargas
-            "#ef4444",   // SUNEDU visitas
+            "#60a5fa", // UAC visitas
+            "#fbbf24", // UAC descargas
+            "#22c55e", // Zenodo visitas
+            "#a855f7", // Zenodo descargas
+            "#ef4444", // SUNEDU visitas
+            "#22d3ee", // OSF visitas (cyan)
           ],
           borderWidth: 0,
           radius: "78%",
@@ -228,6 +231,7 @@ async function cargarEstadisticas() {
   const suneduVisitas = fechas.map(
     (f) => registros[f].sunedu?.visitas_dia ?? 0
   );
+  const osfVisitas = fechas.map((f) => registros[f].osf?.visitas_dia ?? 0);
 
   new Chart(document.getElementById("pordiaChart"), {
     type: "line",
@@ -267,6 +271,13 @@ async function cargarEstadisticas() {
           data: suneduVisitas,
           borderColor: "#dc2626",
           backgroundColor: "rgba(220, 38, 38, 0.15)",
+          tension: 0.35,
+        },
+        {
+          label: "OSF · Visitas",
+          data: osfVisitas,
+          borderColor: "#22d3ee", // cyan
+          backgroundColor: "rgba(34, 211, 238, 0.15)",
           tension: 0.35,
         },
       ],
@@ -309,4 +320,3 @@ async function cargarEstadisticas() {
  * 🚀 EJECUCIÓN
  * ========================================================= */
 cargarEstadisticas();
-
