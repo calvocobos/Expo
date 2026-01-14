@@ -72,7 +72,7 @@ A continuación se presentan las referencias digitales más importantes de la te
 ----------------------------------------------------------------------
 
 ### Nota
-El archivo PDF disponible en OSF y en GitHub Pages corresponde a la versión final de la tesis, idéntica a la depositada en el repositorio universitario y en RENATI.
+c
 
 
 ----------------------------------------------------------------------
