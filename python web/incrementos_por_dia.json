@@ -128,9 +128,6 @@
       },
       "sunedu": {
         "visitas_dia": 2
-      },
-      "osf": {
-        "visitas_dia": 13
       }
     },
     "2025-12-28": {
@@ -144,9 +141,6 @@
       },
       "sunedu": {
         "visitas_dia": 1
-      },
-      "osf": {
-        "visitas_dia": 4
       }
     },
     "2025-12-29": {
@@ -160,9 +154,6 @@
       },
       "sunedu": {
         "visitas_dia": 6
-      },
-      "osf": {
-        "visitas_dia": 8
       }
     },
     "2025-12-30": {
@@ -176,9 +167,6 @@
       },
       "sunedu": {
         "visitas_dia": 2
-      },
-      "osf": {
-        "visitas_dia": 0
       }
     },
     "2025-12-31": {
@@ -192,9 +180,6 @@
       },
       "sunedu": {
         "visitas_dia": 0
-      },
-      "osf": {
-        "visitas_dia": 9
       }
     },
     "2026-01-01": {
@@ -208,9 +193,6 @@
       },
       "sunedu": {
         "visitas_dia": 2
-      },
-      "osf": {
-        "visitas_dia": 0
       }
     },
     "2026-01-02": {
@@ -224,9 +206,6 @@
       },
       "sunedu": {
         "visitas_dia": 1
-      },
-      "osf": {
-        "visitas_dia": 11
       }
     },
     "2026-01-03": {
@@ -239,9 +218,6 @@
         "descargas_dia": 2
       },
       "sunedu": {
-        "visitas_dia": 0
-      },
-      "osf": {
         "visitas_dia": 0
       }
     },
@@ -256,9 +232,6 @@
       },
       "sunedu": {
         "visitas_dia": 0
-      },
-      "osf": {
-        "visitas_dia": 0
       }
     },
     "2026-01-05": {
@@ -271,9 +244,6 @@
         "descargas_dia": 2
       },
       "sunedu": {
-        "visitas_dia": 0
-      },
-      "osf": {
         "visitas_dia": 0
       }
     },
@@ -288,9 +258,6 @@
       },
       "sunedu": {
         "visitas_dia": 0
-      },
-      "osf": {
-        "visitas_dia": 0
       }
     },
     "2026-01-07": {
@@ -303,9 +270,6 @@
         "descargas_dia": 1
       },
       "sunedu": {
-        "visitas_dia": 0
-      },
-      "osf": {
         "visitas_dia": 0
       }
     },
@@ -320,9 +284,6 @@
       },
       "sunedu": {
         "visitas_dia": 0
-      },
-      "osf": {
-        "visitas_dia": 0
       }
     },
     "2026-01-09": {
@@ -336,9 +297,6 @@
       },
       "sunedu": {
         "visitas_dia": 0
-      },
-      "osf": {
-        "visitas_dia": 0
       }
     },
     "2026-01-10": {
@@ -351,9 +309,6 @@
         "descargas_dia": 2
       },
       "sunedu": {
-        "visitas_dia": 0
-      },
-      "osf": {
         "visitas_dia": 0
       }
     },
@@ -370,7 +325,7 @@
         "visitas_dia": 8
       },
       "osf": {
-        "visitas_dia": 10
+        "visitas_dia": 16
       }
     },
     "2026-01-12": {
@@ -391,18 +346,18 @@
     },
     "2026-01-13": {
       "uac": {
-        "visitas_dia": 1,
-        "descargas_dia": 1
-      },
-      "zenodo": {
-        "visitas_dia": 2,
+        "visitas_dia": 6,
         "descargas_dia": 2
       },
+      "zenodo": {
+        "visitas_dia": 7,
+        "descargas_dia": 6
+      },
       "sunedu": {
-        "visitas_dia": 0
+        "visitas_dia": 1
       },
       "osf": {
-        "visitas_dia": 14
+        "visitas_dia": 26
       }
     }
   }

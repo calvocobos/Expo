@@ -149,8 +149,8 @@
     },
     "2026-01-13": {
       "sunedu": {
-        "visitas": 32,
-        "estado": "error"
+        "visitas": 33,
+        "estado": "ok"
       }
     }
   }

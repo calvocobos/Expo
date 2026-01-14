@@ -418,17 +418,17 @@
     },
     "2026-01-13": {
       "uac": {
-        "visitas": 120,
-        "descargas": 31,
+        "visitas": 125,
+        "descargas": 32,
         "origen": "directo"
       },
       "zenodo": {
-        "visitas": 97,
-        "descargas": 70,
+        "visitas": 102,
+        "descargas": 74,
         "origen": "directo"
       },
       "sunedu": {
-        "visitas": 32,
+        "visitas": 33,
         "origen": "directo"
       }
     }
