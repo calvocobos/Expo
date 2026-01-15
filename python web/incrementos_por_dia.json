@@ -420,6 +420,22 @@
       "osf": {
         "visitas_dia": 2
       }
+    },
+    "2026-01-15": {
+      "uac": {
+        "visitas_dia": 6,
+        "descargas_dia": 3
+      },
+      "zenodo": {
+        "visitas_dia": 1,
+        "descargas_dia": 1
+      },
+      "sunedu": {
+        "visitas_dia": 2
+      },
+      "osf": {
+        "visitas_dia": 1
+      }
     }
   }
 }
