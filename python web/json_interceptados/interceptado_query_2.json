@@ -1,0 +1,290 @@
+{
+  "results": [
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2025-12-18"
+      ]
+    },
+    {
+      "metrics": [
+        8
+      ],
+      "dimensions": [
+        "2025-12-19"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2025-12-20"
+      ]
+    },
+    {
+      "metrics": [
+        18
+      ],
+      "dimensions": [
+        "2025-12-21"
+      ]
+    },
+    {
+      "metrics": [
+        11
+      ],
+      "dimensions": [
+        "2025-12-22"
+      ]
+    },
+    {
+      "metrics": [
+        9
+      ],
+      "dimensions": [
+        "2025-12-23"
+      ]
+    },
+    {
+      "metrics": [
+        9
+      ],
+      "dimensions": [
+        "2025-12-24"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2025-12-25"
+      ]
+    },
+    {
+      "metrics": [
+        7
+      ],
+      "dimensions": [
+        "2025-12-26"
+      ]
+    },
+    {
+      "metrics": [
+        5
+      ],
+      "dimensions": [
+        "2025-12-27"
+      ]
+    },
+    {
+      "metrics": [
+        4
+      ],
+      "dimensions": [
+        "2025-12-28"
+      ]
+    },
+    {
+      "metrics": [
+        5
+      ],
+      "dimensions": [
+        "2025-12-29"
+      ]
+    },
+    {
+      "metrics": [
+        6
+      ],
+      "dimensions": [
+        "2025-12-30"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2025-12-31"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-01"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-02"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-03"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-04"
+      ]
+    },
+    {
+      "metrics": [
+        4
+      ],
+      "dimensions": [
+        "2026-01-05"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2026-01-06"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-07"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2026-01-08"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-09"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2026-01-10"
+      ]
+    },
+    {
+      "metrics": [
+        4
+      ],
+      "dimensions": [
+        "2026-01-11"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-12"
+      ]
+    },
+    {
+      "metrics": [
+        5
+      ],
+      "dimensions": [
+        "2026-01-13"
+      ]
+    },
+    {
+      "metrics": [
+        6
+      ],
+      "dimensions": [
+        "2026-01-14"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-15"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-16"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-17"
+      ]
+    }
+  ],
+  "meta": {},
+  "query": {
+    "site_id": "repositorio.uandina.edu.pe",
+    "metrics": [
+      "visits"
+    ],
+    "date_range": [
+      "2025-12-18T00:00:00-05:00",
+      "2026-01-17T23:59:59-05:00"
+    ],
+    "filters": [
+      [
+        "contains",
+        "event:page",
+        [
+          "/item/a5a76dd6-ce00-47f1-8172-cde9c9661b1a"
+        ]
+      ]
+    ],
+    "dimensions": [
+      "time:day"
+    ],
+    "order_by": [
+      [
+        "time:day",
+        "asc"
+      ],
+      [
+        "visits",
+        "desc"
+      ]
+    ],
+    "include": {},
+    "pagination": {
+      "offset": 0,
+      "limit": 10000
+    }
+  }
+}

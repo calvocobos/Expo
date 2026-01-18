@@ -1,0 +1,177 @@
+{
+  "results": [
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2025-12-18"
+      ]
+    },
+    {
+      "metrics": [
+        8
+      ],
+      "dimensions": [
+        "2025-12-19"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2025-12-20"
+      ]
+    },
+    {
+      "metrics": [
+        5
+      ],
+      "dimensions": [
+        "2025-12-21"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2025-12-22"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2025-12-28"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2025-12-30"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2025-12-31"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-01"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-02"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-05"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-06"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-08"
+      ]
+    },
+    {
+      "metrics": [
+        1
+      ],
+      "dimensions": [
+        "2026-01-11"
+      ]
+    },
+    {
+      "metrics": [
+        2
+      ],
+      "dimensions": [
+        "2026-01-13"
+      ]
+    },
+    {
+      "metrics": [
+        3
+      ],
+      "dimensions": [
+        "2026-01-14"
+      ]
+    }
+  ],
+  "meta": {},
+  "query": {
+    "site_id": "repositorio.uandina.edu.pe",
+    "metrics": [
+      "events"
+    ],
+    "date_range": [
+      "2025-12-18T00:00:00-05:00",
+      "2026-01-17T23:59:59-05:00"
+    ],
+    "filters": [
+      [
+        "is",
+        "event:goal",
+        [
+          "File Download"
+        ]
+      ],
+      [
+        "is",
+        "event:props:itemId",
+        [
+          "a5a76dd6-ce00-47f1-8172-cde9c9661b1a"
+        ]
+      ]
+    ],
+    "dimensions": [
+      "time:day"
+    ],
+    "order_by": [
+      [
+        "time:day",
+        "asc"
+      ],
+      [
+        "events",
+        "desc"
+      ]
+    ],
+    "include": {},
+    "pagination": {
+      "offset": 0,
+      "limit": 10000
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "metrics": [
+        35
+      ],
+      "dimensions": []
+    }
+  ],
+  "meta": {},
+  "query": {
+    "site_id": "repositorio.uandina.edu.pe",
+    "metrics": [
+      "events"
+    ],
+    "date_range": [
+      "2025-12-18T00:00:00-05:00",
+      "2026-01-17T23:59:59-05:00"
+    ],
+    "filters": [
+      [
+        "is",
+        "event:goal",
+        [
+          "File Download"
+        ]
+      ],
+      [
+        "is",
+        "event:props:itemId",
+        [
+          "a5a76dd6-ce00-47f1-8172-cde9c9661b1a"
+        ]
+      ]
+    ],
+    "dimensions": [],
+    "order_by": [
+      [
+        "events",
+        "desc"
+      ]
+    ],
+    "include": {},
+    "pagination": {
+      "offset": 0,
+      "limit": 10000
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "2a3a1b6e-cd76-4d69-92ef-a538a36445f1",
+  "uuid": "2a3a1b6e-cd76-4d69-92ef-a538a36445f1",
+  "name": "Pregrado",
+  "handle": "20.500.12557/9",
+  "metadata": {
+    "dc.description.abstract": [
+      {
+        "value": "Investigaciones de Pre-Grado",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.identifier.uri": [
+      {
+        "value": "https://hdl.handle.net/20.500.12557/9",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.title": [
+      {
+        "value": "Pregrado",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ]
+  },
+  "archivedItemsCount": 7718,
+  "type": "community",
+  "_links": {
+    "collections": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/2a3a1b6e-cd76-4d69-92ef-a538a36445f1/collections"
+    },
+    "logo": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/2a3a1b6e-cd76-4d69-92ef-a538a36445f1/logo"
+    },
+    "subcommunities": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/2a3a1b6e-cd76-4d69-92ef-a538a36445f1/subcommunities"
+    },
+    "parentCommunity": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/2a3a1b6e-cd76-4d69-92ef-a538a36445f1/parentCommunity"
+    },
+    "adminGroup": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/2a3a1b6e-cd76-4d69-92ef-a538a36445f1/adminGroup"
+    },
+    "self": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/2a3a1b6e-cd76-4d69-92ef-a538a36445f1"
+    }
+  },
+  "_embedded": {
+    "parentCommunity": {
+      "id": "878502fe-374f-4c4e-aebe-9f44bc929bd4",
+      "uuid": "878502fe-374f-4c4e-aebe-9f44bc929bd4",
+      "name": "Tesis",
+      "handle": "20.500.12557/4218",
+      "metadata": {
+        "dc.description.abstract": [
+          {
+            "value": "Trabajos conducentes a grados y títulos",
+            "language": null,
+            "authority": null,
+            "confidence": -1,
+            "place": 0
+          }
+        ],
+        "dc.identifier.uri": [
+          {
+            "value": "https://hdl.handle.net/20.500.12557/4218",
+            "language": null,
+            "authority": null,
+            "confidence": -1,
+            "place": 0
+          }
+        ],
+        "dc.title": [
+          {
+            "value": "Tesis",
+            "language": null,
+            "authority": null,
+            "confidence": -1,
+            "place": 0
+          }
+        ]
+      },
+      "archivedItemsCount": 8407,
+      "type": "community",
+      "_links": {
+        "collections": {
+          "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/878502fe-374f-4c4e-aebe-9f44bc929bd4/collections"
+        },
+        "logo": {
+          "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/878502fe-374f-4c4e-aebe-9f44bc929bd4/logo"
+        },
+        "subcommunities": {
+          "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/878502fe-374f-4c4e-aebe-9f44bc929bd4/subcommunities"
+        },
+        "parentCommunity": {
+          "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/878502fe-374f-4c4e-aebe-9f44bc929bd4/parentCommunity"
+        },
+        "adminGroup": {
+          "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/878502fe-374f-4c4e-aebe-9f44bc929bd4/adminGroup"
+        },
+        "self": {
+          "href": "https://repositorio.uandina.edu.pe/backend/api/core/communities/878502fe-374f-4c4e-aebe-9f44bc929bd4"
+        }
+      }
+    }
+  }
+}

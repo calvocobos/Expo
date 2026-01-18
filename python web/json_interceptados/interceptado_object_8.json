@@ -1,0 +1,13 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/authz/authorizations/search/object?uri=https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c&feature=canDownload"
+    }
+  },
+  "page": {
+    "size": 20,
+    "totalElements": 0,
+    "totalPages": 0,
+    "number": 0
+  }
+}

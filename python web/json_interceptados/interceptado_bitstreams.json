@@ -1,0 +1,272 @@
+{
+  "_embedded": {
+    "bitstreams": [
+      {
+        "id": "bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7",
+        "uuid": "bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7",
+        "name": "Carlos_Irvin_Tesis_bachiller_2025.pdf",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "Carlos_Irvin_Tesis_bachiller_2025.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "Carlos_Irvin_Tesis_bachiller_2025.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "ORIGINAL",
+        "sizeBytes": 17100027,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "7790f8d2b14c083ddecac3aae144efee"
+        },
+        "sequenceId": 1,
+        "type": "bitstream",
+        "_links": {
+          "content": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7/content"
+          },
+          "bundle": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7/bundle"
+          },
+          "format": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7/format"
+          },
+          "thumbnail": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7/thumbnail"
+          },
+          "self": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/bb91c287-3a0a-4deb-aaac-fc6dbf0ee2f7"
+          }
+        }
+      },
+      {
+        "id": "94ee01d8-629b-499d-a88d-4a8750fc2c7e",
+        "uuid": "94ee01d8-629b-499d-a88d-4a8750fc2c7e",
+        "name": "ANEXOS.pdf",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "ANEXOS.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "ANEXOS.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "ORIGINAL",
+        "sizeBytes": 3271323,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "6ca8de073a169703f96c050a8a54ac36"
+        },
+        "sequenceId": 2,
+        "type": "bitstream",
+        "_links": {
+          "content": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/94ee01d8-629b-499d-a88d-4a8750fc2c7e/content"
+          },
+          "bundle": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/94ee01d8-629b-499d-a88d-4a8750fc2c7e/bundle"
+          },
+          "format": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/94ee01d8-629b-499d-a88d-4a8750fc2c7e/format"
+          },
+          "thumbnail": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/94ee01d8-629b-499d-a88d-4a8750fc2c7e/thumbnail"
+          },
+          "self": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/94ee01d8-629b-499d-a88d-4a8750fc2c7e"
+          }
+        }
+      },
+      {
+        "id": "c7157ba5-665c-443e-9a3d-894acb17a013",
+        "uuid": "c7157ba5-665c-443e-9a3d-894acb17a013",
+        "name": "ACTA.pdf",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "ACTA.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "ACTA.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "ORIGINAL",
+        "sizeBytes": 697942,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "4d89c2763b15bbfbe5f420542f091362"
+        },
+        "sequenceId": 3,
+        "type": "bitstream",
+        "_links": {
+          "content": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/c7157ba5-665c-443e-9a3d-894acb17a013/content"
+          },
+          "bundle": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/c7157ba5-665c-443e-9a3d-894acb17a013/bundle"
+          },
+          "format": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/c7157ba5-665c-443e-9a3d-894acb17a013/format"
+          },
+          "thumbnail": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/c7157ba5-665c-443e-9a3d-894acb17a013/thumbnail"
+          },
+          "self": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/c7157ba5-665c-443e-9a3d-894acb17a013"
+          }
+        }
+      },
+      {
+        "id": "1489da02-8665-41aa-8e2a-d2ffe8bef057",
+        "uuid": "1489da02-8665-41aa-8e2a-d2ffe8bef057",
+        "name": "AUTORIZACIÓN.pdf",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "AUTORIZACIÓN.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "AUTORIZACIÓN.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "ORIGINAL",
+        "sizeBytes": 555929,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "04541ec95f3ad610fc469a923eee97b8"
+        },
+        "sequenceId": 4,
+        "type": "bitstream",
+        "_links": {
+          "content": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/1489da02-8665-41aa-8e2a-d2ffe8bef057/content"
+          },
+          "bundle": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/1489da02-8665-41aa-8e2a-d2ffe8bef057/bundle"
+          },
+          "format": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/1489da02-8665-41aa-8e2a-d2ffe8bef057/format"
+          },
+          "thumbnail": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/1489da02-8665-41aa-8e2a-d2ffe8bef057/thumbnail"
+          },
+          "self": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/1489da02-8665-41aa-8e2a-d2ffe8bef057"
+          }
+        }
+      },
+      {
+        "id": "a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c",
+        "uuid": "a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c",
+        "name": "REPORTE.pdf",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "REPORTE.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "REPORTE.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "ORIGINAL",
+        "sizeBytes": 16734891,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "22d87b965eb4cb0b830b88e9abfb4092"
+        },
+        "sequenceId": 5,
+        "type": "bitstream",
+        "_links": {
+          "content": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c/content"
+          },
+          "bundle": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c/bundle"
+          },
+          "format": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c/format"
+          },
+          "thumbnail": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c/thumbnail"
+          },
+          "self": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/a67232a8-8fb7-4e61-9cb3-9b6fe4caa82c"
+          }
+        }
+      }
+    ]
+  },
+  "page": {
+    "number": 0,
+    "size": 20,
+    "totalPages": 1,
+    "totalElements": 5
+  },
+  "_links": {
+    "self": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/core/bundles/bc6d6be8-032d-4927-b31d-8a795e3cbea6/bitstreams"
+    }
+  }
+}

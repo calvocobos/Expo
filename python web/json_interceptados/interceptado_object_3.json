@@ -1,0 +1,35 @@
+{
+  "_embedded": {
+    "authorizations": [
+      {
+        "id": "canRequestACopy_core.bitstream_94ee01d8-629b-499d-a88d-4a8750fc2c7e",
+        "type": "authorization",
+        "_links": {
+          "eperson": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/authz/authorizations/canRequestACopy_core.bitstream_94ee01d8-629b-499d-a88d-4a8750fc2c7e/eperson"
+          },
+          "feature": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/authz/authorizations/canRequestACopy_core.bitstream_94ee01d8-629b-499d-a88d-4a8750fc2c7e/feature"
+          },
+          "object": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/authz/authorizations/canRequestACopy_core.bitstream_94ee01d8-629b-499d-a88d-4a8750fc2c7e/object"
+          },
+          "self": {
+            "href": "https://repositorio.uandina.edu.pe/backend/api/authz/authorizations/canRequestACopy_core.bitstream_94ee01d8-629b-499d-a88d-4a8750fc2c7e"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://repositorio.uandina.edu.pe/backend/api/authz/authorizations/search/object?uri=https://repositorio.uandina.edu.pe/backend/api/core/bitstreams/94ee01d8-629b-499d-a88d-4a8750fc2c7e&feature=canRequestACopy"
+    }
+  },
+  "page": {
+    "size": 20,
+    "totalElements": 1,
+    "totalPages": 1,
+    "number": 0
+  }
+}
