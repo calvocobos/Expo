@@ -8,10 +8,10 @@ Página de inicio
 Estadísticas
 Total de visitas
 	Visualizaciones
-Desarrollo ...	47
+Desarrollo ...	49
 Total de visitas por mes
 	julio 2025	agosto 2025	septiembre 2025	octubre 2025	noviembre 2025	diciembre 2025	enero 2026
-Desarrollo ...	0	0	0	0	0	21	26
+Desarrollo ...	0	0	0	0	0	21	28
 Archivos descargados
 	Visualizaciones
 Países con mayores visualizaciones
