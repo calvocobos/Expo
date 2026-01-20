@@ -361,6 +361,17 @@
           "UAC_contenido2.txt"
         ]
       }
+    },
+    "2026-01-20": {
+      "uac": {
+        "visitas": 132,
+        "descargas": 27,
+        "estado": "ok",
+        "fuentes_validas": [
+          "UAC_contenido1.txt",
+          "UAC_contenido2.txt"
+        ]
+      }
     }
   }
 }
