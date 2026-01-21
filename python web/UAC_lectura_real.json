@@ -200,7 +200,13 @@
     },
     "2026-01-20": {
       "uac": {
-        "visitas": 2,
+        "visitas": 4,
+        "descargas": 1
+      }
+    },
+    "2026-01-21": {
+      "uac": {
+        "visitas": 1,
         "descargas": 0
       }
     }
