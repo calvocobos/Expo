@@ -27,6 +27,8 @@ Accept cookies
 Rqzdx / Analytics
 Sign in
 Analytics
+Show analytics for date range:
+Past week
 Unique Visits
 Time Of Day Of Visits
 Top Referrers
@@ -34,9 +36,15 @@ Popular Pages
 
 Duplicates
 
+0
+
 Links to this project
 
+0
+
 Template copies
+
+0
 
 Center for Open Science
 Terms of Use
