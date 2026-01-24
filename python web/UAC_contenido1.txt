@@ -1,7 +1,11 @@
-Se interrumpió la conexión
+Vaya… no se puede acceder a esta página
 
-Se detectó un cambio en la red.
+No se encontró la dirección IP del servidor de calvocobos.github.io.
 
-ERR_NETWORK_CHANGED
+Prueba a:
+
+Comprobando la conexión
+Comprobando la configuración de proxy, firewall y DNS
+ERR_NAME_NOT_RESOLVED
 Actualizar
 Microsoft Edge
