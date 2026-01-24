@@ -564,6 +564,19 @@
       "osf": {
         "visitas_dia": 1
       }
+    },
+    "2026-01-24": {
+      "uac": {
+        "visitas_dia": 1,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      },
+      "sunedu": {
+        "visitas_dia": 0
+      }
     }
   }
 }
