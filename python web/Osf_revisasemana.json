@@ -2,7 +2,39 @@
   "fuente": "osf",
   "node": "rqzdx",
   "rango": "past_week",
-  "datos": [],
-  "estado": "error",
-  "error": "HTTPSConnectionPool(host='api.osf.io', port=443): Max retries exceeded with url: /_/metrics/query/node_analytics/rqzdx/week/ (Caused by NameResolutionError(\"HTTPSConnection(host='api.osf.io', port=443): Failed to resolve 'api.osf.io' ([Errno 11001] getaddrinfo failed)\"))"
+  "datos": [
+    {
+      "date": "2026-01-18",
+      "count": 2
+    },
+    {
+      "date": "2026-01-19",
+      "count": 2
+    },
+    {
+      "date": "2026-01-20",
+      "count": 2
+    },
+    {
+      "date": "2026-01-21",
+      "count": 1
+    },
+    {
+      "date": "2026-01-22",
+      "count": 2
+    },
+    {
+      "date": "2026-01-23",
+      "count": 1
+    },
+    {
+      "date": "2026-01-24",
+      "count": 0
+    },
+    {
+      "date": "2026-01-25",
+      "count": 1
+    }
+  ],
+  "estado": "ok"
 }

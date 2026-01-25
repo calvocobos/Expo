@@ -212,14 +212,26 @@
     },
     "2026-01-22": {
       "uac": {
-        "visitas": 1,
+        "visitas": 2,
         "descargas": 2
       }
     },
     "2026-01-23": {
       "uac": {
-        "visitas": 0,
+        "visitas": 4,
         "descargas": 2
+      }
+    },
+    "2026-01-24": {
+      "uac": {
+        "visitas": 1,
+        "descargas": 1
+      }
+    },
+    "2026-01-25": {
+      "uac": {
+        "visitas": 1,
+        "descargas": 0
       }
     }
   }
