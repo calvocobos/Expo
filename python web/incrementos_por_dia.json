@@ -552,7 +552,7 @@
     "2026-01-23": {
       "uac": {
         "visitas_dia": 4,
-        "descargas_dia": 2
+        "descargas_dia": 4
       },
       "zenodo": {
         "visitas_dia": 2,
@@ -584,7 +584,7 @@
     "2026-01-25": {
       "uac": {
         "visitas_dia": 1,
-        "descargas_dia": 0
+        "descargas_dia": 3
       },
       "zenodo": {
         "visitas_dia": 9,
@@ -595,6 +595,19 @@
       },
       "osf": {
         "visitas_dia": 1
+      }
+    },
+    "2026-01-26": {
+      "uac": {
+        "visitas_dia": 0,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 1,
+        "descargas_dia": 1
+      },
+      "sunedu": {
+        "visitas_dia": 2
       }
     }
   }
