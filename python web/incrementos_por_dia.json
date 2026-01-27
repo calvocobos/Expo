@@ -608,6 +608,25 @@
       },
       "sunedu": {
         "visitas_dia": 2
+      },
+      "osf": {
+        "visitas_dia": 1
+      }
+    },
+    "2026-01-27": {
+      "uac": {
+        "visitas_dia": 0,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 2,
+        "descargas_dia": 2
+      },
+      "sunedu": {
+        "visitas_dia": 5
+      },
+      "osf": {
+        "visitas_dia": 1
       }
     }
   }
