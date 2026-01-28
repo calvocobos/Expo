@@ -178,16 +178,21 @@ Search
 
 No citations found
 
-134
+135
  VIEWS
-104
+105
  DOWNLOADS
  Show more details
 Versions
+Version Final version
+10.5281/zenodo.18047949
+Dec 24, 2025
+
+Cite all versions? You can cite all versions by using the DOI 10.5281/zenodo.18047948. This DOI represents all versions, and will always resolve to the latest one. Read more.
+
 External resources
 Indexed in
 OpenAIRE
-Communities
 Keywords and subjects
 Ingeniería de Sistemas Sistema de información web Gestión administrativa Automatización de procesos Aplicaciones informáticas en salud Web-based information system Administrative management Process automation
 GEMET
@@ -210,6 +215,11 @@ Creative Commons Attribution Non Commercial No Derivatives 4.0 International
 Copyright
 Copyright (C) 2025 The Authors.
 Citation
+Cobos Vargas, I. J., & Calvo Arteaga, C. A. (2025). Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco (Final version) [Zenodo]. https://doi.org/10.5281/zenodo.18047949
+Style
+APA
+Export
+JSON
 Export
 Technical metadata
 Created December 24, 2025
