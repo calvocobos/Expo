@@ -671,6 +671,22 @@
         "visitas": 74,
         "origen": "directo"
       }
+    },
+    "2026-01-29": {
+      "uac": {
+        "visitas": 83,
+        "descargas": 21,
+        "origen": "directo"
+      },
+      "zenodo": {
+        "visitas": 136,
+        "descargas": 106,
+        "origen": "directo"
+      },
+      "sunedu": {
+        "visitas": 79,
+        "origen": "directo"
+      }
     }
   }
 }
