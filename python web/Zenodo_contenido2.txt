@@ -5,7 +5,7 @@ My dashboard
 Published December 24, 2025 | Version Final version
 Thesis  Open
 Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
-Creators
+Authors/Creators
 Cobos Vargas, Irvin Julian (Producer)1
  
 Calvo Arteaga, Carlos Antonio (Producer)1
@@ -162,7 +162,7 @@ Software
 Repository URL 
 https://github.com/calvocobos/Expo
 Programming language 
-PHP, JavaScript, HTML, CSS
+PHP , JavaScript , HTML , CSS
 Development Status 
 Active
 References
@@ -178,9 +178,9 @@ Search
 
 No citations found
 
-136
+140
  VIEWS
-106
+108
  DOWNLOADS
  Show more details
 Versions
