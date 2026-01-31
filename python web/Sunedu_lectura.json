@@ -254,6 +254,12 @@
         "visitas": 82,
         "estado": "ok"
       }
+    },
+    "2026-01-31": {
+      "sunedu": {
+        "visitas": 82,
+        "estado": "error"
+      }
     }
   }
 }
