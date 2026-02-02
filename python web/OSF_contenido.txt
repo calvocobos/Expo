@@ -87,25 +87,10 @@ Details
 Revisions
 Keywords
 Back to list of files
-OSF
-File Metadata
-Project Metadata
-Title
-Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
-Description
-Institution: Universidad Andina del Cusco, Facultad de Ingeniería y Arquitectura. Bachelor’s thesis in Systems Engineering. Authors: - Carlos Antonio Calvo Arteaga (ORCID: https://orcid.org/0009-0005-1426-4415) - Irvin Julian Cobos Vargas (ORCID: https://orcid.org/0009-0001-2767-3462) Advisor: - Hugo Espetia Huamanga (ORCID: https://orcid.org/0000-0003-4078-4121) Abstract (Spanish): La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. Para ello se utilizó la metodología ágil Scrum y la arquitectura MVC, implementando módulos de gestión de pacientes, citas, historias clínicas, inventario, pagos y reportes, utilizando tecnologías como Laravel 11, Livewire, Tailwind CSS y MySQL. Los resultados evidencian mejoras significativas en eficiencia, reducción de errores y cumplimiento de criterios de la norma ISO/IEC 25010. Keywords: Software Development; Health Informatics; Administrative Management; Process Automation Version of record (DOI): https://doi.org/10.5281/zenodo.18047949 Institutional repository (Handle): https://hdl.handle.net/20.500.12557/8558 License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). https://creativecommons.org/licenses/by-nc-nd/4.0/ Related resources: Project homepage (demonstration and dissemination site): https://calvocobos.github.io/Expo/ PDF copy (informational copy — not the version of record): https://calvocobos.github.io/Expo/Carlos_Irvin_Tesis_bachiller_2025.pdf Thesis presentation video: https://www.youtube.com/watch?v=GAQ6pLZKUeU
-Resource type
-Dissertation
-Resource language
-spa
-Date created
-December 27, 2025
-Date modified
-December 31, 2025
-Contributors
-Irvin Julian Cobos Vargas,
-Carlos Antonio Calvo Arteaga,
-Hugo Espetia Huamanga
+Keywords
+
+No tags
+
 Center for Open Science
 Terms of Use
 |

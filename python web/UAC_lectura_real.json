@@ -249,31 +249,37 @@
     "2026-01-28": {
       "uac": {
         "visitas": 1,
-        "descargas": 0
+        "descargas": 1
       }
     },
     "2026-01-29": {
       "uac": {
         "visitas": 8,
-        "descargas": 2
+        "descargas": 8
       }
     },
     "2026-01-30": {
       "uac": {
         "visitas": 1,
-        "descargas": 0
+        "descargas": 1
       }
     },
     "2026-01-31": {
       "uac": {
         "visitas": 1,
-        "descargas": 0
+        "descargas": 1
       }
     },
     "2026-02-01": {
       "uac": {
         "visitas": 1,
-        "descargas": 0
+        "descargas": 3
+      }
+    },
+    "2026-02-02": {
+      "uac": {
+        "visitas": 0,
+        "descargas": 1
       }
     }
   }

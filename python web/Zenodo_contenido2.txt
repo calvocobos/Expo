@@ -3,7 +3,7 @@ Communities
 My dashboard
  Log in  Sign up
 Published December 24, 2025 | Version Final version
-Thesis  Open
+Dissertation  Open
 Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
 Authors/Creators
 Cobos Vargas, Irvin Julian (Producer)1
@@ -12,37 +12,65 @@ Calvo Arteaga, Carlos Antonio (Producer)1
 Show affiliations
 Description
 
-La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. Se utilizó metodología ágil Scrum y arquitectura MVC, implementando módulos para registro de pacientes, gestión de citas, administración de tratamientos, inventario y reportes consolidados, con tecnologías como Laravel 11, Jetstream, Livewire, Tailwind CSS, JQuery y MySQL. El sistema contribuye a la digitalización y mejora de la eficiencia administrativa. https://hdl.handle.net/20.500.12557/8558 
+La presente tesis tiene como objetivo principal el desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico LALYSDENT de la ciudad del Cusco. El estudio inicia con la identificación de los procesos del consultorio y la recolección de requerimientos de los especialistas odontólogos, los cuales son obtenidos a través de historias de usuario. Para desarrollar la solución requerida, se utilizó la metodología ágil Scrum y la arquitectura MVC, lo que permitió una construcción iterativa y colaborativa del sistema de información web, el cual incluye módulos para el registro de pacientes, gestión de citas e historias clínicas junto a su odontograma correspondiente, administración de tratamientos, control de suministros e inventario odontológico, administración de pagos realizados por los pacientes y reportes consolidados de atención que reflejan adecuadamente los datos ingresados. La implementación se realizó con tecnologías modernas como el Framework Laravel en su versión 11, Jetstream, Livewire, Tailwind CSS, JQuery y MySQL, lo que garantizó una interfaz dinámica, diseño responsivo y un sistema robusto, confiable y escalable. Como resultado final se logra absolver el problema identificado y los resultados obtenidos evidencian una mejora significativa en la atención brindada en el consultorio, una mayor eficiencia en los tiempos desempeñados en cada proceso y una reducción de errores en el manejo del inventario y finanzas. Logrando alcanzar gran parte de los criterios de la norma ISO/IEC 25010. El sistema de información web desarrollado no solo contribuye a la digitalización de los procesos administrativos, sino también representa un apoyo fundamental para la toma de decisiones estratégicas, asegurando la sostenibilidad y crecimiento del consultorio odontológico.
 
-DOI: https://doi.org/10.5281/zenodo.18047949
+The present thesis has as its main objective the development of a web-based information system for the administration of the registration, care, inventory and financial processes of the LALYSDENT dental office in the city of Cusco. The study begins with the identification of office processes and the collection of requirements from dental specialists, which are obtained through user stories. To develop the required solution, the agile Scrum methodology and the MVC architecture were used, which allowed an iterative and collaborative construction of the web information system, which includes modules for patient registration, appointment management and medical records with the respective odontogram, treatment management, dental supplies and inventory control, patient payment management and consolidated care reports that accurately reflect the data entered. The implementation was done with modern technologies such as Laravel Framework version 11, Jetstream, Livewire, Tailwind CSS, JQuery and MySQL, which ensured a dynamic interface, responsive design, and a robust, reliable, and scalable system. The end result is that the identified problem has been solved, and the results obtained show a significant improvement in the care provided in the dental office, greater efficiency in the time taken in each process and a reduction of errors in inventory and financial management. Most of the criteria of the ISO/IEC 25010 standard have been met. The web-based information system developed not only contributes to the digitization of administrative processes, but also provides fundamental support for strategic decision-making, ensuring the sustainability and growth of the dental practice.
 
 Other
-
-Related resources
-
-• University repository:
+Repositorio Universidad Andina del Cusco (UAC)
 https://hdl.handle.net/20.500.12557/8558
-
-• National Registry (SUNEDU – RENATI):
-https://renati.sunedu.gob.pe/handle/renati/4844187
-
-• DOI (Zenodo record):
-https://doi.org/10.5281/zenodo.18047949
-
-• Open Science Framework (OSF) project:
-https://osf.io/rqzdx/
-
-• Project homepage:
-https://calvocobos.github.io/Expo/
-
-• PDF version:
-https://calvocobos.github.io/Expo/Carlos_Irvin_Tesis_bachiller_2025.pdf
-
-• Thesis presentation video:
-https://www.youtube.com/watch?v=GAQ6pLZKUeU
-
  
-
+Registro Nacional (SUNEDU - RENATI)
+https://renati.sunedu.gob.pe/handle/renati/4844187
+ 
+DOI - Identificador de Objeto Digital (Zenodo)
+https://doi.org/10.5281/zenodo.18047949
+ 
+DOI - Identificador de Objeto Digital (Figshare)
+https://doi.org/10.6084/m9.figshare.31191445
+ 
+Proyecto Open Science Framework (OSF)
+https://osf.io/rqzdx/
+ 
+PDF de la tesis (OSF)
+https://osf.io/rqzdx/files/qmzbp
+ 
+ResearchGate - Difusión académica
+https://www.researchgate.net/publication/400028881
+ 
+Academia.edu - Difusión académica
+https://www.academia.edu/157007270
+ 
+OpenAire - Recolección de la tesis
+https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18047949
+ 
+OpenAlex - Registro bibliográfico
+https://openalex.org/works?page=1&filter=title_and_abstract.search:desarrollo+de+un+sistema+de+informaci%C3%B3n+web+para+la+administraci%C3%B3n+de+los+procesos+de+registro+atenci%C3%B3n+inventario+y+finanzas+del+consultorio+odontol%C3%B3gico+lalysdent+del+distrito+de+cusco
+ 
+Página web oficial de la tesis
+https://calvocobos.github.io/Expo/
+ 
+PDF de la tesis (GitHub Pages)
+https://calvocobos.github.io/Expo/Carlos_Irvin_Tesis_bachiller_2025.pdf
+ 
+Video de sustentación de la tesis
+https://www.youtube.com/watch?v=GAQ6pLZKUeU
+ 
+Repositorio GitHub - Código fuente
+https://github.com/calvocobos/Expo
+ 
+Asesor: Hugo Espetia Huamanga
+https://orcid.org/0000-0003-4078-4121
+ 
+Autor: Carlos Antonio Calvo Arteaga
+https://orcid.org/0000-0003-4078-4121
+ 
+Autor: Irvin Julian Cobos Vargas
+https://orcid.org/0009-0005-1426-4415
+ 
+www.linkedin.com/in/cobos-vij
+ 
+ 
 Methods
 
 El desarrollo del proyecto siguió la metodología ágil Scrum, permitiendo un avance iterativo, retroalimentación continua y entregas incrementales.
@@ -178,9 +206,9 @@ Search
 
 No citations found
 
-143
+146
  VIEWS
-110
+113
  DOWNLOADS
  Show more details
 Versions
@@ -202,7 +230,7 @@ Information Systems
 Details
 DOI
 Resource type
-Thesis
+Dissertation
 Publisher
 Zenodo
 Thesis
@@ -215,7 +243,7 @@ Creative Commons Attribution Non Commercial No Derivatives 4.0 International
 Copyright
 Copyright (C) 2025 The Authors.
 Citation
-Cobos Vargas, I. J., & Calvo Arteaga, C. A. (2025). Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco (Final version) [Zenodo]. https://doi.org/10.5281/zenodo.18047949
+Cobos Vargas, I. J., & Calvo Arteaga, C. A. (2025). Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco (Final version). Zenodo. https://doi.org/10.5281/zenodo.18047949
 Style
 APA
 Export
@@ -223,7 +251,7 @@ JSON
 Export
 Technical metadata
 Created December 24, 2025
-Modified December 28, 2025
+Modified February 1, 2026
 Jump up
 About
 About

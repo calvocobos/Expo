@@ -632,7 +632,7 @@
     "2026-01-28": {
       "uac": {
         "visitas_dia": 1,
-        "descargas_dia": 0
+        "descargas_dia": 1
       },
       "zenodo": {
         "visitas_dia": 3,
@@ -648,7 +648,7 @@
     "2026-01-29": {
       "uac": {
         "visitas_dia": 8,
-        "descargas_dia": 2
+        "descargas_dia": 8
       },
       "zenodo": {
         "visitas_dia": 1,
@@ -664,7 +664,7 @@
     "2026-01-30": {
       "uac": {
         "visitas_dia": 1,
-        "descargas_dia": 0
+        "descargas_dia": 1
       },
       "zenodo": {
         "visitas_dia": 4,
@@ -680,7 +680,7 @@
     "2026-01-31": {
       "uac": {
         "visitas_dia": 1,
-        "descargas_dia": 0
+        "descargas_dia": 1
       },
       "zenodo": {
         "visitas_dia": 2,
@@ -696,7 +696,7 @@
     "2026-02-01": {
       "uac": {
         "visitas_dia": 1,
-        "descargas_dia": 0
+        "descargas_dia": 3
       },
       "zenodo": {
         "visitas_dia": 1,
@@ -704,6 +704,22 @@
       },
       "sunedu": {
         "visitas_dia": 0
+      },
+      "osf": {
+        "visitas_dia": 1
+      }
+    },
+    "2026-02-02": {
+      "uac": {
+        "visitas_dia": 0,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 3,
+        "descargas_dia": 3
+      },
+      "sunedu": {
+        "visitas_dia": 1
       },
       "osf": {
         "visitas_dia": 1
