@@ -712,7 +712,7 @@
     "2026-02-02": {
       "uac": {
         "visitas_dia": 0,
-        "descargas_dia": 1
+        "descargas_dia": 5
       },
       "zenodo": {
         "visitas_dia": 3,
@@ -720,6 +720,22 @@
       },
       "sunedu": {
         "visitas_dia": 1
+      },
+      "osf": {
+        "visitas_dia": 1
+      }
+    },
+    "2026-02-03": {
+      "uac": {
+        "visitas_dia": 0,
+        "descargas_dia": 1
+      },
+      "zenodo": {
+        "visitas_dia": 0,
+        "descargas_dia": 0
+      },
+      "sunedu": {
+        "visitas_dia": 2
       },
       "osf": {
         "visitas_dia": 1
