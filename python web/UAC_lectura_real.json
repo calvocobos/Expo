@@ -272,20 +272,86 @@
     },
     "2026-02-01": {
       "uac": {
-        "visitas": 1,
+        "visitas": 3,
         "descargas": 3
       }
     },
     "2026-02-02": {
       "uac": {
-        "visitas": 0,
+        "visitas": 5,
         "descargas": 5
       }
     },
     "2026-02-03": {
       "uac": {
-        "visitas": 0,
+        "visitas": 2,
         "descargas": 1
+      }
+    },
+    "2026-02-04": {
+      "uac": {
+        "visitas": 8,
+        "descargas": 3
+      }
+    },
+    "2026-02-05": {
+      "uac": {
+        "visitas": 1,
+        "descargas": 0
+      }
+    },
+    "2026-02-06": {
+      "uac": {
+        "visitas": 5,
+        "descargas": 4
+      }
+    },
+    "2026-02-07": {
+      "uac": {
+        "visitas": 3,
+        "descargas": 2
+      }
+    },
+    "2026-02-08": {
+      "uac": {
+        "visitas": 3,
+        "descargas": 3
+      }
+    },
+    "2026-02-09": {
+      "uac": {
+        "visitas": 9,
+        "descargas": 8
+      }
+    },
+    "2026-02-10": {
+      "uac": {
+        "visitas": 1,
+        "descargas": 0
+      }
+    },
+    "2026-02-11": {
+      "uac": {
+        "visitas": 3,
+        "descargas": 2
+      }
+    },
+    "2026-02-12": {
+      "uac": {
+        "visitas": 2,
+        "descargas": 1
+      }
+    },
+    "2026-02-13": {
+      "uac": {
+        "visitas": 2,
+        "descargas": 1
+      }
+    },
+    "2026-02-14": {
+      "uac": {
+        "visitas": 2,
+        "descargas": 0
       }
     }
   }

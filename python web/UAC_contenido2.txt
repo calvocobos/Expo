@@ -1,15 +1,13 @@
+ESTADÍSTICAS
 Inicio
 Tesis
 Pregrado
 Facultad de Ingeniería y Arquitectura
 Escuela Profesional de Ingeniería de Sistemas
-
 Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
-
-Desarrollo de un sistema de información web para la administración de los procesos de registro, atención, inventario y finanzas del consultorio odontológico Lalysdent del distrito de Cusco
-87
+93
 Visitas en los últimos 30 días
-18
+33
 Descargas en los últimos 30 días
 Archivos
 Carlos_Irvin_Tesis_bachiller_2025.pdf
@@ -40,9 +38,7 @@ Autor(es)
 Calvo Arteaga, Carlos Antonio
 Cobos Vargas, Irvin Julian
 Asesor(es)
-
 Espetia Huamanga, Hugo
-
 Editorial
 
 Universidad Andina del Cusco
@@ -86,4 +82,4 @@ La Referencia
 Estadísticas del repositorio
 Contacto
 repositorio.digital@uandina.edu.pe
-dspace-react versión 7.2.4 por Intelego
+dspace-react versión 1.0.0 por Intelego

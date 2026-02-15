@@ -335,6 +335,13 @@
         "descargas": 113,
         "estado": "ok"
       }
+    },
+    "2026-02-14": {
+      "zenodo": {
+        "visitas": 149,
+        "descargas": 115,
+        "estado": "ok"
+      }
     }
   }
 }

@@ -278,6 +278,12 @@
         "visitas": 85,
         "estado": "ok"
       }
+    },
+    "2026-02-14": {
+      "sunedu": {
+        "visitas": 85,
+        "estado": "error"
+      }
     }
   }
 }
