@@ -122,76 +122,92 @@ $(document).ready(function () {
 });
 
 /**
- * 📊 Gráficas estadísticas
- * Chart.js
- * Dona doble + Líneas (UAC / Zenodo / SUNEDU)
+ * 📊 Dona doble — Totales acumulados
+ * Fuente: agrupado/total_acumulado.json
  */
 
-async function cargarEstadisticas() {
+async function cargarDonaTotales() {
   /* =========================================================
    * 1️⃣ CARGA DE JSON
    * ========================================================= */
-  const [incrementos, totales] = await Promise.all([
-    fetch("python web/incrementos_por_dia.json").then((r) => r.json()),
-    fetch("python web/totales_acumulados.json").then((r) => r.json()),
-  ]);
+  const data = await fetch("agrupado/total_acumulado.json")
+    .then((r) => r.json());
+
+  const totGlobal = data.total_global;
+  const elementos = data.totales_por_elemento;
 
   /* =========================================================
-   * 2️⃣ DONA DOBLE — TOTALES
+   * 2️⃣ DONA DOBLE
    * ========================================================= */
-  const tot = totales.totales;
-
   new Chart(document.getElementById("totalesChart"), {
     type: "doughnut",
     data: {
       labels: [
         "Global · Visitas",
         "Global · Descargas",
+
         "UAC · Visitas",
         "UAC · Descargas",
+
         "Zenodo · Visitas",
         "Zenodo · Descargas",
+
         "SUNEDU · Visitas",
         "OSF · Visitas",
+
+        "Figshare · Visitas",
+        "Figshare · Descargas",
       ],
       datasets: [
         {
           // 🟠 DONA EXTERNA — GLOBAL
-          data: [tot.global.visitas, tot.global.descargas, 0, 0, 0, 0, 0],
+          data: [
+            totGlobal.visitas,
+            totGlobal.descargas,
+            0,0,0,0,0,0,0,0
+          ],
           backgroundColor: [
-            "#38bdf8",
-            "#f59e0b",
-            "transparent",
-            "transparent",
-            "transparent",
-            "transparent",
-            "transparent",
+            "#38bdf8", // global visitas
+            "#f59e0b", // global descargas
+            "transparent","transparent","transparent",
+            "transparent","transparent","transparent",
+            "transparent","transparent"
           ],
           borderWidth: 0,
           radius: "100%",
-          cutout: "55%", // ⬅️ deja espacio para la interna
+          cutout: "55%",
         },
         {
           // 🔵 DONA INTERNA — FUENTES
           data: [
-            0,
-            0,
-            tot.uac.visitas,
-            tot.uac.descargas,
-            tot.zenodo.visitas,
-            tot.zenodo.descargas,
-            tot.sunedu.visitas,
-            tot.osf?.visitas ?? 0,
+            0,0,
+
+            elementos.uac.total_visitas,
+            elementos.uac.total_descargas,
+
+            elementos.zenodo.total_visitas,
+            elementos.zenodo.total_descargas,
+
+            elementos.sunedu.total_visitas,
+            elementos.osf.total_visitas,
+
+            elementos.figshare.total_visitas,
+            elementos.figshare.total_descargas,
           ],
           backgroundColor: [
-            "transparent",
-            "transparent",
+            "transparent","transparent",
+
             "#60a5fa", // UAC visitas
             "#fbbf24", // UAC descargas
+
             "#22c55e", // Zenodo visitas
             "#a855f7", // Zenodo descargas
+
             "#ef4444", // SUNEDU visitas
-            "#22d3ee", // OSF visitas (cyan)
+            "#22d3ee", // OSF visitas
+
+            "#0ea5e9", // Figshare visitas
+            "#f97316", // Figshare descargas
           ],
           borderWidth: 0,
           radius: "78%",
@@ -217,21 +233,52 @@ async function cargarEstadisticas() {
     },
     plugins: [ChartDataLabels],
   });
+}
 
+/* =========================================================
+ * 🚀 EJECUCIÓN
+ * ========================================================= */
+cargarDonaTotales();
+
+
+/**
+ * Ahora solo las lineas
+ */
+
+/**
+ * 📊 Gráfico de líneas — Incrementos por día
+ * Fuente: agrupado/incrementos_por_dia.json
+ */
+
+async function cargarLineasIncrementos() {
   /* =========================================================
-   * 3️⃣ GRÁFICO DE LÍNEAS — 5 SERIES
+   * 1️⃣ CARGA DE JSON
    * ========================================================= */
-  const registros = incrementos.incrementos_por_dia;
+  const data = await fetch("agrupado/incrementos_por_dia.json")
+    .then((r) => r.json());
+
+  const registros = data.incrementos_por_dia;
   const fechas = Object.keys(registros);
 
-  const uacVisitas = fechas.map((f) => registros[f].uac.visitas_dia);
-  const uacDescargas = fechas.map((f) => registros[f].uac.descargas_dia);
-  const zenVisitas = fechas.map((f) => registros[f].zenodo.visitas_dia);
-  const zenDescargas = fechas.map((f) => registros[f].zenodo.descargas_dia);
-  const suneduVisitas = fechas.map(
-    (f) => registros[f].sunedu?.visitas_dia ?? 0
-  );
-  const osfVisitas = fechas.map((f) => registros[f].osf?.visitas_dia ?? 0);
+  /* =========================================================
+   * 2️⃣ MAPEO DE SERIES
+   * ========================================================= */
+
+  const uacVisitas = fechas.map(f => registros[f].uac?.visitas_dia ?? 0);
+  const uacDescargas = fechas.map(f => registros[f].uac?.descargas_dia ?? 0);
+
+  const zenVisitas = fechas.map(f => registros[f].zenodo?.visitas_dia ?? 0);
+  const zenDescargas = fechas.map(f => registros[f].zenodo?.descargas_dia ?? 0);
+
+  const suneduVisitas = fechas.map(f => registros[f].sunedu?.visitas_dia ?? 0);
+  const osfVisitas = fechas.map(f => registros[f].osf?.visitas_dia ?? 0);
+
+  const figshareVisitas = fechas.map(f => registros[f].figshare?.visitas_dia ?? 0);
+  const figshareDescargas = fechas.map(f => registros[f].figshare?.descargas_dia ?? 0);
+
+  /* =========================================================
+   * 3️⃣ GRÁFICO
+   * ========================================================= */
 
   new Chart(document.getElementById("pordiaChart"), {
     type: "line",
@@ -276,8 +323,22 @@ async function cargarEstadisticas() {
         {
           label: "OSF · Visitas",
           data: osfVisitas,
-          borderColor: "#22d3ee", // cyan
+          borderColor: "#22d3ee",
           backgroundColor: "rgba(34, 211, 238, 0.15)",
+          tension: 0.35,
+        },
+        {
+          label: "Figshare · Visitas",
+          data: figshareVisitas,
+          borderColor: "#0ea5e9",
+          backgroundColor: "rgba(14, 165, 233, 0.15)",
+          tension: 0.35,
+        },
+        {
+          label: "Figshare · Descargas",
+          data: figshareDescargas,
+          borderColor: "#f97316",
+          backgroundColor: "rgba(249, 115, 22, 0.15)",
           tension: 0.35,
         },
       ],
@@ -319,4 +380,4 @@ async function cargarEstadisticas() {
 /* =========================================================
  * 🚀 EJECUCIÓN
  * ========================================================= */
-cargarEstadisticas();
+cargarLineasIncrementos();
