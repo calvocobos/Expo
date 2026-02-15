@@ -381,3 +381,71 @@ async function cargarLineasIncrementos() {
  * 🚀 EJECUCIÓN
  * ========================================================= */
 cargarLineasIncrementos();
+
+/**
+ * ahora numeros de totales
+ */
+
+/**
+ * 📊 Inserta totales en elementos por ID (versión segura)
+ * Fuente: agrupado/total_acumulado.json
+ */
+
+async function cargarTotalesEnHTML() {
+
+  try {
+    const response = await fetch("agrupado/total_acumulado.json");
+    if (!response.ok) return;
+
+    const data = await response.json();
+
+    const totales = data?.totales_por_elemento ?? {};
+    const global = data?.total_global ?? {};
+
+    /* =========================================================
+     * 🔹 GLOBAL
+     * ========================================================= */
+
+    asignarTexto("global-visitas", global.visitas);
+    asignarTexto("global-descargas", global.descargas);
+
+    /* =========================================================
+     * 🔹 POR ELEMENTO
+     * ========================================================= */
+
+    Object.entries(totales).forEach(([key, valores]) => {
+
+      asignarTexto(`${key}-visitas`, valores?.total_visitas);
+      asignarTexto(`${key}-descargas`, valores?.total_descargas);
+
+    });
+
+  } catch (error) {
+    // Silencioso — no rompe la app
+    console.warn("No se pudieron cargar los totales.");
+  }
+}
+
+
+/* =========================================================
+ * 🔧 Función segura para asignar texto
+ * ========================================================= */
+
+function asignarTexto(id, valor) {
+  const elemento = document.getElementById(id);
+
+  if (!elemento) return; // 🔒 si no existe, sigue sin error
+
+  elemento.textContent =
+    typeof valor === "number"
+      ? valor.toLocaleString()
+      : "0";
+}
+
+
+/* =========================================================
+ * 🚀 EJECUCIÓN
+ * ========================================================= */
+
+cargarTotalesEnHTML();
+
