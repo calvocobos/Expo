@@ -537,7 +537,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 3
@@ -556,7 +556,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 3
@@ -575,7 +575,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 2
@@ -594,7 +594,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 2
@@ -613,7 +613,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 3
@@ -632,7 +632,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 3
@@ -651,7 +651,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 1
@@ -670,7 +670,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 3
@@ -689,7 +689,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 1
@@ -727,7 +727,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 4
@@ -746,7 +746,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 2
@@ -765,7 +765,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 5
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 8
@@ -784,7 +784,7 @@
                 "visitas_dia": 0
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 0
@@ -794,8 +794,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-01-29": {
@@ -804,7 +803,7 @@
                 "descargas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 0
@@ -814,8 +813,7 @@
                 "descargas_dia": 2
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-01-30": {
@@ -824,7 +822,7 @@
                 "descargas_dia": 1
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 0
@@ -834,8 +832,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-01-31": {
@@ -844,7 +841,7 @@
                 "descargas_dia": 0
             },
             "osf": {
-                "visitas_dia": 1
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 0
@@ -854,8 +851,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-01": {
@@ -864,7 +860,7 @@
                 "descargas_dia": 1
             },
             "osf": {
-                "visitas_dia": 2
+                "visitas_dia": 0
             },
             "sunedu": {
                 "visitas_dia": 0
@@ -874,8 +870,7 @@
                 "descargas_dia": 1
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-02": {
@@ -894,8 +889,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-03": {
@@ -914,8 +908,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-04": {
@@ -934,8 +927,7 @@
                 "descargas_dia": 3
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-05": {
@@ -954,8 +946,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-06": {
@@ -974,8 +965,7 @@
                 "descargas_dia": 4
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 0
+                "visitas_dia": 0
             }
         },
         "2026-02-07": {
@@ -994,8 +984,7 @@
                 "descargas_dia": 2
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-08": {
@@ -1014,8 +1003,7 @@
                 "descargas_dia": 3
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 0
+                "visitas_dia": 0
             }
         },
         "2026-02-09": {
@@ -1034,8 +1022,7 @@
                 "descargas_dia": 8
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-10": {
@@ -1054,8 +1041,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 0
+                "visitas_dia": 0
             }
         },
         "2026-02-11": {
@@ -1074,8 +1060,7 @@
                 "descargas_dia": 2
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-12": {
@@ -1094,8 +1079,7 @@
                 "descargas_dia": 1
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 0
+                "visitas_dia": 0
             }
         },
         "2026-02-13": {
@@ -1114,8 +1098,7 @@
                 "descargas_dia": 1
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 0
             }
         },
         "2026-02-14": {
@@ -1134,8 +1117,7 @@
                 "descargas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 0
+                "visitas_dia": 0
             }
         },
         "2026-02-15": {
@@ -1147,14 +1129,33 @@
                 "visitas_dia": 0
             },
             "sunedu": {
-                "visitas_dia": 0
+                "visitas_dia": null
             },
             "uac": {
                 "visitas_dia": 0
             },
             "zenodo": {
-                "visitas_dia": 1,
-                "descargas_dia": 1
+                "visitas_dia": 17,
+                "descargas_dia": 13
+            }
+        },
+        "2026-03-02": {
+            "figshare": {
+                "visitas_dia": 6,
+                "descargas_dia": 0
+            },
+            "osf": {
+                "visitas_dia": 0
+            },
+            "sunedu": {
+                "visitas_dia": null
+            },
+            "uac": {
+                "visitas_dia": 0
+            },
+            "zenodo": {
+                "visitas_dia": 16,
+                "descargas_dia": 2
             }
         }
     }
